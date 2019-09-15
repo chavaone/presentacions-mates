@@ -1,0 +1,66 @@
+
+
+div.problema p {
+  font-size: 30px;
+}
+
+.numero {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+
+
+  border-radius: 100%;
+  background-color: white;
+  color: black;
+
+  font-weight: bold;
+  text-align: center;
+
+  margin-right: 0.3em;
+}
+
+.numero--exemplo {
+  background-color: red;
+}
+
+.numero--apartado {
+  background-color: green;
+}
+
+ul.problema__apartados {
+  list-style: none;
+}
+
+ul.problema__apartados li {
+  margin-top: 0.5em;
+}
+
+.pregunta__opciones {
+  display: flex;
+  justify-content: space-around;
+  margin-top:2em;
+  padding: 0 1em;
+}
+
+div.MathJax_Display {
+  display: inline !important;
+}
+
+.pregunta__enunciado div.MathJax_Display {
+  margin-top: 0;
+}
+
+.pregunta__opcion:not(:last-child) {
+  border-right: 1px solid white;
+}
+
+.pregunta__opcion {
+  flex:1;
+  padding: 0 0.1em;
+}
+
+.pregunta__enunciado em {
+  font-style: italic;
+  font-size: 0.8em;
+}
