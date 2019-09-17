@@ -20,6 +20,11 @@ div.problema p {
   margin-right: 0.3em;
 }
 
+body.print-pdf .numero {
+  background-color: black;
+  color: white;
+}
+
 .numero--exemplo {
   background-color: red;
 }
@@ -53,6 +58,10 @@ div.MathJax_Display {
 
 .pregunta__opcion:not(:last-child) {
   border-right: 1px solid white;
+}
+
+body.print-pdf .pregunta__opcion:not(:last-child) {
+  border-right: 1px solid black;
 }
 
 .pregunta__opcion {
