@@ -1,4 +1,10 @@
 
+.reveal section img {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
 
 div.problema p {
   font-size: 30px;
