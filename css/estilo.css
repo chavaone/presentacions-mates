@@ -3,6 +3,7 @@
   background: none;
   border: none;
   box-shadow: none;
+  max-height: 90vh;
 }
 
 
@@ -41,10 +42,22 @@ body.print-pdf .numero {
 
 ul.problema__apartados {
   list-style: none;
+  margin: 0;
 }
 
 ul.problema__apartados li {
   margin-top: 0.5em;
+}
+
+ul.problema__apartados--flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 40vh;
+}
+
+ul.problema__apartados--flex li {
+  margin-left:10vw
 }
 
 .pregunta__opciones {
