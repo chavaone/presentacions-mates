@@ -28,11 +28,25 @@ Reveal.initialize({
     { src: '../plugin/math/math.js', async: true },
     { src: '../plugin/chalkboard/chalkboard.js' },
   ],
-  
+
+
   keyboard: {
 	    66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
 	    46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
 	     8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
 	    68: function() { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
+      83: function() {Reveal.soluciones.cambiar()}
+
 	},
 });
+
+Reveal.soluciones = {
+  activado: false,
+  cambiar() {
+    this.activado = !this.activado;
+    var div = document.getElementById("revealdiv");
+
+    if (this.activado) div.classList.add("mostrar-solucion");
+    else div.classList.remove("mostrar-solucion");
+  }
+}
