@@ -45,6 +45,15 @@ ul.problema__apartados {
   margin: 0;
 }
 
+ul.problema__apartados li .solucion {
+  color:red;
+  display: none;
+}
+
+.reveal.mostrar-solucion section li .solucion {
+  display: inline;
+}
+
 ul.problema__apartados li {
   margin-top: 0.5em;
 }
@@ -57,7 +66,7 @@ ul.problema__apartados--flex {
 }
 
 ul.problema__apartados--flex li {
-  margin-left:10vw
+  margin-left:5vw
 }
 
 .pregunta__opciones {
