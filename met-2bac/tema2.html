@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Métodos Estadísticos y Numéricos - 2º BAC - Tema 2</title>
+
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/black.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/monokai.css">
+		<link rel="stylesheet" href="../css/estilo.css">
+
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal" id="revealdiv">
+			<div class="slides">
+				<section>
+					<section>
+						<h3>Tema 2: Probabilidad Condicionada</h3>
+					</section>
+
+					<section>
+						<h4>Experimento</h4>
+						<q>Un proceso por el medio del cual se obtiene una observación.</q>
+					</section>
+
+					<section>
+						<h4>Tipos de experimentos</h4>
+						<ul>
+							<li>Determinista</li>
+							<li>Aleatorio</li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="problema">
+							<h4><span class="numero">1</span> Clasifica los siguientes experimentos como deterministas o aleatorios:</h4>
+							<ul class="problema__apartados problema__apartados--flex">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									Lanzar una moneda al aire y anotar si sale cara o cruz.
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									Comprobar el tiempo que tarda un objecto en recorrer una distancia conocidas velocidad y condiciones del entorno.
+								</li>
+								<li>
+									<span class="numero numero--apartado">c</span>
+									El tiempo que va hacer mañana.
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<h4>Suceso elemental</h4>
+						<q>Cada uno de los posibles resultados del experimento</q>
+					</section>
+
+					<section>
+						<h4>Ejemplo:</h4>
+						<q>Lanzar un dado de seis caras y observar el resultado.</q>
+						<ul>
+							<li>\[\omega_1 =\] "sacar un 1"</li>
+							<li>\[\omega_2 =\] "sacar un 2"</li>
+							<li>...</li>
+							<li>\[\omega_6 =\] "sacar un 3"</li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>Espacio muestral</h4>
+						<q>Conjunto formado por todos los sucesos elementales</q>
+					</section>
+
+					<section>
+						<h4>Ejemplo:</h4>
+						<q>Lanzar un dado de seis caras y observar el resultado.</q>
+						<p>
+							\[ \Omega = \{\omega_1, \omega_2, \omega_3, \dots, \omega_6\} \]
+						</p>
+					</section>
+
+					<section>
+						<h4>Suceso</h4>
+						<q>Un subconjunto del espacio muestral</q>
+					</section>
+
+					<section>
+							<h4 class="col-red">Ejemplo:</h4>
+							<q>Lanzar un dado de seis caras y observar el resultado.</q>
+							<ul>
+								<li>\[ A = \] "sacar un número par" \[=  \{\omega_2, \omega_4, \omega_6\} \]</li>
+								<li>\[ B = \] "sacar menos de un 3" \[=  \{\omega_1, \omega_2 \} \]</li>
+								<li>\[ C = \] "sacar un multiplo de 3" \[=  \{\omega_3, \omega_6 \} \]</li>
+							</ul>
+					</section>
+
+					<section>
+						<h4>Suceso Imposible \[ \emptyset \]</h4>
+						<h4>Suceso Seguro \[ \Omega \]</h4>
+					</section>
+
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">2</span> En el experimento de <em>"lanzar un dado de 12 caras y observar su resultado"</em>	halla:</p>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									Los sucesos elementales.
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									El espacio muestral.
+								</li>
+								<li>
+									<span class="numero numero--apartado">c</span>
+									El suceso \[A =\] “múltiplos de 3”.
+								</li>
+								<li>
+									<span class="numero numero--apartado">d</span>
+									El suceso \[B =\] “números pares”.
+								</li>
+								<li>
+									<span class="numero numero--apartado">e</span>
+									Un suceso imposible.
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<h4>Operaciones con <strike>conjuntos</strike> sucesos</h4>
+						<ul>
+							<li>Unión \[ A \cup B \]</li>
+							<li>Intersección \[ A \cap B \] </li>
+							<li>Complementario \[ \overline{A} \]</li>
+							<li>Diferencia \[ A - B = A \cap \overline{B} \]</li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">3</span> Dado el experimento <em>"lanzar un dado de 6 caras y observal el resultado"</em> y sean \[A\], \[B\] y \[C\] los sucesos "sacar un número par", "sacar un número menor que 3" y "sacar un múltiplo de 3", respectivamente;  expresa y calcula los sucesos elementales que forman:</p>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--ejemplo">E</span>
+									Ocurre \[A\] y \[B\] pero no \[C\].
+									<span class="solucion"> \[ A \cap B \cap \overline{C} = \{ \omega_2 \} \] </span>
+								</li>
+								<li>
+									<span class="numero numero--apartado">a</span>
+									Los tres sucesos ocurren simultáneamente.
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									Ocurren \[A\] o \[B\], pero no \[C\]
+								</li>
+								<li>
+									<span class="numero numero--apartado">c</span>
+									Ocurre alguno de los tres sucesos.
+								</li>
+								<li>
+									<span class="numero numero--apartado">d</span>
+									Ninguno de los tres sucesos sucede.
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<h4>Sucesos compatibles e incompatibles</h4>
+						<q>Dos sucesos \[ A \] y \[ B \] son incompatibles si no pueden suceder a la vez y por lo tanto \[A \cap B = \emptyset \]</q>
+					</section>
+
+					<section>
+						<h4>Propiedades operaciones con sucesos</h4>
+					</section>
+
+					<section>
+						<h4>Probabilidad</h4>
+						<q>Medida de la incertidumbre de que ocurra un suceso al realizar un experimento aleatorio.</q>
+					</section>
+
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="../js/reveal.js"></script>
+		<script src="../js/config.js"></script>
+	</body>
+</html>

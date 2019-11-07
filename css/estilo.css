@@ -7,6 +7,10 @@
 }
 
 
+.col-red {
+  color: red;
+}
+
 div.problema p {
   font-size: 30px;
 }
@@ -58,9 +62,11 @@ ul.problema__apartados li {
 }
 
 ul.problema__apartados--flex {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: flex-start;
 }
 
 .pregunta__opciones {
