@@ -190,11 +190,104 @@
 
 					<section>
 						<h4>Propiedades operaciones con sucesos</h4>
+						<img src="../img/propiedadesunionintersec.png" alt="">
 					</section>
+				</section>
 
+				<section>
 					<section>
 						<h4>Probabilidad</h4>
 						<q>Medida de la incertidumbre de que ocurra un suceso al realizar un experimento aleatorio.</q>
+					</section>
+
+					<section>
+						<h5>Probabilidad</h5>
+						<h3>Definición Axiomática de Kolmogorov</h3>
+						<p> \[	P : \Omega \rightarrow \mathbb{R} \]</p>
+						<ol>
+							<li>Para todo suceso \[A, P(A) \ge 0\]</li>
+							<li>\[P(\Omega) = 1 \]</li>
+							<li>Dados \[A, B\] sucesos incompatibles: \[P(A \cup B) = P(A) + P(B)\]</li>
+						</ol>
+					</section>
+
+					<section>
+						<h3>Consecuencias</h3>
+						<ol>
+							<li>\[ 0 \le P(A) \le 1\]</li>
+							<li>\[ P(\overline{A}) = 1 - P(A) \]</li>
+							<li>\[P(A \cup B) = P(A) + P(B) - P(A\cap B)\]</li>
+							<li>\[P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A\cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)\]</li>
+						</ol>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">4</span>Sean A y B dos sucesos incompatibles de un experimento aleatorio tales que \[P(A)= 0,2\] y \[P(A\cup B)=0,6\]. Calcula \[P(B)\].</p>
+						</div>
+
+						<div class="problema">
+							<p><span class="numero">5</span>Se consideran los sucesos \[A\] y \[B\] asociados a un experimento aleatorio con \[P(A)= 0,7\];  \[P(B)=0,6\] y \[P(A\cap B) = 0,4\]. Calcula \[ P(A\cup B)\] y \[ P(\overline{A} \cup \overline{B})\].</p>
+						</div>
+
+						<div class="problema">
+							<p><span class="numero">6</span>Sean los sucesos A y B tales que \[P(A) = \frac{3}{8}\], \[P(B)= \frac{1}{2}\] y \[P(A \cap B) = \frac{1}{4}\]. Calcula \[P(A \cup B)\], \[P(\overline{A})\], \[P(\overline{A} \cup \overline{B})\] y \[P(\overline{A} \cap \overline{B})\]</p>
+						</div>
+					</section>
+
+					<section>
+						<h4>Métodos para asignar la Probabilidad</h4>
+						<h3>Ley de los grandes números</h3>
+						<p>La frecuencia relativa de un sucesos se suele estabilizar en torno a un número que podemos tomar como la probabilidad.</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">E</span>O  60%  dos  individuos  dunha  poboación  está  vacinado  contra  certa  enfermidade.  Durante  unha  epidemia  sábese que o 20% contraeu a enfermidade e que o 3% está vacinado e contraeu a enfermidade.[...]</p>
+						</div>
+					</section>
+
+					<section>
+						<h4>Métodos para asignar la Probabilidad</h4>
+						<h3>Ley de Laplace</h3>
+						<p>Sucesos equiprobables</p>
+						<p>\[ P(A) = \frac{\text{casos favorables}}{\text{casos posibles}} \]</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">6</span> De una baraja española de 40 cartas se extrae una. Calcula las siguientes probabilidades:</p>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									Que sea un rey.
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									Que sea de copas
+								</li>
+								<li>
+									<span class="numero numero--apartado">c</span>
+									Que no sea figura (sota, caballo o rey).
+								</li>
+								<li>
+									<span class="numero numero--apartado">d</span>
+									Que sea el 7 de espadas.
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">7</span>De una urna que contiene 10 bolas numeradas del 1 al 10 se extrae una bola. Consideremos los sucesos:</p>
+								<ul>
+									<li>A = "obtener número par"</li>
+									<li>B = "obtener un número mayor que 7"</li>
+									<li>C = "obtener un múltiplo de tres"</li>
+								</ul>
+								<p>Calcula la probabilidad de los sucesos \[A\], \[B\], \[C\], \[A \cap B\], \[A \cup B\], y \[A \cup B \cup C\]</p>
+						</div>
 					</section>
 
 				</section>
