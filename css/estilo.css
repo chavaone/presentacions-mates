@@ -6,6 +6,9 @@
   max-height: 90vh;
 }
 
+.ali-left {
+  text-align: left;
+}
 
 .col-red {
   color: red;
