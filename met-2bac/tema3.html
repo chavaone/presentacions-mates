@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Métodos Estadísticos y Numéricos - 2º BAC - Tema 2</title>
+
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/black.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/monokai.css">
+		<link rel="stylesheet" href="../css/estilo.css">
+
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal" id="revealdiv">
+			<div class="slides">
+				<section>
+					<h3>Tema 3: Muestreo</h3>
+				</section>
+
+        <section>
+						<h4>Variables aleatorias</h4>
+        </section>
+
+				<section>
+					<h4>Variable aleatoria</h4>
+				</section>
+
+				<section>
+					<h4>Tipos</h4>
+					<ul>
+						<li>Discretas</li>
+						<li>Continuas</li>
+					</ul>
+				</section>
+
+				<section>
+					<h6>V.A. Discretas</h6>
+					<h3>Función de masa de probabilidad</h3>
+					<h5>Dada una variable aleatoria discreta \[X\]:</h5>
+					<h1>\[ f(x_i) = p_i = P(X=x_i) \]</h1>
+				</section>
+
+				<section>
+					<h4>Ejemplo</h4>
+					<p>Definimos la v.a. discreta \[X = \text{"Número de caras obtenidas al lanzar 3 monedas."}\]</p>
+					<ul>
+						<li>\[ p_0 = f(0) = P(X=0) = \frac{1}{8} \]</li>
+						<li>\[ p_1 = f(1) = P(X=1) = \frac{3}{8} \]</li>
+						<li>\[ p_2 = f(2) = P(X=2) = \frac{3}{8} \]</li>
+						<li>\[ p_3 = f(3) = P(X=3) = \frac{1}{8} \]</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Discrete_probability_distrib.svg/220px-Discrete_probability_distrib.svg.png" alt="">
+				</section>
+
+				<section>
+					<h4>Propiedades</h4>
+					<ul>
+						<li>\[f(x_i) \in [0, 1]\] <em>(es una propiedad)</em></li>
+						<li>\[ \sum_i f(x_i) = 1 \]</li>
+					</ul>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">1</span>Indica los valores de la función de masa de probabilidad de las siguientes variables aleatorias y traza su gráfica:</p>
+						<ul class="problema__apartados">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								\[ X = \text{"Número de cruces al lanzar 2 monedas"}\]
+							</li>
+							<li>
+								<span class="numero numero--apartado">b</span>
+								\[ Y = \text{"Suma de los números obtenidos al lanzar dos dados de 4 caras"}\]
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h6>V.A. Discretas</h6>
+					<h3>Función de distribución</h3>
+					<h5>Dada una variable aleatoria discreta \[X\]:</h5>
+					<h1>\[ F(x_i) = P(X \le x_i) \]</h1>
+				</section>
+
+				<section>
+					<h4>Ejemplo</h4>
+					<p>Definimos la v.a. discreta \[X = \text{"Número de caras obtenidas al lanzar 3 monedas."}\]</p>
+					<ul>
+						<li>\[ F(0) = P(X \ge 0) = \frac{1}{8} \]</li>
+						<li>\[ F(1) = P(X \ge 1) = \frac{4}{8} \]</li>
+						<li>\[ F(2) = P(X \ge 2) = \frac{7}{8} \]</li>
+						<li>\[ F(3) = P(X \ge 3) = \frac{8}{8} \]</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="https://www.uv.es/ceaces/base/variable%20aleatoria/Image20.gif" alt="">
+				</section>
+
+				<section>
+					<h4>Propiedades</h4>
+					<ul>
+						<li>\[ F(x) \in [0, 1] \]</li>
+						<li>Función creciente</li>
+						<li>\[ \lim_{x \to -\infty} F(x) = 0 \]</li>
+						<li>\[ \lim_{x \to +\infty} F(x) = 1 \]</li>
+						<li>\[ P(a \ge X \ge b) = F(b) - F(a) \]</li>
+					</ul>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">2</span>Indica los valores de la función de distribución de las siguientes variables aleatorias y traza su gráfica:</p>
+						<ul class="problema__apartados">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								\[ X = \text{"Número de cruces al lanzar 2 monedas"}\]
+							</li>
+							<li>
+								<span class="numero numero--apartado">b</span>
+								\[ Y = \text{"Suma de los números obtenidos al lanzar dos dados de 4 caras"}\]
+							</li>
+						</ul>
+					</div>
+				</section>
+
+
+
+			</div>
+		</div>
+
+		<script src="../js/reveal.js"></script>
+		<script src="../js/config.js"></script>
+	</body>
+</html>
