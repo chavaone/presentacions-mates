@@ -32,117 +32,197 @@
 					<h3>Tema 3: Muestreo</h3>
 				</section>
 
-        <section>
-						<h4>Variables aleatorias</h4>
-        </section>
+				<section>
+	        <section>
+							<h4>Variables aleatorias</h4>
+							<q>Función que asocia a cada suceso elemental, un número real.</q>
+							<p>\[ X:\Omega\to \mathbb{R} \]</p>
+	        </section>
+
+					<section>
+						<h4>Ejemplo</h4>
+						<p>Definimos la v.a. discreta \[X = \] "Número de caras obtenidas al lanzar 3 monedas."</p>
+						<ul>
+							<li>"No sacar ninguna cara" \[\Rightarrow 0 \]</li>
+							<li>"Sacar una cara" \[\Rightarrow 1 \]</li>
+							<li>"Sacar dos caras" \[\Rightarrow 2 \]</li>
+							<li>"Sacar tres cara" \[\Rightarrow 3 \]</li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>Tipos</h4>
+						<ul>
+							<li>Discretas: P. ej. <em>"número obtenido al lanzar un dado"</em></li>
+							<li>Continuas: P. ej. <em>"altura de una persona elegida al azar"</em></li>
+						</ul>
+					</section>
+				</section>
+
 
 				<section>
-					<h4>Variable aleatoria</h4>
+					<section>
+						<h6>V.A. Discretas</h6>
+						<h3>Función de masa de probabilidad</h3>
+						<h5>Dada una variable aleatoria discreta \[X\]:</h5>
+						<h3>\[ f(x_i) = p_i = P(X=x_i) \]</h3>
+					</section>
+
+					<section>
+						<h4>Ejemplo</h4>
+						<p>Definimos la v.a. discreta \[X = \] "Número de caras obtenidas al lanzar 3 monedas."</p>
+						<ul>
+							<li>\[ p_0 = f(0) = P(X=0) = 1/8 \]</li>
+							<li>\[ p_1 = f(1) = P(X=1) = 3/8 \]</li>
+							<li>\[ p_2 = f(2) = P(X=2) = 3/8 \]</li>
+							<li>\[ p_3 = f(3) = P(X=3) = 1/8 \]</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Gráfica</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Discrete_probability_distrib.svg/220px-Discrete_probability_distrib.svg.png" alt="">
+					</section>
+
+					<section>
+						<h4>Propiedades</h4>
+						<ul>
+							<li>\[f(x_i) \in [0, 1]\] <em>(es una propiedad)</em></li>
+							<li>\[ \sum_i f(x_i) = 1 \]</li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">1</span>Indica los valores de la función de masa de probabilidad de las siguientes variables aleatorias y traza su gráfica:</p>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									\[ X = \]"Número de cruces al lanzar 2 monedas"
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									\[ Y = \]"Suma de los números obtenidos al lanzar dos dados de 4 caras"
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<h6>V.A. Discretas</h6>
+						<h3>Función de distribución</h3>
+						<h5>Dada una variable aleatoria discreta \[X\]:</h5>
+						<h3>\[ F(x_i) = P(X \le x_i) \]</h3>
+					</section>
+
+					<section>
+						<h4>Ejemplo</h4>
+						<p>Definimos la v.a. discreta \[X = \] "Número de caras obtenidas al lanzar 3 monedas."</p>
+						<ul>
+							<li>\[ F(0) = P(X \le 0) = 1/8 \]</li>
+							<li>\[ F(1) = P(X \le 1) = 4/8 \]</li>
+							<li>\[ F(2) = P(X \le 2) = 7/8 \]</li>
+							<li>\[ F(3) = P(X \le 3) = 8/8 = 1 \]</li>
+						</ul>
+					</section>
+
+					<section>
+						<img src="https://www.uv.es/ceaces/base/variable%20aleatoria/Image20.gif" alt="">
+					</section>
+
+					<section>
+						<h4>Propiedades</h4>
+						<ul>
+							<li>\[ F(x) \in [0, 1] \]</li>
+							<li>Función creciente</li>
+							<li>\[ \lim_{x \to -\infty} F(x) = 0 \]</li>
+							<li>\[ \lim_{x \to +\infty} F(x) = 1 \]</li>
+							<li>\[ P(a \ge X \ge b) = F(b) - F(a) \]</li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">2</span>Indica los valores de la función de distribución de las siguientes variables aleatorias y traza su gráfica:</p>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									\[ X = \]"Número de cruces al lanzar 2 monedas"
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									\[ Y = \]"Suma de los números obtenidos al lanzar dos dados de 4 caras"
+								</li>
+							</ul>
+						</div>
+					</section>
 				</section>
 
 				<section>
-					<h4>Tipos</h4>
-					<ul>
-						<li>Discretas</li>
-						<li>Continuas</li>
-					</ul>
-				</section>
+					<section>
+						<h4>Parámetros de una v.a. discreta</h4>
+						<h3>Esperanza matemática o media</h3>
+						<q>Nos aporta el "valor esperado" al realizar el experimente aleatorio.</q>
+						<h3>\[ \mu_x = E[x] = \sum_i x_i \cdot f(x_i) \]</h3>
+					</section>
 
-				<section>
-					<h6>V.A. Discretas</h6>
-					<h3>Función de masa de probabilidad</h3>
-					<h5>Dada una variable aleatoria discreta \[X\]:</h5>
-					<h1>\[ f(x_i) = p_i = P(X=x_i) \]</h1>
+					<section>
+						<h4>Parámetros de una v.a. discreta</h4>
+						<h3>Varianza</h3>
+						<q>Nos aporta una medida de dispresión de los valores de la variable con respecto a la media.</q>
+						<h3>\[\sigma_x^2 = VAR[X] = \sum_i (x_i - \mu)^2 \cdot f(x_i) = \] <br/> \[= \sum_i x_i^2 \cdot f(x_i) - \mu^2 \]</h3>
+					</section>
+
+					<section>
+						<h4>Parámetros de una v.a. discreta</h4>
+						<h3>Desviación típica</h3>
+						<q>Nos aporta una medida de dispersión pero en las mismas unidades que la variable.</q>
+						<h3>\[\sigma_x = \sqrt{\sigma_x^2} = \sqrt{VAR[X]}\]</h3>
+					</section>
 				</section>
 
 				<section>
 					<h4>Ejemplo</h4>
-					<p>Definimos la v.a. discreta \[X = \text{"Número de caras obtenidas al lanzar 3 monedas."}\]</p>
-					<ul>
-						<li>\[ p_0 = f(0) = P(X=0) = \frac{1}{8} \]</li>
-						<li>\[ p_1 = f(1) = P(X=1) = \frac{3}{8} \]</li>
-						<li>\[ p_2 = f(2) = P(X=2) = \frac{3}{8} \]</li>
-						<li>\[ p_3 = f(3) = P(X=3) = \frac{1}{8} \]</li>
-					</ul>
+					<p>Definimos la v.a. discreta \[X = \] "Número de caras obtenidas al lanzar 3 monedas."</p>
+					<p style="text-align:left">\[E[X] = \sum_i x_i \cdot f(x_i) = 0 \cdot f(0) + 1 \cdot f(1) + 2 \cdot f(2) + \] <br/>
+						\[+  3 \cdot f(3) = 0 \cdot \frac{1}{8} + 1 \cdot \frac{3}{8} + 2 \cdot \frac{3}{8} + 3 \cdot \frac{1}{8} = \]
+						\[ = \frac{0}{8} + \frac{3}{8} + \frac{6}{8} + \frac{3}{8} = \frac{12}{8} = 1'5\]
+					</p>
 				</section>
 
 				<section>
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Discrete_probability_distrib.svg/220px-Discrete_probability_distrib.svg.png" alt="">
+					<p style="text-align:left">\[VAR[X] = \sum_i x_i^2 \cdot f(x_i) - \mu^2 = \] \[ = 0^2 \cdot f(0) + 1^2 \cdot f(1) + 2^2 \cdot f(2) +  3^2 \cdot f(3)) - 1.5^2 =\]
+						\[ = (0 \cdot \frac{1}{8} + 1 \cdot \frac{3}{8} + 4 \cdot \frac{3}{8} + 9 \cdot \frac{1}{8}) - 1.5^2 = \]
+						\[ = (\frac{0}{8} + \frac{3}{8} + \frac{12}{8} + \frac{9}{8}) - 1.5^2 = \frac{24}{8} - 1.5^2 = 0.75\]
 				</section>
 
 				<section>
-					<h4>Propiedades</h4>
-					<ul>
-						<li>\[f(x_i) \in [0, 1]\] <em>(es una propiedad)</em></li>
-						<li>\[ \sum_i f(x_i) = 1 \]</li>
-					</ul>
+					<p>\[ \sigma_x = \sqrt[\sigma_x^2] = \sqrt{0.75}= 0.86\]</p>
 				</section>
 
 				<section>
 					<div class="problema">
-						<p><span class="numero">1</span>Indica los valores de la función de masa de probabilidad de las siguientes variables aleatorias y traza su gráfica:</p>
+						<p><span class="numero">3</span>Calcula la media, varianza y desviación típica de las siguientes variables aleatorias:</p>
 						<ul class="problema__apartados">
 							<li>
 								<span class="numero numero--apartado">a</span>
-								\[ X = \text{"Número de cruces al lanzar 2 monedas"}\]
+								\[ X = \]"Número de cruces al lanzar 2 monedas"
 							</li>
 							<li>
 								<span class="numero numero--apartado">b</span>
-								\[ Y = \text{"Suma de los números obtenidos al lanzar dos dados de 4 caras"}\]
+								\[ Y = \]"Suma de los números obtenidos al lanzar dos dados de 4 caras"
 							</li>
 						</ul>
 					</div>
 				</section>
+			</section>
 
+			<section>
 				<section>
-					<h6>V.A. Discretas</h6>
-					<h3>Función de distribución</h3>
-					<h5>Dada una variable aleatoria discreta \[X\]:</h5>
-					<h1>\[ F(x_i) = P(X \le x_i) \]</h1>
+					<h4>V.A. Continua</h4>
 				</section>
 
-				<section>
-					<h4>Ejemplo</h4>
-					<p>Definimos la v.a. discreta \[X = \text{"Número de caras obtenidas al lanzar 3 monedas."}\]</p>
-					<ul>
-						<li>\[ F(0) = P(X \ge 0) = \frac{1}{8} \]</li>
-						<li>\[ F(1) = P(X \ge 1) = \frac{4}{8} \]</li>
-						<li>\[ F(2) = P(X \ge 2) = \frac{7}{8} \]</li>
-						<li>\[ F(3) = P(X \ge 3) = \frac{8}{8} \]</li>
-					</ul>
-				</section>
-
-				<section>
-					<img src="https://www.uv.es/ceaces/base/variable%20aleatoria/Image20.gif" alt="">
-				</section>
-
-				<section>
-					<h4>Propiedades</h4>
-					<ul>
-						<li>\[ F(x) \in [0, 1] \]</li>
-						<li>Función creciente</li>
-						<li>\[ \lim_{x \to -\infty} F(x) = 0 \]</li>
-						<li>\[ \lim_{x \to +\infty} F(x) = 1 \]</li>
-						<li>\[ P(a \ge X \ge b) = F(b) - F(a) \]</li>
-					</ul>
-				</section>
-
-				<section>
-					<div class="problema">
-						<p><span class="numero">2</span>Indica los valores de la función de distribución de las siguientes variables aleatorias y traza su gráfica:</p>
-						<ul class="problema__apartados">
-							<li>
-								<span class="numero numero--apartado">a</span>
-								\[ X = \text{"Número de cruces al lanzar 2 monedas"}\]
-							</li>
-							<li>
-								<span class="numero numero--apartado">b</span>
-								\[ Y = \text{"Suma de los números obtenidos al lanzar dos dados de 4 caras"}\]
-							</li>
-						</ul>
-					</div>
-				</section>
-
+			</section>
 
 
 			</div>
