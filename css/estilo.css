@@ -104,3 +104,8 @@ body.print-pdf .pregunta__opcion:not(:last-child) {
   font-style: italic;
   font-size: 0.8em;
 }
+
+.reveal section img.whitebg {
+  background: white;
+  padding: 1em;
+}

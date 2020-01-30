@@ -232,6 +232,132 @@
 					<h4>V.A. Continua</h4>
 				</section>
 
+				<section>
+					<h5>Ejemplos</h5>
+					<ul>
+						<li>\[X= \] <em>"Longitud de unos ciertos tornillos"</em></li>
+						<li>\[X= \] <em>"Tiempo de vida de un cierto tipo de lámparas medido en horas"</em></li>
+						<li>\[X= \] <em>"Litros de agua consumidos por una persona"</em></li>
+					</ul>
+				</section>
+
+				<section>
+					<h5>Función de distribución</h5>
+					<h3>\[ F(x) = P(X \le x) \]</h3>
+				</section>
+
+				<section>
+					<h4>Propiedades</h4>
+					<ul>
+						<li>\[ F(x) \in [0, 1] \]</li>
+						<li>Función creciente</li>
+						<li>\[ \lim_{x \to -\infty} F(x) = 0 \]</li>
+						<li>\[ \lim_{x \to +\infty} F(x) = 1 \]</li>
+						<li>\[ P(a \ge X \ge b) = F(b) - F(a) \]</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="../img/2bac-metodos-funciondistribucioncontinuas.gif" alt="">
+				</section>
+
+				<section>
+					<h4>¿Cuál es la probabilidad de que uno/a de vosotros/as haya consumido ayer 3.2L de agua?</h4>
+				</section>
+
+				<section>
+					<h5>Función de densidad</h5>
+					<p>\[f(x)\]</p>
+					<q>Versión suavizada del histograma</q>
+				</section>
+
+				<section>
+					<img class="whitebg" src="../img/2back-metodos-densidad1.png" alt="">
+				</section>
+
+				<section>
+					<img class="whitebg" src="../img/2back-metodos-densidad2.png" alt="">
+				</section>
+
+				<section>
+					<img class="whitebg" src="../img/2back-metodos-densidad3.png" alt="">
+				</section>
+
+				<section>
+					<h4>Propiedades</h4>
+					<ul>
+						<li>\[f(x) \in [0, 1]\] <em>(es una propiedad)</em></li>
+						<li>\[ \int_{-\infty}^{\infty} f(x) = 1 \]</li>
+					</ul>
+				</section>
+
+			</section>
+
+			<section>
+
+				<section>
+					<h5>Parámetros v.a. continua</h5>
+					<h3>Media o esperanza matemática</h3>
+					<h4>\[E[X]= \int_{-\infty}^{\infty} x \cdot f(x)\]</h4>
+				</section>
+
+				<section>
+					<h4>Parámetros de una v.a. continua</h4>
+					<h3>Varianza</h3>
+					<h3>\[\sigma_x^2 = VAR[X] = \int_{-\infty}^{\infty} (x - \mu)^2 \cdot f(x) = \] <br/> \[= \int_{-\infty}^{\infty} x^2 \cdot f(x) - \mu^2 \]</h3>
+				</section>
+
+				<section>
+					<h4>Parámetros de una v.a. continua</h4>
+					<h3>Desviación típica</h3>
+					<h3>\[\sigma_x = \sqrt{\sigma_x^2} = \sqrt{VAR[X]}\]</h3>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Distribuciones notables</h2>
+				</section>
+
+				<section>
+					<h4>Distribuciones notables: variables discretas</h4>
+					<p>Llamamos <strong style="text-decoration:underline;">proceso de Bernuilli</strong> a un experimento en el que:</p>
+					<ul>
+						<li>Cada observación es independiente.</li>
+						<li>Esta observación se puede clasificar en dos categorías: éxito o fracaso.</li>
+						<li>Las probabilidades de éxito y fracaso son consantes y se denotan por \[p\] y \[q\].</li>
+					</ul>
+				</section>
+
+				<section>
+					<h5>Ejemplos de procesos de Bernuilli</h5>
+					<ul>
+						<li>Un exame tipo test consta de 10 preguntas, cada unha con 4 respostas das cales só unha é correcta.
+[...] <em>(Mat. 2018)</em></li>
+						<li>Nun bombo temos 10 bolas idénticas numeradas do 0 ao 9 e cada vez que facemos una extracción
+devolvemos a bola ao bombo [...] <em>(Mat. 2018)</em></li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>Distribución Binomial</h4>
+					<p>Decimos que una variable aleatoria discreta sigue una distribución Binomial cuando, trabajando con un proceso de Bernuilli, es de la forma:</p>
+					<h5>\[X\]="Número de éxitos en \[n\] intentos"</h5>
+					<p>Denotándolo por \[X \sim B(n,p)\]</p>
+				</section>
+
+				<section>
+					<h5>Ejemplos</h5>
+					<q>Un exame tipo test consta de 10 preguntas, cada unha con 4 respostas das cales só unha é correcta. Cal é a probabilidade de contestar ben polo menos dúas preguntas? <em>(Mat. 2018)</em></q>
+					<p class="fragment">\[X=\] "Número de preguntas bien contestadas." </br> \[X \sim B(10, 0.25)\]</p>
+				</section>
+
+				<section>
+					<h5>Ejemplos</h5>
+					<q>Nun bombo temos 10 bolas idénticas numeradas do 0 ao 9 e cada vez que facemos una extracción devolvemos a bola ao bombo. Se facemos 5 extraccións, calcula a probabilidade de que o 7 saia menos de dúas veces.<em>(Mat. 2018)</em></q>
+					<p class="fragment">\[X=\] "Número de 7 sacados bien contestadas." </br> \[X \sim B(5, 0.1)\]</p>
+				</section>
+
 			</section>
 
 
