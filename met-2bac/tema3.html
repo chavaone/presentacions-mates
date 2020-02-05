@@ -345,7 +345,7 @@ devolvemos a bola ao bombo [...] <em>(Mat. 2018)</em></li>
 					<h5>\[X\]="Número de éxitos en \[n\] intentos"</h5>
 					<p>Denotándolo por \[X \sim B(n,p)\]</p>
 				</section>
-
+r H.264 implementation, and open sourced it under BSD license terms. Development and maintenance will be overseen by a board from industry and the open source community. Furthermore, we have provided a binary form suitable for inclusion in applications across a number of different operating systems, and make this binary module available for download from the Internet. We will not pass on our MPEG-LA licensing costs for this module, and based on the current licensing environment, this will effectively make H.264 free for use on supporte
 				<section>
 					<h5>Ejemplos</h5>
 					<q>Un exame tipo test consta de 10 preguntas, cada unha con 4 respostas das cales só unha é correcta. Cal é a probabilidade de contestar ben polo menos dúas preguntas? <em>(Mat. 2018)</em></q>
@@ -354,12 +354,104 @@ devolvemos a bola ao bombo [...] <em>(Mat. 2018)</em></li>
 
 				<section>
 					<h5>Ejemplos</h5>
-					<q>Nun bombo temos 10 bolas idénticas numeradas do 0 ao 9 e cada vez que facemos una extracción devolvemos a bola ao bombo. Se facemos 5 extraccións, calcula a probabilidade de que o 7 saia menos de dúas veces.<em>(Mat. 2018)</em></q>
+					<q>Nun bombo temos 10 bolas idéntir H.264 implementation, and open sourced it under BSD license terms. Development and maintenance will be overseen by a board from industry and the open source community. Furthermore, we have provided a binary form suitable for inclusion in applications across a number of different operating systems, and make this binary module available for download from the Internet. We will not pass on our MPEG-LA licensing costs for this module, and based on the current licensing environment, this will effectively make H.264 free for use on supportecas numeradas do 0 ao 9 e cada vez que facemos una extracción devolvemos a bola ao bombo. Se facemos 5 extraccións, calcula a probabilidade de que o 7 saia menos de dúas veces.<em>(Mat. 2018)</em></q>
 					<p class="fragment">\[X=\] "Número de 7 sacados bien contestadas." </br> \[X \sim B(5, 0.1)\]</p>
+				</section>
+
+				<section>
+					<h4>Ejemplo</h4>
+					<p>Dado una moneda trucada que tiene una probabilidad \[p\] de "sacar cara", definimos la v.a. discreta \[X = \] "Número de caras obtenidas al lanzar 3 monedas."</p>
+				</section>
+
+				<section>
+					<h4>Función de masa de probabilidad</h4>
+					<p>Dada una variable aleaatoria \[X \sim B(n,p)\]</p>
+					<h5 class="fragment">\[f(k) = P(X = k) = \binom{n}{k} \cdot p^k \cdot q^{n-k}\]</h5>
+				</section>
+
+				<section>
+					<h4>Función de distribución</h4>
+					<p>Dada una variable aleaatoria \[X \sim B(n,p)\]</p>
+					<h5>\[F(k) = P(X \le k) = \sum_{i \le k} f(i) \]</h5>
+					<h6>F(2) = f(0) + f(1) + f(2)</h6>
+				</section>
+
+				<section>
+					<p>Dada una variable aleaatoria \[X \sim B(n,p)\]</p>
+					<h5>Esperanza matemática o media: \[E[X] = np \]</h5>
+					<h5>Varianza: \[VAR[X] = npq \]</h5>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">5</span>La probabilidad de que un hombre acierte en el blanco es 0'25. Si dispara 10 veces, ¿cuál es la probabilidad de que acierte exactamente en tres ocasiones? ¿Cuál es la probabilidad de que acierte por lo menos en una ocasión?</p>
+					</div>
+
+					<div class="problema">
+						<p><span class="numero">6</span>En una asociación juvenil el 60% de los socios juegan al balonmano. En un momento dado se trata de reunir gente para formar un equipo, por lo que se pregunta a un grupo de 20 socios si practican dicho deporte. ¿Cuál es la probabilidad de que en el grupo haya tres o más personas que jueguen al balonmano?</p>
+					</div>
+
+					<div class="problema">
+						<p><span class="numero">7</span>El 85% de la población considera que los tratamientos de psicoterapia son caros. Elegida una muestra al azar formada por siete individuos. ¿cuál es la probabilidad de que todos los consideren caros? ¿y de que ninguno los considere caros? ¿y de que por lo menos tres los consideren caros?</p>
+					</div>
 				</section>
 
 			</section>
 
+			<section>
+				<section>
+					<h5>Distribución Normal</h5>
+				</section>
+
+				<section>
+					<h5>Distribución Normal</h5>
+					<ul>
+						<li>Distribución continua</li>
+						<li>Tiene por parámetros la media \[\mu\] y la desviación típica \[ \sigma \] de la distribución.</li>
+						<li>Lo denotamos por \[ X \sim N(\mu, \sigma) \]</li>
+					</ul>
+				</section>
+
+				<section>
+					<h5>Función de densidad</h5>
+					<h4>\[f(x) = {1 \over \sigma\sqrt{2\pi}} e^{-(x-\mu)^2 / 2\sigma^2}\]</h4>
+				</section>
+
+				<section>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Normal_distribution_pdf.png/1280px-Normal_distribution_pdf.png" alt="">
+				</section>
+
+				<section>
+					<h5>Función de distribución</h5>
+					<h4>F(x) = \int_{-\infty}^x f(x) dx</h4>
+				</section>
+
+				<section>
+					<img src="https://4.bp.blogspot.com/-DvxfNHq-0cg/VDehUTOA8uI/AAAAAAAAJ2o/xhM71iFdpWo/s1600/CropperCapture%5B30%5D.png" alt="">
+				</section>
+
+				<section>
+					<h3>Distribución normal tipificada</h3>
+					<ul>
+						<li>\[Z \sim N(0,1)\]</li>
+						<li>Su función de distribución está tabulada \[\Omega(z)\]</li>
+					</ul>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">E</span>Calcula las siguientes probabilidades para \[Z \sim N(0,1)\]:</p>
+						<ul class="problema__apartados">
+							<li><span class="numero numero--apartado">a</span> \[P(Z \lt 0'63)\]</li>
+							<li><span class="numero numero--apartado">b</span> \[P(Z \gt 0'63)\]</li>
+							<li><span class="numero numero--apartado">c</span> \[P(Z \lt -0'63)\]</li>
+							<li><span class="numero numero--apartado">d</span> \[P(Z \gt -0'63)\]</li>
+							<li><span class="numero numero--apartado">e</span> \[P(0'34 \gt Z \gt 0'76)\]</li>
+						</ul>
+					</div>
+				</section>
+				
+			</section>
 
 			</div>
 		</div>
