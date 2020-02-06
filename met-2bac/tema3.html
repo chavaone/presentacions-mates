@@ -369,10 +369,16 @@ devolvemos a bola ao bombo [...] <em>(Mat. 2018)</em></li>
 				</section>
 
 				<section>
+					<h5>Coeficiente binomial</h5>
+					<h3>\[\binom{n}{k} = \frac{n!}{k! (n-k)!}\]</h3>
+					<img src="../img/calculadora-numerocombinatorio.png" alt="">
+				</section>
+
+				<section>
 					<h4>Función de distribución</h4>
 					<p>Dada una variable aleaatoria \[X \sim B(n,p)\]</p>
 					<h5>\[F(k) = P(X \le k) = \sum_{i \le k} f(i) \]</h5>
-					<h6>F(2) = f(0) + f(1) + f(2)</h6>
+					<h6>\[F(2) = f(0) + f(1) + f(2)\]</h6>
 				</section>
 
 				<section>
@@ -395,6 +401,19 @@ devolvemos a bola ao bombo [...] <em>(Mat. 2018)</em></li>
 					</div>
 				</section>
 
+				<section>
+					<div class="problema">
+						<p><span class="numero">8</span>Un examen tipo test consta de 10 preguntas, cada una con 4 respuestas de las que sólo una es correcta. Si se contesta al azar, ¿cuál es la probabilidad de contestar bien por lo menos dos preguntas? <em>(MAT - Xuño 2018)</em></p>
+					</div>
+
+					<div class="problema">
+						<p><span class="numero">9</span>Nun grupo de 100 persoas hai 40 homes eLa probabilidad de romper una galleta al ser envasada es el 1%. Si en un envase hay 10 galletas, ¿cuál es la probabilidad de que al menos u 60 mulleres. Elíxense ó azar 4 persoas do grupo. ¿cal é a probabilidade de seleccionar máis mulleres que homes? <em>(MAT - Xuño 2017)</em></p>
+					</div>
+
+					<div class="problema">
+						<p><span class="numero">10</span>Nunha cidade, o 20% das persoas que acceden a un centro comercial proceden do centro da cidade, o 45% de barrios periféricos e o resto de aldeas cercanas. Efectúan algunha compra o 60%, o 75% e o 50% de cada procedencia respectivamente. Se nun determinado día visitan o centro comercial 2000 persoas, cal é o número esperado de persoas que non fan compras? <em>(MACS – Xullo 2019)</em></p>
+					</div>
+				</section>
 			</section>
 
 			<section>
@@ -422,7 +441,7 @@ devolvemos a bola ao bombo [...] <em>(Mat. 2018)</em></li>
 
 				<section>
 					<h5>Función de distribución</h5>
-					<h4>F(x) = \int_{-\infty}^x f(x) dx</h4>
+					<h4>\[F(x) = \int_{-\infty}^x f(x) dx\]</h4>
 				</section>
 
 				<section>
@@ -433,7 +452,7 @@ devolvemos a bola ao bombo [...] <em>(Mat. 2018)</em></li>
 					<h3>Distribución normal tipificada</h3>
 					<ul>
 						<li>\[Z \sim N(0,1)\]</li>
-						<li>Su función de distribución está tabulada \[\Omega(z)\]</li>
+						<li>Su función de distribución está tabulada \[\Phi(z)\]</li>
 					</ul>
 				</section>
 
@@ -449,7 +468,60 @@ devolvemos a bola ao bombo [...] <em>(Mat. 2018)</em></li>
 						</ul>
 					</div>
 				</section>
-				
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">11</span>Calcula las siguintes probabilidades para \[Z \sim N(0,1)\]:</p>
+						<ul class="problema__apartados problema__apartados--flex">
+							<li><span class="numero numero--apartado">a</span> \[P(Z \lt 0'88)\]</li>
+							<li><span class="numero numero--apartado">b</span> \[P(Z \lt 0'74)\]</li>
+							<li><span class="numero numero--apartado">c</span> \[P(Z \gt 0'23)\]</li>
+							<li><span class="numero numero--apartado">d</span> \[P(Z \lt -0'57)\]</li>
+							<li><span class="numero numero--apartado">e</span> \[P(Z \gt -0'8)\]</li>
+							<li><span class="numero numero--apartado">f</span> \[P(Z \lt 2'34)\]</li>
+							<li><span class="numero numero--apartado">g</span> \[P(Z \gt 2'4)\]</li>
+							<li><span class="numero numero--apartado">h</span> \[P(Z \lt -1'23)\]</li>
+							<li><span class="numero numero--apartado">i</span> \[P(0'23 \lt Z \lt 0'63)\]</li>
+							<li><span class="numero numero--apartado">j</span> \[P(-0'45 \lt Z \lt 0'38)\]</li>
+							<li><span class="numero numero--apartado">k</span> \[P(-0'43 \lt Z \lt -0'13)\]</li>
+							<li><span class="numero numero--apartado">l</span> \[P(0'83 \lt Z \lt 1'22)\]</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h4>Tipificación de variable aleatoria</h4>
+					<p>Sea \[X \sim N(\mu, \sigma)\] podemos hacer el cambio de variable \[Z = \frac{X - \mu}{\sigma}\]</p>
+				</section>
+
+				<section>
+					<p>P. ej: Dada \[X \sim N(13, 3'4)\]</p>
+					<p>\[P(X \lt 24) = P(Z \lt \frac{24 - 13}{3'4}) = \\ = P(Z \lt 2'23) = \Phi(2'23)\]</p>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">12</span>Calcula las siguintes probabilidades:</p>
+						<ul class="problema__apartados">
+							<li><span class="numero numero--apartado">a</span> \[P(X \lt )\] con \[X \sim N()\]</li>
+							<li><span class="numero numero--apartado">b</span> \[P(X \lt )\] con \[X \sim N()\]</li>
+							<li><span class="numero numero--apartado">c</span> \[P(X \lt )\] con \[X \sim N()\]</li>
+							<li><span class="numero numero--apartado">d</span> \[P(X \lt )\] con \[X \sim N()\]</li>
+							<li><span class="numero numero--apartado">e</span> \[P(X \lt )\] con \[X \sim N()\]</li>
+							<li><span class="numero numero--apartado">f</span> \[P(X \lt )\] con \[X \sim N()\]</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h4>Aproximación de distribución Binomial con la Normal</h4>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero"></span></p>
+					</div>
+				</section>
 			</section>
 
 			</div>
