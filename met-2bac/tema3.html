@@ -29,7 +29,7 @@
 		<div class="reveal" id="revealdiv">
 			<div class="slides">
 				<section>
-					<h3>Tema 3: Muestreo</h3>
+					<h3>Tema 3: Variables Aleatorias</h3>
 				</section>
 
 				<section>
@@ -436,7 +436,16 @@ devolvemos a bola ao bombo [...] <em>(Mat. 2018)</em></li>
 				</section>
 
 				<section>
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Normal_distribution_pdf.png/1280px-Normal_distribution_pdf.png" alt="">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Normal_distribution_pdf.png/1280px-Normal_distribution_pdf.png" style="height:80%" alt="">
+				</section>
+
+				<section>
+					<h4>Características</h4>
+					<ul>
+						<li>Área bajo la curva es 1 (es unha función de densidad).</li>
+						<li>Máximo en \[x = \mu\]</li>
+						<li>Simétrica (par) con respecto a la recta \[x = \mu\]</li>
+					</ul>
 				</section>
 
 				<section>
@@ -445,8 +454,9 @@ devolvemos a bola ao bombo [...] <em>(Mat. 2018)</em></li>
 				</section>
 
 				<section>
-					<img src="https://4.bp.blogspot.com/-DvxfNHq-0cg/VDehUTOA8uI/AAAAAAAAJ2o/xhM71iFdpWo/s1600/CropperCapture%5B30%5D.png" alt="">
+					<img src="https://4.bp.blogspot.com/-DvxfNHq-0cg/VDehUTOA8uI/AAAAAAAAJ2o/xhM71iFdpWo/s1600/CropperCapture%5B30%5D.png" style="height:80%"  alt="">
 				</section>
+
 
 				<section>
 					<h3>Distribución normal tipificada</h3>
@@ -503,25 +513,35 @@ devolvemos a bola ao bombo [...] <em>(Mat. 2018)</em></li>
 					<div class="problema">
 						<p><span class="numero">12</span>Calcula las siguintes probabilidades:</p>
 						<ul class="problema__apartados">
-							<li><span class="numero numero--apartado">a</span> \[P(X \lt )\] con \[X \sim N()\]</li>
-							<li><span class="numero numero--apartado">b</span> \[P(X \lt )\] con \[X \sim N()\]</li>
-							<li><span class="numero numero--apartado">c</span> \[P(X \lt )\] con \[X \sim N()\]</li>
-							<li><span class="numero numero--apartado">d</span> \[P(X \lt )\] con \[X \sim N()\]</li>
-							<li><span class="numero numero--apartado">e</span> \[P(X \lt )\] con \[X \sim N()\]</li>
-							<li><span class="numero numero--apartado">f</span> \[P(X \lt )\] con \[X \sim N()\]</li>
+							<li><span class="numero numero--apartado">a</span> \[P(X \lt 38'23)\] con \[X \sim N(20, 12'3)\]</li>
+							<li><span class="numero numero--apartado">b</span> \[P(X \lt 6'42)\] con \[X \sim N(2, 5'6)\]</li>
+							<li><span class="numero numero--apartado">c</span> \[P(X \lt -20)\] con \[X \sim N(-12, 3'4)\]</li>
+							<li><span class="numero numero--apartado">d</span> \[P(X \lt -4)\] con \[X \sim N(0, 8)\]</li>
+							<li><span class="numero numero--apartado">e</span> \[P(X \lt 130'5)\] con \[X \sim N(120, 30)\]</li>
+							<li><span class="numero numero--apartado">f</span> \[P(X \lt 14'8)\] con \[X \sim N(13, 0'7)\]</li>
 						</ul>
 					</div>
 				</section>
 
 				<section>
 					<h4>Aproximación de distribución Binomial con la Normal</h4>
+					<q>Cuando \[n\] es muy grande podemos aproximar la una distribución binomial con parámetros \[n\] y \[p\] por una distribución normal de media \[\mu = n \cdot p\] y desviación tipica \[\sigma = \sqrt{n \cdot p \cdot q}\]</q>
 				</section>
 
 				<section>
-					<div class="problema">
-						<p><span class="numero"></span></p>
-					</div>
+					<h5>Corrección de Yates / De continuidad</h5>
+					<q>Al aproximar una variable discreta (binomial) por una continua (normal) debemos hacer una corrección de medio punto sobre los valores a calcular. Es decir debemos sumar o restar 0'5 a los valores que nos piden.</q>
 				</section>
+
+				<section>
+					<p>EJEMPLO: Dada la variable \[X \sim B(100, 0'3)\] nos piden calcular la probabilidad \[P(X \ge 9)\] aproximandola por la distribución Normal.</p>
+					<ol>
+						<li>Aproximaríamos la distribución:</br> \[B(100,0'3)\] por \[N(30, 7)\].</li>
+						<li>Aplicaríamos la corrección de Yates: \[P(X \ge 9) \approx P (X \ge 8'5)\]</li>
+						<li>Tipificaríamos la variable \[X\] y calcularíamos la probabilidad usando las tablas de la distribución normal tipificada</li>
+					</ol>
+				</section>
+
 			</section>
 
 			</div>
