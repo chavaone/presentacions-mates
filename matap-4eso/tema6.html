@@ -48,26 +48,32 @@
 							<ul class="problema__apartados">
 								<li>
 									<span class="numero numero--apartado">a</span>
-									\[ \]
+									\[ \begin{cases}
+											x + y = 2 \\
+											2x - 2y = 3
+										\end{cases}  \]
 								</li>
 								<li>
 									<span class="numero numero--apartado">b</span>
-									\[ \]
+									\[ \begin{cases}
+											x + y = 5 \\
+											x - y = 2
+										\end{cases}  \]
 								</li>
 								<li>
 									<span class="numero numero--apartado">c</span>
-									\[ \]
-								</li>
-								<li>
-									<span class="numero numero--apartado">d</span>
-									\[ \]
+									\[ \begin{cases}
+											x + y = 2 \\
+											3x - 2y = 0
+										\end{cases}
+									\]
 								</li>
 							</ul>
 						</div>
 					</section>
 
 					<section>
-						<h4>Representación gráfica de una ecuación con dos</h4>
+						<h4>Representación gráfica de una ecuación con dos incógnitas</h4>
 					</section>
 
 					<section>
@@ -76,19 +82,57 @@
 							<ul class="problema__apartados">
 								<li>
 									<span class="numero numero--apartado">a</span>
-									\[ \]
+									\[ x + y = 2 \]
 								</li>
 								<li>
 									<span class="numero numero--apartado">b</span>
-									\[ \]
+									\[ x - 2y = 2 \]
 								</li>
 								<li>
 									<span class="numero numero--apartado">c</span>
-									\[ \]
+									\[ 2x - 1 = y \]
 								</li>
 								<li>
 									<span class="numero numero--apartado">d</span>
-									\[ \]
+									\[ 2x - 4y = 4 \]
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<div id="ggb-element"></div>
+					</section>
+
+					<section>
+						<h4>Representación gráfica de un sistema de ecuaciones con dos incógnitas</h4>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">3</span>Representa graficamente los siguientes sistemas de ecuaciones:</p>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									\[ \begin{cases}
+											x + y = 2 \\
+											x - 2y = 2
+										\end{cases}  \]
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									\[ \begin{cases}
+											x - 2y = 2 \\
+											2x - 4y = 4
+										\end{cases}  \]
+								</li>
+								<li>
+									<span class="numero numero--apartado">c</span>
+									\[ \begin{cases}
+											x + y = 2 \\
+											x + y = 3
+										\end{cases}  \]
+										<small>(la segunda ecuación es nueva)</small>
 								</li>
 							</ul>
 						</div>
@@ -242,36 +286,7 @@
 					<section>
 						<div class="problema">
 							<p><span class="numero">6</span>Resuelve los siguientes sistemas de ecuaciones:</p>
-							<ul class="problema__apartados">
-								<li>
-									<span class="numero numero--apartado">a</span>
-									\[ \begin{cases}
-											y = 2x \\
-											10y + x - 27 = 10x + y
-											\end{cases}  \]
-								</li>
-								<li>
-									<span class="numero numero--apartado">b</span>
-									\[ \begin{cases}
-											x = 2y \\
-											x - 10 + y -10 = x
-											\end{cases}  \]
-								</li>
-								<li>
-									<span class="numero numero--apartado">c</span>
-									\[ \begin{cases}
-											6x + 2y = 560 \\
-											x + y = 150
-											\end{cases}  \]
-								</li>
-								<li>
-									<span class="numero numero--apartado">d</span>
-									\[ \begin{cases}
-											x - 3y = 0 \\
-											2x + 2y = 16
-											\end{cases}  \]
-								</li>
-							</ul>
+							<h4>FICHA</h4>
 						</div>
 					</section>
 
@@ -286,5 +301,23 @@
 
 		<script src="../js/reveal.js"></script>
 		<script src="../js/config.js"></script>
+		<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+		<script>
+	    var ggbApp = new GGBApplet({
+				"appName": "graphing",
+				"material_id":"ynutpjjn",
+				"width": 800,
+				"height": 600,
+				"enableShiftDragZoom": true,
+				"autoHeight": true,
+				"showZoomButtons": true,
+				"showToolBar": false,
+				"showAlgebraInput": false,
+				"showMenuBar": false
+			}, true);
+	    window.addEventListener("load", function() {
+	        ggbApp.inject('ggb-element');
+	    });
+</script>
 	</body>
 </html>
