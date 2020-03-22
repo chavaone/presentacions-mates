@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Métodos Estadísticos y Numéricos - 2º BAC - Tema 2</title>
+
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/black.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/monokai.css">
+		<link rel="stylesheet" href="../css/estilo.css">
+
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal" id="revealdiv">
+			<div class="slides">
+				<section>
+					<h3>Tema 3: Muestreo, intervalos de confianza e contraste de hipótesis</h3>
+				</section>
+
+				<section>
+					<section>
+						<h4>Muestreo</h4>
+					</section>
+
+					<section>
+						<p>Población: conjunto de todos los sujetos que queremos estudiar.</p>
+						<p>Parámetros poblacionales: \[\mu\], \[\sigma\] e \[p\]</p>
+					</section>
+
+					<section>
+						<p>Muestra: subconjunto de los elementos de la población</p>
+						<p>Parámetros muestrales o Estadísticos: \[\overline{X}\], \[S\] e \[\hat{p}\]</p>
+					</section>
+
+					<section>
+						<p>Una muesta es <em>representativa</em> cuando está bien elegida para </p>
+						<p>Los errores que tenemso a la hora de inferir debidos a la elección de la muestra denominan sesgos.</p>
+					</section>
+
+					<section>
+						<h3>Técnicas de muestreo</h3>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/elTml6zLxy4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</section>
+
+					<section>
+						<h3>M. aleatorio simple</h3>
+						<q>Se escogen todos los elementos de la muestra de forma aleatoria.</q>
+					</section>
+
+					<section>
+						<h3>M. aleatorio sistemático</h3>
+						<q>Se escoge el primer elemento de la muestra de forma aleatoria y despues se va haciendo saltos de tamaño \[c= N/n\]</q>
+					</section>
+
+					<section>
+						<h3>M. aleatorio estratificado</h3>
+						<q>Se divide la población en estratos y se hace un muestro simple de cada estrato. El número de elementos seleccionado de cada estato es proporcional al número de elementos de cada estrato.</q>
+					</section>
+
+					<section>
+						<h3>M. aleatorio por conglomerados</h3>
+						<q>Se divide la pobloación en conglomerados, se seleccionan uno o varios conglomerados y despues se hace un muestreo aleatorio simple de cada conglomerado.</q>
+					</section>
+
+					<section>
+						<h4>Estratos vs Conglomerados</h4>
+					</section>
+
+					<section>
+						<h4>Elección del tamaño de la muesta en cada estrato</h4>
+						<p>Ejemplo: Queremos estudiar una cierta característica de los 500 estudiantes de un IES. Estos estudiantes están divididos entre 150 hombres de ESO, 200 mujeres de ESO, 50 hombres de BAC y 100 mujeres de BAC. Escogemos una muesta de 50 estudiantes.</p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h3>Estimación</h3>
+						<q>Los parametros muestrales nos ayudan a <em>inferir</em> los poblacionales.</q>
+					</section>
+
+					<section>
+						<h4>Tipos de estimación</h4>
+						<ul>
+							<li>Estimación puntual: elegimos un único valor para estimar el parámetro poblacional.</li>
+							<li>Estimación por intervalos de confianza: elegimos un intervalo en el que estamos "seguros" de que estará nuestro parámetro poblacional.</li>
+						</ul>
+					</section>
+
+					<section>
+						<p>Ejemplo: Queremos conocer cuantas personas de nuestra ciudad de 13000 habitantes fuman. Para ello elegimos una muestra de 100 personas y obtenemos que el 31 de ellas fuman.</p>
+						<p>\[N=13000\], \[n=100\] y \[\hat{p} = 31/100 = 0.31\]</p>
+						<p>Inferimos que el número de fumadores de nuestra ciudad es \[N \cdot \hat{p} = 13000 \cdot 0.31 = 4030\].</p>
+					</section>
+
+					<section>
+						<h3>Estimadores</h3>
+						<p>Un parámetro muestal o estdístico obtenido con el fin de estimar un parámetro poblacional.</p>
+					</section>
+
+					<section>
+						<h3>Características deseables de los estimadores</h3>
+						<p>Un estimador \[ \hat{\lambda} \] se espera que sea</p>
+						<ul>
+							<li><strong>Centrado (insesgado):</strong> \[E[\hat{\lambda}] = \lambda\]</li>
+							<li><strong>Eficiente:</strong> \[ VAR[\hat{\lambda}] \] es pequeña.</li>
+							<li><strong>Consistente:</strong> mejora con el tamaño de la muestra.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h4>Estimación por intervalos de confianza</h4>
+						<q>Calcular un intervalo de confianza para media poblacional con un nivel de confianza del 90%.</q>
+						<p>Tenemos que calcular un intervalo de forma que la probabilidad de que el parámetro poblacional este dentro con una probabilidad de \[0'9\].</p>
+					</section>
+
+					<section>
+						<h3>Teorema central del límite</h3>
+						<img src="../img/teoremacentraldolimite.png" alt="">
+						<small>Introducción a la estadística y sus aplicaciones. Ricardo Cao Abad et al.</small>
+					</section>
+
+					<section>
+						<h3>Aplicación 1: Aproximación de la Binomial por la Normal</h3>
+					</section>
+
+					<section>
+						<h3>Aplicación 2: Media muestral</h3>
+					</section>
+
+					<section>
+						<h3>Aplicación 3: Proporción muestral</h3>
+					</section>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="../js/reveal.js"></script>
+		<script src="../js/config.js"></script>
+	</body>
+</html>
