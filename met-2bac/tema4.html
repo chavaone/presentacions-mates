@@ -4,12 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Métodos Estadísticos y Numéricos - 2º BAC - Tema 2</title>
+		<title>MEN - Presentación e Tema 1</title>
 
 		<link rel="stylesheet" href="../css/reset.css">
 		<link rel="stylesheet" href="../css/reveal.css">
 		<link rel="stylesheet" href="../css/theme/black.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="../lib/css/monokai.css">
@@ -20,136 +19,355 @@
 		<script src="../js/print.js"></script>
 	</head>
 	<body>
-		<div class="reveal" id="revealdiv">
+		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h3>Tema 3: Muestreo, intervalos de confianza e contraste de hipótesis</h3>
-				</section>
-
-				<section>
 					<section>
-						<h4>Muestreo</h4>
+						<h3>Tema 1: Programación Lineal</h3>
+						<h5>17 de setembro</h5>
+					</section>
+					<section>
+						<div class="problema">
+							<p>Una empresa láctea gallega desea proyectar la fabricación de unos nuevos derivados de la leche. La compañía considera tres posiblidades: quesos, yogures y batidos. El departamento de producción elaboró la siguiente tabla:</p>
+							<table>
+								<tr>
+									<th>Modelo</th>
+									<th>Queso</th>
+									<th>Yougur</th>
+									<th>Batido</th>
+								</tr>
+								<tr>
+									<th>Trabajo (h/palé)</th>
+									<td>7</td>
+									<td>3</td>
+									<td>6</td>
+								</tr>
+								<tr>
+									<th>Material (L/palé)</th>
+									<td>4</td>
+									<td>4</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<th>Beneficios (€/palé)</th>
+									<td>40</td>
+									<td>20</td>
+									<td>30</td>
+								</tr>
+							</table>
+							<p> El suministro se restringe a 200L de leche diarios y la disponibilidad horario es de 150h cada día.</p>
+							<p>Determinar la produción diaria de cada producto para maximizar el beneficio total.</p>
+						</div>
+					</section>
+					<section>
+						<div class="pregunta">
+							<div class="pregunta__enunciado">
+							<p>Resuelve la siguiente inecuación:
+								\[\begin{aligned}
+								x + 3 \gt 4
+								\end{aligned} \]
+							</p>
+							</div>
+							<div class="pregunta__opciones">
+								<div class="pregunta__opcion"><span class="numero">1</span> \[ x \gt 7 \]</div>
+								<div class="pregunta__opcion"><span class="numero">2</span> \[ x \gt 1 \]</div>
+								<div class="pregunta__opcion"><span class="numero">3</span> \[ x \lt 1 \]</div>
+								<div class="pregunta__opcion"><span class="numero">3</span> \[ x \gt 1 \]</div>
+							</div>
+						</div>
 					</section>
 
 					<section>
-						<p>Población: conjunto de todos los sujetos que queremos estudiar.</p>
-						<p>Parámetros poblacionales: \[\mu\], \[\sigma\] e \[p\]</p>
+						<div class="pregunta">
+							<div class="pregunta__enunciado">
+								<p>Resuelve la siguiente inecuación:
+								\[\begin{aligned}
+								3x \le 6
+								\end{aligned} \]
+							</p>
+							</div>
+							<div class="pregunta__opciones">
+								<div class="pregunta__opcion"><span class="numero">1</span> \[ x \ge 3 \]</div>
+								<div class="pregunta__opcion"><span class="numero">2</span> \[ x \ge 2 \]</div>
+								<div class="pregunta__opcion"><span class="numero">3</span> \[ x \le 3 \]</div>
+								<div class="pregunta__opcion"><span class="numero">3</span> \[ x \ge 3 \]</div>
+							</div>
+						</div>
 					</section>
-
 					<section>
-						<p>Muestra: subconjunto de los elementos de la población</p>
-						<p>Parámetros muestrales o Estadísticos: \[\overline{X}\], \[S\] e \[\hat{p}\]</p>
+						<div class="pregunta">
+							<div class="pregunta__enunciado">
+								<p>Resuelve la siguiente inecuación:
+								\[\begin{aligned}
+								\frac{x}{2} \lt 4
+								\end{aligned} \]
+							</p>
+							</div>
+							<div class="pregunta__opciones">
+								<div class="pregunta__opcion"><span class="numero">1</span> \[ z \gt 8 \]</div>
+								<div class="pregunta__opcion"><span class="numero">2</span> \[ z \lt 8 \]</div>
+								<div class="pregunta__opcion"><span class="numero">3</span> \[ z \lt 2 \]</div>
+								<div class="pregunta__opcion"><span class="numero">4</span> \[ z \lt 2 \]</div>
+							</div>
+						</div>
 					</section>
-
 					<section>
-						<p>Una muesta es <em>representativa</em> cuando al estudiar un parámetro de esta muestra (estdístico) este se acerca al parámetro de la población.</p>
-						<p>Los errores que tenemso a la hora de inferir debidos a la elección de la muestra denominan <em>sesgos</em>.</p>
-					</section>
-
-					<section>
-						<h3>Técnicas de muestreo</h3>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/elTml6zLxy4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</section>
-
-					<section>
-						<h3>M. aleatorio simple</h3>
-						<q>Se escogen todos los elementos de la muestra de forma aleatoria.</q>
-					</section>
-
-					<section>
-						<h3>M. aleatorio sistemático</h3>
-						<q>Se escoge el primer elemento de la muestra de forma aleatoria y despues se va haciendo saltos de tamaño \[c= N/n\]</q>
-					</section>
-
-					<section>
-						<h3>M. aleatorio estratificado</h3>
-						<q>Se divide la población en estratos y se hace un muestro simple de cada estrato. El número de elementos seleccionado de cada estato es proporcional al número de elementos de cada estrato.</q>
-					</section>
-
-					<section>
-						<h3>M. aleatorio por conglomerados</h3>
-						<q>Se divide la pobloación en conglomerados, se seleccionan uno o varios conglomerados y despues se hace un muestreo aleatorio simple de cada conglomerado.</q>
-					</section>
-
-					<section>
-						<h4>Estratos vs Conglomerados</h4>
-					</section>
-
-					<section>
-						<h4>Elección del tamaño de la muesta en cada estrato</h4>
-						<p>Ejemplo: Queremos estudiar una cierta característica de los 500 estudiantes de un IES. Estos estudiantes están divididos entre 150 hombres de ESO, 200 mujeres de ESO, 50 hombres de BAC y 100 mujeres de BAC. Escogemos una muesta de 50 estudiantes.</p>
+						<div class="pregunta">
+							<div class="pregunta__enunciado">
+								<p>Resuelve la siguiente inecuación:
+								\[ \begin{aligned}
+								-2x \gt 6
+								\end{aligned} \]
+							</p>
+							</div>
+							<div class="pregunta__opciones">
+								<div class="pregunta__opcion"><span class="numero">1</span> \[ x \gt 3 \]</div>
+								<div class="pregunta__opcion"><span class="numero">2</span> \[ x \lt 3 \]</div>
+								<div class="pregunta__opcion"><span class="numero">3</span> \[ x \ge 3 \]</div>
+								<div class="pregunta__opcion"><span class="numero">4</span> \[ x \le 3 \]</div>
+							</div>
+						</div>
 					</section>
 
 					<section>
 						<div class="problema">
-							<p><span class="numero">1</span>Queremos estudiar una cierta característica de una población formada por 1000 elementos. Estos elementos estan divididos en tres categorías o estratos de tamaño 200, 500 y 300 respectivamente. Para realizar el estudio queremos tomar una muestra de 350 elementos utilizando un muestreo aleatorio estratificado. ¿Cuantos elementos de cada estrato tenemos que escoger</p>
+							<h4><span class="numero">1</span> Resuelve: Inecuaciones de primer grado</h4>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--exemplo">a</span>
+									\[ 2x + 5 - 3x + 1 \ge 4x - 3 + 3x - 7 \]
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									\[ 3(2x+1) - 4(3x+2) < 5(8-3x) \]
+								</li>
+								<li>
+									<span class="numero numero--apartado">c</span>
+									\[ 4(3-2x) - (2x-3) \le 3(2x+6) +2x -21  \]
+								</li>
+							</ul>
 						</div>
 					</section>
 
-				</section>
-
-				<section>
 					<section>
-						<h3>Estimación</h3>
-						<q>Los parametros muestrales nos ayudan a <em>inferir</em> los poblacionales.</q>
+						<h2>Otra forma de resolver esto/forma genérica para resolver inecuaciones</h2>
 					</section>
 
 					<section>
-						<h4>Tipos de estimación</h4>
-						<ul>
-							<li>Estimación puntual: elegimos un único valor para estimar el parámetro poblacional.</li>
-							<li>Estimación por intervalos de confianza: elegimos un intervalo en el que estamos "seguros" de que estará nuestro parámetro poblacional.</li>
-						</ul>
-					</section>
-
-					<section>
-						<p>Ejemplo: Queremos conocer cuantas personas de nuestra ciudad de 13000 habitantes fuman. Para ello elegimos una muestra de 100 personas y obtenemos que el 31 de ellas fuman.</p>
-						<p>\[N=13000\], \[n=100\] y \[\hat{p} = 31/100 = 0.31\]</p>
-						<p>Inferimos que el número de fumadores de nuestra ciudad es \[N \cdot \hat{p} = 13000 \cdot 0.31 = 4030\].</p>
-					</section>
-
-					<section>
-						<h3>Estimadores</h3>
-						<p>Un parámetro muestral o estdístico obtenido con el fin de estimar un parámetro poblacional.</p>
-					</section>
-
-					<section>
-						<h3>Características deseables de los estimadores</h3>
-						<p>Un estimador \[ \hat{\lambda} \] se espera que sea</p>
-						<ul>
-							<li><strong>Centrado (insesgado):</strong> \[E[\hat{\lambda}] = \lambda\]</li>
-							<li><strong>Eficiente:</strong> \[ VAR[\hat{\lambda}] \] es pequeña.</li>
-							<li><strong>Consistente:</strong> mejora con el tamaño de la muestra.</li>
-						</ul>
+						<div class="problema">
+							<h4><span class="numero">2</span> Resuelve: Inecuaciones de grado mayor que 1</h4>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--exemplo">a</span>
+									\[ x (x - 4) \gt 0 \]
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									\[ x^2 - x - 6 \le 0 \]
+								</li>
+								<li>
+									<span class="numero numero--apartado">c</span>
+									\[ x (x - 3) (x - 2) \lt 0  \]
+								</li>
+							</ul>
+						</div>
 					</section>
 				</section>
 
 				<section>
 					<section>
-						<h4>Estimación por intervalos de confianza</h4>
-						<q>Calcular un intervalo de confianza para media poblacional con un nivel de confianza del 90%.</q>
-						<p>Tenemos que calcular un intervalo de forma que la probabilidad de que el parámetro poblacional este dentro con una probabilidad de \[0'9\].</p>
+						<div class="pregunta">
+							<div class="pregunta__enunciado">
+								<p>Resuelve el siguiente sistema de inecuaciones:</p>
+								<p>
+								\[
+								\begin{cases}
+									x \lt 3 \\
+									x \gt -4
+								\end{cases}
+								\]
+								</p>
+							</div>
+							<div class="pregunta__opciones">
+								<div class="pregunta__opcion"><span class="numero">1</span> \[ x \in (-4, 3) \]</div>
+								<div class="pregunta__opcion"><span class="numero">2</span> \[ x \in (-\infty, 3) \]</div>
+								<div class="pregunta__opcion"><span class="numero">3</span> \[ x \in [-4, 3) \]</div>
+								<div class="pregunta__opcion"><span class="numero">4</span> \[ x \in [-3, \infty) \]</div>
+							</div>
+						</div>
 					</section>
 
 					<section>
-						<h3>Teorema central del límite</h3>
-						<img src="../img/teoremacentraldolimite.png" alt="">
-						<small>Introducción a la estadística y sus aplicaciones. Ricardo Cao Abad et al.</small>
+						<div class="problema">
+							<h4><span class="numero">3</span> Resuelve: Sistemas de inecuaciones con una incógnita</h4>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									\[\begin{cases}
+										\frac{2x}{3} \lt x + 4\\
+										7 - \frac{4x}{5} \ge 1
+									\end{cases}  \]
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									\[
+									\begin{cases}
+										2 (x-3) \lt x \\
+										(4-x) \cdot 3 \ge 5
+									\end{cases}  \]
+								</li>
+								<li>
+									<span class="numero numero--apartado">c</span>
+									\[
+									\begin{cases}
+										5-x \le 4x - 4 \\
+										1 - 2x \ge -3
+									\end{cases}  \]
+								</li>
+							</ul>
+						</div>
 					</section>
 
 					<section>
-						<h3>Aplicación 1: Aproximación de la Binomial por la Normal</h3>
+						<div class="problema">
+							<h4><span class="numero">3</span> Resuelve: Sistemas de inecuaciones con una incógnita</h4>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">d</span>
+									\[\begin{cases}
+										2x+1 \le x + 3 \\
+										2x+3 \le 3x + 1
+									\end{cases}  \]
+								</li>
+								<li>
+									<span class="numero numero--apartado">e</span>
+									\[
+									\begin{cases}
+										2x-10 \gt -x + 2 \\
+										12 - 4x \gt -3x + 2 \\
+										3(x+2) \ge 2(x+6)
+									\end{cases}  \]
+								</li>
+
+								<li>
+									<span class="numero numero--apartado">f</span>
+									\[
+									\begin{cases}
+										x^2 - 4 \gt 0 \\
+										3x + 6 < 0
+									\end{cases}  \]
+								</li>
+							</ul>
+						</div>
 					</section>
 
 					<section>
-						<h3>Aplicación 2: Media muestral</h3>
+						<h2>Dos incógnitas...</h2>
 					</section>
 
 					<section>
-						<h3>Aplicación 3: Proporción muestral</h3>
+						<h3>Para representar una recta necesiamos...</h3>
 					</section>
+
+					<section>
+						<div class="problema">
+							<h4><span class="numero">4</span> Resuelve: Representa las siguientes rectas</h4>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									\[ 7x + 2y = 14  \]
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									\[ 4x + 5y = 20 \]
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<h4><span class="numero">5</span> Resuelve: Representa el conjunto solución de las siguientes inecuaciones de dos incógnitas</h4>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									\[ 7x + 2y \ge 14  \]
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									\[ 4x + 5y \ge 20 \]
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+							<div class="problema">
+								<h4><span class="numero">6</span> Resuelve: Representa el conjunto solución de los siguientes sistemas de inecuaciones de dos incógnitas</h4>
+								<ul class="problema__apartados">
+									<li>
+										<span class="numero numero--apartado">a</span>
+										\[
+										\begin{cases}
+											7x + 2y \ge 14 \\
+											4x + 5y \ge 20
+										\end{cases}  \]
+									</li>
+									<li>
+										<span class="numero numero--apartado">b</span>
+										\[
+										\begin{cases}
+										  2x + 3y \ge 4 \\
+											x + y \ge -3
+										\end{cases}  \]
+									</li>
+
+									<li>
+										<span class="numero numero--apartado">c</span>
+										\[
+										\begin{cases}
+											x + 4y \le 1 \\
+											x - 2y \ge 2
+										\end{cases}  \]
+									</li>
+								</ul>
+							</div>
+						</section>
+
+						<section>
+							<div class="problema">
+								<h4><span class="numero">6</span> Resuelve: Representa el conjunto solucióin de los siguientes sistemas de inecuaciones de dos incógnitas (cont.)</h4>
+								<ul class="problema__apartados">
+									<li>
+										<span class="numero numero--apartado">d</span>
+										\[
+										\begin{cases}
+											2x+y \ge  -1 \\
+											4x - y \ge -3
+										\end{cases}  \]
+									</li>
+
+									<li>
+										<span class="numero numero--apartado">e</span>
+										\[
+										\begin{cases}
+											2x + y \le 6 \\
+											4x + y \le 10 \\
+											-x + y \le 3
+										\end{cases}  \]
+									</li>
+
+								</ul>
+							</div>
+						</section>
+
+						<section>
+							<div class="problema">
+								<h4><span class="numero">6</span> Representa el recinto solución de este sistema de inecuaciones y calcula los puntos de corte.</h4>
+								<img src="../img/metodos-proglineal-ejer.png" alt="">
+						</section>
+
 				</section>
-
 			</div>
 		</div>
 
