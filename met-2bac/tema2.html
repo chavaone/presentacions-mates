@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Métodos Estadísticos y Numéricos - 2º BAC - Tema 2</title>
+		<title>Métodos Estatísticos e Numéricos - 2º BAC - Tema 1</title>
 
 		<link rel="stylesheet" href="../css/reset.css">
 		<link rel="stylesheet" href="../css/reveal.css">
@@ -24,12 +24,14 @@
 			<div class="slides">
 				<section>
 					<section>
-						<h3>Tema 2: Probabilidad Condicionada</h3>
+						<h3>Tema 1: Probabilidade Condicionada</h3>
 					</section>
+				</section>
 
+				<section>
 					<section>
 						<h4>Experimento</h4>
-						<q>Un proceso por el medio del cual se obtiene una observación.</q>
+						<q>Un proceso a través do cal se obtén unha observación.</q>
 					</section>
 
 					<section>
@@ -42,19 +44,19 @@
 
 					<section>
 						<div class="problema">
-							<h4><span class="numero">1</span> Clasifica los siguientes experimentos como deterministas o aleatorios:</h4>
+							<h4><span class="numero">1</span> Clasifica os seguintes experimentos como deterministas ou aleatorios:</h4>
 							<ul class="problema__apartados problema__apartados--flex">
 								<li>
 									<span class="numero numero--apartado">a</span>
-									Lanzar una moneda al aire y anotar si sale cara o cruz.
+									Lanzar unha moneda ao aire e anotar se sae cara ou cruz.
 								</li>
 								<li>
 									<span class="numero numero--apartado">b</span>
-									Comprobar el tiempo que tarda un objecto en recorrer una distancia conocidas velocidad y condiciones del entorno.
+									Comprobar o tempo que tarda un obxecto en recorrer unha distancia coñecidas velocidade e condicións do entorno.
 								</li>
 								<li>
 									<span class="numero numero--apartado">c</span>
-									El tiempo que va hacer mañana.
+									O tempo metereolóxico que fará mañá.
 								</li>
 							</ul>
 						</div>
@@ -62,12 +64,12 @@
 
 					<section>
 						<h4>Suceso elemental</h4>
-						<q>Cada uno de los posibles resultados del experimento</q>
+						<q>Cada un dos posibles resultados dun experimento.</q>
 					</section>
 
 					<section>
-						<h4>Ejemplo:</h4>
-						<q>Lanzar un dado de seis caras y observar el resultado.</q>
+						<h4>Exemplo:</h4>
+						<q>Lanzar un dado de seis caras e observar o resultado.</q>
 						<ul>
 							<li>\[\omega_1 =\] "sacar un 1"</li>
 							<li>\[\omega_2 =\] "sacar un 2"</li>
@@ -77,13 +79,13 @@
 					</section>
 
 					<section>
-						<h4>Espacio muestral</h4>
-						<q>Conjunto formado por todos los sucesos elementales</q>
+						<h4>Espazo mostral</h4>
+						<q>Conxunto formado por todos os sucesos elementais.</q>
 					</section>
 
 					<section>
-						<h4>Ejemplo:</h4>
-						<q>Lanzar un dado de seis caras y observar el resultado.</q>
+						<h4>Exemplo:</h4>
+						<q>Lanzar un dado de seis caras e observar o resultado.</q>
 						<p>
 							\[ \Omega = \{\omega_1, \omega_2, \omega_3, \dots, \omega_6\} \]
 						</p>
@@ -91,15 +93,15 @@
 
 					<section>
 						<h4>Suceso</h4>
-						<q>Un subconjunto del espacio muestral</q>
+						<q>Un subconxunto do espazo mostral</q>
 					</section>
 
 					<section>
-							<h4 class="col-red">Ejemplo:</h4>
-							<q>Lanzar un dado de seis caras y observar el resultado.</q>
+							<h4 class="col-red">Exemplo:</h4>
+							<q>Lanzar un dado de seis caras e observar o resultado.</q>
 							<ul>
 								<li>\[ A = \] "sacar un número par" \[=  \{\omega_2, \omega_4, \omega_6\} \]</li>
-								<li>\[ B = \] "sacar menos de un 3" \[=  \{\omega_1, \omega_2 \} \]</li>
+								<li>\[ B = \] "sacar menos dun 3" \[=  \{\omega_1, \omega_2 \} \]</li>
 								<li>\[ C = \] "sacar un multiplo de 3" \[=  \{\omega_3, \omega_6 \} \]</li>
 							</ul>
 					</section>
@@ -112,23 +114,23 @@
 
 					<section>
 						<div class="problema">
-							<p><span class="numero">2</span> En el experimento de <em>"lanzar un dado de 12 caras y observar su resultado"</em>	halla:</p>
+							<p><span class="numero">2</span> No experimento de <em>"lanzar un dado de 12 caras e observar o seu resultado"</em>	calcula:</p>
 							<ul class="problema__apartados">
 								<li>
 									<span class="numero numero--apartado">a</span>
-									Los sucesos elementales.
+									Os sucesos elementales.
 								</li>
 								<li>
 									<span class="numero numero--apartado">b</span>
-									El espacio muestral.
+									O espazo mostral.
 								</li>
 								<li>
 									<span class="numero numero--apartado">c</span>
-									El suceso \[A =\] “múltiplos de 3”.
+									O suceso \[A =\] “sacar un múltiplo de 3”.
 								</li>
 								<li>
 									<span class="numero numero--apartado">d</span>
-									El suceso \[B =\] “números pares”.
+									O suceso \[B =\] “sacar un números par”.
 								</li>
 								<li>
 									<span class="numero numero--apartado">e</span>
@@ -139,7 +141,7 @@
 					</section>
 
 					<section>
-						<h4>Operaciones con <strike>conjuntos</strike> sucesos</h4>
+						<h4>Operaciones con sucesos</h4>
 						<ul>
 							<li>Unión \[ A \cup B \]</li>
 							<li>Intersección \[ A \cap B \] </li>
@@ -149,29 +151,55 @@
 					</section>
 
 					<section>
+						<p>Experimento: "Tirar un dado de 6 caras e anotar o resultado".</p>
+						<img src="../img/conjuntosbase.png" alt="">
+						<p>\[A = \]"Sacar número par" e \[B = \]"Sacar múltiplo de 3"</p>
+					</section>
+
+					<section>
+						<h4>Unión</h4>
+						<img src="../img/conjuntosunion.png" alt="">
+					</section>
+
+					<section>
+						<h4>Intersección</h4>
+						<img src="../img/conjuntosinterseccion.png" alt="">
+					</section>
+
+					<section>
+						<h4>Diferencia</h4>
+						<img src="../img/conjuntosdiferencia.png" alt="">
+					</section>
+
+					<section>
+						<h4>Complementario</h4>
+						<img src="../img/conjuntoscomplementario.png" alt="">
+					</section>
+
+					<section>
 						<div class="problema">
-							<p><span class="numero">3</span> Dado el experimento <em>"lanzar un dado de 6 caras y observal el resultado"</em> y sean \[A\], \[B\] y \[C\] los sucesos "sacar un número par", "sacar un número menor que 3" y "sacar un múltiplo de 3", respectivamente;  expresa y calcula los sucesos elementales que forman:</p>
+							<p><span class="numero">3</span> Dado o experimento <em>"lanzar un dado de 6 caras e observar o resultado"</em> e sexan \[A\], \[B\] y \[C\] os sucesos "sacar un número par", "sacar un número menor que 3" y "sacar un múltiplo de 3", respectivamente;  expresa empregando notación e calcula os sucesos elementais que forman:</p>
 							<ul class="problema__apartados">
 								<li>
-									<span class="numero numero--ejemplo">E</span>
-									Ocurre \[A\] y \[B\] pero no \[C\].
+									<span class="numero numero--Exemplo">E</span>
+									Ocorre \[A\] e \[B\] pero non \[C\].
 									<span class="solucion"> \[ A \cap B \cap \overline{C} = \{ \omega_2 \} \] </span>
 								</li>
 								<li>
 									<span class="numero numero--apartado">a</span>
-									Los tres sucesos ocurren simultáneamente.
+									Os tres sucesos ocorren simultáneamente.
 								</li>
 								<li>
 									<span class="numero numero--apartado">b</span>
-									Ocurren \[A\] o \[B\], pero no \[C\]
+									Ocorren \[A\] ou \[B\], pero non \[C\]
 								</li>
 								<li>
 									<span class="numero numero--apartado">c</span>
-									Ocurre alguno de los tres sucesos.
+									Ocorre algún dos tres sucesos.
 								</li>
 								<li>
 									<span class="numero numero--apartado">d</span>
-									Ninguno de los tres sucesos sucede.
+									Ningún dos tres sucesos ocorre.
 								</li>
 							</ul>
 						</div>
@@ -179,23 +207,120 @@
 
 					<section>
 						<h4>Sucesos compatibles e incompatibles</h4>
-						<q>Dos sucesos \[ A \] y \[ B \] son incompatibles si no pueden suceder a la vez y por lo tanto \[A \cap B = \emptyset \]</q>
+						<q>Dous sucesos \[ A \] e \[ B \] son incompatibles se non poden suceder á vez e polo tanto \[A \cap B = \emptyset \]</q>
 					</section>
 
 					<section>
-						<h4>Propiedades operaciones con sucesos</h4>
+						<h4>Propiedades operacións con sucesos</h4>
 						<img src="../img/propiedadesunionintersec.png" alt="">
 					</section>
+
+					<section>
+						<h4>Leis de De Morgan</h4>
+						<p>\[\overline{A \cup B} = \bar{A} \cap \bar{B} \]</p>
+						<p>\[\overline{A \cap B} = \bar{A} \cup \bar{B} \]</p>
+					</section>
+
 				</section>
 
 				<section>
 					<section>
-						<h4>Probabilidad</h4>
-						<q>Medida de la incertidumbre de que ocurra un suceso al realizar un experimento aleatorio.</q>
+						<h4>Probabilidade</h4>
+						<q>Medida da incertidume de que ocorra un suceso ao realizar un experimento aleatorio.</q>
 					</section>
 
 					<section>
-						<h5>Probabilidad</h5>
+						<h4>Métodos para asignar a probabilidade</h4>
+						<h3>Lei de Laplace</h3>
+						<p>Só válido para sucesos equiprobables</p>
+						<p>\[ P(A) = \frac{\text{casos favorables}}{\text{casos posibles}} \]</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">4</span> Dunha baralla española de 40 cartas extráese unha. Calcula as seguintes probabilidades:</p>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									Que sexa un rei.
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									Que sexa de copas
+								</li>
+								<li>
+									<span class="numero numero--apartado">c</span>
+									Que no sexa figura (sota, cabalo ou rei).
+								</li>
+								<li>
+									<span class="numero numero--apartado">d</span>
+									Que sexa o 7 de espadas.
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">5</span>Dunha urna que contén 10 bólas numeradas do 1 ao 10 extráese unha bóla. Consideremos os sucesos A = "obter número par", B = "obter un número maior que 7" e C = "obter un múltiplo de tres". Calcula as probabilidades dos sucesos:</p>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									\[A\], \[B\] e \[C\]
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									\[A \cap B\]
+								</li>
+								<li>
+									<span class="numero numero--apartado">c</span>
+									\[A \cup B\] e \[A \cup B \cup C\]
+								</li>
+								<li>
+									<span class="numero numero--apartado">d</span>
+									\[A - B \]
+								</li>
+							</ul>
+
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">6</span>Dado o experimento lanzar dous dados de 6 caras, calcula as probabilidades dos seguintes sucesos:</p>
+							<ul class="problema__apartados ">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									Sacar o mesmo número nos dous dados.
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									Que os números sumen 7.
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<h4>Métodos para asignar a Probabilidade</h4>
+						<h3>Lei dos grandes números</h3>
+						<p>A frecuencia relativa da ocorrencia dun suceso cando aumentamos moito o número de experimentos estabilizase en torno a un número que podemos tomar como la probabilidade.</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p>Collede unha moeda que teñades no peto e lanzádea 20 veces anotando o número de veces que sae cara.</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">E</span>O  60%  dos  individuos  dunha  poboación  está  vacinado  contra  certa  enfermidade.  Durante  unha  epidemia  sábese que o 20% contraeu a enfermidade e que o 3% está vacinado e contraeu a enfermidade.[...]</p>
+						</div>
+					</section>
+
+					<section>
+						<h5>Probabilidade</h5>
 						<h3>Definición Axiomática de Kolmogorov</h3>
 						<p> \[	P : \Omega \rightarrow \mathbb{R} \]</p>
 						<ol>
@@ -211,98 +336,44 @@
 							<li>\[ 0 \le P(A) \le 1\]</li>
 							<li>\[ P(\overline{A}) = 1 - P(A) \]</li>
 							<li>\[P(A \cup B) = P(A) + P(B) - P(A\cap B)\]</li>
-							<li>\[P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A\cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)\]</li>
+							<li>\[P(A \cup B \cup C) =\]
+								  <br> \[ P(A) + P(B) + P(C) \]
+									<br> \[- P(A\cap B) - P(A \cap C) - P(B \cap C)\]
+									<br> \[ + P(A \cap B \cap C)\]</li>
+							<li>\[P(A-B) = P(A) - P(A \cap B) \]</li>
 						</ol>
 					</section>
 
 					<section>
 						<div class="problema">
-							<p><span class="numero">4</span>Sean A y B dos sucesos incompatibles de un experimento aleatorio tales que \[P(A)= 0,2\] y \[P(A\cup B)=0,6\]. Calcula \[P(B)\].</p>
+							<p><span class="numero">7</span>Sexan A e B dous sucesos incompatibles dun experimento aleatorio tales que \[P(A)= 0,2\] e \[P(A\cup B)=0,6\]. Calcula \[P(B)\].</p>
 						</div>
 
 						<div class="problema">
-							<p><span class="numero">5</span>Se consideran los sucesos \[A\] y \[B\] asociados a un experimento aleatorio con \[P(A)= 0,7\];  \[P(B)=0,6\] y \[P(A\cap B) = 0,4\]. Calcula \[ P(A\cup B)\] y \[ P(\overline{A} \cup \overline{B})\].</p>
+							<p><span class="numero">8</span>Consideranse os sucesos \[A\] e \[B\] asociados a un experimento aleatorio con \[P(A)= 0,7\]; \[P(B)=0,6\] e \[P(A\cap B) = 0,4\]. Calcula \[ P(A\cup B)\], \[ P(\overline{A} \cup \overline{B})\] e \[ P(A - B)\].</p>
 						</div>
 
 						<div class="problema">
-							<p><span class="numero">6</span>Sean los sucesos A y B tales que \[P(A) = \frac{3}{8}\], \[P(B)= \frac{1}{2}\] y \[P(A \cap B) = \frac{1}{4}\]. Calcula \[P(A \cup B)\], \[P(\overline{A})\], \[P(\overline{A} \cup \overline{B})\] y \[P(\overline{A} \cap \overline{B})\]</p>
+							<p><span class="numero">9</span>Sexan os sucesos A e B tales que \[P(A) = 3/8\], \[P(B)= 1/2\] e \[P(A \cap B) = 1/4\]. Calcula \[P(A \cup B)\], \[P(\overline{A})\], \[P(\overline{A} \cup \overline{B})\] e \[P(\overline{A} \cap \overline{B})\] e e \[ P(A - B)\].</p>
 						</div>
 					</section>
 
+				</section>
+
+				<section>
 					<section>
-						<h4>Métodos para asignar la Probabilidad</h4>
-						<h3>Ley de los grandes números</h3>
-						<p>La frecuencia relativa de un sucesos se suele estabilizar en torno a un número que podemos tomar como la probabilidad.</p>
+						<h4>Probabilidade Condicionada</h4>
+						<h3>\[ P(B / A ) \]</h3>
+						<q>Probabilidade de que se cumpla B sabendo que se cumple A</q>
 					</section>
 
 					<section>
-						<div class="problema">
-							<p><span class="numero">E</span>O  60%  dos  individuos  dunha  poboación  está  vacinado  contra  certa  enfermidade.  Durante  unha  epidemia  sábese que o 20% contraeu a enfermidade e que o 3% está vacinado e contraeu a enfermidade.[...]</p>
-						</div>
-					</section>
 
-					<section>
-						<h4>Métodos para asignar la Probabilidad</h4>
-						<h3>Ley de Laplace</h3>
-						<p>Sucesos equiprobables</p>
-						<p>\[ P(A) = \frac{\text{casos favorables}}{\text{casos posibles}} \]</p>
 					</section>
 
 					<section>
 						<div class="problema">
-							<p><span class="numero">7</span> De una baraja española de 40 cartas se extrae una. Calcula las siguientes probabilidades:</p>
-							<ul class="problema__apartados">
-								<li>
-									<span class="numero numero--apartado">a</span>
-									Que sea un rey.
-								</li>
-								<li>
-									<span class="numero numero--apartado">b</span>
-									Que sea de copas
-								</li>
-								<li>
-									<span class="numero numero--apartado">c</span>
-									Que no sea figura (sota, caballo o rey).
-								</li>
-								<li>
-									<span class="numero numero--apartado">d</span>
-									Que sea el 7 de espadas.
-								</li>
-							</ul>
-						</div>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">8</span>De una urna que contiene 10 bolas numeradas del 1 al 10 se extrae una bola. Consideremos los sucesos:</p>
-								<ul>
-									<li>A = "obtener número par"</li>
-									<li>B = "obtener un número mayor que 7"</li>
-									<li>C = "obtener un múltiplo de tres"</li>
-								</ul>
-								<p>Calcula la probabilidad de los sucesos \[A\], \[B\], \[C\], \[A \cap B\], \[A \cup B\], y \[A \cup B \cup C\]</p>
-						</div>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">9</span>Dado el experimento lanzar dos datos, calcula las probabilidades de los siguientes sucesos:</p>
-							<ul class="problema__apartados ">
-								<li>
-									<span class="numero numero--apartado">a</span>
-									Sacar el mismo número en los dos dados.
-								</li>
-								<li>
-									<span class="numero numero--apartado">b</span>
-									Que los números sumen 7.
-								</li>
-							</ul>
-						</div>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">10</span>En una caja se tienen pinzas grandes y pequeñas de madera y de plástico según se refleja en la tabla. Se elige una al azar. Halla la probabilidad de que:</p>
+							<p><span class="numero">10</span>Nunha caixa hai pinzas grandes e pequenas de madera e de plástico según se reflexa na taboa.</p>
 							<table>
 								<tr>
 									<td></td>
@@ -320,101 +391,74 @@
 									<td>23</td>
 								</tr>
 							</table>
+							<p>Elíxese unha ao azar. Calcula a probabilidade de que:</p>
 							<ul class="problema__apartados problema__apartados--flex">
 								<li>
 									<span class="numero numero--apartado">a</span>
-									Que sea grande.
+									Que sexa grande.
 								</li>
 								<li>
 									<span class="numero numero--apartado">b</span>
-									Que sea grande y de plástico
+									Que sexa grande e de plástico.
 								</li>
 								<li>
 									<span class="numero numero--apartado">c</span>
-									Que sea grande sabiendo que es de plástico
+									Que sexa grande sabendo que é de plástico.
 								</li>
 							</ul>
 						</div>
 					</section>
 
-				</section>
-
-				<section>
 					<section>
 						<p>
-						\[G = \text{"que sea grande"} \] <br>
-						\[P = \text{"que sea de plástico"} \]
+						\[G = \text{"que sexa grande"} \] <br>
+						\[P = \text{"que sexa de plástico"} \]
 						</p>
 						<ul class="problema__apartados">
 							<li>
 								<span class="numero numero--apartado">a</span>
-								Que sea grande. \[\rightarrow P(~~~~~~~~~) \]
+								Que sexa grande. \[\rightarrow P(~~~~~~~~~) \]
 							</li>
 							<li>
 								<span class="numero numero--apartado">b</span>
-								Que sea grande y de plástico \[\rightarrow P(~~~~~~~~~) \]
+								Que sexa grande e de plástico \[\rightarrow P(~~~~~~~~~) \]
 							</li>
 							<li>
 								<span class="numero numero--apartado">c</span>
-								Que sea grande sabiendo que es de plástico \[\rightarrow P(~~~~~~~~~) \]
+								Que sexa grande sabendo que é de plástico \[\rightarrow P(~~~~~~~~~) \]
 							</li>
 						</ul>
 					</section>
 
 					<section>
-						<h4>Probabilidad Condicionada</h4>
-						<h3>\[ P(B / A ) \]</h3>
-						<q>Probabilidad de que se cumple B sabiendo que se cumple A</q>
-					</section>
-
-					<section>
 						<div class="problema">
-							<p><span class="numero">11</span>¿Qué probabilidades nos dan y qué probabilidad nos piden en el siguiente problema?: \[H = \text{"ser home"}\] \[M = \text{"ser muller"}\] \[A = \text{"adquirir un produto"}\]</p>
+							<p><span class="numero">11</span>Que probabilidades nos dan e qué probabilidades nos piden no seguinte problema?: \[H = \text{"ser home"}\] \[M = \text{"ser muller"}\] \[A = \text{"adquirir un produto"}\]</p>
 							<q>Segundo certo estudo dun departamento de vendas, o 30% dos seus clientes son homes, o 25% dos seus clientes adquiren algún produto e o 40% dos que adquiren algún produto son mulleres. ¿Que porcentaxe dos seus clientes son mulleres e adquiren algún produto do departamento de electrónica?[...]</q>
 						</div>
 					</section>
 
 					<section>
 						<div class="problema">
-							<p><span class="numero">12</span>¿Qué probabilidades nos dan y qué probabilidad nos piden en el siguiente problema?: \[D = \text{"estar defectuoso"}\]   \[I = \text{"pasar a inspección"}\]</p>
+							<p><span class="numero">12</span>Que probabilidades nos dan e qué probabilidades nos piden no seguinte problema?: \[D = \text{"estar defectuoso"}\]   \[I = \text{"pasar a inspección"}\]</p>
 							<q>Cando os motores chegan ó final dunha cadea de produción, escóllense os que deben pasar unha inspección. Prodúcense un 10% de motores defectuosos, e o 60% de tódolos motores defectuosos e o 20% dos bós pasan unha inspección. ¿Probabilidade de que un motor sexa defectuoso e pase a inspección e de que un motor sexa bo e pase a inspección?[...]</q>
 						</div>
 					</section>
 
 					<section>
-						<h4>Probabilidad Condicionada</h4>
+						<h4>Probabilidade Condicionada</h4>
 						<h3>\[ P(B / A ) = \frac{P(A \cap B)}{P(A)} \]</h3>
 					</section>
 
 					<section>
-						<div class="problema">
-							<p><span class="numero">13</span> Calcula la probabilidad de los siguientes sucesos dado el experimento "Sacar una carta de una baraja española":</p>
-							<ul class="problema__apartados">
-								<li>
-									<span class="numero numero--apartado">a</span>
-									"Sabiendo que salió una figura, que sea de oros"
-								</li>
-								<li>
-									<span class="numero numero--apartado">b</span>
-									"Sabiendo que salieron oros, que sea el as"
-								</li>
-							</ul>
-						</div>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">14</span> En un taller se disponen de 10 motores de los cuales 3 son defectuosos. Si se eligen 2 motores al azar, calcular la probabildad de que el segundo motor sea defectuoso cuando el primero no lo es. </p>
-						</div>
 
 						<div class="problema">
-							<p><span class="numero">15</span> En una encuesta realizada en A Coruña se ha determinado que el 40% de encuestados lee el periódico La Voz de Galicia, el 15% lee El Ideal Gallego y el 3% ambos periódicos. Seleccionado un lector al azar de El Ideal Gallego, calcular la probabildad de que lea La Voz de Galicia. </p>
+							<p><span class="numero">13</span> Nunha enquisa realizada en A Coruña determinou que o 40% dos enquisados lee o xornal A Voz de Galicia, o 15% lee o Nós Diario e o 3% lee ambos xornais. Selecionado un lector ao azar do xornal Nós Diario, calcular a probabilidade de que lea tamén La Voz de Galicia. </p>
 						</div>
 					</section>
 
 
 					<section>
-						<h4>Regla del producto</h4>
+						<h4>Regra do produto</h4>
 						<h5>\[ P(B / A ) = \frac{P(A \cap B)}{P(A)} \Rightarrow \]</h5>
 						<h3>\[ P(A \cap B) = P(A) \cdot P(B / A ) \]</h3>
 						<h4>\[ P(A \cap B \cap C) = P(A) \cdot P(B / A ) \cdot P(C / A \cap B) \]</h4>
@@ -422,52 +466,66 @@
 
 					<section>
 						<div class="problema">
-							<p><span class="numero">16</span>Dado el experimento, "tirar un dado tres veces" y calcular la probabilidad de sacar un número par la primera vez, sacar 6 la segunda vez y sacar un múltiplo de 3 la tercera.</p>
+							<p><span class="numero">14</span>Dado o experimento, "tirar un dado tres veces" e calcular a probabilidade de sacar un número par a primeira vez, sacar 6 a segunda vez e sacar un múltiplo de 3 a terceira.</p>
 						</div>
 
 						<div class="problema">
-							<p><span class="numero">17</span>Tenemos una bolsa con 3 bolas blancas y 5 negras. Calcular la probabilidad de que al sacar dos bolas la primera sea blanca y la segunda negra.</p>
+							<p><span class="numero">15</span>Temos unha bolsa con 3 bólas blancas e 5 negras. Calcular a probabilidade de que ó sacar dúas bólas a primeira sea branca e a segunda negra.</p>
 						</div>
 					</section>
 
 					<section>
 						<h4>Dependencia de sucesos</h4>
-						<q>Dos sucesos \[A\] y \[B\] son independientes si:</q>
-						<h4>\[P(A) = P(A/B)\] y \[P(B) = P(B/A)\]</h4>
+						<q>Dous sucesos \[A\] e \[B\] son independientes se:</q>
+						<h4>\[P(A) = P(A/B)\] e \[P(B) = P(B/A)\]</h4>
 						<h4>\[P(A \cap B) = P(A) \cdot P(B)\]</h4>
 					</section>
 
 					<section>
 						<div class="problema">
-							<p><span class="numero">18</span> Segundo certo estudo dun departamento de vendas, o 30% dos seus clientes son homes, o 25% dos seus clientes  adquiren  algún produto e o 40% dos que  adquiren  algún produto son mulleres. ¿Que porcentaxe dos seus clientes son mulleres e adquiren algún produto do departamento de electrónica? <em style="font-size: 0.5em;">(MACS - Xuño 2017)</em></p>
+							<p><span class="numero">18</span> <em style="font-size: 0.5em;">(MACS - Xuño 2003)</em> Sexan \[A\] e \[B\] dous sucesos tales que \[P(A)=0,6\] e \[P(B)=0,3\]. Se \[P(A/B)=0,1\] calcúlese \[P(A \cup B)\] e \[P( \overline{B}/ A )\].</p>
+
 						</div>
 
 						<div class="problema">
-							<p><span class="numero">19</span>Cando os motores chegan ó final dunha cadea de produción, escóllense os que deben pasar unha inspección. Prodúcense un 10% de motores defectuosos, e o 60% de tódolos motores defectuosos e o 20% dos bós pasan unha inspección. ¿Probabilidade de que un motor sexa defectuoso e pase a inspección e de que un motor sexa bo e pase a inspección? <em style="font-size: 0.5em;">(MACS - Xuño 2001)</em></p>
+							<p><span class="numero">19</span> <em style="font-size: 0.5em;">(Mat - Xuño 2017)</em> Nun experimento aleatorio, sexan A e B dous sucesos con \[P(\overline{A})=0'4\]; \[P(B)=0'7\] . Se \[A\] e \[B\] son independentes, calcula \[P(A \cup B)\] e \[P(A−B)\]</p>
 						</div>
-					</section>
 
-					<section>
-						<h5>Conjunto completo de sucesos</h5>
-						<q>Un conjunto de sucesos tal que su unión da el espacio muestral y los sucesos son incompatibles dos a dos.</q>
-						<p>Por ejemplo dado el experimento "lanzar un dado de 6 caras", los sucesos A="sacar par" y B="sacar impar" formarían un conjunto completo de sucesos.</p>
+						<div class="problema">
+							<p><span class="numero">20</span> <em style="font-size: 0.5em;">(MACS – Setembro 2014)</em> Sábese que \[P(B/A)=0'7\] , \[P(A/B)=0'4\] e \[P(A)=0'2\]. Calcula \[P( A \cap B)\], \[P( B)\] e \[P(A \cup \overline{B})\]. Xustifica se son independentes ou non os sucesos \[A\] e \[B\].</p>
+						</div>
 					</section>
 
 					<section>
 						<div class="problema">
-							<p><span class="numero">20</span>En una escuela técnica el 50% de los alumnos es de primer curso, el 30% es de segundo y el 20% es de tercero. De la encuesta de evaluación del profesorado se sabe que el 60% del alumnado de primero tiene buena opinión del profesorado, al igual que el 70% de los de segundo y el 75% de los de tercero. Elegido un alumno al azar ¿cuál es la probabilidad de que tenga una buena opinión del profesorado?</p>
+							<p><span class="numero">21</span> <em style="font-size: 0.5em;">(MACS - Xuño 2017)</em> Segundo certo estudo dun departamento de vendas, o 30% dos seus clientes son homes, o 25% dos seus clientes  adquiren  algún produto e o 40% dos que  adquiren  algún produto son mulleres. ¿Que porcentaxe dos seus clientes son mulleres e adquiren algún produto do departamento de electrónica? </p>
+						</div>
+
+						<div class="problema">
+							<p><span class="numero">22</span> <em style="font-size: 0.5em;">(MACS - Xuño 2001)</em>Cando os motores chegan ó final dunha cadea de produción, escóllense os que deben pasar unha inspección. Prodúcense un 10% de motores defectuosos, e o 60% de tódolos motores defectuosos e o 20% dos bós pasan unha inspección. ¿Probabilidade de que un motor sexa defectuoso e pase a inspección e de que un motor sexa bo e pase a inspección?</p>
 						</div>
 					</section>
 
 					<section>
-						<h5>Teorema de las probabilidades totales</h5>
-						<p>Sea \[A_1, A_2, \dots, A_n\] un conjunto completo de sucesos y sea \[B\] un sucesos cualquiera:</p>
+						<h5>Conxunto completo de sucesos</h5>
+						<q>Un conxunto de sucesos tal que a súa unión dá o espazo mostral e os sucesos son incompatibles dous a dous.</q>
+						<p>Por exemplo dado o experimento "lanzar un dado de 6 caras", os sucesos A="sacar par" e B="sacar impar" formarían un conxunto completo de sucesos.</p>
+					</section>
+
+					<section>
+						<h5>Teorema de las probabilidades totais</h5>
+						<p>Sexa \[A_1, A_2, \dots, A_n\] un conxunto completo de sucesos e sexa \[B\] un sucesos calquera:</p>
 						\[ P(B) = \sum_{i=1}^n P(B/A_i)P(A_i)\]
 					</section>
 
+				</section>
+
+
+				<section>
+
 					<section>
 						<div class="problema">
-							<p><span class="numero">21</span> Un artigo distribuído en tres marcas distintas A, B e C véndese nun supermercado. Obsérvase que o 30% das vendas diarias do artigo son da marca A, o 50% son da marca B e o resto son da marca C. Sábese ademais que o 60% das vendas da marca A realízase pola mañá, o 55% das vendas da marca B pola tarde e o 40% da marca C véndese pola mañá. </p>
+							<p><span class="numero">21</span> Un artigo distribuído en tres marcas distintas A, B e C; véndese nun supermercado. Obsérvase que o 30% das vendas diarias do artigo son da marca A, o 50% son da marca B e o resto son da marca C. Sábese ademais que o 60% das vendas da marca A realízase pola mañá, o 55% das vendas da marca B pola tarde e o 40% da marca C véndese pola mañá. </p>
 							<em>(a) Calcula a porcentaxe de vendas do artigo efectuadas pola mañá.</em>
 						</div>
 					</section>
@@ -485,42 +543,7 @@
 						\[P(A/B) = \frac{P(A \cap B)}{P(B)}\]
 					</section>
 
-					<section>
-						<div class="problema">
-							<p><span class="numero">20*</span>En una escuela técnica el 50% de los alumnos es de primer curso, el 30% es de segundo y el 20% es de tercero. De la encuesta de evaluación del profesorado se sabe que el 60% del alumnado de primero tiene buena opinión del profesorado, al igual que el 70% de los de segundo y el 75% de los de tercero. Elegido un alumno al azar ¿cuál es la probabilidad de que tenga una buena opinión del profesorado?</p>
-							<em>Si nos encontramos con un alumno o alumna que tiene buena opinión del profesorado, ¿cuál es la probabilidad de que sea de primero?</em>
-						</div>
-					</section>
-				</section>
 
-				<section>
-					<h5>Repaso</h5>
-					<div class="problema">
-						<p><span class="numero">21</span>Un fabricante elabora dos modelos de bicicletas: A y B. Para planificar su producción mensual tiene en cuenta que el número de bicicletas del modelo A debe ser menor o igual que el número de bicicletas del modelo B y que el número de bicicletas del modelo B no debe ser superior a 35 unidades y además el número total de bicicletas producidas no debe sobrepasar las 50 unidades.</p>
-						<ul class="problema__apartados">
-							<li>
-								<span class="numero numero--apartado">a</span>
-								Formula el sistema de inecuaciones asociado al problema. Representa la región factible y calcula sus vértices.
-							</li>
-							<li>
-								<span class="numero numero--apartado">b</span>
-								 Si el beneficio  obtenido  por  cada  unidad  del  modelo  A  es  de  200  euros  y  por  cada  unidad  del  modelo  B  es  de  300  euros,  determina la producción mensual que aporta al fabricante el máximo beneficio. ¿A cuánto asciende?
-							</li>
-						</ul>
-					</div>
-					<div class="problema">
-						<p><span class="numero">22</span> Una compañía de seguros afirma que el 70% de la población tiene contratado seguro de hogar, y tan sólo el 30% tiene contratado seguro  de  vida  y  seguro  de  hogar.  Además,  3  de  cada  5  personas  de  entre  las  que  tienen  contratado  seguro  de  vida,  tienen  contratado seguro de hogar.</p>
-						<ul class="problema__apartados">
-							<li>
-								<span class="numero numero--apartado">a</span>
-								¿Qué porcentaje de la población tiene contratado alguno de los seguros?
-							</li>
-							<li>
-								<span class="numero numero--apartado">b</span>
-								Justifica si son independientes o no los sucesos "tener contratado seguro de hogar" y "tener contratado seguro de vida"
-							</li>
-						</ul>
-					</div>
 				</section>
 
 			</div>
