@@ -18,6 +18,11 @@ div.problema p {
   font-size: 30px;
 }
 
+div.problema span.info {
+  font-size: 0.5em;
+  font-style: italic;
+}
+
 .numero {
   display: inline-block;
   width: 35px;

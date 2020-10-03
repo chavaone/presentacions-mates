@@ -308,18 +308,6 @@
 					</section>
 
 					<section>
-						<div class="problema">
-							<p>Collede unha moeda que teñades no peto e lanzádea 20 veces anotando o número de veces que sae cara.</p>
-						</div>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">E</span>O  60%  dos  individuos  dunha  poboación  está  vacinado  contra  certa  enfermidade.  Durante  unha  epidemia  sábese que o 20% contraeu a enfermidade e que o 3% está vacinado e contraeu a enfermidade.[...]</p>
-						</div>
-					</section>
-
-					<section>
 						<h5>Probabilidade</h5>
 						<h3>Definición Axiomática de Kolmogorov</h3>
 						<p> \[	P : \Omega \rightarrow \mathbb{R} \]</p>
@@ -332,16 +320,36 @@
 
 					<section>
 						<h3>Consecuencias</h3>
-						<ol>
-							<li>\[ 0 \le P(A) \le 1\]</li>
+						<ul>
+							<li>\[P(\emptyset) = 0 \Rightarrow 0 \le P(A) \le 1\]</li>
 							<li>\[ P(\overline{A}) = 1 - P(A) \]</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Consecuencias</h3>
+						<ul>
 							<li>\[P(A \cup B) = P(A) + P(B) - P(A\cap B)\]</li>
-							<li>\[P(A \cup B \cup C) =\]
+						</ul>
+						<img src="../img/probabilidadeunion.png" alt="">
+					</section>
+
+					<section>
+						<h3>Consecuencias</h3>
+						<img src="../img/probabilidadeuniontres.png" alt="">
+						<p class="fragment">
+							\[P(A \cup B \cup C) =\]
 								  <br> \[ P(A) + P(B) + P(C) \]
 									<br> \[- P(A\cap B) - P(A \cap C) - P(B \cap C)\]
-									<br> \[ + P(A \cap B \cap C)\]</li>
-							<li>\[P(A-B) = P(A) - P(A \cap B) \]</li>
-						</ol>
+									<br> \[ + P(A \cap B \cap C)\]
+						</p>
+					</section>
+
+					<section>
+						<h3>Consecuencias</h3>
+						<p>\[P(A-B) = \] <br>
+								<span class="fragment">\[ P(A) - P(A \cap B) \]</span>
+						</p>
 					</section>
 
 					<section>
@@ -365,10 +373,6 @@
 						<h4>Probabilidade Condicionada</h4>
 						<h3>\[ P(B / A ) \]</h3>
 						<q>Probabilidade de que se cumpla B sabendo que se cumple A</q>
-					</section>
-
-					<section>
-
 					</section>
 
 					<section>
@@ -450,7 +454,6 @@
 					</section>
 
 					<section>
-
 						<div class="problema">
 							<p><span class="numero">13</span> Nunha enquisa realizada en A Coruña determinou que o 40% dos enquisados lee o xornal A Voz de Galicia, o 15% lee o Nós Diario e o 3% lee ambos xornais. Selecionado un lector ao azar do xornal Nós Diario, calcular a probabilidade de que lea tamén La Voz de Galicia. </p>
 						</div>
@@ -483,26 +486,26 @@
 
 					<section>
 						<div class="problema">
-							<p><span class="numero">18</span> <em style="font-size: 0.5em;">(MACS - Xuño 2003)</em> Sexan \[A\] e \[B\] dous sucesos tales que \[P(A)=0,6\] e \[P(B)=0,3\]. Se \[P(A/B)=0,1\] calcúlese \[P(A \cup B)\] e \[P( \overline{B}/ A )\].</p>
+							<p><span class="numero">18</span> <span class="info">(MACS - Xuño 2003)</span> Sexan \[A\] e \[B\] dous sucesos tales que \[P(A)=0,6\] e \[P(B)=0,3\]. Se \[P(A/B)=0,1\] calcúlese \[P(A \cup B)\] e \[P( \overline{B}/ A )\].</p>
 
 						</div>
 
 						<div class="problema">
-							<p><span class="numero">19</span> <em style="font-size: 0.5em;">(Mat - Xuño 2017)</em> Nun experimento aleatorio, sexan A e B dous sucesos con \[P(\overline{A})=0'4\]; \[P(B)=0'7\] . Se \[A\] e \[B\] son independentes, calcula \[P(A \cup B)\] e \[P(A−B)\]</p>
+							<p><span class="numero">19</span> <span class="info">(Mat - Xuño 2017)</span> Nun experimento aleatorio, sexan A e B dous sucesos con \[P(\overline{A})=0'4\]; \[P(B)=0'7\] . Se \[A\] e \[B\] son independentes, calcula \[P(A \cup B)\] e \[P(A−B)\]</p>
 						</div>
 
 						<div class="problema">
-							<p><span class="numero">20</span> <em style="font-size: 0.5em;">(MACS – Setembro 2014)</em> Sábese que \[P(B/A)=0'7\] , \[P(A/B)=0'4\] e \[P(A)=0'2\]. Calcula \[P( A \cap B)\], \[P( B)\] e \[P(A \cup \overline{B})\]. Xustifica se son independentes ou non os sucesos \[A\] e \[B\].</p>
+							<p><span class="numero">20</span> <span class="info">(MACS – Setembro 2014)</span> Sábese que \[P(B/A)=0'7\] , \[P(A/B)=0'4\] e \[P(A)=0'2\]. Calcula \[P( A \cap B)\], \[P( B)\] e \[P(A \cup \overline{B})\]. Xustifica se son independentes ou non os sucesos \[A\] e \[B\].</p>
 						</div>
 					</section>
 
 					<section>
 						<div class="problema">
-							<p><span class="numero">21</span> <em style="font-size: 0.5em;">(MACS - Xuño 2017)</em> Segundo certo estudo dun departamento de vendas, o 30% dos seus clientes son homes, o 25% dos seus clientes  adquiren  algún produto e o 40% dos que  adquiren  algún produto son mulleres. ¿Que porcentaxe dos seus clientes son mulleres e adquiren algún produto do departamento de electrónica? </p>
+							<p><span class="numero">21</span> <span class="info">(MACS - Xuño 2017)</span> Segundo certo estudo dun departamento de vendas, o 30% dos seus clientes son homes, o 25% dos seus clientes  adquiren  algún produto e o 40% dos que  adquiren  algún produto son mulleres. ¿Que porcentaxe dos seus clientes son mulleres e adquiren algún produto do departamento de electrónica? </p>
 						</div>
 
 						<div class="problema">
-							<p><span class="numero">22</span> <em style="font-size: 0.5em;">(MACS - Xuño 2001)</em>Cando os motores chegan ó final dunha cadea de produción, escóllense os que deben pasar unha inspección. Prodúcense un 10% de motores defectuosos, e o 60% de tódolos motores defectuosos e o 20% dos bós pasan unha inspección. ¿Probabilidade de que un motor sexa defectuoso e pase a inspección e de que un motor sexa bo e pase a inspección?</p>
+							<p><span class="numero">22</span> <span class="info">(MACS - Xuño 2001)</span>Cando os motores chegan ó final dunha cadea de produción, escóllense os que deben pasar unha inspección. Prodúcense un 10% de motores defectuosos, e o 60% de tódolos motores defectuosos e o 20% dos bós pasan unha inspección. ¿Probabilidade de que un motor sexa defectuoso e pase a inspección e de que un motor sexa bo e pase a inspección?</p>
 						</div>
 					</section>
 
@@ -518,31 +521,61 @@
 						\[ P(B) = \sum_{i=1}^n P(B/A_i)P(A_i)\]
 					</section>
 
+					<section>
+						<div class="problema">
+							<p><span class="numero">21</span> <span class="info">(MACS - Xuño 2017)</span> Un artigo distribuído en tres marcas distintas A, B e C; véndese nun supermercado. Obsérvase que o 30% das vendas diarias do artigo son da marca A, o 50% son da marca B e o resto son da marca C. Sábese ademais que o 60% das vendas da marca A realízase pola mañá, o 55% das vendas da marca B pola tarde e o 40% da marca C véndese pola mañá. Calcula a porcentaxe de vendas do artigo efectuadas pola mañá.</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">22</span> <span class="info">(MACS - Setembro 2007)</span>Nunha cidade, o 55% da poboación en idade laboral son homes; deles, un 12% está no paro. Entre as mulleres a porcentaxe de paro é do 23%. Se nesta cidade se elixe ao chou unha persoa en idade laboral:</p>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									Cal é a probabilidade de que sexa home e non estea no paro?
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									Cal é a probabilidade de que sexa muller e estea no paro?
+								</li>
+								<li>
+									<span class="numero numero--apartado">c</span>
+									Calcular a porcentaxe de paro nesa cidade
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">23</span> <span class="info">(MACS - Xuño 2010)</span> Un estudo sociolóxico afirma que 3 de cada 10 persoas dunha determinada poboación son obesas, das cales o 60% segue unha dieta. Por outra parte, o 63% da poboación non é obesa e non segue unha dieta. Que porcentaxe da poboación segue unha dieta?</p>
+						</div>
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Diagramas de árbore</h3>
+					</section>
+
+
+					<section>
+						<h3>Tablas de continxencia</h3>
+					</section>
+
 				</section>
 
 
 				<section>
 
-					<section>
-						<div class="problema">
-							<p><span class="numero">21</span> Un artigo distribuído en tres marcas distintas A, B e C; véndese nun supermercado. Obsérvase que o 30% das vendas diarias do artigo son da marca A, o 50% son da marca B e o resto son da marca C. Sábese ademais que o 60% das vendas da marca A realízase pola mañá, o 55% das vendas da marca B pola tarde e o 40% da marca C véndese pola mañá. </p>
-							<em>(a) Calcula a porcentaxe de vendas do artigo efectuadas pola mañá.</em>
-						</div>
-					</section>
-
-					<section>
-							<div class="problema">
-								<p><span class="numero">21*</span> Un artigo distribuído en tres marcas distintas A, B e C véndese nun supermercado. Obsérvase que o 30% das vendas diarias do artigo son da marca A, o 50% son da marca B e o resto son da marca C. Sábese ademais que o 60% das vendas da marca A realízase pola mañá, o 55% das vendas da marca B pola tarde e o 40% da marca C véndese pola mañá. (a) Calcula a porcentaxe de vendas do artigo efectuadas pola mañá.</p>
-								<em>(b) Se a venda se efectuou pola maña, calcula a probabilidade de que o artigo sexa da marca C.</em>
-							</div>
-					</section>
-
-					<section>
+				  <section>
 						<h4>Teorema de Bayes</h4>
 						<h6>Probabilidades a posteriori</h6>
 						\[P(A/B) = \frac{P(A \cap B)}{P(B)}\]
 					</section>
-
 
 				</section>
 
