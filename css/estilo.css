@@ -56,12 +56,12 @@ ul.problema__apartados {
   margin: 0;
 }
 
-ul.problema__apartados li .solucion {
+.reveal section .solucion {
   color: rgb(255, 148, 148);
   display: none;
 }
 
-.reveal.mostrar-solucion section li .solucion {
+.reveal.mostrar-solucion section .solucion {
   display: inline;
 }
 
