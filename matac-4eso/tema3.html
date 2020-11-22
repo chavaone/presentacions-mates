@@ -23,7 +23,396 @@
 		<div class="reveal">
 			<div class="slides">
 
+			<section>
+				<h1>Tema 3</h1>
+				<h3>Polinomios</h3>
+			</section>
 
+			<section>
+
+				<section>
+					<h4>Expresión algebraica</h4>
+					<q>Una expresión algebraica es una combinación de letras, números y signos de operaciones.</q>
+				</section>
+
+				<section>
+					<h5>Variables/incógnitas</h5>
+					<q>Las letras</q>
+
+					<h5>Valor numérico</h5>
+					<q>Resultado de substituir una variable por un número en una expresión algebraica.</q>
+				</section>
+
+				<section>
+					<p>Enunciado: El doble de un número más uno </p>
+					<p>Expresión algebraica: \[ 2x + 1 \]</p>
+					<p>Valor númerico con si el número es 2: \[2 \cdot 2 + 1 = 5\]</p>
+				</section>
+
+			</section>
+
+			<section>
+				<section>
+					<h3>Monomios</h3>
+					<q>Expresión alxebraica formada por un producto de números e letras.</q>
+				</section>
+
+				<section>
+					<h4>Partes de un monomio</h4>
+					<img src="../img/monomio-partes.png" alt="">
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">1</span>Indica el coeficiente, parte literal y grado de los siguientes monomios:</p>
+						<ul class="problema__apartados">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								\[ 3x^3y \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">b</span>
+								\[ -7x^2yz \]
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h4>Monomios semejantes</h4>
+					<q>Son aquellos que tiene la misma parte literal.</q>
+				</section>
+
+				<section>
+					<h4>Operaciones: suma y resta</h4>
+					<q>Solo podemos sumar/restar monomios semejantes.</q>
+					<q>Sumamos o restamos los coeficientes manteniendo la parte literal.</q>
+					<p>\[ 2x^2 + 5x^2 = 7x^2 \]</p>
+				</section>
+
+				<section>
+					<h4>Operaciones: multiplicación y división</h4>
+					<q>Podemos multiplicar/dividir cualquier par de monomios.</q>
+					<q>Multiplicamos o dividimos coeficiente y parte literal</q>
+					<p>\[ (2xy^2) \cdot (3 x^4y) = (2\cdot3)x^{1+4}y^{2+1} = 6x^5y^3\]</p>
+				</section>
+
+				<section>
+					<h4>Operaciones: potenciación</h4>
+					<q>Aplicamos la propiedad del producto de un producto y elevamos cada uno de los factores de un monomio.</q>
+					<p>\[ (2x^2y)^3 = 2^3 \cdot x^6 \cdot y^3 = 8x^6y^3 \]</p>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">2</span> Realiza las siguientes operaciones con monomios:</p>
+						<ul class="problema__apartados problema__apartados--flex">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								\[ 2x \cdot 3y + 4xy^2 : 2y^2 + 10xy \cdot 3 \]
+								<span class="solucion"></span>
+							</li>
+							<li>
+								<span class="numero numero--apartado">b</span>
+								\[ ((12x^2y)^2 \cdot 3x^2) : 2x^2 \]
+								<span class="solucion"></span>
+							</li>
+							<li>
+								<span class="numero numero--apartado">c</span>
+								\[ (3x^2)^3 - 4x^2 \cdot 3x + (4x^2)^2 \]
+								<span class="solucion"></span>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+			</section>
+
+			<section>
+
+				<section>
+					<h4>Polinomios</h4>
+				</section>
+
+				<section>
+					<h4>Partes de un polinomio</h4>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">3</span> Indica cuales son los términos, el término independiente (si tiene) y el grado de los siguientes polinomios. Calcula su valor numérico para \[x=3\]. </p>
+						<ul class="problema__apartados">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								\[ -5x^3 + 3x^2 - 2 \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">b</span>
+								\[ 5x + x^4 - 3 \]
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h4>Ops. con polinomios: suma, resta y producto por escalar</h4>
+					<ul>
+						<li style="margin-bottom:0.5em">\[(x^2 + 3) + (x^3 + 2x^2) = x^2 + 3 + x^3 + 2x^2 = \\ = x^3 + 3x^2 + 3\]</li>
+						<li style="margin-bottom:0.5em">\[(x^2 + 3) - (x^3 + 2x^2) = x^2 + 3 - x^3 -2x^2 = \\ = -x^3 -x^2 + 3\]</li>
+						<li>\[2 \cdot (x^2 + 3) = 2x^2 + 6\]</li>
+					</ul>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">4</span>Dados los polinomios \[P(x)=\], \[Q(x)= \] y \[R(x) = \], calcula:</p>
+						<ul class="problema__apartados">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								\[-2(x^4 - 2x^3 -x^2) - (3x^2 +6x - 4)\]
+							</li>
+							<li>
+								<span class="numero numero--apartado">d</span>
+								\[(3x^2 +6x - 4) + 2 \cdot (4x^3 + 5x - 2) - 3 \cdot (x^4 - 2x^3 -x^2)\]
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<p>\[(2a + 3b) \cdot (x + y + z) = \\ = 2a \cdot (x+ y + z) + 3b \cdot (x+ y + z)\]</p>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">5</span>Resulve las siguientes multiplicaciones de polinomios:</p>
+						<ul class="problema__apartados">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								\[(2x^2 - x + 5) \cdot (-x+3)  \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">b</span>
+								\[(-4x + 1) \cdot (2x^2 + 3x - 5)  \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">c</span>
+								\[(2x - 4) \cdot (3x^2 - 3x + 1)  \]
+							</li>
+						</ul>
+					</div>
+				</section>
+
+			</section>
+
+			<section>
+				<section>
+					<h4>Potencia de polinomios</h4>
+					\[ 2^3 = 2 \cdot 2 \cdot 2 \]
+					\[ (x^2 + x)^3 = (x^2 + x) \cdot (x^2 + x) \cdot (x^2 + x) \]
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">6</span>Calcula las siguientes potencias de polinomios:</p>
+						<ul class="problema__apartados">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								\[(x^2 + x + 3)^2  \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">b</span>
+								\[(3xy + 2x + 5)^3  \]
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h4>Identidades notables</h4>
+					\[ (a + b)^2 = a^2 + 2ab + b^2 \]
+					\[ (a - b)^2 = a^2 - 2ab + b^2 \]
+					\[ (a + b) (a - b) = a^2 - b^2 \]
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">7</span>Calcula usando igualdades notables:</p>
+						<ul class="problema__apartados">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								\[(x + 3)^2  \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">b</span>
+								\[(x^3 - 3x)^2   \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">c</span>
+								\[(x+4) \cdot (x-4)  \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">d</span>
+								\[(5xy + 4y) \cdot (5xy - 4y)  \]
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h4>Potencias de un binomio</h4>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">8</span>Calcula las siguientes potencias de binomios:</p>
+						<ul class="problema__apartados">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								\[ \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">b</span>
+								\[ \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">c</span>
+								\[ \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">d</span>
+								\[ \]
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h4>Sacar factor común</h4>
+					<p>\[ (2x) \cdot (3xy + 7x^2) = 6x^2y + 14x^3 \]</p>
+					<p class="fragment">\[ 6x^2y + 14x^3 = (2x) \cdot (3xy + 7x^2) \]</p>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">9</span>Saca factor común en los siguientes polinomios:</p>
+						<ul class="problema__apartados">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								\[6x^4 + 12x^3 - 8 x^2  \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">b</span>
+								\[-6x^3y - 9x^3y^2 + 15x^2y^2 - 3x^2y  \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">c</span>
+								\[x^3yz^2 + x^2y^3z^2  \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">d</span>
+								\[-12ab^3c - 9b^3c^3 - 15b^2c^2d  \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">e</span>
+								\[2x^3yz - 3x^2y^2z + x^2yz^3 + x^2yz - x^4y^2z^2  \]
+							</li>
+						</ul>
+					</div>
+				</section>
+
+			</section>
+
+			<section>
+
+				<section>
+					<h4>División de polinomios</h4>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">10</span>Realiza las siguientes divisiones de polinomios:</p>
+						<ul class="problema__apartados">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								\[(3x^5 - 4x^3 + 2x - 3) : (x^2 + 2x - 3)  \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">b</span>
+								\[(6x^6 + 5x^5 - 3x^3 + 2x - 1) : (2x^2 - 1)  \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">c</span>
+								\[(x^5 + 1) \cdot (x^3 + x^2 + 2x - 5)  \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">d</span>
+								\[(3x^6 - 5x^5 + 4x^4 - 2x^3 + 3x^2 - x + 2) : (3x^2 - x + 2) \]
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h4>Método de Ruffini</h4>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">11</span>Realiza las siguientes divisiones usando el método de Ruffini:</p>
+						<ul class="problema__apartados">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								\[(3x^3 - 2x + 5) \cdot (x-5)  \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">b</span>
+								\[(-x^6 + x^5 - 3x^3 + 2x + 1) \cdot (x+2)  \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">c</span>
+								\[(4x^2 + 3x^3 - x^2 - x + 1) \cdot (x + 5)  \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">d</span>
+								\[(x^4 + 2x^2 - 3) \cdot (x - 2)  \]
+							</li>
+						</ul>
+					</div>
+				</section>
+
+			</section>
+
+			<section>
+				<section>
+					<h4>Factorización de un polinomio</h4>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">12</span>Factoriza los siguientes polinomios:</p>
+					</div>
+				</section>
+
+				<section>
+					<h4>Raíces de un polinomio</h4>
+				</section>
+
+				<section>
+					<h4>Teorema del Resto</h4>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">13</span> Calcula las raíces de los siguientes polinomios:</p>
+					</div>
+				</section>
+
+			</section>
+
+			<section>
+				<h4>Fracciones algebraicas</h4>
+			</section>
 
 			</div>
 		</div>
