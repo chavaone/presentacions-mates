@@ -47,7 +47,7 @@
 					<section>
 						<h4>Tipos</h4>
 						<ul>
-							<li>Discretas: P. ex. <em>"número obtenido ó lanzar un dado"</em></li>
+							<li>Discretas: P. ex. <em>"número obtido ó lanzar un dado"</em></li>
 							<li>Continuas: P. ex. <em>"altura de unha persoa elixida ó azar"</em></li>
 						</ul>
 					</section>
@@ -96,7 +96,7 @@
 								</li>
 								<li>
 									<span class="numero numero--apartado">b</span>
-									\[ Y = \]"Suma dos números obtenidos ó lanzar dous dados de 4 caras"
+									\[ Y = \]"Suma dos números obtidos ó lanzar dous dados de 4 caras"
 								</li>
 							</ul>
 						</div>
@@ -145,7 +145,7 @@
 								</li>
 								<li>
 									<span class="numero numero--apartado">b</span>
-									\[ Y = \]"Suma dos números obtenidos ó lanzar dous dados de 4 caras"
+									\[ Y = \]"Suma dos números obtidos ó lanzar dous dados de 4 caras"
 								</li>
 							</ul>
 						</div>
@@ -205,7 +205,7 @@
 							</li>
 							<li>
 								<span class="numero numero--apartado">b</span>
-								\[ Y = \]"Suma dos números obtenidos ó lanzar dous dados de 4 caras"
+								\[ Y = \]"Suma dos números obtidos ó lanzar dous dados de 4 caras"
 							</li>
 						</ul>
 					</div>
@@ -290,19 +290,36 @@
 			<section>
 
 				<section>
-					<h5>Parámetros v.a. continua</h5>
 					<h3>Media ou esperanza matemática</h3>
-					<h4>\[E[X]= \int_{-\infty}^{\infty} x \cdot f(x)\]</h4>
+					<table>
+						<tr>
+							<th>V.A. Discreta</th>
+							<th>V.A. Continua</th>
+						</tr>
+						<tr>
+							<td>\[\sum_i x_i \cdot f(x_i)\] </td>
+							<td class="fragment">\[\int_{-\infty}^{\infty} x \cdot f(x) dx\]</td>
+						</tr>
+					</table>
 				</section>
 
 				<section>
-					<h4>Parámetros dunha v.a. continua</h4>
-					<h3>Varianza</h3>
-					<h3>\[\sigma_x^2 = VAR[X] = \int_{-\infty}^{\infty} (x - \mu)^2 \cdot f(x) = \] <br/> \[= \int_{-\infty}^{\infty} x^2 \cdot f(x) - \mu^2 \]</h3>
+					<h4>Varianza</h4>
+					<table>
+						<tr>
+							<th>V.A. Discreta</th>
+							<th>V.A. Continua</th>
+						</tr>
+						<tr>
+							<td>\[\sum_i (x_i - \mu)^2 \cdot f(x_i)\] <br/>
+								  \[\sum_i x_i^2 \cdot f(x_i) - \mu^2 \]</td>
+							<td class="fragment">\[\int_{-\infty}^{\infty} (x - \mu)^2 \cdot f(x) dx\] <br/>
+								  \[\int_{-\infty}^{\infty} x^2 \cdot f(x) dx - \mu^2 \]</td>
+						</tr>
+					</table>
 				</section>
 
 				<section>
-					<h4>Parámetros dunha v.a. continua</h4>
 					<h3>Desviación típica</h3>
 					<h3>\[\sigma_x = \sqrt{\sigma_x^2} = \sqrt{VAR[X]}\]</h3>
 				</section>
@@ -326,8 +343,7 @@
 				<section>
 					<h5>Exemplos de procesos de Bernuilli</h5>
 					<ul>
-						<li>Un exame tipo test consta de 10 preguntas, cada unha con 4 respostas das cales só unha é correcta.
-[...] <em>(Mat. 2018)</em></li>
+						<li>Un exame tipo test consta de 10 preguntas, cada unha con 4 respostas das cales só unha é correcta.[...] <em>(Mat. 2018)</em></li>
 						<li>Nun bombo temos 10 bolas idénticas numeradas do 0 ao 9 e cada vez que facemos una extracción devolvemos a bola ao bombo [...] <em>(Mat. 2018)</em></li>
 					</ul>
 				</section>
@@ -338,6 +354,7 @@
 					<h5>\[X\]="Número de éxitos en \[n\] intentos"</h5>
 					<p>Denotándoo por \[X \sim B(n,p)\]</p>
 				</section>
+
 				<section>
 					<h5>Exemplos</h5>
 					<q>Un exame tipo test consta de 10 preguntas, cada unha con 4 respostas das cales só unha é correcta. Cal é a probabilidade de contestar ben polo menos dúas preguntas? <em>(Mat. 2018)</em></q>
@@ -351,13 +368,14 @@
 				</section>
 
 				<section>
-					<h4>Exemplo</h4>
-					<p>Dada unha moeda trucada que ten unha probabilidade \[p\] de "sacar cara", definimos a v.a. discreta \[X = \] "Número de caras obtidas ó lanzar 3 moedas."</p>
+					<div class="problema">
+						<p><span class="numero">5</span> Dado experimento aleatorio "lanzar 3 dados de 5 caras", pregúntannos pola probabilidade de obter dúas veces un 3. Defíne a variable aleatoria coa que imos a traballar. Indica que probabilidade nos preguntan e calcúlaa co que sabes do tema anterior.</p>
+					</div>
 				</section>
 
 				<section>
 					<h4>Función de masa de probabilidad</h4>
-					<p>Dada unha variable aleaatoria \[X \sim B(n,p)\]</p>
+					<p>Dada unha variable aleatoria \[X \sim B(n,p)\]</p>
 					<h5 class="fragment">\[f(k) = P(X = k) = \binom{n}{k} \cdot p^k \cdot q^{n-k}\]</h5>
 				</section>
 
@@ -382,29 +400,29 @@
 
 				<section>
 					<div class="problema">
-						<p><span class="numero">5</span>A probabilidade de que un home acerte no branco é 0'25. Se dispara 10 veces, cal é a probabilidade de que acerte exactamente en tres ocasións? Cal é a probabilidade de que acerte polo menos nunha ocasión?</p>
+						<p><span class="numero">6</span>A probabilidade de que un home acerte no branco é 0'25. Se dispara 10 veces, cal é a probabilidade de que acerte exactamente en tres ocasións? Cal é a probabilidade de que acerte polo menos nunha ocasión?</p>
 					</div>
 
 					<div class="problema">
-						<p><span class="numero">6</span>En una asociación juvenil el 60% de los socios juegan al balonmano. En un momento dado se trata de reunir gente para formar un equipo, por lo que se pregunta a un grupo de 20 socios si practican dicho deporte. ¿Cuál es la probabilidad de que en el grupo haya tres o más personas que jueguen al balonmano?</p>
+						<p><span class="numero">7</span>En una asociación juvenil el 60% de los socios juegan al balonmano. En un momento dado se trata de reunir gente para formar un equipo, por lo que se pregunta a un grupo de 20 socios si practican dicho deporte. ¿Cuál es la probabilidad de que en el grupo haya tres o más personas que jueguen al balonmano?</p>
 					</div>
 
 					<div class="problema">
-						<p><span class="numero">7</span>El 85% de la población considera que los tratamientos de psicoterapia son caros. Elegida una muestra al azar formada por siete individuos. ¿cuál es la probabilidad de que todos los consideren caros? ¿y de que ninguno los considere caros? ¿y de que por lo menos tres los consideren caros?</p>
+						<p><span class="numero">8</span>El 85% de la población considera que los tratamientos de psicoterapia son caros. Elegida una muestra al azar formada por siete individuos. ¿cuál es la probabilidad de que todos los consideren caros? ¿y de que ninguno los considere caros? ¿y de que por lo menos tres los consideren caros?</p>
 					</div>
 				</section>
 
 				<section>
 					<div class="problema">
-						<p><span class="numero">8</span>Un examen tipo test consta de 10 preguntas, cada una con 4 respuestas de las que sólo una es correcta. Si se contesta al azar, ¿cuál es la probabilidad de contestar bien por lo menos dos preguntas? <em>(MAT - Xuño 2018)</em></p>
+						<p><span class="numero">9</span>Un examen tipo test consta de 10 preguntas, cada una con 4 respuestas de las que sólo una es correcta. Si se contesta al azar, ¿cuál es la probabilidad de contestar bien por lo menos dos preguntas? <em>(MAT - Xuño 2018)</em></p>
 					</div>
 
 					<div class="problema">
-						<p><span class="numero">9</span>Nun grupo de 100 persoas hai 40 homes eLa probabilidad de romper una galleta al ser envasada es el 1%. Si en un envase hay 10 galletas, ¿cuál es la probabilidad de que al menos u 60 mulleres. Elíxense ó azar 4 persoas do grupo. ¿cal é a probabilidade de seleccionar máis mulleres que homes? <em>(MAT - Xuño 2017)</em></p>
+						<p><span class="numero">10</span>Nun grupo de 100 persoas hai 40 homes eLa probabilidad de romper una galleta al ser envasada es el 1%. Si en un envase hay 10 galletas, ¿cuál es la probabilidad de que al menos u 60 mulleres. Elíxense ó azar 4 persoas do grupo. ¿cal é a probabilidade de seleccionar máis mulleres que homes? <em>(MAT - Xuño 2017)</em></p>
 					</div>
 
 					<div class="problema">
-						<p><span class="numero">10</span>Nunha cidade, o 20% das persoas que acceden a un centro comercial proceden do centro da cidade, o 45% de barrios periféricos e o resto de aldeas cercanas. Efectúan algunha compra o 60%, o 75% e o 50% de cada procedencia respectivamente. Se nun determinado día visitan o centro comercial 2000 persoas, cal é o número esperado de persoas que non fan compras? <em>(MACS – Xullo 2019)</em></p>
+						<p><span class="numero">11</span>Nunha cidade, o 20% das persoas que acceden a un centro comercial proceden do centro da cidade, o 45% de barrios periféricos e o resto de aldeas cercanas. Efectúan algunha compra o 60%, o 75% e o 50% de cada procedencia respectivamente. Se nun determinado día visitan o centro comercial 2000 persoas, cal é o número esperado de persoas que non fan compras? <em>(MACS – Xullo 2019)</em></p>
 					</div>
 				</section>
 			</section>
