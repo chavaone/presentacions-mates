@@ -91,50 +91,96 @@
 					</section>
 
 					<section>
-						<p>Exemplo: Queremos conocer cuantas personas de nuestra ciudad de 13000 habitantes fuman. Para ello elegimos una muestra de 100 personas y obtenemos que el 31 de ellas fuman.</p>
-						<p>\[N=13000\], \[n=100\] y \[\hat{p} = 31/100 = 0.31\]</p>
-						<p>Inferimos que el número de fumadores de nuestra ciudad es \[N \cdot \hat{p} = 13000 \cdot 0.31 = 4030\].</p>
-					</section>
-
-					<section>
-						<h3>Estimadores</h3>
-						<p>Un parámetro muestral o estdístico obtenido con el fin de estimar un parámetro poblacional.</p>
-					</section>
-
-					<section>
-						<h3>Características deseables de los estimadores</h3>
-						<p>Un estimador \[ \hat{\lambda} \] se espera que sea</p>
-						<ul>
-							<li><strong>Centrado (insesgado):</strong> \[E[\hat{\lambda}] = \lambda\]</li>
-							<li><strong>Eficiente:</strong> \[ VAR[\hat{\lambda}] \] es pequeña.</li>
-							<li><strong>Consistente:</strong> mejora con el tamaño de la muestra.</li>
-						</ul>
+						<h4>Estimación por intervalos de confianza</h4>
+						<q>Unha fábrica de conservas desexa coñecer o tempo que tarda en botarse a perder un produto que ten almacenado. Elixe unha mostra de 400 unidades, resultando que o tempo medio de descomposición destes produtos é de 172 horas. Por experiencias anteriores coñécese que a desviación típica da variable normal tempo de descomposición é de 5 horas. Cun nivel de confianza do 95%, entre que valores se atopa o tempo medio de descomposición para a totalidade do produto almacenado?</q>
 					</section>
 				</section>
 
 				<section>
 					<section>
-						<h4>Estimación por intervalos de confianza</h4>
-						<q>Calcular un intervalo de confianza para media poblacional con un nivel de confianza del 90%.</q>
-						<p>Tenemos que calcular un intervalo de forma que la probabilidad de que el parámetro poblacional este dentro con una probabilidad de \[0'9\].</p>
+						<h3>Distribución da media mostral</h3>
 					</section>
 
 					<section>
-						<h3>Teorema central del límite</h3>
+						<h3>Teorema central do límite</h3>
 						<img src="../img/teoremacentraldolimite.png" alt="">
 						<small>Introducción a la estadística y sus aplicaciones. Ricardo Cao Abad et al.</small>
 					</section>
 
 					<section>
-						<h3>Aplicación 1: Aproximación de la Binomial por la Normal</h3>
+						<h3>Media muestral</h3>
+						<h1>\[\overline{X}\] \sim N(\mu, \frac{\sigma}{\sqrt{n}} \]</h1>
 					</section>
 
 					<section>
-						<h3>Aplicación 2: Media muestral</h3>
+						<div class="problema">
+							<p><span class="numero">1</span>Considérese unha poboación na que se estuda unha característica X que segue unha distribución normal de media \[\mu = 12\] e varianza \[\sigma^2 = 16\]. Pídese:</p>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									Probabilidade de que un elemento da poboación, elixido ó chou, teña a característica superior a 14.
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									Considérase unha mostra aleatoria de tamaño n=9. Cal é a probabilidade de que a media mostral \[\overline{X}\] teña un valor superior a 14?
+								</li>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Calculo do intervalo de confianza</h3>
+
+						<div class="problema">
+							<p><span class="numero">E</span>Unha fábrica de conservas desexa coñecer o tempo que tarda en botarse a perder un produto que ten almacenado. Elixe unha mostra de 400 unidades, resultando que o tempo medio de descomposición destes produtos é de 172 horas. Por experiencias anteriores coñécese que a desviación típica da variable normal tempo de descomposición é de 5 horas. Cun nivel de confianza do 95%, entre que valores se atopa o tempo medio de descomposición para a totalidade do produto almacenado?</p>
+						</div>
+
 					</section>
 
 					<section>
-						<h3>Aplicación 3: Proporción muestral</h3>
+						<div class="problema">
+							<p><span class="numero">2</span>Un supervisor someteu unha mostra de 16 fusibles a unha certa sobrecarga. Os tempos que tardaron en fundirse deron unha media de 10,63 minutos. Considerando que a variable “tempo que tarda en fundirse un fusible sometido a esa sobrecarga” é normal cunha desviación típica de 2,48 minutos, construír un intervalo de confianza para a media poboacional cun nivel de confianza do 95%.</p>
+						</div>
+
+						<div class="problema">
+							<p><span class="numero">3</span>Unha fábrica desexa coñecer o tempo que tarda en estragarse un produto que ten almacenado. Para isto, elixe unha mostra de 100 unidades, resultando un tempo medio de descomposición de 120 horas. Por experiencias anteriores coñécese que a desviación típica da variable normal tempo de descomposición é de 5 horas. Cun nivel de confianza do 95%, ¿entre que valores se atopa o tempo medio de descomposición para a totalidade do produto almacenado?</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">4</span>Para determina-la idade promedio dos seus clientes, un fabricante de roupa para cabaleiro colle unha mostra aleatoria de 50 clientes e calcula a súa idade media  anos. Se se sabe que a variable idade segue unha distribución normal con desviación típica  anos, determinar cun 95% de confianza o intervalo da media de idade de tódolos clientes.</p>
+						</div>
+					</section>
+
+
+					<section>
+						<h3>Calculo da d. típica, o tamaño da mostra, o erro, etc.</h3>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<p>Exemplo: Queremos coñecer cantas persoas da nosa cidade de 13 000 habitantes fuman. Para isto eliximos unha mostra de 100 persoas e obtemos que 31 delas fuman.</p>
+						<p>\[N=13000\], \[n=100\] y \[\hat{p} = 31/100 = 0.31\]</p>
+						<p>Inferimos que o número de fumadores da nosa cidade é \[N \cdot \hat{p} = 13000 \cdot 0.31 = 4030\].</p>
+					</section>
+
+					<section>
+						<h3>Estimadores</h3>
+						<p>Un parámetro mostral ou estatístico obtido co fin de estimar un parámetro poboacional.</p>
+					</section>
+
+					<section>
+						<h3>Características desexables dos estimadores</h3>
+						<p>Un estimador \[ \hat{\lambda} \] dun parámetro \[ \lambda\ ] se espera que sea</p>
+						<ul>
+							<li><strong>Centrado (insesgado):</strong> \[E[\hat{\lambda}] = \lambda\]</li>
+							<li><strong>Eficiente:</strong> \[ VAR[\hat{\lambda}] \] é pequena.</li>
+							<li><strong>Consistente:</strong> mellora co aumento do tamaño da mostra.</li>
+						</ul>
 					</section>
 				</section>
 
