@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>MEN - Presentación e Tema 1</title>
+		<title>MEN - Tema 4: Programación Lineal</title>
 
 		<link rel="stylesheet" href="../css/reset.css">
 		<link rel="stylesheet" href="../css/reveal.css">
@@ -22,272 +22,24 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<section>
-						<h3>Tema 1: Programación Lineal</h3>
-						<h5>17 de setembro</h5>
-					</section>
-					<section>
-						<div class="problema">
-							<p>Una empresa láctea gallega desea proyectar la fabricación de unos nuevos derivados de la leche. La compañía considera tres posiblidades: quesos, yogures y batidos. El departamento de producción elaboró la siguiente tabla:</p>
-							<table>
-								<tr>
-									<th>Modelo</th>
-									<th>Queso</th>
-									<th>Yougur</th>
-									<th>Batido</th>
-								</tr>
-								<tr>
-									<th>Trabajo (h/palé)</th>
-									<td>7</td>
-									<td>3</td>
-									<td>6</td>
-								</tr>
-								<tr>
-									<th>Material (L/palé)</th>
-									<td>4</td>
-									<td>4</td>
-									<td>5</td>
-								</tr>
-								<tr>
-									<th>Beneficios (€/palé)</th>
-									<td>40</td>
-									<td>20</td>
-									<td>30</td>
-								</tr>
-							</table>
-							<p> El suministro se restringe a 200L de leche diarios y la disponibilidad horario es de 150h cada día.</p>
-							<p>Determinar la produción diaria de cada producto para maximizar el beneficio total.</p>
-						</div>
-					</section>
-					<section>
-						<div class="pregunta">
-							<div class="pregunta__enunciado">
-							<p>Resuelve la siguiente inecuación:
-								\[\begin{aligned}
-								x + 3 \gt 4
-								\end{aligned} \]
-							</p>
-							</div>
-							<div class="pregunta__opciones">
-								<div class="pregunta__opcion"><span class="numero">1</span> \[ x \gt 7 \]</div>
-								<div class="pregunta__opcion"><span class="numero">2</span> \[ x \gt 1 \]</div>
-								<div class="pregunta__opcion"><span class="numero">3</span> \[ x \lt 1 \]</div>
-								<div class="pregunta__opcion"><span class="numero">3</span> \[ x \gt 1 \]</div>
-							</div>
-						</div>
-					</section>
-
-					<section>
-						<div class="pregunta">
-							<div class="pregunta__enunciado">
-								<p>Resuelve la siguiente inecuación:
-								\[\begin{aligned}
-								3x \le 6
-								\end{aligned} \]
-							</p>
-							</div>
-							<div class="pregunta__opciones">
-								<div class="pregunta__opcion"><span class="numero">1</span> \[ x \ge 3 \]</div>
-								<div class="pregunta__opcion"><span class="numero">2</span> \[ x \ge 2 \]</div>
-								<div class="pregunta__opcion"><span class="numero">3</span> \[ x \le 3 \]</div>
-								<div class="pregunta__opcion"><span class="numero">3</span> \[ x \ge 3 \]</div>
-							</div>
-						</div>
-					</section>
-					<section>
-						<div class="pregunta">
-							<div class="pregunta__enunciado">
-								<p>Resuelve la siguiente inecuación:
-								\[\begin{aligned}
-								\frac{x}{2} \lt 4
-								\end{aligned} \]
-							</p>
-							</div>
-							<div class="pregunta__opciones">
-								<div class="pregunta__opcion"><span class="numero">1</span> \[ z \gt 8 \]</div>
-								<div class="pregunta__opcion"><span class="numero">2</span> \[ z \lt 8 \]</div>
-								<div class="pregunta__opcion"><span class="numero">3</span> \[ z \lt 2 \]</div>
-								<div class="pregunta__opcion"><span class="numero">4</span> \[ z \lt 2 \]</div>
-							</div>
-						</div>
-					</section>
-					<section>
-						<div class="pregunta">
-							<div class="pregunta__enunciado">
-								<p>Resuelve la siguiente inecuación:
-								\[ \begin{aligned}
-								-2x \gt 6
-								\end{aligned} \]
-							</p>
-							</div>
-							<div class="pregunta__opciones">
-								<div class="pregunta__opcion"><span class="numero">1</span> \[ x \gt 3 \]</div>
-								<div class="pregunta__opcion"><span class="numero">2</span> \[ x \lt 3 \]</div>
-								<div class="pregunta__opcion"><span class="numero">3</span> \[ x \ge 3 \]</div>
-								<div class="pregunta__opcion"><span class="numero">4</span> \[ x \le 3 \]</div>
-							</div>
-						</div>
-					</section>
-
-					<section>
-						<div class="problema">
-							<h4><span class="numero">1</span> Resuelve: Inecuaciones de primer grado</h4>
-							<ul class="problema__apartados">
-								<li>
-									<span class="numero numero--exemplo">a</span>
-									\[ 2x + 5 - 3x + 1 \ge 4x - 3 + 3x - 7 \]
-								</li>
-								<li>
-									<span class="numero numero--apartado">b</span>
-									\[ 3(2x+1) - 4(3x+2) < 5(8-3x) \]
-								</li>
-								<li>
-									<span class="numero numero--apartado">c</span>
-									\[ 4(3-2x) - (2x-3) \le 3(2x+6) +2x -21  \]
-								</li>
-							</ul>
-						</div>
-					</section>
-
-					<section>
-						<h2>Otra forma de resolver esto/forma genérica para resolver inecuaciones</h2>
-					</section>
-
-					<section>
-						<div class="problema">
-							<h4><span class="numero">2</span> Resuelve: Inecuaciones de grado mayor que 1</h4>
-							<ul class="problema__apartados">
-								<li>
-									<span class="numero numero--exemplo">a</span>
-									\[ x (x - 4) \gt 0 \]
-								</li>
-								<li>
-									<span class="numero numero--apartado">b</span>
-									\[ x^2 - x - 6 \le 0 \]
-								</li>
-								<li>
-									<span class="numero numero--apartado">c</span>
-									\[ x (x - 3) (x - 2) \lt 0  \]
-								</li>
-							</ul>
-						</div>
-					</section>
+					<h3>Tema 4: Programación Lineal</h3>
 				</section>
 
 				<section>
+
 					<section>
-						<div class="pregunta">
-							<div class="pregunta__enunciado">
-								<p>Resuelve el siguiente sistema de inecuaciones:</p>
-								<p>
-								\[
-								\begin{cases}
-									x \lt 3 \\
-									x \gt -4
-								\end{cases}
-								\]
-								</p>
-							</div>
-							<div class="pregunta__opciones">
-								<div class="pregunta__opcion"><span class="numero">1</span> \[ x \in (-4, 3) \]</div>
-								<div class="pregunta__opcion"><span class="numero">2</span> \[ x \in (-\infty, 3) \]</div>
-								<div class="pregunta__opcion"><span class="numero">3</span> \[ x \in [-4, 3) \]</div>
-								<div class="pregunta__opcion"><span class="numero">4</span> \[ x \in [-3, \infty) \]</div>
-							</div>
-						</div>
+						<h4>Inecuacións</h4>
+						<p>\[2x + 3 \ge 7\]</p>
+					</section>
+
+					<section>
+						<h4>Inecuacións con dúas incógnitas</h4>
+						<p>\[2x + 3y \ge 6\]</p>
 					</section>
 
 					<section>
 						<div class="problema">
-							<h4><span class="numero">3</span> Resuelve: Sistemas de inecuaciones con una incógnita</h4>
-							<ul class="problema__apartados">
-								<li>
-									<span class="numero numero--apartado">a</span>
-									\[\begin{cases}
-										\frac{2x}{3} \lt x + 4\\
-										7 - \frac{4x}{5} \ge 1
-									\end{cases}  \]
-								</li>
-								<li>
-									<span class="numero numero--apartado">b</span>
-									\[
-									\begin{cases}
-										2 (x-3) \lt x \\
-										(4-x) \cdot 3 \ge 5
-									\end{cases}  \]
-								</li>
-								<li>
-									<span class="numero numero--apartado">c</span>
-									\[
-									\begin{cases}
-										5-x \le 4x - 4 \\
-										1 - 2x \ge -3
-									\end{cases}  \]
-								</li>
-							</ul>
-						</div>
-					</section>
-
-					<section>
-						<div class="problema">
-							<h4><span class="numero">3</span> Resuelve: Sistemas de inecuaciones con una incógnita</h4>
-							<ul class="problema__apartados">
-								<li>
-									<span class="numero numero--apartado">d</span>
-									\[\begin{cases}
-										2x+1 \le x + 3 \\
-										2x+3 \le 3x + 1
-									\end{cases}  \]
-								</li>
-								<li>
-									<span class="numero numero--apartado">e</span>
-									\[
-									\begin{cases}
-										2x-10 \gt -x + 2 \\
-										12 - 4x \gt -3x + 2 \\
-										3(x+2) \ge 2(x+6)
-									\end{cases}  \]
-								</li>
-
-								<li>
-									<span class="numero numero--apartado">f</span>
-									\[
-									\begin{cases}
-										x^2 - 4 \gt 0 \\
-										3x + 6 < 0
-									\end{cases}  \]
-								</li>
-							</ul>
-						</div>
-					</section>
-
-					<section>
-						<h2>Dos incógnitas...</h2>
-					</section>
-
-					<section>
-						<h3>Para representar una recta necesiamos...</h3>
-					</section>
-
-					<section>
-						<div class="problema">
-							<h4><span class="numero">4</span> Resuelve: Representa las siguientes rectas</h4>
-							<ul class="problema__apartados">
-								<li>
-									<span class="numero numero--apartado">a</span>
-									\[ 7x + 2y = 14  \]
-								</li>
-								<li>
-									<span class="numero numero--apartado">b</span>
-									\[ 4x + 5y = 20 \]
-								</li>
-							</ul>
-						</div>
-					</section>
-
-					<section>
-						<div class="problema">
-							<h4><span class="numero">5</span> Resuelve: Representa el conjunto solución de las siguientes inecuaciones de dos incógnitas</h4>
+							<h4><span class="numero">1</span> Representa o conxunto solución das seguintes inecuacións con dúas incógnitas</h4>
 							<ul class="problema__apartados">
 								<li>
 									<span class="numero numero--apartado">a</span>
@@ -302,72 +54,137 @@
 					</section>
 
 					<section>
-							<div class="problema">
-								<h4><span class="numero">6</span> Resuelve: Representa el conjunto solución de los siguientes sistemas de inecuaciones de dos incógnitas</h4>
-								<ul class="problema__apartados">
-									<li>
-										<span class="numero numero--apartado">a</span>
-										\[
-										\begin{cases}
-											7x + 2y \ge 14 \\
-											4x + 5y \ge 20
-										\end{cases}  \]
-									</li>
-									<li>
-										<span class="numero numero--apartado">b</span>
-										\[
-										\begin{cases}
-										  2x + 3y \ge 4 \\
-											x + y \ge -3
-										\end{cases}  \]
-									</li>
+						<h3>Sistemas de inecuacións</h3>
+						<p>
+							\begin{cases}
+								2x + 3 \ge 7 \\
+								2x + 3 \lt 23
+							\end{cases}  \]
+						</p>
+					</section>
 
-									<li>
-										<span class="numero numero--apartado">c</span>
-										\[
-										\begin{cases}
-											x + 4y \le 1 \\
-											x - 2y \ge 2
-										\end{cases}  \]
-									</li>
-								</ul>
-							</div>
-						</section>
+					<section>
+						<h3>Sistemas de inecuacións de dúas incógnitas</h3>
+						<p>
+							\begin{cases}
+								2x + 3y \ge 24 \\
+								6x + 3y \lt 30
+							\end{cases}  \]
+						</p>
+					</section>
 
-						<section>
-							<div class="problema">
-								<h4><span class="numero">6</span> Resuelve: Representa el conjunto solucióin de los siguientes sistemas de inecuaciones de dos incógnitas (cont.)</h4>
-								<ul class="problema__apartados">
-									<li>
-										<span class="numero numero--apartado">d</span>
-										\[
-										\begin{cases}
-											2x+y \ge  -1 \\
-											4x - y \ge -3
-										\end{cases}  \]
-									</li>
+					<section>
+						<div class="problema">
+							<h4><span class="numero">2</span> Representa el conjunto solución de los siguientes sistemas de inecuaciones de dos incógnitas. Calcula además los puntos de corte.</h4>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									\[
+									\begin{cases}
+										7x + 2y \ge 14 \\
+										4x + 5y \ge 20
+									\end{cases}  \]
+								</li>
+								<li>						<img src="" alt="">
+									<span class="numero numero--apartado">b</span>
+									\[
+									\begin{cases}
+									  2x + 3y \ge 4 \\
+										x + y \ge -3
+									\end{cases}  \]
+								</li>
 
-									<li>
-										<span class="numero numero--apartado">e</span>
-										\[
-										\begin{cases}
-											2x + y \le 6 \\
-											4x + y \le 10 \\
-											-x + y \le 3
-										\end{cases}  \]
-									</li>
+								<li>
+									<span class="numero numero--apartado">c</span>
+									\[
+									\begin{cases}
+										x + 4y \le 1 \\
+										x - 2y \ge 2
+									\end{cases}  \]
+								</li>
+							</ul>
+						</div>
+					</section>
 
-								</ul>
-							</div>
-						</section>
+					<section>
+						<div class="problema">
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">d</span>
+									\[
+									\begin{cases}
+										2x+y \ge  -1 \\
+										4x - y \ge -3
+									\end{cases}  \]
+								</li>
 
-						<section>
-							<div class="problema">
-								<h4><span class="numero">6</span> Representa el recinto solución de este sistema de inecuaciones y calcula los puntos de corte.</h4>
-								<img src="../img/metodos-proglineal-ejer.png" alt="">
-						</section>
+								<li>
+									<span class="numero numero--apartado">e</span>
+									\[
+									\begin{cases}
+										2x + y \le 6 \\
+										4x + y \le 10 \\
+										-x + y \le 3
+									\end{cases}  \]
+								</li>
+
+							</ul>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Programación lineal</h3>
+						<p>Trátase de problemas onde pretendemos optimizar unha función lineal cunhas certas restricións.</p>
+					</section>
+
+					<section>
+						<h4>Exemplo en 1 dimensión</h4>
+						<ul>
+							<li>Función a optimizar: \[ f(x) = 4x + 2 \]</li>
+							<li class="fragment">Restricións: </br>
+								<ul>
+									<li>\[2x + 3 \ge 3  \]</li>
+									<li>\[3x + 2 \le 13 \]</li>
+							  </ul>
+						  </li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>En 2 dimensións...</h4>
+						<table>
+							<thead>
+							  <tr>
+							    <th></th>
+							    <th>1D</th>
+							    <th>2D</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+							    <td>Figura restriccións<br></td>
+							    <td>Intervalo R<br>(segmento)<br></td>
+							    <td><span class="segment">Rexión plano R²<br>(polígono)<br></span></td>
+							  </tr>
+							  <tr>
+							    <td>Función obxectivo</td>
+							    <td>Recta</td>
+							    <td><span class="segment">Recta</span></td>
+							  </tr>
+							  <tr>
+							    <td>Posibles solucións</td>
+							    <td>Extremos<br></td>
+							    <td><span class="segment">Vértices</span></td>
+							  </tr>
+							</tbody>
+						</table>
+					</section>
+
 
 				</section>
+
 			</div>
 		</div>
 
