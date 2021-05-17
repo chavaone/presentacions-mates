@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>Matemáticas - 4º ESO - Tema 7</title>
+  <title>Matemáticas - 4º ESO - Tema 8: Vectores y rectas en el plano</title>
 
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/reveal.css">
@@ -29,27 +29,14 @@
 
       <section>
         <section>
-          <h3>Magnitudes escalares</h3>
-        </section>
-
-
-        <section>
-          <h3>Magnitudes vectoriales</h3>
+          <h3>Magnitudes escalares y vectoriales</h3>
+          <p>Mientras que las magnitudes escalares solo indican una cantidad, las escalares tambíen indican una dirección y sentido.</p>
         </section>
 
         <section>
           <h2>Vector</h2>
           <p>Segmento orientado (es decir, una "flecha") definidos por dos puntos, su origen y su extremo.</p>
-          <p>Si esos dos puntos son A y B el vector se denota por </p>
-        </section>
-
-        <section>
-          <h2>Elementos de un vector</h2>
-          <ul>
-            <li>Módulo</li>
-            <li>Sentido</li>
-            <li>Dirección</li>
-          </ul>
+          <p>Si esos dos puntos son A y B el vector se denota por \[\overrightarrow{AB}\]</p>
         </section>
 
         <section>
@@ -58,18 +45,74 @@
 
         <section>
           <div class="problema">
-            <p><span class="numero">1</span>Dado los puntos del plano A(3,5) B(3,9) C(0,2) y D(2,5) representa y calcula las coordendas de los siguientes vectores:</p>
-
+            <p><span class="numero">1</span>Dado los puntos del plano A(3,5); B(3,9) y C(2,5) representa y calcula las coordenadas de los siguientes vectores:</p>
+            <ul class="problema__apartados">
+              <li>
+                <span class="numero numero--apartado">a</span>
+                \[\overrightarrow{AB}\]
+              </li>
+              <li>
+                <span class="numero numero--apartado">b</span>
+                \[\overrightarrow{BA}\]
+              </li>
+              <li>
+                <span class="numero numero--apartado">c</span>
+                \[\overrightarrow{BC}\]
+              </li>
+              <li>
+                <span class="numero numero--apartado">d</span>
+                \[\overrightarrow{AC}\]
+              </li>
+            </ul>
           </div>
         </section>
 
         <section>
+          <h3>Vector de posición</h3>
+          <p>Dado un punto A su vector de posición es el vector que une el origen de coordenadas O(0,0) y dicho punto.</p>
+        </section>
+
+        <section>
+          <h2>Elementos de un vector</h2>
+          <ul>
+            <li>Módulo: su tamaño</li>
+            <li>Sentido</li>
+            <li>Dirección: donde está su origen y su fin</li>
+          </ul>
+        </section>
+
+        <section>
           <h3>Módulo de un vector</h3>
+          <img src="../img/modulovector.png" alt="">
+        </section>
+
+        <section>
+          <h3>Módulo vector</h3>
+          <p>Sea \[\overrightarrow{v}(v_1,v_2)\] un vector su módulo es:</p>
+          <p>\[|v| = \sqrt{x^2 + y^2}\]</p>
         </section>
 
         <section>
           <div class="problema">
             <p><span class="numero">2</span>Calcula el módulo de los vectores con las siguientes coordenadas:</p>
+            <ul class="problema__apartados">
+              <li>
+                <span class="numero numero--apartado">a</span>
+                \[\overrightarrow{v}(2,3)\]
+              </li>
+              <li>
+                <span class="numero numero--apartado">b</span>
+                \[\overrightarrow{u}(-2,4)\]
+              </li>
+              <li>
+                <span class="numero numero--apartado">c</span>
+                \[\overrightarrow{w}(-3,6)\]
+              </li>
+              <li>
+                <span class="numero numero--apartado">d</span>
+                \[\overrightarrow{t}(1,1)\]
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -80,6 +123,20 @@
         <section>
           <div class="problema">
             <p><span class="numero">3</span>Dados los puntos del plano...  representa y calcula las coordendas de los siguientes vectores. Indica cuales son equipolentes:</p>
+            <ul class="problema__apartados">
+              <li>
+                <span class="numero numero--apartado">a</span>
+              </li>
+              <li>
+                <span class="numero numero--apartado">b</span>
+              </li>
+              <li>
+                <span class="numero numero--apartado">c</span>
+              </li>
+              <li>
+                <span class="numero numero--apartado">d</span>
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -88,7 +145,8 @@
       <section>
         <section>
           <h3>Operaciones con vectores: suma</h3>
-          <p>De forma gráfica...</p>
+          <p>De forma gráfica</p>
+          <img src="../img/sumavectores.png" alt="">
         </section>
 
         <section>
@@ -98,20 +156,39 @@
         </section>
 
         <section>
-          <h3>Operaciones con vectores: producto por escalar</h3>
-          <p>De forma gráfica...</p>
+          <div class="problema">
+            <p><span class="numero">4</span>Representa y calcula de forma analítica la suma de los siguientes vectores:</p>
+          </div>
         </section>
 
         <section>
-          <h3>Operaciones con vectores: producto por escalar</h3>
+          <h3>Operaciones con vectores: producto por escalar (un número)</h3>
+          <p>De forma gráfica</p>
+          <img src="../img/productoescalarvectores.png" alt="" >
+        </section>
+
+        <section>
+          <h3>Operaciones con vectores: producto por escalar (un número)</h3>
           <p>De forma analítica...</p>
           <p>\[\lambda (x_1, y_1) = (\lambda \cdot x_1, \lambda \cdot y_1)\]</p>
         </section>
+
+        <section>
+          <div class="problema">
+            <p><span class="numero">5</span>Representa y calcula de forma analítica los siguientes productos escalares de vectores:</p>
+          </div>
+        </section>
+
       </section>
 
       <section>
         <section>
           <h3>Ecuaciones de la recta</h3>
+        </section>
+
+        <section>
+          <h4>Ecuación vectorial</h4>
+          <a href="https://www.geogebra.org/m/C8jYqD5x">Ver en Geogebra</a>
         </section>
 
         <section>
