@@ -4,16 +4,16 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Matemáticas - 3º ESO - Tema 7</title>
+		<title>Matemáticas I - 1º BAC - Tema 1</title>
 
 		<link rel="stylesheet" href="../css/reset.css">
 		<link rel="stylesheet" href="../css/reveal.css">
-		<link rel="stylesheet" href="../css/theme/black.css">
+		<link rel="stylesheet" href="../css/theme/white.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="../lib/css/monokai.css">
-		<link rel="stylesheet" href="../css/estilo.css">
+		<link rel="stylesheet" href="../css/estilo-blanco.css">
 
 
 		<!-- Printing and PDF exports -->
@@ -26,6 +26,369 @@
 				<section>
 					<h1>Tema 1</h1>
 					<h3>Números reales</h3>
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Conjuntos numéricos</h3>
+					</section>
+
+					<section>
+						<img src="../img/clasificacionnumeros.jpeg" alt="">
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">1</span>Clasifica los siguientes números en naturales, enteros, racionales o irracionales:</p>
+							<ol class="problema__apartados problema__apartados--flex">
+								<li>
+									25,37
+									<span class="solucion">\[ \in \mathbb{Q} \] </span>
+								</li>
+								<li>
+									-6/17
+									<span class="solucion">\[ \in\mathbb{Q} \]</span>
+								</li>
+								<li>
+									2/5
+									<span class="solucion">\[ \in \mathbb{Q} \] </span>
+								</li>
+								<li>
+									\[-\sqrt{12}\]
+									<span class="solucion">\[ \in \mathbb{I} \] </span>
+								</li>
+								<li>
+									\[ \pi	\]
+									<span class="solucion">\[ \in \mathbb{I} \]</span>
+								</li>
+								<li>
+									-5
+									<span class="solucion"> \[ \in \mathbb{Z}  \]</span>
+								</li>
+							</ol>
+					</section>
+
+				</section>
+
+
+				<section>
+
+					<section>
+						<h3>Valor absoluto</h3>
+						<p>Si \[x \in \mathbb{R}\], \[|x|\] es distancia en la recta real de x al 0.</p>
+					</section>
+
+					<section>
+						<h3>Valor absoluto: propiedades</h3>
+						<ul>
+							<li>\[|a| \ge 0 \]</li>
+							<li>\[|a \cdot b| = |a| \cdot |b| \]</li>
+							<li>\[d(a,b) = |a - b|\] (nos permite calcula la distancia entre dos puntos en al recta real)</li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">2</span>Desarrolla el valor de las siguientes expresiones:</p>
+							<ol class="problema__apartados">
+								<li>\[2x - 3 + |2x-3|\]</li>
+								<li>\[|x+2| + |x+3|\]</li>
+								<li>\[x +|x-3| + |x+5|\]</li>
+							</ol>
+						</div>
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Intervalos y entornos</h3>
+						<em>Son subconjuntos continuos de la recta real.</em>
+						<ul>
+							<li>Intervalos: indicamos principio y fin</li>
+							<li>Entornos: indicamos centro y radio</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Intervalos</h3>
+						<ul>
+							<li>Abierto: no incluímos el extremo. Se indica con paréntesis (2,5)</li>
+							<li>Cerrado: incluímos el extremo. Se indica con corchetes [-6,10]</li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="problema problema">
+							<p><span class="numero">3</span>Representa como intervalos los siguientes conjuntos de números:</p>
+							<ol class="problema__apartados problema__apartados--flex">
+								<li>
+									\[\{x \in \mathbb{R} / -1 \le x \lt 5  \} \]
+									<span class="solucion">= [-1, 5)</span>
+								</li>
+								<li>
+									\[\{x \in \mathbb{R} / -1 \ge x \gt -5 \} \]
+									<span class="solucion">= (-5,-1]</span>
+								</li>
+								<li>
+									\[\{x \in \mathbb{R} / -3 \lt x  \} \]
+									<span class="solucion">\[= (-3, \infty) \]</span>
+								</li>
+								<li>
+									\[\{x \in \mathbb{R} / 3 \gt x \} \]
+									<span class="solucion">\[= (-\infty, 3) \]</span>
+								</li>
+								<li>
+									\[\{x \in \mathbb{R} / -1 \le x \le 0  \} \]
+									<span class="solucion">\[= [-1,0] \]</span>
+								</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<h3>Operaciones con conjuntos: unión e intersección</h3>
+						<img src="../img/conjuntosbase.png" alt="">
+					</section>
+
+					<section>
+						<h3>Unión</h3>
+						<img src="../img/conjuntosunion.png" alt="">
+					</section>
+
+					<section>
+						<h3>Intersección</h3>
+						<img src="../img/conjuntosinterseccion.png" alt="">
+					</section>
+
+					<section>
+						<h3>Unión e intersección de intervalos</h3>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">4</span>Dados \[A=(2,4)\], \[B=(-2,4)\] y \[C=(-3, \infty)\], calcula:</p>
+							<ol class="problema__apartados">
+								<li>\[A \cup B \cup C\]</li>
+								<li>\[A \cap B \cap C\]</li>
+								<li>\[(A \cap B) \cup C\]</li>
+								<li>\[(A \cup B) \cap C\]</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<h3>Entornos</h3>
+						<p>Indicamos el centro y el radio</p>
+						<p> \[E(3,4) =\{x \in \mathbb{R} / |x-3| \lt 4 \} = (-1, 7)\] </p>
+						<img src="../img/entorno.png" alt="">
+					</section>
+
+					<section>
+						<h3>Entornos</h3>
+						<ul>
+							<li>Entornos abiertos: se incluyen los extremos. \[E(3, 10)\]</li>
+							<li>Entornos cerrados: no se incluyen los extremos. \[E[-2, 5]\] </li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">5</span>Expresa como entornos los intervalos \[(-5, 2)\] y \[[-10, 10]\]</p>
+						</div>
+						<div class="problema">
+							<p><span class="numero">6</span>Expresa como entornos los siguientes conjuntos de números:</p>
+							<ol class="problema__apartados">
+								<li>\[\{x \in \mathbb{R} / |x-2| \lt 5 \} \]</li>
+								<li>\[\{x \in \mathbb{R} / |x+2| \le 3 \} \]</li>
+								<li>\[\{x \in \mathbb{R} / |x-5| \lt 2 \} \]</li>
+							</ol>
+						</div>
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Aproximación de números reales</h3>
+						<ul>
+							<li>Redondeo</li>
+							<li>Truncamiento</li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">7</span>Aproxima los siguientes números como se indica:</p>
+							<ol class="problema__apartados">
+								<li>Redondea a las centésimas el número 12,23563</li>
+								<li>Trunca a las décimas el número 9,2934</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<h3>Cálculo de errores</h3>
+						<ul>
+							<li>Error absoluto: \[ E_a = |V_{\text{real}} - V_{\text{aproximado}} | \]</li>
+							<li>Error relativo: \[ E_r = \frac{E_a}{V_{\text{real}}}\]</li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">8</span>Calcula el error absoluto y el error relativo cometido al aproximar el número \[\sqrt{2}\] por \[1,4\].</p>
+						</div>
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Notación científica</h3>
+						<img src="../img/3eso-tema2-notacioncientifica.png" class="blackbg">
+					</section>
+
+					<section>
+						<h3>Operaciones con Not. Científica</h3>
+						<ul>
+							<li>Multiplicación / División</li>
+							<li>Suma / Resta</li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">9</span>Expresa el número \[42 000\] y el número \[0,002\] en notación científica. Calcula la suma y el producto de estos números expresados en notación científica.</p>
+						</div>
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Radical</h3>
+						\[ \sqrt[n]{a} = b \iff b^n = a \]
+						<p>Por exemplo \[\sqrt[3]{8} = 2\] porque 2^3</p>
+					</section>
+
+					<section>
+						<h3>Propiedades</h3>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">10</span>Extrae factores de los siguientes denominadores:</p>
+							<ol class="problema__apartados">
+								<li>\[ \sqrt{3^{10} \cdot 5^7 \cdot 7 \cdot 13^2}\]</li>
+								<li>\[ \sqrt[3]{3^{10} \cdot 5^6 \cdot 7^2 \cdot 13^3} \]</li>
+							</ol>
+						</div>
+						<div class="problema">
+							<p><span class="numero">11</span>Introduce los siguientes factores en el radical:</p>
+							<ol class="problema__apartados">
+								<li>\[ 2 \cdot 3^2 \sqrt{5}\]</li>
+								<li>\[ 2 \cdot 3^2 \sqrt[5]{5^3}\]</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">10</span>Simplifica las siguientes expresiones</p>
+							<ol class="problema__apartados">
+								<li>\[ \sqrt{2} + \frac{3}{2} \sqrt{8} - \frac{1}{4}\sqrt{18} \]</li>
+								<li>\[ \sqrt[4]{144 a^2} - 2 \sqrt{\frac{27}{16} a} + \sqrt{3a} \]</li>
+								<li>\[ \frac{a^4 \sqrt[3]{a^2}(\sqrt{a})^3}{\sqrt{\sqrt[3]{a^5}}} \]</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<h3>Racionalizar</h3>
+						<p>Eliminar las raíces del denominador</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">11</span>Racionaliza los siguientes denominadores:</p>
+							<ol class="problema__apartados">
+								<li>\[ \frac{5}{2\sqrt{5}} \]</li>
+								<li>\[ \frac{5}{2\sqrt[4]{5}} \]</li>
+								<li>\[ \frac{5}{2\sqrt{5} + 1} \]</li>
+								<li>\[ \frac{\sqrt{6}}{2\sqrt{3} - 3\sqrt{2}} \]</li>
+							</ol>
+						</div>
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Logaritmos</h3>
+						<p>\[ log_a (b) = c \iff a^c = b \]</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">12</span>Aplicando la definición, halla el valor de los logaritmos:</p>
+							<ol class="problema__apartados">
+								<li>\[log_3 27 \]</li>
+								<li>\[log_3 \sqrt{27} \]</li>
+								<li>\[log_5 \sqrt[3]{25} \]</li>
+								<li>\[log_7 \frac{1}{49} \]</li>
+								<li>\[log_9 \sqrt[3]{3} \]</li>
+								<li>\[log_3 0,\widehat{3} \]</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<h4>Propiedades de los logaritmos</h4>
+						<p>\[log_a (b \cdot c) = log_a (b) + log_a (c)\]</p>
+						<p>\[log_a (b^n) = n \cdot log_a (b)\]</p>
+						<p>\[log_a (\frac{b}{c}) = log_a (b) - log_a (c)\]</p>
+						<p>\[log_a b = \frac{log_x b}{log_x a}\]</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">13</span>Factoriza y aplica las propiedades de los logaritmos para expresar en función de suma ou resta de logaritmos de números primos:</p>
+							<ol class="problema__apartados">
+								<li>
+									\[ log~2^4 \cdot 3 - log 2^3 \cdot 3^4 \]
+								</li>
+								<li>
+									\[ log 24 + log \frac{16}{9} - log 144 \]
+								</li>
+								<li>
+									\[ log~686 + log~56 - log~\frac{16}{49} \]
+								</li>
+								<li>
+									\[  log~100 - log \frac{8}{25} + log~250 \]
+								</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">14</span>Expresa el valor de E en cada caso sin que aparezcan logaritmos:</p>
+							<ol class="problema__apartados">
+								<li>\[log E =  log~x + 2 log~y - log~z\]</li>
+								<li>\[log E = 3(log x -1) - 2(1-log y)\]</li>
+								<li>\[log E = 2 log\sqrt{x} - log x - log y + 3 log \sqrt[3]{y}\]</li>
+								<li>\[log E = log x^3 + 3 log y - log x^4\]</li>
+							</ol>
+						</div>
+					</section>
+
 				</section>
 
 			</div>

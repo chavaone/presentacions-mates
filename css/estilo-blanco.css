@@ -1,0 +1,118 @@
+
+.reveal section img {
+  background: none;
+  border: none;
+  box-shadow: none;
+  max-height: 90vh;
+}
+
+.ali-left {
+  text-align: left;
+}
+
+.col-red {
+  color: red;
+}
+
+div.problema span.info {
+  font-size: 0.5em;
+  font-style: italic;
+}
+
+.numero {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+
+  border-radius: 100%;
+  background-color: black;
+  color: white;
+
+  font-weight: bold;
+  text-align: center;
+  margin-right: 0.1em;
+  font-size: 0.6em;
+}
+
+.numero--exemplo {
+  background-color: red;
+}
+
+.numero--apartado {
+  background-color: green;
+}
+
+ul.problema__apartados {
+  list-style: none;
+  margin: 0;
+}
+
+ol.problema__apartados {
+  margin:0;
+  list-style: lower-latin;
+  display: flex !important;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 40vh;
+  justify-content: flex-start;
+}
+
+ol.problema__apartados li::marker {
+  color: blue;
+}
+
+.reveal section .solucion {
+  color: rgb(187, 0, 0);
+  display: none;
+}
+
+.reveal.mostrar-solucion section .solucion {
+  display: inline;
+}
+
+.problema__apartados li {
+  margin-top: 0.5em;
+}
+
+.pregunta__opciones {
+  display: flex;
+  justify-content: space-around;
+  margin-top:2em;
+  padding: 0 1em;
+}
+
+div.MathJax_Display {
+  display: inline !important;
+}
+
+.pregunta__enunciado div.MathJax_Display {
+  margin-top: 0;
+}
+
+.pregunta__opcion:not(:last-child) {
+  border-right: 1px solid white;
+}
+
+body.print-pdf .pregunta__opcion:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.pregunta__opcion {
+  flex:1;
+  padding: 0 0.1em;
+}
+
+.pregunta__enunciado em {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.reveal section img.whitebg {
+  background: white;
+  padding: 1em;
+}
+
+.reveal section img.blackbg {
+  background: black;
+  padding: 1em;
+}
