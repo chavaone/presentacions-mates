@@ -1,0 +1,72 @@
+% !TeX spellcheck = es_ES
+\documentclass[a4paper,11pt,twoside,openright]{book}
+
+%%%%%%%%%%%%% Xeometría
+\usepackage[a4paper,left=1.5cm,right=1cm, bottom=2.5cm,top=2.5cm]{geometry}
+
+%%%%%%%%%%%%%%% Estilo
+\usepackage[palette=starrynight]{nexus}
+
+%%%%%%%%%%%%%%% Idioma
+\usepackage[spanish]{babel}
+
+%%%%%%%%%%%%%%% Fuentes tipográficas
+\usepackage{amsmath}
+\usepackage{kmath,kerkis}
+\usepackage[T1]{fontenc}
+
+%%%%%%%%%%%%%%%% hyperref
+\usepackage[verbose]{hyperref}
+\hypersetup{hidelinks}
+\setlength{\XeTeXLinkMargin}{-1pt}
+
+
+%%%%%%%%%%%%%%% Dos Columnas
+\twocolumn
+\setlength{\columnsep}{10mm}
+
+
+%%%%%%%%%%%%%%% Entornos Ejercicio
+%CONFIGURAMOS CONTADOR NUMERO DE EJERCICIO
+\usepackage{tcolorbox}
+\newtcbox{\numexercicio}{
+	nobeforeafter,
+	tcbox raise base,
+	size=small,
+	colback=gray!20!white,
+	boxrule=0.4mm,
+	right skip=1.5mm,
+	sharp corners=east
+}
+
+\newenvironment{solucion}{}{}
+\tcolorboxenvironment{solucion}{
+	halign title=flush center,
+	title=Solución,
+	ignore nobreak,
+	boxrule=0.4mm
+}
+
+\newcounter{exercicio}
+
+\newcommand\Exercicio{%
+	\stepcounter{exercicio}%
+	\vspace{3mm}
+	\numexercicio{\textbf{\theexercicio}}%
+}
+
+%%%%%%%%%%%%%%% Apartados
+\usepackage{enumitem}
+\renewcommand{\theenumi}{\alph{enumi}}
+
+
+\renewcommand{\chaptername}{Tema}
+
+\usepackage{titlesec}
+\titlespacing\section{0pt}{0pt}{0pt}
+
+\parindent 0in
+\parskip 1em
+
+\usepackage{graphicx}
+\graphicspath{ {../img/} }
