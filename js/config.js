@@ -18,7 +18,7 @@ Reveal.initialize({
 
   chalkboard: {
 		theme: "chalkboard",
-    color: [ 'rgba(172,240,255,1)', 'rgba(255,255,255,1)' ],
+    color: [ 'rgba(30,144,255, 1)', 'rgba(255,255,255,1)' ],
 	},
 
   dependencies: [
