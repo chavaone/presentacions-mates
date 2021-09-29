@@ -12,3 +12,10 @@ node_modules/
 css/reveal.min.css
 js/reveal.min.js
 package-lock.json
+libros/*.toc
+libros/*.pdf
+libros/*.out
+libros/*.log
+libros/*.aux
+libros/*.gz
+libros/**/*.log
