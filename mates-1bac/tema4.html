@@ -13,7 +13,7 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="../lib/css/monokai.css">
-		<link rel="stylesheet" href="../css/estilo-white.css">
+		<link rel="stylesheet" href="../css/estilo-blanco.css">
 
 
 		<!-- Printing and PDF exports -->
@@ -25,7 +25,149 @@
 
 				<section>
 					<h1>Tema 4</h1>
-					<h3>Trigonometría</h3>
+					<h3>Geometría Analítica</h3>
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Vectores</h3>
+						<p>Segmento orientado es decir, una flecha</p>
+					</section>
+
+					<section>
+						<h3>Vector fijo</h3>
+						<p>Sean los puntos $A$ y $B$ del plano, el vector fijo $\vec{AB}$ es el vector con origen $A$ y extremo $B$</p>
+						Sus características son:
+						<ul>
+							<li>Módulo: su longitud \[ |\vec{AB}| \]</li>
+							<li>Dirección: inclinación del segmento.Pendiente de la recta que pasa por A y B.</li>
+							<li>Sentido: Orientación del vector.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Coordenadas de un vector fijo</h3>
+						<p>\[A(a_1, a_2)\] y \[ B(b_1,b_2)\]</p>
+						<p>\[\vec{AB} = (b_1 - a_1, b_2 - a_2)\]</p>
+					</section>
+
+					<section>
+						<h3>Módulo de un vector dadas sus coordenadas</h3>
+						<p>Sea \[\vec{AB}(v_1,v_2)\] un vector su módulo es:</p>
+						<p>\[|\vec{AB}| = \sqrt{x^2 + y^2}\]</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">1</span>Dado los puntos del plano A(-2,3); B(1,7); C(6,9) y D(3,3). Representa los siguientes vectores, calcula sus coordenadas y su módulo:</p>
+							<ol class="problema__apartados">
+								<li> \[\overrightarrow{AB}\] </li>
+								<li> \[\overrightarrow{BA}\] </li>
+								<li> \[\overrightarrow{AC}\] </li>
+								<li> \[\overrightarrow{DC}\] </li>
+								<li> \[\overrightarrow{DA}\] </li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<h3>Vectores equipolentes</h3>
+						<p>Son aquellos que tienen las mismas características (módulo dirección y sentido). También tienen las mismas coordenadas.</p>
+						<h3>Vector libre</h3>
+						<p>Es el conjuntos de todos los vectores equipolentes.</p>
+						<p>Se suele denotar por las coordenadas de cualquiera de sus vectores fijos representente.</p>
+					</section>
+
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">2</span>¿Cuáles de los vectores calculados en el ejercicio 1 son equipolentes? Indica y representa un par de puntos que definan un vector equipolente a \[\vec{AC}\]</p>
+						</div>
+					</section>
+
+				</section>
+
+				<section>
+	        <section>
+	          <h3>Operaciones con vectores: suma</h3>
+	          <p>De forma gráfica</p>
+	          <img src="../img/sumavectores.png" alt="">
+	        </section>
+
+	        <section>
+	          <h3>Operaciones con vectores: suma</h3>
+	          <p>De forma analítica...</p>
+	          <p>\[(x_1, y_1) \pm (x_2, y_2) = (x_1 \pm x_2, y_1 \pm y_2)\]</p>
+	        </section>
+
+	        <section>
+	          <div class="problema">
+	            <p><span class="numero">3</span>Representa y calcula de forma analítica la suma de los siguientes vectores:</p>
+	            <ul class="problema__apartados">
+	              <li>
+	                <span class="numero numero--apartado">b</span>
+	                \[\overrightarrow{u}(3,2) + \overrightarrow{u}(-1,0)\]
+	              </li>
+	              <li>
+	                <span class="numero numero--apartado">c</span>
+	                \[\overrightarrow{u}(-2,6) + \overrightarrow{u}(4,3)\]
+	              </li>
+	              <li>
+	                <span class="numero numero--apartado">d</span>
+	                \[\overrightarrow{u}(1,3) + \overrightarrow{u}(-2,-1)\]
+	              </li>
+	            </ul>
+	          </div>
+	        </section>
+
+	        <section>
+	          <h3>Operaciones con vectores: producto por escalar (un número)</h3>
+	          <p>De forma gráfica</p>
+	          <img src="../img/productoescalarvectores.png" alt="" >
+	        </section>
+
+	        <section>
+	          <h3>Operaciones con vectores: producto por escalar (un número)</h3>
+	          <p>De forma analítica...</p>
+	          <p>\[\lambda (x_1, y_1) = (\lambda \cdot x_1, \lambda \cdot y_1)\]</p>
+	        </section>
+
+	        <section>
+	          <div class="problema">
+	            <p><span class="numero">4</span>Representa y calcula de forma analítica los siguientes productos escalares de vectores:</p>
+	          </div>
+	          <ul class="problema__apartados">
+	            <li>
+	              <span class="numero numero--apartado">a</span>
+	              \[ 4 \cdot \overrightarrow{u}(1,1)\]
+	            </li>
+	            <li>
+	              <span class="numero numero--apartado">c</span>
+	              \[ 0,5 \cdot \overrightarrow{u}(-2,6)\]
+	            </li>
+	            <li>
+	              <span class="numero numero--apartado">d</span>
+	              \[ -2 \cdot \overrightarrow{u}(1,3)\]
+	            </li>
+	          </ul>
+	        </section>
+
+					<section>
+						<h3>Operaciones con vectores: resta</h3>
+						<p>sumar el opuesto</p>
+					</section>
+
+	      </section>
+
+				<section>
+
+					<section>
+						<h3>Combinación lineal de vectores</h3>
+						<p>Decimos que un vector \vec{w} es combinación lineal de otros dos \vec{u} y \vec{v} si puede obtenerse de la siguiente forma:</p>						
+					</section>
+
+
 				</section>
 
 			</div>
