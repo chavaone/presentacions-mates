@@ -37,7 +37,7 @@
 
 					<section>
 						<h3>Vector fijo</h3>
-						<p>Sean los puntos $A$ y $B$ del plano, el vector fijo $\vec{AB}$ es el vector con origen $A$ y extremo $B$</p>
+						<p>Sean los puntos \[A\] y \[B\] del plano, el vector fijo \[\vec{AB}\] es el vector con origen \[A\] y extremo \[B\]</p>
 						Sus características son:
 						<ul>
 							<li>Módulo: su longitud \[ |\vec{AB}| \]</li>
@@ -60,7 +60,7 @@
 
 					<section>
 						<div class="problema">
-							<p><span class="numero">1</span>Dado los puntos del plano A(-2,3); B(1,7); C(6,9) y D(3,3). Representa los siguientes vectores, calcula sus coordenadas y su módulo:</p>
+							<p><span class="numero">1</span>Dado los puntos del plano A(-2,3); B(1,7); C(6,7) y D(3,3). Representa los siguientes vectores, calcula sus coordenadas y su módulo:</p>
 							<ol class="problema__apartados">
 								<li> \[\overrightarrow{AB}\] </li>
 								<li> \[\overrightarrow{BA}\] </li>
@@ -113,10 +113,6 @@
 	                <span class="numero numero--apartado">c</span>
 	                \[\overrightarrow{u}(-2,6) + \overrightarrow{u}(4,3)\]
 	              </li>
-	              <li>
-	                <span class="numero numero--apartado">d</span>
-	                \[\overrightarrow{u}(1,3) + \overrightarrow{u}(-2,-1)\]
-	              </li>
 	            </ul>
 	          </div>
 	        </section>
@@ -154,8 +150,24 @@
 	        </section>
 
 					<section>
-						<h3>Operaciones con vectores: resta</h3>
-						<p>sumar el opuesto</p>
+						<div class="problema">
+							<p><span class="numero">5</span>Dados los puntos A(2,4), B(5,8) y C(6,4), calcula las coordenadas de los siguientes vectores:</p>
+							<ol class="problema__apartados">
+								<li>\[ \vec{u} = 2 \cdot \vec{AB} + 3 cdot \vec{AC} \]</li>
+								<li>\[ \vec{v} = 4 \cdot \vec{BA} - 3 cdot \vec{CA} \]</li>
+								<li>\[ \vec{z} = 3 \cdot \vec{BC} - 5 cdot \vec{BA} \]</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">6</span>Calcula los valores de \[x\] e \[y\] para que se verifiquen las siguientes igualdades:</p>
+							<ol class="problema__apartados">
+								<li>\[ (15, 4) = 2(x, 4) + 3(2, y) \]</li>
+								<li>\[ (-4, y) = 3(7, 5) + 3(x, -y) \]</li>
+							</ol>
+						</div>
 					</section>
 
 	      </section>
@@ -164,9 +176,34 @@
 
 					<section>
 						<h3>Combinación lineal de vectores</h3>
-						<p>Decimos que un vector \vec{w} es combinación lineal de otros dos \vec{u} y \vec{v} si puede obtenerse de la siguiente forma:</p>						
+						<p>Decimos que un vector \[\vec{w}\] es combinación lineal de otros dos \[\vec{u}\] y \[\vec{v}\] si puede obtenerse de la siguiente forma:</p>
+						<p>\[\vec{w} = a \cdot  \vec{u} + b \cdot \vec{v}\]</p>
 					</section>
 
+					<section>
+						<h3>Dependencia/Independencia lineal de vectores</h3>
+						<p>Un conjunto de vectores decimos que es linealmente dependiente si hay alguno de ellos que se pueda expresar como combinación lineal de los restantes. En caso contrario decimos que son linealmente independientes.</p>
+					</section>
+
+					<div>
+						<p><span class="numero">7</span>Indica si son linealmente independientes los siguientes conjuntos de vectores.</p>
+					</div>
+
+					<section>
+						<h3>Base</h3>
+						<p>Una base es un conjunto de vectores que nos permite generar cualquier vector a partir de el mediante combinación lineal.</p>
+						<p>En dos dimensiones (\[\mathbb{R}\]) dos vectores linealmente independientes siempre forman una base.</p>
+					</section>
+
+					<section>
+						<h3>Coordenadas</h3>
+						<p>Dada una base formada por los vectores \[\vec{u}\] y \[\vec{v}\] y un vector \[\vec{w} = a \cdot  \vec{u} + b \cdot \vec{v}\] decimos que (a,b) son las coordenadas del vector \[\vec{w}\] con respecto a esa base.</p>
+					</section>
+
+					<section>
+						<h3>Base canónica en \[\mathbb{R}\]</h3>
+						<p>La base formada por los vectores (1,0) y (0,1) se denomina Base Canónica.</p>
+					</section>
 
 				</section>
 
