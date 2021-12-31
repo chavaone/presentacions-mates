@@ -236,7 +236,304 @@
 						</div>
 					</section>
 
+					<section>
+						<h3>Base ortogonal</h3>
+						<p>Es aquella que sus vectores son perpendiculares.</p>
+					</section>
+
+					<section>
+						<h3>Base ortonormal</h3>
+						<p>Es aquella que sus vectores son perpendiculares y además estos tienen módulo 1.</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">10</span>Determina si los siguientes vectores forman una base y si esta es ortogonal y/o ortonormal:</p>
+							<ol class="problema__apartados">
+								<li>\[ \vec{i}(4,5) y \vec{j}(-5,4) \]</li>
+								<li>\[ \vec{i}(1,0) y \vec{j}(-1,0) \]</li>
+								<li>\[ \vec{i}(-1,0) y \vec{j}(0,-1) \]</li>
+							</ol>
+						</div>
+					</section>
+
 				</section>
+
+				<section>
+
+					<section>
+						<h3>Distancia entre dos puntos</h3>
+						<p>La distancia entre dos puntos \[A(a_1, a_2)\] y \[ B(b_1,b_2)\] es el módulo del vector \[ \vec{AB} \].</p>
+						<p>\[d(A,B) = |\vec{AB}| = sqrt{(b_1 - a_1)^2 + (b_2 - a_2)^2}\]</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">11</span>Calcula la distancia entre los siguientes pares de puntos:</p>
+							<ol class="problema__apartados">
+								<li></li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<h3>Punto medio de un segmento</h3>
+						<p>El punto medio de de un segmento determinado por dos puntos \[A(a_1, a_2)\] y \[ B(b_1,b_2)\] se calcula:</p>
+						<p>(\frac{a_1+b_1}{2}, \frac{a_2+b_2}{2})</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">12</span>Calcula el punto medio del segmento determinado por los siguientes pares de puntso:</p>
+						</div>
+					</section>
+				</section>
+
+				<section>
+	        <section>
+	          <h3>Ecuaciones de la recta</h3>
+	        </section>
+
+	        <section>
+	          <h4>Ecuación vectorial</h4>
+	          <a href="https://www.geogebra.org/m/C8jYqD5x">Ver en Geogebra</a>
+	        </section>
+
+	        <section>
+	          <h4>Ecuación vectorial</h4>
+	          <p>\[ \overrightarrow{X} = \overrightarrow{O} + \lambda \cdot \overrightarrow{V} \]</p>
+	          \[(x,y) = (o_1, o_2) + \lambda \cdot (v_1, v_2)\]
+	        </section>
+
+	        <section>
+	          <h4>Ecuación paramétrica</h4>
+	          <em>Separamos las componentes x e y del vector.</em>
+	          <p>\[\begin{cases}
+	                x = o_1 + \lambda \cdot v_1\\
+	                y = o_2 + \lambda \cdot v_2
+	               \end{cases}
+	              \]</p>
+	        </section>
+
+	       <section>
+	         <h4>Ecuación continua</h4>
+	         <em>Despejamos \[\lambda\] en cada ecuación e igualamos</em>
+	         <p>\[ \frac{x - o_1}{v_1} = \frac{y - o_2}{v_2}  \]</p>
+	       </section>
+
+	       <section>
+	         <h4>Ecuación general o implícita</h4>
+	         <p>Pasamos todos los términos a un miembro de la ecuación.</p>
+	         <p>\[ Ax + By + C = 0 \]</p>
+	       </section>
+
+				 <section>
+				 	<h4>Vector normal</h4>
+					<p>Dada una recta en su forma general \[ Ax + By + C = 0 \] el vector (A,B) se conoce como vector normal a la recta y es perpendicular al vector director de la recta (y por lo tanto a la recta en si)</p>
+				 </section>
+
+	       <section>
+	         <h4>Ecuación explícita</h4>
+	         <em>Despejamos y</em>
+	         <p>\[y = m \cdot x + n \]</p>
+	       </section>
+
+	       <section>
+	         <h3>Pendiente de una recta</h3>
+	         <p>\[m = \frac{x_2 - x_1}{y_2 - y_1} = \frac{v_2}{v_1}\]</p>
+	       </section>
+
+	       <section>
+	         <h4>Ecuación punto-pendiente</h4>
+	         <p>Recta que pasa por O(x_0, y_0)</p>
+	         <p>\[y - y_0 = m \cdot (x-x_0)\]</p>
+	       </section>
+
+	       </section>
+
+	     </section>
+
+
+			 <section>
+
+				<section>
+					<h3>Posición relativa de dos rectas</h3>
+				</section>
+
+				<section>
+					<p>Según su posición:</p>
+					<ol>
+						<li>Secantes</li>
+						<li>Paralelas</li>
+						<li>Coincidentes</li>
+					</ol>
+				</section>
+
+				<section>
+					<p>Podemos analizarlo de diversas formas:</p>
+					<ol>
+						<li>Sistema de ecuaciones</li>
+						<li>Pendientes</li>
+						<li>Vector director</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Sistema de ecuaciones</h3>
+					<p>Un sistema de ecuaciones podía ser:</p>
+					<ol>
+						<li>S. Incompatible: Rectas paralelas.</li>
+						<li>S. Compatible Determinado: Rectas secantes (el punto de corte es la solución).</li>
+						<li>S. Compatible Indeterminado: Rectas coincidentes</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Pendientes</h3>
+					<p>Dadas las pendientes \[m_1\] y \[m_2\] de dos rectas:</p>
+					<ol>
+						<li>Si \[m_1 = m_2\]: Rectas paralelas o coincidentes</li>
+						<li>Si \[m_1 \neq m_2\]: Rectas secantes.</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Vectores director</h3>
+					<p>Dados los vectores director v_1\] y v_2\] de dos rectas:</p>
+					<ol>
+						<li>Si \[v_1\] y v_2\] son linealmente dependientes: Rectas paralelas o coincidentes</li>
+						<li>Si \[v_1\] y v_2\] son linealmente independientes: Rectas secantes</li>
+					</ol>
+				</section>
+
+			 </section>
+
+
+			 <section>
+
+				<section>
+					<h3>Producto escalar</h3>
+					<p>El producto escalar de dos vectores libres \[\vec{u}\] y \[\vec{v}\] es un número real:</p>
+					<p>\[\vec{u} \cdot \vec{v} = |\vec{u}| \cdot |\vec{v}| cdot cos(\alpha)\]</p>
+					<p>Donde \[\alpha\] es el ángulo que forman los dos vectores.</p>
+				</section>
+
+				<section>
+					<h3>Expresión analítica</h3>
+					<p>Dados dos vectores libres \[\vec{u}(x_1,y_1)\] y \[\vec{v}(x_2,y_2)\] el producto escalar de estos dos vectores es:</p>
+					<p>\[\vec{u} \cdot \vec{v} = x_1x_2 + y_1y_2\]</p>
+					<em>Demostración...</em>
+				</section>
+
+				<section>
+					<h3>Propiedades</h3>
+					<ol>
+
+					</ol>
+				</section>
+
+				<section>
+					<h3>Interpretación Geométrica</h3>
+				</section>
+
+				<section>
+					<h3>Utilidades: Ángulo entre dos rectas</h3>
+				</section>
+
+				<section>
+					<h3>Utilidades: Distancia recta y punto</h3>
+				</section>
+
+				<section>
+					<h3>Utilidades: Punto simétrico a uno dado</h3>
+				</section>
+
+			 </section>
+
+
+			 <section>
+
+				<section>
+					<h3>Lugares geométricos</h3>
+					<p>Es un conjunto de puntos que cumplen una serie de propiedades.</p>
+				</section>
+
+				<section>
+					<h3>Mediatriz</h3>
+					<p>Lugar geométrico de los puntos que equidistan de dos puntos dados.</p>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero"></span>Calcula la mediatriz de los segmentos delimitados por A y B en cada caso:</p>
+						<ol class="problema__apartados">
+							<li></li>
+						</ol>
+					</div>
+				</section>
+
+				<section>
+					<h3>Bisectriz</h3>
+					<p>Lugar geométrico de los puntos que equidistan de dos rectas dadas.</p>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero"></span>Calcula las bisectrices de los siguientes pares de rectas:</p>
+						<ol class="problema__apartados">
+							<li></li>
+						</ol>
+					</div>
+				</section>
+
+				<section>
+				<h3>Circunferencia</h3>
+				<p>Lugar geométrico de los puntos que equidistan de un punto fijo llamado centro. A la distancia constante se la denomina radio.</p>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero"></span>Calcula la ecuación de la circunferencia en cada caso:</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero"></span>Calcula las ecuaciones de las circunferencias inscrita y circunscrita de los triángulo dado por los siguientes conjuntos de puntos:</p>
+					</div>
+				</section>
+
+				<section>
+					<h3>Posición relativa de un punto y una circunferencia</h3>
+				</section>
+
+				<section>
+					<h3>Posición relativa de un punto y una recta</h3>
+				</section>
+
+				<section>
+					<h3>Posición relativa de dos circunferencias</h3>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero"></span>Calcula la posición relativa de los siguientes pares de objectos geométricos:</p>
+					</div>
+				</section>
+
+				<section>
+					<h3>Elipse</h3>
+					<p>Lugar geométrico de los puntos del plano cuya suma de distancias a dos puntos fijos llamados focos es contante.</p>
+					<img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Ellipse_Animation.gif" alt="">
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero"></span>Calcula la ecuación de la elipse a partir de los siguientes datos:</p>
+					</div>
+				</section>
+
+			 </section>
 
 			</div>
 		</div>
