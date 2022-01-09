@@ -20,7 +20,7 @@ def apartado2latex (apartado):
         pass
     texto = apartado.getText().strip()
     texto = texto.replace("\[", "$").replace("\]", "$")
-    return "\item " + texto
+    return "\item \\textbf{[C]} " + texto
 
 def html2latex (problem):
     try:
