@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Matemáticas I - 1º BAC - Tema 7</title>
+
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/white.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/monokai.css">
+		<link rel="stylesheet" href="../css/estilo-blanco.css">
+
+
+		<!-- Printing and PDF exports -->
+		<script src="../js/print.js"></script>
+	</head>
+	<body>
+		<div class="reveal" id="revealdiv">
+			<div class="slides">
+
+				<section>
+					<h1>Tema 8</h1>
+					<h3>Límites de Funciones. Continuidad</h3>
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Concepto de límite</h3>
+						<p>Valor que toma la función cuando nos aproximamos a un cierto punto.</p>
+					</section>
+
+					<section>
+						<h3>Límite lateral</h3>
+						<p>Lím. por la izquierda: \[ \lim_{x \to a^-} f(x) = b \]</p>
+						<p>Lím. por la derecha: \[ \lim_{x \to a^-} f(x) = b \]</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">1</span>Calcula los siguientes límites analizando la gráfica A.7 del anexo de funciones:</p>
+							<ol class="problema__apartados">
+								<li>\[ \lim_{x \to -7^-} f(x) \]</li>
+								<li>\[ \lim_{x \to -7^+} f(x) \]</li>
+								<li>\[ \lim_{x \to 10^-} f(x) \]</li>
+								<li>\[ \lim_{x \to 10^+} f(x) \]</li>
+								<li>\[ \lim_{x \to -3^-} f(x) \]</li>
+								<li>\[ \lim_{x \to -3^-} f(x) \]</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<h3>Existencia de límite</h3>
+						<p>El límite de una función en un punto existe cuando existen los límites laterales y estos son iguales.</p>
+					</section>
+
+					<section>
+						<h3>Cálculo de límites</h3>
+						<p>\[ \lim_{x \to a} f(x) \]</p>
+						<p>De forma general el límite de una función se calcula calculando f(a).</p>
+						<p>En una función definida a trozos, en los cambios de definición tendremos que hacer límites laterales y comprobar que coinciden.</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">2</span>Calcula los límites cuando x tiende a 3 de las siguientes funciones:</p>
+							<ol class="problema__apartados">
+								<li>\[ f(x) = 3x + 4 \]</li>
+								<li>\[ f(x) = \frac{1}{x} \]</li>
+								<li>\[ f(x) = \left\{ \begin{array}{lcc}
+											             x - 2 &   si  & x \lt 3 \\
+											             1 &  si & x \ge 3
+											             \end{array}
+											   \right.\]</li>
+							 <li>\[ f(x) = \left\{ \begin{array}{lcc}
+																	x^2 -6x + 9 &   si  & x \lt 3 \\
+																	x-6 &  si & x \ge 3
+																	\end{array}
+												\right.\]</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<h3>Propiedades de los límites</h3>
+						<p>Si \[ \lim_{x \to a} f(x) = L_f \] y \[ \lim_{x \to a} g(x) = L_g \], se cumple:</p>
+						<ul>
+							<li>\[ \lim_{x \to a} (f(x) \pm g(x) ) = L_f \pm L_g \]</li>
+							<li>\[ \lim_{x \to a} (f(x) \cdot g(x) ) = L_f \cdot L_g \]</li>
+							<li>\[ \lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L_f}{L_g} \]</li>
+							<li>\[ \lim_{x \to a} (f(x)^{g(x)} ) = L_f^{L_g} \]</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Límites y el infinito</h3>
+						<p class="fragment">Ejemplo: función racional \[f(x) = \frac{1}{x} \]
+							<br>
+							<a href="https://www.geogebra.org/m/jrtzqu66">Ver Geogebra</a>
+						</p>
+
+					</section>
+
+					<section>
+						<h5>Cuando el resultado es \[ \pm \infty \]</h5>
+						<p>Ejemplo: La función \[f(x) = \frac{1}{x}\] tiene por límites laterales en 0:</p>
+						<p>\[\lim_{x \to 0^-} f(x) = -\infty\]</p>
+						<p>\[\lim_{x \to 0^+} f(x) = +\infty\]</p>
+					</section>
+
+					<section>
+						<h5>Cuando la función tiende a \[ \pm \infty \]</h5>
+						<p>Ejemplo: La función \[f(x) = \frac{1}{x}\] tiene por límites cuando \[x\] tiende a \[\pm \infty\]:</p>
+						<p>\[\lim_{x \to -\infty} f(x) = 0^-\]</p>
+						<p>\[\lim_{x \to +\infty} f(x) = 0+\]</p>
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Operaciones con \[0\] e \[\infty\]</h3>
+						<p>Supongamos que N es un real estrictamente mayor que cero.</p>
+					</section>
+
+					<section>
+						<h3>Con la suma...</h3>
+						<ul>
+							<li>\[ N \pm \infty = \] <span class="fragment">\[ \pm  \infty\]</span></li>
+							<li>\[ 0 \pm \infty = \] <span class="fragment">\[ \pm \infty\]</span></li>
+							<li>\[ \infty + \infty = \] <span class="fragment">\[\infty\]</span></li>
+							<li>\[ \infty - \infty = \] <span class="fragment color-red">INDETERMINACIÓN</span></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Con el producto...</h3>
+						<ul>
+							<li>\[ \pm N \cdot \infty = \] <span class="fragment">\[\pm \infty\]</span></li>
+							<li>\[ N \cdot (-\infty) = \] <span class="fragment">\[ -\infty\]</span></li>
+							<li>\[ \infty \cdot (\pm \infty) = \] <span class="fragment">\[\pm \infty\]</span></li>
+							<li>\[ 0 \cdot 0 = \] <span class="fragment">\[0\]</li>
+							<li>\[ 0 \cdot (\pm \infty) = \] <span class="fragment color-red">INDETERMINACIÓN</span></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Con la división...</h3>
+						<ul>
+							<li> \[ \frac{k}{0} =  \] <span class="fragment">\[\infty\]</span>
+								  <span style="margin-left:1em">&#9679;</span>
+									\[ \frac{N}{\infty} =  \] <span class="fragment">\[0\]</span>
+									<span style="margin-left:1em">&#9679;</span>
+									\[ \frac{\infty}{N} =  \] <span class="fragment">\[\infty\]</span> </li>
+							<li>\[ \frac{\infty}{0} =  \] <span class="fragment"> \[\infty \cdot \frac{1}{0} =  \infty\]</span> </li>
+							<li>\[ \frac{0}{\infty} =  \] <span class="fragment">\[0 \cdot \frac{1}{\infty} =  0\]</span> </li>
+							<li>\[ \frac{\infty}{\infty} =  \] <span class="fragment">INDETERMINACIÓN</span> </li>
+							<li>\[ \frac{0}{0} =  \] <span class="fragment">INDETERMINACIÓN</span> </li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Con la potencia...</h3>
+						<ul>
+							<li>\[ N^{\infty} = \] <span class="fragment">\[\infty\]</span> <span>(con \[N \gt 1\])</span></li>
+							<li>\[ N^{\infty} = \] <span class="fragment">0</span> <span>(con \[0 \lt N \lt 1\])</span> </li>
+							<li>\[ 0^\infty = \] <span class="fragment">0</span></li>
+							<li>\[1^\infty = \] <span class="fragment">INDETERMINACIÓN</span></li>
+							<li>\[\infty^0 = \] <span class="fragment">INDETERMINACIÓN</span></li>
+							<li>\[0^0 =\] <span class="fragment">INDETERMINACIÓN</span></li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero"></span>Calcula los siguientes límites empleando las propiedades de las operaciones con el 0 y el \[ \infty \]:</p>
+							<ol class="problema__apartados">
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+							</ol>
+						</div>
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Indeterminaciones</h3>
+						<p>Estudiaremos como resolver las siguientes indeterminaciones:</p>
+						<ul>
+							<li>Indeterminación de tipo \[ \frac{\infty}{\infty} \]</li>
+							<li>Indeterminación de tipo \[ \frac{0}{0} \]</li>
+							<li>Indeterminación de tipo \[ \infty - \infty \]</li>
+							<li>Indeterminación de tipo \[ 1^{\infty} \]</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Indeterminación de tipo \[ \frac{\infty}{\infty} \]</h3>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero"></span>Resuelve los siguientes límites aplicando lo visto sobre indeterminaciones de tipo \[ \frac{\infty}{\infty} \]:</p>
+							<ol class="problema__apartados">
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<h3>Indeterminación de tipo \[ \frac{0}{0} \]</h3>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero"></span>Resuelve los siguientes límites aplicando lo visto sobre indeterminaciones de tipo \[ \frac{\infty}{\infty} \]:</p>
+							<ol class="problema__apartados">
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<h3>Indeterminación de tipo \[ \infty - \infty \]</h3>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero"></span>Resuelve los siguientes límites aplicando lo visto sobre indeterminaciones de tipo \[ \frac{\infty}{\infty} \]:</p>
+							<ol class="problema__apartados">
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<h3>Indeterminación de tipo \[ 1^{\infty} \]</h3>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero"></span>Resuelve los siguientes límites aplicando lo visto sobre indeterminaciones de tipo \[ \frac{\infty}{\infty} \]:</p>
+							<ol class="problema__apartados">
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero"></span>Resuelve los siguientes límites aplicando todo lo vito en el tema:</p>
+							<ol class="problema__apartados">
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to }  \]</li>
+							</ol>
+						</div>
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Continuidad</h3>
+						<p>Una función  \[f\] es continua en un intervalo cuando lo es en cada uno de los puntos de dicho intervalo.</p>
+					</section>
+
+					<section>
+						<h3>Continuidad</h3>
+						<p>Una función \[f\] es continua en un punto \[x_0\] si:</p>
+						<ul>
+							<li>Existe el límite \[ \lim_{x \to x_0} f(x) \]</li>
+							<li>Y este es igual al valor de la función en el punto (\lim_{x \to x_0} f(x) = f(x_0))</li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero"></span>Indica si las siguientes funciones son continuas en el punto \[ x_0 = 3 \]:</p>
+						</div>
+					</section>
+
+					<section>
+						<h3>Tipos de discontinuidades</h3>
+						<ul>
+							<li>Evitable</li>
+							<li>De salto finito</li>
+							<li>De salto infinito</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Discontinuidad evitable</h3>
+						<p>Existe el límite de la función en el punto \[ x_0\] pero este límite no es igual al valor de la función en dicho punto.</p>
+					</section>
+
+					<section>
+						<h3>Discontinuidad de salto finito</h3>
+						<p>Existen los límites laterales en  \[ x_0\] pero estos no son iguales y por tanto no existe el límite de la funcióne en el punto.</p>
+					</section>
+
+					<section>
+						<h3>Discontinuidad de salto infinito</h3>
+						<p>Alguno de los límites laterales de la función en el punto \[ x_0\] tiende a \[ \pm \infty \].</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero"></span>Indica el tipo de discontinuidad que presentaban en las funciones del ejercicio anterior.</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero"></span>Estudia la continuidad de las siguientes funciones:</p>
+							<ol class="problema__apartados">
+								<li>\[f(x) = \]</li>
+							</ol>
+						</div>
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Asíntotas</h3>
+					</section>
+
+					<section>
+						<h3>Asíntotas verticales</h3>
+					</section>
+
+					<section>
+						<h3>Asíntotas horizontales</h3>
+					</section>
+
+					<section>
+						<h3>Asíntotas oblicuas</h3>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero"></span>Estudia la presencia de asíntotas en las siguientes funciones:</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero"></span>Realiza un estudio de las siguientes funciones atendiendo a su dominio, sus puntos de corte, su continuidad, la presencia de asíntotas y la presencia de simetrías:</p>
+							<ol class="problema__apartados">
+								<li>\[f(x) = \]</li>
+							</ol>
+						</div>
+					</section>
+
+				</section>
+
+			</div>
+		</div>
+
+		<script src="../js/reveal.js"></script>
+		<script src="../js/config.js"></script>
+	</body>
+</html>
