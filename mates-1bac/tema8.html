@@ -145,6 +145,12 @@
 					</section>
 
 					<section>
+						<h3>Y que pasa con los polinomios...</h3>
+						<p>\[ \lim_{x\to \infty} x^3 -3x^2 = \]</p>
+						<p class="fragment">Analizamos siempre el coeficiente de término de mayor grado pues es el que marcará el sentido de crecimiento.</p>
+					</section>
+
+					<section>
 						<h3>Con el producto...</h3>
 						<ul>
 							<li>\[ \pm N \cdot \infty = \] <span class="fragment">\[\pm \infty\]</span></li>
@@ -184,13 +190,27 @@
 
 					<section>
 						<div class="problema">
-							<p><span class="numero"></span>Calcula los siguientes límites empleando las propiedades de las operaciones con el 0 y el \[ \infty \]:</p>
+							<p><span class="numero">3</span>Calcula los siguientes límites empleando las propiedades de las operaciones con el 0 y el \[ \infty \]:</p>
 							<ol class="problema__apartados">
-								<li>\[ \lim_{x \to }  \]</li>
-								<li>\[ \lim_{x \to }  \]</li>
-								<li>\[ \lim_{x \to }  \]</li>
-								<li>\[ \lim_{x \to }  \]</li>
-								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to 0} 3 + \frac{1}{2x}\]</li>
+								<li>\[ \lim_{x \to -\infty}  x^2+3x\]</li>
+								<li>\[ \lim_{x \to \infty} ln(x) + \sqrt{x+3} \]</li>
+								<li>\[ \lim_{x \to \infty} \sqrt{2x} - \sqrt{x+1}  \]</li>
+								<li>\[ \lim_{x \to \infty} (2x + 3) \cdot ln(x) \]</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">3</span></p>
+							<ol class="problema__apartados">
+								<li>\[ \lim_{x \to \infty} \frac{2^-x}{x^2 + 3}\]</li>
+								<li>\[ \lim_{x \to \infty} \frac{ln(x)}{e^{-2x+3}}\]</li>
+								<li>\[ \lim_{x \to \infty} \frac{x^3-2}{x^2+3x}\]</li>
+								<li>\[ \lim_{x \to -1} \frac{x^2-1}{x+1}\]</li>
+								<li>\[ \lim_{x \to \infty} (\frac{2}{x})^{x+3}\]</li>
+								<li>\[ \lim_{x \to 0} (1-x)^{\frac{1}{x}}\]</li>
 							</ol>
 						</div>
 					</section>
@@ -212,43 +232,86 @@
 
 					<section>
 						<h3>Indeterminación de tipo \[ \frac{\infty}{\infty} \]</h3>
+						<p>La técnica consistirá en dividir toda la expresión entre la parte literal del término de mayor grado.</p>
+						<p>Dependiendo del grado de los dos polinomios podemos tener como resultado: 0, un número o \[\infty\]</p>
+					</section>
+
+					<section>
+						<h3>Indeterminación de tipo \[ \frac{\infty}{\infty} \]</h3>
+						<p>En caso de intervenir expresiones no polinómicas, tendremos que estudiar la velocidad de crecimiento de estas expresiones. De mayor a menor tenemos:</p>
+						<ol>
+							<li>Exponenciales</li>
+							<li>Polinómicas</li>
+							<li>Radicales</li>
+							<li>Logarítmicas</li>
+						</ol>
 					</section>
 
 					<section>
 						<div class="problema">
-							<p><span class="numero"></span>Resuelve los siguientes límites aplicando lo visto sobre indeterminaciones de tipo \[ \frac{\infty}{\infty} \]:</p>
+							<p><span class="numero">4</span>Resuelve los siguientes límites aplicando lo visto sobre indeterminaciones de tipo \[ \frac{\infty}{\infty} \]:</p>
 							<ol class="problema__apartados">
-								<li>\[ \lim_{x \to }  \]</li>
-								<li>\[ \lim_{x \to }  \]</li>
-								<li>\[ \lim_{x \to }  \]</li>
-								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to \infty} \frac{3x^2-2x+1}{-x^3+2x^2+x-3} \]</li>
+								<li>\[ \lim_{x \to \infty} \frac{x^2-3x+2}{2x^2-x+5} \]</li>
+								<li>\[ \lim_{x \to \infty} \frac{4x^3-x^2+2x+5}{-2x^2+7x-3} \]</li>
+								<li>\[ \lim_{x \to \infty} \frac{-x^4-5x^2+3}{2x^3+x} \]</li>
+								<li>\[ \lim_{x \to \infty} \frac{x-4}{\sqrt{x^2-1}} \]</li>
+								<li>\[ \lim_{x \to \infty} \frac{x^2-4}{\sqrt[3]{x^7-1}} \]</li>
+								<li>\[ \lim_{x \to \infty} \frac{e^x}{x^2 +3x} \]</li>
 							</ol>
 						</div>
 					</section>
 
 					<section>
 						<h3>Indeterminación de tipo \[ \frac{0}{0} \]</h3>
+						<p>Aplicaremos dos técnicas:</p>
+						<ul>
+							<li>simplificar la fracción algebraica factorizando previamente.</li>
+							<li>Multiplicando por el conjugado (en caso de la presencia de raíces).</li>
+						</ul>
+						<p>Ejemplo: \[ \lim_{x \to 2} \frac{x^2-4}{x+2} \] \[ \lim_{x \to -5} \frac{x+5}{\sqrt{x+6}-1} \]</p>
 					</section>
 
 					<section>
 						<div class="problema">
-							<p><span class="numero"></span>Resuelve los siguientes límites aplicando lo visto sobre indeterminaciones de tipo \[ \frac{\infty}{\infty} \]:</p>
+							<p><span class="numero">5</span>Resuelve los siguientes límites aplicando lo visto sobre indeterminaciones de tipo \[ \frac{\0}{\0} \]:</p>
 							<ol class="problema__apartados">
-								<li>\[ \lim_{x \to }  \]</li>
-								<li>\[ \lim_{x \to }  \]</li>
-								<li>\[ \lim_{x \to }  \]</li>
-								<li>\[ \lim_{x \to }  \]</li>
+								<li>\[ \lim_{x \to 1} \frac{x^3-x^2}{x^2+3x-4} \]</li>
+								<li>\[ \lim_{x \to 0} \frac{x^2+3x}{2x^2-x}  \]</li>
+								<li>\[ \lim_{x \to -1} \frac{x^3+x^2+x+1}{x^2-x}  \]</li>
+								<li>\[ \lim_{x \to 1} \frac{x-1}{\sqrt{x}-1}  \]</li>
+								<li>\[ \lim_{x \to 0} \frac{ \sqrt{1+x}-\sqrt{1-x}}{x} \]</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<h3>Indeterminación de tipo \[ \infty \cdot 0 \]</h3>
+						<p>La transformaremos en una de tipo \[ \frac{\0}{\0} \] o de tipo \[ \frac{\infty}{\infty} \].</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">6</span>Resuelve los siguientes límites aplicando lo visto sobre indeterminaciones de tipo \[ \infty \cdot 0 \]:</p>
+							<ol class="problema__apartados">
+								<li>\[ \lim_{x \to \infty } e^{-x} \cdot (x^2 + x + 1) \]</li>
+								<li>\[ \lim_{x \to 1} \frac{1}{\sqrt{1} -1} \cdot (x-1) \]</li>
 							</ol>
 						</div>
 					</section>
 
 					<section>
 						<h3>Indeterminación de tipo \[ \infty - \infty \]</h3>
+						<p>Aplicaremos dos técnicas:</p>
+						<ul>
+							<li>Operando la diferencia en caso de que se pueda.</li>
+							<li>Multiplicando y dividiendo por el conjugado (en caso de la presencia de raíces).</li>
+						</ul>
 					</section>
 
 					<section>
 						<div class="problema">
-							<p><span class="numero"></span>Resuelve los siguientes límites aplicando lo visto sobre indeterminaciones de tipo \[ \frac{\infty}{\infty} \]:</p>
+							<p><span class="numero">7</span>Resuelve los siguientes límites aplicando lo visto sobre indeterminaciones de tipo \[ \frac{\infty}{\infty} \]:</p>
 							<ol class="problema__apartados">
 								<li>\[ \lim_{x \to }  \]</li>
 								<li>\[ \lim_{x \to }  \]</li>
@@ -260,6 +323,7 @@
 
 					<section>
 						<h3>Indeterminación de tipo \[ 1^{\infty} \]</h3>
+						<p>Usaremos la igualdad \[e = \lim_{x \to \infty} (1+ \frac{1}{x})^x\]</p>
 					</section>
 
 					<section>
