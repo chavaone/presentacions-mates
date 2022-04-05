@@ -45,12 +45,12 @@
 						<div class="problema">
 							<p><span class="numero">1</span>Calcula los siguientes límites analizando la gráfica A.7 del anexo de funciones:</p>
 							<ol class="problema__apartados">
-								<li>\[ \lim_{x \to -7^-} f(x) \]</li>
-								<li>\[ \lim_{x \to -7^+} f(x) \]</li>
-								<li>\[ \lim_{x \to 10^-} f(x) \]</li>
-								<li>\[ \lim_{x \to 10^+} f(x) \]</li>
-								<li>\[ \lim_{x \to -3^-} f(x) \]</li>
-								<li>\[ \lim_{x \to -3^-} f(x) \]</li>
+								<li>\[ \lim_{x \to -8^-} f(x) \]</li>
+								<li>\[ \lim_{x \to -8^+} f(x) \]</li>
+								<li>\[ \lim_{x \to 11^-} f(x) \]</li>
+								<li>\[ \lim_{x \to 11^+} f(x) \]</li>
+								<li>\[ \lim_{x \to 5^-} f(x) \]</li>
+								<li>\[ \lim_{x \to 5^-} f(x) \]</li>
 							</ol>
 						</div>
 					</section>
@@ -204,8 +204,8 @@
 					<section>
 						<div class="problema">
 							<p><span class="numero">3</span></p>
-							<ol class="problema__apartados">
-								<li>\[ \lim_{x \to \infty} \frac{2^-x}{x^2 + 3}\]</li>
+							<ol class="problema__apartados" start="6">
+								<li>\[ \lim_{x \to \infty} \frac{2^{-x}}{x^2 + 3}\]</li>
 								<li>\[ \lim_{x \to \infty} \frac{ln(x)}{e^{-2x+3}}\]</li>
 								<li>\[ \lim_{x \to \infty} \frac{x^3-2}{x^2+3x}\]</li>
 								<li>\[ \lim_{x \to -1} \frac{x^2-1}{x+1}\]</li>
@@ -311,12 +311,12 @@
 
 					<section>
 						<div class="problema">
-							<p><span class="numero">7</span>Resuelve los siguientes límites aplicando lo visto sobre indeterminaciones de tipo \[ \frac{\infty}{\infty} \]:</p>
+							<p><span class="numero">7</span>Resuelve los siguientes límites aplicando lo visto sobre indeterminaciones de tipo \[ \infty - \infty \]:</p>
 							<ol class="problema__apartados">
 								<li>\[ \lim_{x \to 3} (\frac{4}{x-3} - \frac{3x}{x^2-x-6}) \]</li>
 								<li>\[ \lim_{x \to \infty} ( \frac{2x^4-x^2+1}{x^3} - \frac{2x^3+x^2-x+4}{3x^2} ) \]</li>
 								<li>\[ \lim_{x \to \infty} (\sqrt{4x^2-2x+6} - 2x+1) \]</li>
-								<li>\[ \lim_{x \to 2} (\frac{1}{\sqrt{x-2}} - \frac{3}{\sqrt{x^2-4})  \]</li>
+								<li>\[ \lim_{x \to 2} (\frac{1}{\sqrt{x-2}} - \frac{3}{\sqrt{x^2-4}})  \]</li>
 							</ol>
 						</div>
 					</section>
@@ -328,12 +328,12 @@
 
 					<section>
 						<div class="problema">
-							<p><span class="numero">8</span>Resuelve los siguientes límites aplicando lo visto sobre indeterminaciones de tipo \[ \frac{\infty}{\infty} \]:</p>
+							<p><span class="numero">8</span>Resuelve los siguientes límites aplicando lo visto sobre indeterminaciones de tipo  \[ 1^{\infty} \]:</p>
 							<ol class="problema__apartados">
 								<li>\[ \lim_{x \to \infty} (1-\frac{2}{x})^{x+1} \]</li>
 								<li>\[ \lim_{x \to \infty} (\frac{x^2-2x+1}{x^2-4})^{\frac{x^2}{x-2}} \]</li>
 								<li>\[ \lim_{x \to \infty} (\frac{x^2-1}{x^2+1})^{x} \]</li>
-								<li>\[ \lim_{x \to \infty} (\frac{x}{2x-1})^{\frac{1}{x+1}} \]</li>
+								<li>\[ \lim_{x \to 1} (\frac{x}{2x-1})^{\frac{1}{x-1}} \]</li>
 							</ol>
 						</div>
 					</section>
@@ -344,15 +344,10 @@
 
 					<section>
 						<h3>Continuidad</h3>
-						<p>Una función  \[f\] es continua en un intervalo cuando lo es en cada uno de los puntos de dicho intervalo.</p>
-					</section>
-
-					<section>
-						<h3>Continuidad</h3>
 						<p>Una función \[f\] es continua en un punto \[x_0\] si:</p>
 						<ul>
 							<li>Existe el límite \[ \lim_{x \to x_0} f(x) \]</li>
-							<li>Y este es igual al valor de la función en el punto (\lim_{x \to x_0} f(x) = f(x_0))</li>
+							<li>Y este es igual al valor de la función en el punto (\[\lim_{x \to x_0} f(x) = f(x_0)\])</li>
 						</ul>
 					</section>
 
@@ -375,6 +370,17 @@
 											   \right.\]</li>
 							</ol>
 						</div>
+					</section>
+
+					<section>
+						<h3>Continuidad</h3>
+						<p>Una función  \[f\] es continua en un intervalo cuando lo es en cada uno de los puntos de dicho intervalo.</p>
+					</section>
+
+					<section>
+						<h3>Continuidad</h3>
+						<p>En general todas las funciones vista son continuas en donde están definidas.</p>
+						<p>Deberemos analizar cambios en la definición de la función (si es a trozos) y puntos donde no están definidas.</p>
 					</section>
 
 					<section>
@@ -411,7 +417,9 @@
 						<div class="problema">
 							<p><span class="numero">11</span>Estudia la continuidad de las siguientes funciones:</p>
 							<ol class="problema__apartados">
-								<li>\[f(x) = 3x + 4\]</li>
+								<li>\[ f(x) = 3x + 4\]</li>
+								<li>\[ f(x) = \frac{2}{x-4} \]</li>
+								<li>\[ f(x) = \frac{x+2}{x^2+5+6} \]</li>
 								<li>\[ f(x) = \left\{ \begin{array}{ll}
 											             2x+6      &    x \lt 1 \\
 											             x-7       &  x \ge 1
