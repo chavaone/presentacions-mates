@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="189.79297mm"
+   height="48.163139mm"
+   viewBox="0 0 189.79297 48.163139"
+   version="1.1"
+   id="svg41143"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="graficas-funciones-2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview41145"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-right="1"
+     fit-margin-bottom="1"
+     inkscape:zoom="1.3612233"
+     inkscape:cx="351.88935"
+     inkscape:cy="151.70178"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs41140">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Sstart"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Sstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path9251" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path9254" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Sstart-4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Sstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path9251-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path9254-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DiamondM"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DiamondM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path9321" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="EmptyDiamondM"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="EmptyDiamondM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:context-fill;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path9348" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker41308"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DiamondM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path41306" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker41312"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="EmptyDiamondM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:context-fill;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path41310" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DiamondM-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DiamondM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path9321-57" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="EmptyDiamondM-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="EmptyDiamondM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:context-fill;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path9348-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker41320"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DiamondM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path41318" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker41324"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="EmptyDiamondM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:context-fill;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path41322" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DiamondM-51"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DiamondM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path9321-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="EmptyDiamondM-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="EmptyDiamondM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:context-fill;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path9348-76" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker41332"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DiamondM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path41330" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker41336"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="EmptyDiamondM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:context-fill;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path41334" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Sstart-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Sstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path9251-6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path9254-81" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Sstart-4-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Sstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path9251-8-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send-0-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path9254-8-7" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-11.210628,-68.019392)">
+    <path
+       d="m 105.61421,114.71548 4e-5,-36.139209"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0511029;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path14-6"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 108.00447,114.71548 4e-5,-36.139209"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0511029;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path16-7"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 110.39475,114.71548 3e-5,-36.139209"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0511029;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path18-5"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 112.78503,114.84695 4e-5,-36.279596"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.051202;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path20-3"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 115.17531,114.84695 3e-5,-36.279596"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.051202;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path22-5"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 117.56558,114.84695 2e-5,-35.739045"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0508191;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path24-6"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 119.95585,114.84695 4e-5,-35.739045"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0508191;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path26-2"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 122.34613,114.84695 3e-5,-35.739045"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0508191;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path28-9"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 124.73641,114.84695 3e-5,-35.739045"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0508191;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path30-1"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 127.12668,114.84695 3e-5,-35.739045"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0508191;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path32-2"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 129.51695,114.84695 3e-5,-35.739045"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0508191;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path34-7"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 131.90723,114.84695 4e-5,-35.739045"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0508191;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path36-0"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 134.29751,114.84695 3e-5,-35.739045"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0508191;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path38-9"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 136.68777,114.84695 4e-5,-35.739045"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0508191;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path40-3"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 139.07806,114.84695 3e-5,-35.739045"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0508191;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path42-6"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 141.46833,114.84695 4e-5,-35.739045"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0508191;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path44-0"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 143.85862,114.84695 2e-5,-35.739045"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0508191;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path46-6"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 146.24888,114.84695 3e-5,-35.739045"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0508191;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path48-2"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 148.63915,114.84695 4e-5,-35.739045"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0508191;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path50-6"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 151.01922,114.79587 2e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path52-1"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 153.40867,114.79587 4e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path54-8"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 155.79812,114.79587 4e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path56-7"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 158.18759,114.79587 4e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path58-9"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 160.57704,114.79587 4e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path60-2"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 162.96649,114.79587 4e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path62-0"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 165.35596,114.79587 4e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path64-2"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 167.74542,114.79587 3e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path66-3"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 170.13488,114.79587 2e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path68-7"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 172.52433,114.79587 4e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path70-5"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 174.91378,114.79587 4e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path72-9"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 177.30325,114.79587 3e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path74-2"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 179.6927,114.79587 4e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path76-2"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 182.08216,114.79587 4e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path78-8"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 184.47162,114.79587 4e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path80-9"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 186.86108,114.79587 3e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path82-7"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 189.25053,114.79587 3e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path84-3"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 191.64,114.79587 3e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path86-6"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 194.02945,114.79587 3e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path88-1"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 196.41891,114.79587 3e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path90-2"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 198.80836,114.79587 4e-5,-35.884342"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0509136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path92-9"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,114.78185 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path102-7"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,112.39236 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path104-8"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,110.00286 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path106-4"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,107.61338 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path108-5"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,105.22389 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path110-0"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,102.8344 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path112-3"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,100.4449 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path114-6"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,98.05542 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path116-1"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,95.66592 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path118-0"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,93.27643 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path120-6"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,90.88694 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path122-3"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,88.49744 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path124-2"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,86.10795 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path126-0"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,83.71847 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path128-6"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,81.32897 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path130-1"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 105.62044,78.93948 h 93.18792"
+       style="opacity:0.764862;fill:#ff0800;fill-opacity:1;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path132-5"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 12.431586,114.72249 3.6e-5,-36.122518"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510823;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path14"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 14.821039,114.72249 3.6e-5,-36.122518"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510823;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path16"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 17.210492,114.72249 3.7e-5,-36.122518"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510823;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path18"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 19.599958,114.72249 3.6e-5,-36.122518"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510823;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path20"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 21.989411,114.72249 3.6e-5,-36.122518"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510823;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path22"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 24.378876,114.72249 24.3789,78.599972"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510823;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path24"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 26.76833,114.72249 3.6e-5,-36.122518"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510823;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path26"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 29.157783,114.72249 3.6e-5,-36.122518"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510823;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path28"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 31.547248,114.72249 2.4e-5,-36.122518"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510823;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path30"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 33.936701,114.72249 3.6e-5,-36.122518"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510823;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path32"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 36.326155,114.72249 3.6e-5,-36.122518"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510823;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path34"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 38.71562,114.72249 3.6e-5,-36.122518"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510823;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path36"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 41.105073,114.72249 3.6e-5,-36.122518"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510823;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path38"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 43.494525,114.72249 3.8e-5,-36.122518"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510823;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path40"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 45.883993,114.72249 3.4e-5,-36.122518"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510823;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path42"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 48.273444,114.63898 3.7e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path44"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 50.662912,114.63898 2.3e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path46"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 53.052362,114.63898 53.0524,78.599972"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path48"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 55.441817,114.63898 3.7e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path50"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 57.831281,114.63898 2.4e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path52"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 60.220735,114.63898 3.8e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path54"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 62.61019,114.63898 3.4e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path56"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 64.999654,114.63898 3.8e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path58"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 67.389108,114.63898 3.4e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path60"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 69.778559,114.63898 3.8e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path62"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 72.168027,114.63898 3.4e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path64"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 74.557481,114.63898 3.4e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path66"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 76.946946,114.63898 2.4e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path68"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 79.3364,114.63898 3.4e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path70"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 81.725847,114.63898 4e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path72"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 84.115317,114.63898 3e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path74"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 86.504767,114.63898 4e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path76"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 88.894227,114.63898 3e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path78"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 91.283687,114.63898 4e-5,-36.039008"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0510232;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path80"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 93.663737,114.69033 4e-5,-35.937977"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0509604;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path82"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 96.054017,114.69033 3e-5,-35.937977"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0509604;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path84"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 98.444297,114.71548 3e-5,-36.139209"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0511029;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path86"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 100.83457,114.71548 3e-5,-36.139209"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0511029;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path88"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 103.22485,114.71548 3e-5,-36.139209"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0511029;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path90"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,114.78185 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path102"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,112.39236 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path104"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,110.00286 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path106"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,107.61338 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path108"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,105.22389 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path110"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,102.8344 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path112"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,100.4449 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path114"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,98.05542 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path116"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,95.66592 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path118"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,93.27643 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path120"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,90.88694 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path122"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,88.49744 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path124"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,86.10795 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path126"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,83.71847 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path128"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,81.32897 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path130"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="M 12.432501,78.93948 H 105.62043"
+       style="opacity:0.764862;fill:none;stroke:#000000;stroke-width:0.0682678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.9256;stroke-dasharray:none;stroke-opacity:1"
+       id="path132"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.396875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Sstart);marker-end:url(#Arrow1Send)"
+       d="M 12.919185,107.57762 H 199.29504"
+       id="path9237"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.25026;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Sstart-4);marker-end:url(#Arrow1Send-0)"
+       d="M 105.61509,114.71548 V 78.745293"
+       id="path9237-1"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#DiamondM-51)"
+       d="m 105.62043,88.497438 11.9768,9.567521 11.9291,-0.04684 16.69177,-7.108975 19.12611,0.01973"
+       id="path42630"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker41320)"
+       d="m 105.62043,88.49744 -11.9768,9.567521 -11.9291,-0.04684 -16.69177,-7.108975 -19.126114,0.01973"
+       id="path42630-5"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 104.91459,95.66593 h 1.401"
+       id="path51530"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 104.91459,83.71847 h 1.401"
+       id="path51530-7"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g52127"
+       transform="translate(2.6904776,22.819932)"
+       inkscape:export-filename="/mnt/esquio/documentos/profe/presentacions-mates/img/graficas-funciones-2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.396875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Sstart-1);marker-end:url(#Arrow1Send-9)"
+         d="M 10.119125,84.754869 H 196.49499"
+         id="path9237-8" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 90.873102,84.067657 v 1.401"
+         id="path51530-1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 78.925809,84.054369 v 1.401"
+         id="path51530-1-5" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 66.978518,84.054369 v 1.401"
+         id="path51530-1-0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 55.031233,84.054369 v 1.401"
+         id="path51530-1-6" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 43.08395,84.054369 v 1.401"
+         id="path51530-1-50" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 31.136659,84.054369 v 1.401"
+         id="path51530-1-8" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 19.189369,84.046718 v 1.401"
+         id="path51530-1-1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 186.44872,84.054369 v 1.401"
+         id="path51530-1-2" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 174.50143,84.054369 v 1.401"
+         id="path51530-1-5-2" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 162.55414,84.054369 v 1.401"
+         id="path51530-1-0-6" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 150.60685,84.054369 v 1.401"
+         id="path51530-1-6-9" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 138.65957,84.054369 v 1.401"
+         id="path51530-1-50-1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 126.71228,84.054369 v 1.401"
+         id="path51530-1-8-0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.202109px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 114.76499,84.054369 v 1.401"
+         id="path51530-1-1-4" />
+    </g>
+  </g>
+</svg>
