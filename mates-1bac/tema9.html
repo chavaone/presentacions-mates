@@ -32,7 +32,7 @@
 
           <section>
             <h3>Definición de derivada</h3>
-            <p>La derivada de una función en un punto \[x_0\] es la pendiente de la recta tangente a dicha función en dicho punto.</p>
+            <p>La derivada de una función en un punto \[x_0\] es la pendiente de la recta tangente a dicha función en dicho punto. Se denota por \[f'(x_0)\].</p>
           </section>
 
           <section>
@@ -42,6 +42,7 @@
           <section>
             <h3>Recordando...</h3>
             <h2>Pendiente de una recta</h2>
+						<p>\[ m = \frac{y_2-y_1}{x_2-x_1} = \frac{f(x_2) - f(x_1)}{x_2-x_1} \]</p>
           </section>
 
           <section>
@@ -81,7 +82,20 @@
 
           <section>
             <div class="problema">
-              <p><span class="numero">2</span>Comprueba si son o no derivables las siguientes funciones en los puntos que se indican:</p>
+              <p><span class="numero">2</span>Estudia la continuidad y derivabilidad de las siguientes funciones:</p>
+							<ol class="problema__apartados">
+								<li>\[ f(x) = \left\{ \begin{array}{lc}
+											             x^2+1 & x \le 1 \\
+											             -x+3  & x \gt 1
+											             \end{array}
+											   \right.\]</li>
+								<li>\[ t(x) = |x-5| \]</li>
+								<li>\[ f(x) = \left\{ \begin{array}{lc}
+											             \frac{x^2-9}{x-3} & x \neq 3 \\
+											             6                 & x = 1
+											             \end{array}
+											   \right.\]</li>
+							</ol>
             </div>
           </section>
 
@@ -96,33 +110,51 @@
 
           <section>
             <h3>Función derivada</h3>
-            <a href="">Ver geogebra</a>
+            <a href="https://www.geogebra.org/m/cpdnzjpf">Ver geogebra</a>
           </section>
 
           <section>
             <h3>Derivadas sucesivas</h3>
             <p>Como f' también es una función, podemos calcular su derivada.</p>
             <p>Existe por lo tanto una función derivada segunda, tercera, cuarta, etc.</p>
+						<p>Se denotan por \[f''(x)\], \[f'''(x)\], \[f^{4)}(x)\dots\]</p>
           </section>
 
           <section>
             <div class="problema">
               <p><span class="numero">3</span>Calcula la función derivada primera y segunda de las siguientes funciones:</p>
               <ol class="problema__apartados">
-                <li></li>
+								<li>\[f(x) = 3x\]</li>
+                <li>\[g(x) = x^2 + 3\]</li>
               </ol>
             </div>
           </section>
 
           <section>
             <h3>Función derivada y Derivabilidad</h3>
+
+						<p><strong>Condición suficiente:</strong> Si una función es continua en \[x_0\] y existe \[\lim_{x\to x_0} f'(x)\], la función es derivable en ese punto.</p>
+						<p>Si el límite no existe <strong>no podemos concluir que no es derivable</strong>.</p>
+						<p>Para comprobar que existe el límite tenemos que hacer los límites laterales (derivadas laterales)</p>
           </section>
 
-          <section>
-            <div class="problema">
-              <p><span class="numero">4</span>Comprueba si las siguientes funciones son derivables:</p>
-            </div>
-          </section>
+					<section>
+						<div class="problema">
+							<p><span class="numero">4</span>Comprueba si existe algún valor de \[a\] para el cual sean derivables las siguientes funciones en los puntos indicados.</p>
+							<ol class="problema__apartados">
+								<li>\[ f(x) = \left\{ \begin{array}{lc}
+																	 ax+2 & x \lt 1 \\
+																	 3(x-2)^2  & x \ge 1
+																	 \end{array}
+												 \right.\] en el punto \[x=1\]</li>
+							 <li>\[ f(x) = \left\{ \begin{array}{lc}
+																	 a-x^2 & x \le 1 \\
+																	 \frac{2}{ax}  & x \ge 1
+																	 \end{array}
+												 \right.\] en el punto \[x=1\]</li>
+							</ol>
+						</div>
+					</section>
 
         </section>
 
@@ -132,30 +164,102 @@
             <h3>Cálculo de derivadas</h3>
           </section>
 
-          <section>
-            <h3>Función potencia</h3>
-          </section>
+					<section>
+						<h3>Función constante</h3>
+						<p>
+							\[f(x) = N\]
+						</p>
+						<p>
+							\[f'(x) = 0 \]
+						</p>
+					</section>
 
           <section>
-            <h3>Derivadas elementales</h3>
+            <h3>Función potencia</h3>
+						<p>
+							\[f(x) = x^n\]
+						</p>
+						<p>\[f'(x) = n \cdot x^{n-1} \]</p>
+						<p>Ejemplo: \[ f(x) = x^3  \Rightarrow \] <span class="fragment">\[f'(x) = 3x^2\]</span></p>
+						<p>Ejemplo: \[ f(x) = \sqrt{x} = x^{1/2}  \Rightarrow \] <span class="fragment">\[f'(x) = \frac{1}{2} \cdot x^{-1/2} = \frac{1}{2\sqrt{x}}\]</span></p>
           </section>
+
+					<section>
+						<h3>Derivadas de operaciones: producto por escalar</h3>
+						<p>\[ (k \cdot f)'(x) = k \cdot f'(x) \]</p>
+						<p>Ejemplo: \[f(x) = 3x^2 \Rightarrow \] <span class="fragment">\[f'(x) = 3 \cdot 2 \cdot x = 6x\]</span></p>
+					</section>
 
           <section>
             <h3>Derivadas de operaciones: suma/resta</h3>
+						<p>\[(f+g)'(x) = f'(x) + g'(x)\]</p>
+						<p>Ejemplo: \[ f(x) = x^2 + 3x  \Rightarrow \] <span class="fragment">\[f'(x) = 2x + 3\]</span></p>
           </section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">5</span> Calcula las derivadas de los siguientes funciones polinómicas:</p>
+							<ol class="problema__apartados">
+								<li>\[ f(x) = 3\]</li>
+								<li>\[ f(x) = x^3 \]</li>
+								<li>\[ f(x) = x^3 + 2x \]</li>
+								<li>\[ f(x) = x^2 + 3x + 4 \]</li>
+								<li>\[ f(x) = 2x^4 + 5x^2 \]</li>
+							</ol>
+						</div>
+					</section>
+
+					<section>
+						<h3>Derivadas elementales</h3>
+						<h2>Ver tabla</h2>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">6</span>Calcula las derivadas de las siguientes funciones elementales:</p>
+							<ol class="problema__apartados">
+								<li>\[ f(x) = 2^x \]</li>
+								<li>\[ f(x) = ln(x) \]</li>
+								<li>\[ f(x) = sen(x) + cos(x)\]</li>
+								<li>\[ f(x) = \sqrt{x}\]</li>
+							</ol>
+						</div>
+					</section>
 
           <section>
             <h3>Derivadas de operaciones: producto</h3>
+						<p>\[ (f \cdot g)'(x) = f'(x)\cdot g(x) + f(x)\cdot g'(x) \]</p>
           </section>
 
           <section>
             <h3>Derivadas de operaciones: cociente</h3>
+						<p>\[ (\frac{f}{g})'(x) = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{[g'(x)]^2}\]</p>
           </section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">7</span>Calcula las derivadas de los siguientes productos y cocientes de funciones:</p>
+							<ol class="problema__apartados">
+								<li>\[ f(x) = 2x \cdot 2^x \]</li>
+								<li>\[ f(x) = sen(x) \cdot \sqrt{x} \]</li>
+								<li>\[ f(x) = \frac{sen(x)}{2x} \]</li>
+								<li>\[ f(x) = \frac{e^x}{3x^2}\]</li>
+								<li></li>
+							</ol>
+						</div>
+					</section>
 
           <section>
             <h3>Derivadas de operaciones: composición</h3>
             <p>Regla de la cadena</p>
+						<p>\[ (f \circ g)'(x) = f'(g(x)) \cdot g'(x) \]</p>
           </section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">8</span>Calcula las siguientes derivadas:</p>
+						</div>
+					</section>
 
         </section>
 
