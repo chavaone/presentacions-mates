@@ -24,8 +24,8 @@
 			<div class="slides">
 
 				<section>
-					<h1>Tema 4</h1>
-					<h3>Geometría Analítica</h3>
+					<h1>Tema 3</h1>
+					<h3>Vectores</h3>
 				</section>
 
 				<section>
@@ -260,199 +260,7 @@
 
 				</section>
 
-				<section>
-
-					<section>
-						<h3>Distancia entre dos puntos</h3>
-						<p>La distancia entre dos puntos \[A(a_1, a_2)\] y \[ B(b_1,b_2)\] es el módulo del vector \[ \vec{AB} \].</p>
-						<p>\[d(A,B) = |\vec{AB}| = \sqrt{(b_1 - a_1)^2 + (b_2 - a_2)^2}\]</p>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">11</span>Calcula la distancia entre los siguientes pares de puntos:</p>
-							<ol class="problema__apartados">
-								<li>A(0,3) y B(7,8)</li>
-								<li>A(2,7) y B(1,5)</li>
-							</ol>
-						</div>
-					</section>
-
-					<section>
-						<h3>Punto medio de un segmento</h3>
-						<p>El punto medio de de un segmento determinado por dos puntos \[A(a_1, a_2)\] y \[ B(b_1,b_2)\] se calcula:</p>
-						<p>\[\Big(\frac{a_1+b_1}{2}, \frac{a_2+b_2}{2}\Big)\]</p>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">12</span>Calcula el punto medio del segmento determinado por los siguientes pares de puntos:</p>
-							<ol class="problema__apartados">
-								<li>A(0,3) y B(7,8)</li>
-								<li>A(2,7) y B(1,5)</li>
-							</ol>
-						</div>
-					</section>
-				</section>
-
-				<section>
-	        <section>
-	          <h3>Ecuaciones de la recta</h3>
-	        </section>
-
-	        <section>
-	          <h4>Ecuación vectorial</h4>
-	          <a href="https://www.geogebra.org/m/C8jYqD5x">Ver en Geogebra</a>
-	        </section>
-
-	        <section>
-	          <h4>Ecuación vectorial</h4>
-	          <p>\[ \overrightarrow{X} = \overrightarrow{O} + \lambda \cdot \overrightarrow{V} \]</p>
-	          \[(x,y) = (o_1, o_2) + \lambda \cdot (v_1, v_2)\]
-	        </section>
-
-	        <section>
-	          <h4>Ecuación paramétrica</h4>
-	          <em>Separamos las componentes x e y del vector.</em>
-	          <p>\[\begin{cases}
-	                x = o_1 + \lambda \cdot v_1\\
-	                y = o_2 + \lambda \cdot v_2
-	               \end{cases}
-	              \]</p>
-	        </section>
-
-	       <section>
-	         <h4>Ecuación continua</h4>
-	         <em>Despejamos \[\lambda\] en cada ecuación e igualamos</em>
-	         <p>\[ \frac{x - o_1}{v_1} = \frac{y - o_2}{v_2}  \]</p>
-	       </section>
-
-	       <section>
-	         <h4>Ecuación general o implícita</h4>
-	         <p>Pasamos todos los términos a un miembro de la ecuación.</p>
-	         <p>\[ Ax + By + C = 0 \]</p>
-	       </section>
-
 				 <section>
-				 	<h4>Vector normal</h4>
-					<p>Dada una recta en su forma general \[ Ax + By + C = 0 \] el vector (A,B) se conoce como vector normal a la recta y es perpendicular al vector director de la recta (y por lo tanto a la recta en si)</p>
-					<p>Si \[ \vec{v}(v_1,v_2)\] es el vector director, entonces su vector director será \[ \vec{n}(-v_2,v_1)\]</p>
-				 </section>
-
-	       <section>
-	         <h4>Ecuación explícita</h4>
-	         <em>Despejamos y</em>
-	         <p>\[y = m \cdot x + n \]</p>
-	       </section>
-
-	       <section>
-	         <h3>Pendiente de una recta</h3>
-					 <p>Dado un dos puntos \[A(x_1, y_1)\] y \[B(x_2, y_2)\] y un vector director \[\vec{AB}=\vec{v}(v_1,v_2)\]</p>
-	         <p>\[m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{v_2}{v_1} = tan(\alpha)\]</p>
-					 <p>Si dos rectas son perpendiculares sus pendientes cumplen \[m' = -1/m\] </p>
-	       </section>
-
-	       <section>
-	         <h4>Ecuación punto-pendiente</h4>
-	         <p>Recta que pasa por O(x_0, y_0)</p>
-	         <p>\[y - y_0 = m \cdot (x-x_0)\]</p>
-	       </section>
-
-				 <section>
-				 	<div class="problema">
-				 		<p><span class="numero">13</span>Escribe la ecuacion de la recta en todas sus formas e indicando los nombres en cada uno de los siguientes casos:</p>
-						<ol class="problema__apartados">
-							<li>Vector director \[\vec{v}(2,3)\] y pasa por A(1,5).</li>
-							<li>Pasa por \[A(2,5)\] y por \[B(3,7)\].</li>
-							<li>Tiene por vector normal \[\vec{n}(2,-4)\] y pasa por \[A(2,7)\].</li>
-							<li>Tiene por pendiente \[m=3\] y pasa por \[A(1,9)\].</li>
-							<li>Forma un ángulo \[\alpha=45º\] con el eje de abscisas (el de la x's) y pasa por \[A(2,3)\]</li>
-						</ol>
-				 	</div>
-				 </section>
-
-				 <section>
-				 	<div class="problema">
-				 		<p><span class="numero">14</span>Dada la recta \[r \equiv 2x + 3y -7 = 0\] calcula:</p>
-						<ol class="problema__apartados">
-							<li>El vector director y la pendiente.</li>
-							<li>La ecuación general de la recta que pasa paralela a r y que pasa por \[P(3,1)\].</li>
-							<li>El vector normal y la pendiente de la recta perpendicular a r.</li>
-							<li>La ecuacion general de la recta perpendicular arque pasa por el punto \[Q(1,−5)\]</li>
-						</ol>
-				 	</div>
-				 </section>
-
-	     </section>
-
-
-			 <section>
-
-				<section>
-					<h3>Posición relativa de dos rectas</h3>
-				</section>
-
-				<section>
-					<p>Según su posición:</p>
-					<ol>
-						<li>Secantes</li>
-						<li>Paralelas</li>
-						<li>Coincidentes</li>
-					</ol>
-				</section>
-
-				<section>
-					<p>Podemos analizarlo de diversas formas:</p>
-					<ol>
-						<li>Sistema de ecuaciones</li>
-						<li>Pendientes</li>
-						<li>Vector director</li>
-					</ol>
-				</section>
-
-				<section>
-					<h3>Sistema de ecuaciones</h3>
-					<p>Un sistema de ecuaciones podía ser:</p>
-					<ol>
-						<li>S. Incompatible: Rectas paralelas.</li>
-						<li>S. Compatible Determinado: Rectas secantes (el punto de corte es la solución).</li>
-						<li>S. Compatible Indeterminado: Rectas coincidentes</li>
-					</ol>
-				</section>
-
-				<section>
-					<h3>Pendientes</h3>
-					<p>Dadas las pendientes \[m_1\] y \[m_2\] de dos rectas:</p>
-					<ol>
-						<li>Si \[m_1 = m_2\]: Rectas paralelas o coincidentes</li>
-						<li>Si \[m_1 \neq m_2\]: Rectas secantes.</li>
-					</ol>
-				</section>
-
-				<section>
-					<h3>Vectores director</h3>
-					<p>Dados los vectores director \[v_1\] y \[v_2\] de dos rectas:</p>
-					<ol>
-						<li>Si \[v_1\] y \[v_2\] son linealmente dependientes: Rectas paralelas o coincidentes</li>
-						<li>Si \[v_1\] y \[v_2\] son linealmente independientes: Rectas secantes</li>
-					</ol>
-				</section>
-
-				<section>
-					<div class="problema">
-						<p><span class="numero">15</span>Estudia la posición relativa de las siguientes rectas:</p>
-						<ol class="problema__apartados">
-							<li>\[r \equiv 3x−5y+ 4 = 0 \] y \[s \equiv 3x+ 5y−3 = 0 \]</li>
-							<li>\[r \equiv x−3y+ 1 = 0\] y \[s \equiv −2x+ 6y−2 = 0\]</li>
-							<li>\[r \equiv y = 2x+ 3\] y \[s \equiv x= \frac{y}{2}\]</li>
-						</ol>
-					</div>
-				</section>
-
-			 </section>
-
-
-			 <section>
 
 				<section>
 					<h3>Producto escalar</h3>
@@ -474,7 +282,7 @@
 
 				<section>
 					<div class="problema">
-						<p><span class="numero">16</span>Calcula el producto escalar entre los siguientes pares de vectores:</p>
+						<p><span class="numero">11</span>Calcula el producto escalar entre los siguientes pares de vectores:</p>
 						<ol class="problema__apartados">
 							<li>\[ \vec{u}(2,3)\] y \[\vec{v}(1,7) \]</li>
 							<li>\[ \vec{u}(0,3)\] y \[\vec{v}(1,8) \]</li>
@@ -495,7 +303,7 @@
 
 				<section>
 					<div class="problema">
-						<p><span class="numero">17</span>Comprueba si los siguientes pares de vectores son perpendiculares de forma analítica:</p>
+						<p><span class="numero">12</span>Comprueba si los siguientes pares de vectores son perpendiculares de forma analítica:</p>
 						<ol class="problema__apartados">
 							<li>\[ \vec{u}(0,3)\] y \[\vec{v}(1,0) \]</li>
 							<li>\[ \vec{u}(3,1)\] y \[\vec{v}(-2,6) \]</li>
@@ -516,7 +324,7 @@
 
 				<section>
 					<div class="problema">
-						<p><span class="numero">18</span>Calcula el módulo de las siguientes proyecciones:</p>
+						<p><span class="numero">13</span>Calcula el módulo de las siguientes proyecciones:</p>
 						<ol class="problema__apartados">
 							<li>Proyección del vector \[\vec{v}(3,5)\] sobre el vector \[\vec{u}(1,10)\]</li>
 						</ol>
@@ -529,32 +337,10 @@
 					<p>\[\vec{u} \cdot \vec{v} = |\vec{u}| \cdot |\vec{v}| \cdot cos(\alpha) \Rightarrow \\ \Rightarrow   cos(\alpha) = \frac{\left| \vec{v} \cdot \vec{u} \right| }{|\vec{v}| \cdot |\vec{u}|} \]</p>
 				</section>
 
-				<section>
-					<h3>Ángulo entre dos rectas: vectores directores</h3>
-					<p>A partir de los vectores directores o los vectores normales</p>
-				</section>
-
-				<section>
-					<h3>Ángulo entre dos rectas: pendiente</h3>
-					<p>\[m_r = tan(\alpha_r)\] y \[m_s = tan(\alpha_s)\]</p>
-					
-					<p>\[ tan(\alpha) = \tan(\alpha_r - \alpha_s) = \\ = \left| \frac{tan(\alpha_r) - tan(\alpha_s)}{1 + tan(\alpha_r) \cdot tan(\alpha_s)}\right| = \left|\frac{m_r - m_s}{1 + m_r \cdot m_s} \right|   \] </p>
-				</section>
 
 				<section>
 					<div class="problema">
-						<p><span class="numero">19</span>Calcula el ángulo que hay entre los siguientes pares de rectas:</p>
-						<ol class="problema__apartados">
-							<li>\[ r \equiv y = 0 \] y \[ s \equiv x = 0 \]</li>
-							<li>\[ r \equiv y = 3x + 5  \] y \[ s \equiv 2x + 3y +5 = 0 \]</li>
-							<li>\[ r \equiv y = 2x - 3  \] y \[ s \equiv x = 0 \]</li>
-						</ol>
-					</div>
-				</section>
-
-				<section>
-					<div class="problema">
-						<p><span class="numero">20</span>Dados los vectores \[ \vec{u}(3,-4)\] y \[ \vec{v} (5,6) \] calcula:</p>
+						<p><span class="numero">14</span>Dados los vectores \[ \vec{u}(3,-4)\] y \[ \vec{v} (5,6) \] calcula:</p>
 						<ol class="problema__apartados">
 							<li>Su producto escalar.</li>
 							<li>El módulo de los dos vectores.</li>
@@ -564,151 +350,6 @@
 							<li>Un vector ortogonal a \[\vec{u}\].</li>
 						</ol>
 					</div>
-				</section>
-
-				<section>
-					<h3>Utilidades: Distancia recta y punto</h3>
-					<p>Sea \[ r\equiv Ax +By + C = 0 \] una recta y \[P(x_0,y_0)\] un punto del plano, entonces:</p>
-					<p>\[ d(r,P) = \frac{|A\cdot x_0 + B \cdot y_0 + C|}{\sqrt{A^2 + B^2}} \]</p>
-				</section>
-
-				<section>
-					<h3>Utilidades: Distancia recta y punto</h3>
-					<h1>Demostración</h1>
-				</section>
-
-				<section>
-					<div class="problema">
-						<p><span class="numero">21</span>Calcula la distancia entre las rectas y puntos dados:</p>
-						<ol class="problema__apartados">
-							<li>A(2,3) y \[ r \equiv x = 0 \]</li>
-							<li>A(5,6) y \[ r \equiv y = 2x + 3 \]</li>
-						</ol>
-					</div>
-				</section>
-
-				<section>
-					<div class="problema">
-						<p><span class="numero">22</span>Indica la distancia entre las siguientes rectas:</p>
-						<ol class="problema__apartados">
-							<li>\[ r \equiv 2x + 3y +4 = 0 \] y \[ s \equiv 4x + 6y - 4 = 0 \]</li>
-							<li>\[ r \equiv y = 2x + 3 \] y \[ s \equiv y = 3x - 5 \]</li>
-						</ol>
-					</div>
-				</section>
-
-				<section>
-					<div class="problema">
-						<p><span class="numero">23</span>Calcula \[a\] y \[b\] para que las rectas  \[r \equiv 3x-ay -2b = 0\] y \[s \equiv 3x-6y +4 = 0\] cumplan las siguientes propiedades:</p>
-						<ol class="problema__apartados">
-							<li>Sean paralelas. Calcula su distancia.</li>
-							<li>Sean perpendiculares.</li>
-							<li>Formen un ángulo de 45º.</li>
-						</ol>
-					</div>
-				</section>
-
-				<section>
-					<div class="problema">
-						<p><span class="numero">24</span>Para cada apartado, calcula el simétrico de cada punto con respecto a la recta dada:</p>
-						<ol class="problema__apartados">
-							<li>A(2,3) y \[ r \equiv x = 0 \]</li>
-							<li>A(5,6) y \[ r \equiv y = 2x + 3 \]</li>
-						</ol>
-					</div>
-				</section>
-
-			 </section>
-
-
-			 <section>
-
-				<section>
-					<h3>Lugares geométricos</h3>
-					<p>Es un conjunto de puntos que cumplen una serie de propiedades.</p>
-				</section>
-
-				<section>
-					<h3>Recta</h3>
-					<p>Una recta es un lugar geométrico.</p>
-				</section>
-
-				<section>
-					<h3>Mediatriz</h3>
-					<p>Lugar geométrico de los puntos que equidistan de dos puntos dados.</p>
-				</section>
-
-				<section>
-					<div class="problema">
-						<p><span class="numero">25</span>Calcula la mediatriz de los segmentos delimitados por A y B en cada caso:</p>
-						<ol class="problema__apartados">
-							<li>A(4,0) y B(10,0)</li>
-							<li>A(2,3) y B(3,7)</li>
-						</ol>
-					</div>
-				</section>
-
-				<section>
-					<h3>Bisectriz</h3>
-					<p>Lugar geométrico de los puntos que equidistan de dos rectas dadas.</p>
-				</section>
-
-				<section>
-					<div class="problema">
-						<p><span class="numero">26</span>Calcula las bisectrices de los siguientes pares de rectas:</p>
-						<ol class="problema__apartados">
-							<li>\[ r \equiv x=0 \] y \[ s \equiv y = 0 \]</li>
-							<li>\[ r \equiv y = 3x - 5 \] y \[ s \equiv y = 5x + 9 \]</li>
-						</ol>
-					</div>
-				</section>
-
-				<section>
-					<h3>Rectas notables del triángulo</h3>
-					<ul>
-						<li>Mediatriz</li>
-						<li>Bisectriz</li>
-						<li>Mediana: recta que une cada vértice con el punto medio de su lado opuesto.</li>
-						<li>Altura: recta que es perpendicular a un lado y pasa por el vértice opuesto.</li>
-					</ul>
-				</section>
-
-				<section>
-					<h3>Puntos notables de un triángulo</h3>
-					<ul>
-						<li>Las mediatrices se cortan en el circuncentro.</li>
-						<li>Las bisectrices se cortan en el incentro.</li>
-						<li>Las medianas se cortan en el baricentro</li>
-						<li>Las alturas se cortan en el ortocentro</li>
-					</ul>
-				</section>
-
-				<section>
-					<div class="problema">
-						<p><span class="numero">27</span>Dado el triángulo formado por los puntos A(0,0), B(8,0) y C(8,10), calcula:</p>
-						<ol class="problema__apartados">
-							<li>Clasifica el triángulo en función de sus ángulos y lados.</li>
-							<li>Las ecuaciones de los lados</li>
-							<li>El circuncentro</li>
-							<li>El radio de la circunferencia circunscrita</li>
-							<li>La ecuación general de la mediana que parte de B</li>
-							<li>El baricentro</li>
-							<li>La longitud de la altura que pasa por A</li>
-							<li>Su área</li>
-						</ol>
-					</div>
-				</section>
-
-				<section>
-					<div class="problema">
-						<p><span class="numero">28</span>Dado el cuadrilátero formado por los puntos \[A(1,1)\], \[B(5,2)\], \[C(3,3)\] y \[D(1, 5/2)\], calcula:</p>
-						<ol class="problema__apartados">
-							<li>Demuestra que es un trapecio.</li>
-							<li>Indica que tipo de trapecio es.</li>
-							<li>Calcula el punto donde se cortan las diagonales.</li>
-						</ol>
-					</div>
-				</section>
 
 			 </section>
 
