@@ -1,0 +1,552 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Matemáticas I - 1º BAC - Tema 6</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/reveal.css" />
+    <link rel="stylesheet" href="../css/theme/white.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../lib/css/monokai.css" />
+    <link rel="stylesheet" href="../css/estilo-blanco.css" />
+
+    <!-- Printing and PDF exports -->
+    <script src="../js/print.js"></script>
+  </head>
+  <body>
+    <div class="reveal" id="revealdiv">
+      <div class="slides">
+        <section>
+          <h1>Estadística</h1>
+        </section>
+
+        <section>
+          <section>
+            <h2>Estudio estadístico: conceptos</h2>
+            <p>
+              El estudio estadístico es el proceso mediante el cual se recogen,
+              organizan y analizan datos para obtener conclusiones. Los estudios
+              pueden realizarse sobre toda una población o una muestra de ella.
+            </p>
+          </section>
+          <section>
+            <h4>Población y muestra</h4>
+            <p>
+              La población es el conjunto total de elementos sobre los que se
+              realiza el estudio. La muestra es un subconjunto de la población
+              que se selecciona para ser estudiada. Los resultados obtenidos de
+              la muestra se utilizan para hacer inferencias sobre toda la
+              población.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">1</span> Queremos realizar un estudio
+                estadístico de la talla de calzado que usan los alumnos de 3ºESO
+                de un instituto.
+              </p>
+              <ol class="problema__apartados">
+                <li>¿Cuál sería la población?</li>
+                <li>Elige una muestra. ¿Qué tamaño tiene?</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">2</span> Señala en qué caso es más
+                conveniente estudiar la población o una muestra.
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  La longitud de los tornillos que, ininterrumpidamente, produce
+                  una máquina.
+                </li>
+                <li>La estatura de todos los turistas en un año.</li>
+                <li>El peso de un grupo de cinco amigos.</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">3</span> Este es el titular de un
+                periódico. «EL PESO MEDIO DE LOS ESPAÑOLES ES 69 KG.»
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  ¿Cómo crees que se llega a esta conclusión? ¿Se habrá
+                  estudiado a toda la población?
+                </li>
+                <li>
+                  ¿Qué características debe tener la muestra? ¿Podrían ser todos
+                  los individuos de la muestra de la misma edad? Si todos son
+                  mujeres, ¿sería correcta la muestra?
+                </li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">4</span> Piensa y escribe un ejemplo de
+                población para hacer un estudio estadístico. ¿Qué muestra
+                podríamos tomar? Indica quiénes son los individuos y cuál es el
+                tamaño de la muestra.
+              </p>
+              <ol class="problema__apartados">
+                <li></li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Variables estadísticas</h2>
+          </section>
+          <section>
+            <h4>Variables estadísticas</h4>
+            <p>
+              Las variables estadísticas son las características o cualidades
+              que se estudian en una población. Pueden ser cualitativas o
+              cuantitativas, dependiendo de si representan atributos o
+              cantidades.
+            </p>
+          </section>
+          <section>
+            <h4>Tipos de variables estadísticas</h4>
+            <p>
+              Las variables cuantitativas pueden ser discretas (valores enteros,
+              como el número de hermanos) o continuas (pueden tomar cualquier
+              valor dentro de un rango, como la altura). Las cualitativas pueden
+              ser ordinales (con un orden) o nominales (sin orden).
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">5</span> Indica si las siguientes variables
+                estadísticas son cualitativas o cuantitativas:
+              </p>
+              <ol class="problema__apartados">
+                <li>Comida Favorita.</li>
+                <li>Profesión que te gusta.</li>
+                <li>Número de goles marcados por tu equipo.</li>
+                <li>Número de alumnos de tu Instituto.</li>
+                <li>El color de ojos de tus compañeros de clase.</li>
+                <li>Coeficiente intelectual de tus compañeros.</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">6</span> De las siguientes variables
+                cuantitativas, indica cuáles son discretas y cuáles continuas:
+              </p>
+              <ol class="problema__apartados">
+                <li>Número de acciones vendidas en la Bolsa.</li>
+                <li>Temperaturas registradas en Casablanca.</li>
+                <li>Duración de un automóvil.</li>
+                <li>El diámetro de las ruedas de varios coches.</li>
+                <li>Número de hijos de 50 familias.</li>
+                <li>Censo anual de los españoles.</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">7</span> Clasifica las siguientes variables
+                en cualitativas y cuantitativas discretas o continuas:
+              </p>
+              <ol class="problema__apartados">
+                <li>La nacionalidad de una persona.</li>
+                <li>Litros de agua contenidos en un depósito.</li>
+                <li>Número de libros en un estante de librería.</li>
+                <li>Puntos al lanzar dos dados.</li>
+                <li>La profesión de una persona.</li>
+                <li>El área de las distintas baldosas de un edificio.</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Tabla de frecuencias</h2>
+          </section>
+          <section>
+            <h4>Frecuencias absoluta y frecuencia absoluta acumulada</h4>
+            <p>
+              La frecuencia absoluta es el número de veces que aparece un valor
+              en un conjunto de datos. La frecuencia absoluta acumulada es la
+              suma de las frecuencias absolutas hasta un valor determinado.
+            </p>
+          </section>
+          <section>
+            <h4>Frecuencia relativa y frecuencia relativa acumulada</h4>
+            <p>
+              La frecuencia relativa es el cociente entre la frecuencia absoluta
+              de un valor y el total de datos. La frecuencia relativa acumulada
+              es la suma de las frecuencias relativas hasta un valor
+              determinado.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">8</span> Las estaturas (en cm) de 28
+                jóvenes son:
+              </p>
+              <p>
+                155 178 170 165 173 168 160 166 176 169 158 170 179 161 164 156
+                170 171 167 151 163 158 164 174 176 164 154 157
+              </p>
+              <p>
+                Forma una tabla con intervalos, efectúa el recuento y obtén las
+                marcas de clase.
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">9</span> El color de pelo (M = moreno, R =
+                rubio, P = pelirrojo) de 30 personas es:
+              </p>
+              <p>M R P M M M M R R P P M M M M M M P R R R P M M M M R M M M</p>
+              <p>Construye su tabla de frecuencias.</p>
+            </div>
+          </section>
+          <section>
+            <h4>Variables continuas: clases y marcas de clase</h4>
+            <p>
+              Cuando las variables son continuas, es común agrupar los datos en
+              clases o intervalos. La marca de clase es el punto medio de cada
+              intervalo y se utiliza para representar el valor promedio de los
+              datos en ese intervalo.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">10</span> ¿Por qué los intervalos en las
+                tablas son cerrados por un lado y abiertos por el otro?
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">11</span> El número de horas diarias que
+                trabajan con el ordenador 30 personas es:
+              </p>
+              <p>3 4 0 5 5 3 4 5 0 2 2 5 3 2 0 1 2 2 1 2 0 3 1 2 1 1 2 1 4 3</p>
+              <ol class="problema__apartados">
+                <li>¿De qué tipo es la variable estadística?</li>
+                <li>Construye la tabla de frecuencias.</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">12</span> Los resultados de un test de
+                inteligencia realizado a 20 personas han sido:
+              </p>
+              <p>
+                100 80 92 101 65 72 121 68 75 93 101 100 102 97 89 73 121 114
+                113 94
+              </p>
+              <p>
+                Obtén la tabla de frecuencias, tomando intervalos de amplitud
+                10.
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">13</span> ¿Qué ocurre si la suma de las
+                frecuencias absolutas no es igual al número total de datos?
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">14</span> Los pesos (en kg) de 24 personas
+                son:
+              </p>
+              <p>
+                68.5, 34.2, 47.5, 39.2, 47.3, 79.2, 46.5, 58.3, 62.5, 58.7, 80,
+                63.4, 58.6, 50.2, 60.5, 70.8, 30.5, 42.7, 59.4, 39.3, 48.6,
+                56.8, 72, 60
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  Agrúpalos en intervalos de amplitud 10 y obtén la tabla de
+                  frecuencias.
+                </li>
+                <li>¿Cuántas personas pesan menos de 50 kg?</li>
+                <li>
+                  Calcula el tanto por ciento sobre el total que representa el
+                  intervalo de mayor frecuencia absoluta.
+                </li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">15</span> El número de horas diarias de
+                estudio de 30 alumnos es:
+              </p>
+              <p>3 4 3 5 5 1 1 1 1 2 3 4 5 0 2 0 3 2 2 1 2 1 3 2 2 1 2 1 4 3</p>
+              <p>
+                Obtén la tabla de frecuencias. ¿Qué significan las frecuencias
+                acumuladas?
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">16</span> Explica cómo completarías una
+                tabla de frecuencias en la que conoces solo las frecuencias
+                absolutas acumuladas.
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">17</span> En un edificio de 16 vecinos, el
+                número de televisores por vivienda es:
+              </p>
+              <p>0, 1, 1, 2, 1, 3, 2, 1, 1, 1, 2, 2, 3, 0, 3, 2</p>
+              <ol class="problema__apartados">
+                <li>
+                  Construye la tabla de frecuencias. ¿Qué tipo de variable es?
+                  Razona tu respuesta.
+                </li>
+                <li>
+                  Realiza el diagrama de barras y el polígono de frecuencias de
+                  los datos.
+                </li>
+                <li>Haz lo mismo con las frecuencias acumuladas.</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">18</span> En un aparcamiento público hay 25
+                coches rojos, 19 amarillos, 39 plateados, 50 blancos, 27 verdes,
+                30 azules y 10 negros.
+              </p>
+              <ol class="problema__apartados">
+                <li>Construye la tabla de frecuencias.</li>
+                <li>¿Puedes hallar las frecuencias acumuladas?</li>
+                <li>Realiza el diagrama de barras.</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">19</span> Haz los gráficos del ejercicio
+                anterior con las frecuencias relativas. ¿Qué observas?
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">20</span> La longitud (en cm) de 18 grillos
+                es:
+              </p>
+              <p>
+                1.8, 1.9, 2, 2.4, 2.6, 2.8, 1.7, 1.9, 2.3, 1.6, 2.1, 3, 2.3,
+                2.7, 2.9, 1.5, 1.8, 2.6
+              </p>
+              <ol class="problema__apartados">
+                <li>Construye la tabla de frecuencias tomando intervalos.</li>
+                <li>
+                  Representa los datos mediante un histograma y un polígono de
+                  frecuencias.
+                </li>
+                <li>
+                  Realiza un diagrama de sectores. ¿Qué gráfico te parece más
+                  adecuado?
+                </li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">21</span> Representa estos datos: en una
+                clase de 50 alumnos, 12 de ellos han suspendido, 30 han sacado
+                Suficiente, un 12 % ha obtenido Notable y el resto
+                Sobresaliente.
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">22</span> Haz la tabla de frecuencias que
+                corresponde a este gráfico.
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Medidas estadísticas</h2>
+          </section>
+          <section>
+            <h4>Medidas de centralización</h4>
+            <p>
+              Las medidas de centralización nos ayudan a resumir un conjunto de
+              datos en un solo valor que represente el centro o la tendencia
+              central de los datos. Las más comunes son la media, la mediana y
+              la moda.
+            </p>
+          </section>
+          <section>
+            <h4>Media</h4>
+            <p>
+              La media aritmética es el valor promedio de un conjunto de datos.
+              Se calcula sumando todos los valores y dividiendo entre el número
+              total de valores. La fórmula es:
+            </p>
+            <p>\(\overline{x} = \frac{\sum_{i=1}^{n} x_i}{n}\)</p>
+          </section>
+          <section>
+            <h4>Mediana</h4>
+            <p>
+              La mediana es el valor que deja el mismo número de datos por
+              encima y por debajo de él cuando los datos están ordenados. Si hay
+              un número impar de datos, la mediana es el valor central. Si hay
+              un número par de datos, la mediana es la media de los dos valores
+              centrales.
+            </p>
+          </section>
+          <section>
+            <h4>Moda</h4>
+            <p>
+              La moda es el valor que más se repite en un conjunto de datos. Es
+              posible que un conjunto de datos tenga más de una moda (si varios
+              valores se repiten el mismo número de veces) o que no tenga moda
+              (si ningún valor se repite).
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">23</span> Las estaturas (en cm) de 24
+                alumnos de 3.° ESO son:
+              </p>
+              <p>
+                158, 160, 168, 156, 166, 158, 160, 168, 168, 158, 156, 164, 162,
+                166, 164, 168, 162, 158, 156, 166, 160, 168, 160, 160
+              </p>
+              <ol class="problema__apartados">
+                <li>Agrúpalas en intervalos.</li>
+                <li>Calcula la media, mediana y moda.</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">24</span> Interpreta las medidas de
+                centralización del número de suspensos de 15 alumnos.
+              </p>
+              <p>4, 1, 0, 4, 1, 4, 1, 2, 3, 0, 2, 4, 0, 3, 1</p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">25</span> Añade un valor que no haga variar
+                la mediana.
+              </p>
+              <p>18, 8, 7, 9, 12, 15, 21, 12</p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">26</span> Calcula los cuartiles de este
+                conjunto de datos que expresan los días de baja laboral sufridos
+                por 10 trabajadores.
+              </p>
+              <p>0, 2, 3, 4, 2, 1, 1, 0, 0, 3</p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">27</span> Interpreta los cuartiles que has
+                calculado en el ejercicio anterior.
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">28</span> Se han convocado unas oposiciones
+                en las que hay 50 plazas y se han presentado 200 personas. Estos
+                son los resultados. ¿Con qué nota se consigue una plaza?
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">29</span> Las longitudes (en mm) de una
+                muestra de tornillos son las siguientes. Calcula sus medidas de
+                dispersión utilizando las marcas de clase.
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">30</span> Las notas obtenidas por un alumno
+                en cinco exámenes han sido: 3, 8, 5, 7 y 4, y las de otro
+                alumno: 2, 9, 4, 5 y 7. ¿En qué alumno es mayor la dispersión?
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">31</span> Pregunta a 5 compañeros por su
+                edad y su altura. Compara la dispersión de las dos variables.
+              </p>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
