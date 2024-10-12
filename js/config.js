@@ -16,10 +16,10 @@ Reveal.initialize({
     }
   },
 
-  chalkboard: {
-		theme: "chalkboard",
-    color: [ 'rgba(30,144,255, 1)', 'rgba(255,255,255,1)' ],
-	},
+  //chalkboard: {
+	//	theme: "chalkboard",
+  //  color: [ 'rgba(30,144,255, 1)', 'rgba(255,255,255,1)' ],
+	//},
 
   dependencies: [
     { src: '../plugin/markdown/marked.js' },
