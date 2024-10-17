@@ -10,7 +10,16 @@ Reveal.initialize({
       { icon: '<i class="fa fa-pen"></i>',
         title: 'Toggle notes canvas (C)',
         action: 'RevealChalkboard.toggleNotesCanvas();'
+      },
+      { icon: '<i class="fa fa-paragraph"></i><span>+</span>',
+        title: "Subir letra",
+        action: 'revealPlugins.fontSize.cambiar(1);'
+      },
+      { icon: '<i class="fa fa-paragraph"></i><span>-</span>',
+        title: "Subir letra",
+        action: 'revealPlugins.fontSize.cambiar(-1);'
       }
+
     ]
   },
   chalkboard: {
