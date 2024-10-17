@@ -28,6 +28,6 @@ Reveal.initialize({
     }
   },
   // ...
-  plugins: [ RevealChalkboard, RevealCustomControls ],
+  plugins: [ RevealChalkboard, RevealCustomControls, RevealMath.KaTeX ],
   // ...
 });
