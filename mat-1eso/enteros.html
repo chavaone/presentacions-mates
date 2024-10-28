@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Matemáticas 1º ESO - Divisibilidad</title>
+
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/white.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../plugin/customcontrols/style.css" />
+    <link rel="stylesheet" href="../plugin/chalkboard/style.css" />
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../css/estilo-blanco.css" />
+  </head>
+  <body>
+    <div class="reveal" id="revealdiv">
+      <div class="slides">
+        <section>
+          <h2>Números Enteros</h2>
+        </section>
+        <section>
+          <section>
+            <h2>Números negativos</h2>
+          </section>
+          <section>
+            <h4>Números negativos</h4>
+            <p>
+              Los números negativos son aquellos que están por debajo de cero en
+              la recta numérica. Representan cantidades como deudas o
+              temperaturas bajo cero. Se denotan con el signo menos (-) delante
+              del número.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">1</span> Expresa estos enunciados con un
+                número positivo, negativo o cero:
+              </p>
+              <ol class="problema__apartados">
+                <li>Subida de temperatura de 5 grados.</li>
+                <li>Pérdida de 3 puntos en un juego.</li>
+                <li>Nivel del agua por debajo de la marca de cero.</li>
+                <li>Saldo inicial en una cuenta bancaria sin cambios.</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">2</span> Indica el significado de los
+                números negativos en cada una de las situaciones:
+              </p>
+              <ol class="problema__apartados">
+                <li>Temperatura de -4 grados.</li>
+                <li>Un balance de cuenta de -200 euros.</li>
+                <li>Un submarino a 50 metros bajo el nivel del mar.</li>
+                <li>Una deuda de 10 euros.</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <h4>Valor absoluto</h4>
+            <p>
+              El valor absoluto de un número representa su distancia al cero en
+              la recta numérica, independientemente de si es positivo o
+              negativo. Se denota por barras, por ejemplo, \( |−5| = 5 \).
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">3</span> Calcula el valor absoluto de los
+                siguientes números:
+              </p>
+              <ol class="problema__apartados">
+                <li>\(|−7|\)</li>
+                <li>\(|4|\)</li>
+                <li>\(|−12|\)</li>
+                <li>\(|0|\)</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <h4>Opuesto</h4>
+            <p>
+              El opuesto de un número es aquel que tiene el mismo valor numérico
+              pero el signo contrario. Por ejemplo, el opuesto de \(−3\) es
+              \(3\), y el opuesto de \(4\) es \(−4\).
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">4</span> Calcula el opuesto de los
+                siguientes números:
+              </p>
+              <ol class="problema__apartados">
+                <li>\(Op(8)\)</li>
+                <li>\(Op(-15)\)</li>
+                <li>\(Op(7)\)</li>
+                <li>\(Op(-3)\)</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <h4>Representación en la recta numérica</h4>
+            <p>
+              Los números enteros pueden representarse en una recta numérica
+              donde los valores a la derecha del cero son positivos y los de la
+              izquierda son negativos.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">5</span> Representa en la recta numérica
+                los siguientes números:
+              </p>
+              <ol class="problema__apartados">
+                <li>\(−3\)</li>
+                <li>\(2\)</li>
+                <li>\(0\)</li>
+                <li>\(−5\)</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">6</span> Indica qué números están
+                representados en la siguiente recta:
+              </p>
+              <img src="../img/1eso_rectareal_problema.png" alt="" />
+            </div>
+          </section>
+          <section>
+            <h4>Comparación de números enteros</h4>
+            <p>
+              Para comparar números enteros, consideramos su posición en la
+              recta numérica: los números más a la derecha son mayores, y los
+              que están más a la izquierda son menores.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">7</span> Ordena de menor a mayor las
+                siguientes series de números enteros:
+              </p>
+              <ol class="problema__apartados">
+                <li>\(-3, 0, 5, -1\)</li>
+                <li>\(7, -8, 2, -4\)</li>
+                <li>\(6, -2, 3, -5\)</li>
+                <li>\(-6, 4, -1, 2\)</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Operaciones con enteros</h2>
+          </section>
+          <section>
+            <h4>Suma y resta con resultados negativos</h4>
+            <p>
+              Al sumar números enteros, si tienen el mismo signo, sumamos sus
+              valores absolutos y mantenemos el signo. Si tienen signos
+              opuestos, restamos el menor valor absoluto del mayor y usamos el
+              signo del mayor.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">8</span> Realiza las siguientes sumas y
+                restas:
+              </p>
+              <ol class="problema__apartados">
+                <li>\(7 + (−3)\)</li>
+                <li>\(−5 + 8\)</li>
+                <li>\(−9 − (−4)\)</li>
+                <li>\(12 − 15\)</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">9</span> Realiza las siguientes operaciones
+                agrupando primero los números con el mismo signo:
+              </p>
+              <ol class="problema__apartados">
+                <li>\(3 −7 + 5 - 4 + 3 + 2\)</li>
+                <li>\(−4 + −6 + 8 - 2 - 4\)</li>
+                <li>\(−10 + 12 − 5 + 3 + 1\)</li>
+                <li>\(15 − 3 − 4 - 1 + 7\)</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">10</span> Realiza las siguientes
+                operaciones paso a paso:
+              </p>
+              <ol class="problema__apartados">
+                <li>\( (-6) + (−2) − (+4) + (-8) \)</li>
+                <li>\( (−7) + (+5) − (+3) - (+4)\)</li>
+                <li>\( (+12) − (+9) + (−6) - (-3)\)</li>
+                <li>\( (−8) + (+4) + (−5) + (-7)\)</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <h4>Multiplicación y división de números negativos</h4>
+            <p>
+              Cuando multiplicamos o dividimos dos números con el mismo signo,
+              el resultado es positivo. Si tienen signos opuestos, el resultado
+              es negativo.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">11</span> Calcula las siguientes
+                multiplicaciones y divisiones de números enteros:
+              </p>
+              <ol class="problema__apartados">
+                <li>\( (−3) \cdot (+4)\)</li>
+                <li>\( (−5) \cdot (−2)\)</li>
+                <li>\( (+15) : (−3)\)</li>
+                <li>\((−16) : (+4)\)</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">12</span> Resuelve las siguientes
+                operaciones:
+              </p>
+              <ol class="problema__apartados">
+                <li>\((−6) \cdot (−3) + 4\)</li>
+                <li>\(5 \cdot (−4) − 8\)</li>
+                <li>\(10 : (−2) + 7\)</li>
+                <li>\((−12) : 3 − 5\)</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <h4>Potencias de números enteros</h4>
+            <p>
+              Las potencias de números enteros siguen ciertas reglas. Si el
+              exponente es par, el resultado siempre es positivo; si es impar,
+              el resultado tiene el mismo signo que la base.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">13</span> Indica el signo de las siguientes
+                potencias:
+              </p>
+              <ol class="problema__apartados">
+                <li>\((−3)^4\)</li>
+                <li>\((−2)^3\)</li>
+                <li>\(5^2\)</li>
+                <li>\((−1)^5\)</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Operaciones combinadas con enteros</h2>
+          </section>
+          <section>
+            <h4>Jerarquía de operaciones con enteros</h4>
+            <p>
+              Para resolver operaciones combinadas, es importante seguir la
+              jerarquía de operaciones: primero se resuelven las potencias y
+              raíces, luego multiplicaciones y divisiones, y finalmente sumas y
+              restas.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">14</span> Resuelve las siguientes
+                operaciones combinadas con números enteros:
+              </p>
+              <ol class="problema__apartados">
+                <li>\(3 + 5 \cdot (−2)\)</li>
+                <li>\((−4) \cdot (2 + 6) − 3\)</li>
+                <li>\(8 : (−4) + 2^3\)</li>
+                <li>\(−7 + (3 \cdot 2) − (−5)\)</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h2>Problemas</h2>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="../plugin/customcontrols/plugin.js"></script>
+    <script src="../plugin/chalkboard/plugin.js"></script>
+    <script src="../plugin/math/math.js"></script>
+    <script type="module" src="/js/config.esm.js"></script>
+    <script src="../js/custom_plugins.js"></script>
+  </body>
+</html>
