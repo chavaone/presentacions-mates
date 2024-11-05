@@ -1,0 +1,498 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Matemáticas 3º ESO - Probabilidad</title>
+
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/white.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../plugin/customcontrols/style.css" />
+    <link rel="stylesheet" href="../plugin/chalkboard/style.css" />
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../css/estilo-blanco.css" />
+  </head>
+
+  <body>
+    <div class="reveal" id="revealdiv">
+      <div class="slides">
+        <section>
+          <h2>Probabilidad</h2>
+        </section>
+
+        <section>
+          <section>
+            <h2>Experimentos y sucesos</h2>
+          </section>
+          <section>
+            <h4>Experimentos deterministas y aleatorios</h4>
+            <p>
+              Un <strong>experimento determinista</strong> es aquel en el que
+              siempre se obtiene el mismo resultado al realizarlo bajo las
+              mismas condiciones, mientras que en un
+              <strong>experimento aleatorio</strong> el resultado puede variar.
+            </p>
+            <p>
+              Ejemplos: lanzar una moneda es un experimento aleatorio, mientras
+              que medir la longitud de un objeto es determinista.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">1</span>Clasifica los siguientes
+                experimentos en aleatorios o deterministas.
+              </p>
+              <ol class="problema__apartados">
+                <li>Extraer una carta de una baraja.</li>
+                <li>Pesar un litro de mercurio.</li>
+                <li>Preguntar a tus compañeros un número.</li>
+                <li>Lanzar tres monedas y anotar el número de caras.</li>
+                <li>
+                  Medir la hipotenusa en un triángulo rectángulo de catetos 3cm
+                  y 4 cm.
+                </li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">2</span> En una bolsa hay 10 bolas de 3
+                colores diferentes. Escribe un experimento aleatorio y otro
+                determinista.
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Sucesos y operaciones con ellos</h2>
+          </section>
+          <section>
+            <h4>Sucesos elementales y espacio muestral</h4>
+            <p>
+              El <strong>espacio muestral</strong> es el conjunto de todos los
+              resultados posibles de un experimento aleatorio. Un
+              <strong>suceso elemental</strong> es un solo resultado dentro de
+              ese espacio muestral.
+            </p>
+            <p>
+              Por ejemplo, al lanzar un dado, el espacio muestral es {1, 2, 3,
+              4, 5, 6}.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">4</span> Escribe el espacio muestral de los
+                siguientes experimentos aleatorios.
+              </p>
+              <ol class="problema__apartados">
+                <li>Extraer una carta de la baraja española.</li>
+                <li>Lanzar una chincheta y anotar la posición de caída.</li>
+                <li>
+                  Sacar una bola de una urna con 5 bolas rojas, 3 azules y 2
+                  verdes.
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Sucesos compuestos</h4>
+            <p>
+              Un <strong>suceso compuesto</strong> es aquel que se forma
+              combinando varios sucesos elementales.
+            </p>
+            <p>
+              Por ejemplo, en el lanzamiento de un dado, el suceso "sacar un
+              número par" es compuesto, ya que incluye los resultados {2, 4, 6}.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">6</span> Se lanzan 2 dados y se multiplica
+                el número de puntos obtenido en cada uno. ¿Cuántos resultados se
+                pueden obtener? Describe el espacio muestral e indica dos
+                sucesos que no sean elementales.
+              </p>
+            </div>
+          </section>
+          <section>
+            <h4>Sucesos seguro y imposible</h4>
+            <p>
+              El <strong>suceso seguro</strong> es aquel que siempre ocurre,
+              como "sacar un número entre 1 y 6" al lanzar un dado. El
+              <strong>suceso imposible</strong> es el que nunca ocurre, como
+              "sacar un 7" en un dado de seis caras.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">10</span> En una urna hay 5 bolas blancas y
+                4 bolas rojas. Describe un suceso seguro y uno imposible.
+              </p>
+            </div>
+          </section>
+          <section>
+            <h4>Operaciones con sucesos: unión</h4>
+            <p>
+              La unión de dos sucesos incluye todos los resultados que
+              pertenecen a al menos uno de los sucesos.
+            </p>
+            <p>
+              Si A es "sacar un número par" y B es "sacar un número mayor que
+              3", la unión A ∪ B es {2, 4, 5, 6}.
+            </p>
+          </section>
+          <section>
+            <h4>Operaciones con sucesos: intersección</h4>
+            <p>
+              La intersección de dos sucesos incluye solo los resultados
+              comunes.
+            </p>
+            <p>
+              Si A es "sacar un número par" y B es "sacar un número mayor que
+              3", la intersección A ∩ B es {4, 6}.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">13</span> Calcula la unión y la
+                intersección de los sucesos $A = \{1, 2, 3\}$ y $B = \{1, 3,
+                5\}$:
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">14</span> Al extraer una carta de la baraja
+                española expresa en forma de uniones e intersecciones los
+                siguientes sucesos.
+              </p>
+              <ol class="problema__apartados">
+                <li>«Que salga un número menor que 5 y mayor que 2».</li>
+                <li>«Que salga una figura y sea de bastos».</li>
+                <li>«Que no salga un as».</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">15</span> Extraemos una carta de la baraja.
+                Halla la unión y la intersección de las siguientes parejas de
+                sucesos.
+              </p>
+              <ol class="problema__apartados">
+                <li>A = «Sacar oros» y B = «Sacar copas».</li>
+                <li>C = «Sacar as» y D = «No sacar as».</li>
+                <li>F = «Sacar bastos» y G = «Sacar as».</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Sucesos incompatibles</h4>
+            <p>
+              Dos sucesos son incompatibles si no pueden ocurrir al mismo
+              tiempo.
+            </p>
+            <p>
+              Por ejemplo, en el lanzamiento de un dado, "sacar un 1" y "sacar
+              un 6" son incompatibles.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">18</span> Determina dos sucesos compatibles
+                y otros dos incompatibles en el experimento aleatorio de lanzar
+                dos monedas al aire.
+              </p>
+            </div>
+          </section>
+          <section>
+            <h4>Operaciones con sucesos: complementario</h4>
+            <p>
+              El complemento de un suceso A es el conjunto de resultados que no
+              están en A.
+            </p>
+            <p>
+              Por ejemplo, si A es "sacar un número par", el complemento es
+              "sacar un número impar".
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">20</span> Considera el lanzamiento de 3 monedas. Escribe los siguientes sucesos:
+A = «Obtener al menos una cara» y B = «Obtener una sola cara». Calcula.
+</p>
+              <ol class="problema__apartados">
+                <li>$A \cup B$</li>
+                <li>$A \cap B$</li>
+                <li>$\overline{A}$</li>
+                <li>$\overline{B}$</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">25</span> 25</p>
+              <ol class="problema__apartados">
+                <li></li>
+
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">26</span> 26</p>
+              <ol class="problema__apartados">
+                <li></li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Iniciación a la combinatoria</h2>
+          </section>
+
+          <section>
+            <h4>Técnicas para contar: diagrama de árbol</h4>
+            <p>
+              Un diagrama de árbol es una herramienta visual que ayuda a
+              representar todas las posibles combinaciones de un experimento
+              secuencial. Por ejemplo, al lanzar una moneda y luego un dado,
+              cada rama representa un resultado posible.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">12</span> 27</p>
+              <ol class="problema__apartados">
+                <li></li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <h4>Técnicas para contar tabla de contingencia</h4>
+            <p>
+              Una tabla de contingencia muestra las frecuencias de ocurrencia de
+              dos o más variables categóricas. Por ejemplo, se puede usar para
+              ver la relación entre el género de una persona y su preferencia de
+              bebida.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">13</span> 28</p>
+              <ol class="problema__apartados">
+                <li></li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <h4>Regla del producto</h4>
+            <p>
+              La regla del producto establece que si un experimento se compone
+              de dos etapas, donde la primera tiene n resultados posibles y la
+              segunda m resultados, el total de resultados es n × m.
+            </p>
+          </section>
+          <section>
+            <h4>Permutaciones</h4>
+            <p>
+              Las permutaciones son ordenamientos de un conjunto de elementos.
+              En un grupo de 3 personas (A, B, C), las permutaciones posibles
+              son ABC, ACB, BAC, BCA, CAB y CBA.
+            </p>
+          </section>
+          <section>
+            <h4>Variaciones sin repetición</h4>
+            <p>
+              Las variaciones sin repetición son arreglos de un subconjunto de
+              elementos de un conjunto, en los que el orden importa. Por
+              ejemplo, elegir 2 de las letras {A, B, C} sin repetir da AB, AC,
+              BA, BC, CA, CB.
+            </p>
+          </section>
+          <section>
+            <h4>Variaciones con repetición</h4>
+            <p>
+              En variaciones con repetición, se permite que un elemento aparezca
+              varias veces. Por ejemplo, eligiendo 2 de las letras {A, B}, se
+              pueden obtener AA, AB, BA, BB.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">14</span> 30</p>
+              <ol class="problema__apartados">
+                <li></li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">15</span> 31</p>
+              <ol class="problema__apartados">
+                <li></li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Probabilidad</h2>
+          </section>
+
+          <section>
+            <h4>¿Qué es la probabilidad?</h4>
+            <p>
+              La probabilidad mide la posibilidad de que un suceso ocurra. Se
+              calcula como el número de casos favorables dividido por el número
+              de casos posibles. Por ejemplo, al lanzar un dado, la probabilidad
+              de sacar un 3 es 1/6.
+            </p>
+          </section>
+          <section>
+            <h4>Ley de Laplace</h4>
+            <p>
+              La ley de Laplace establece que, en experimentos aleatorios
+              simples y equiprobables, la probabilidad de un suceso es el
+              cociente entre los casos favorables y los posibles.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">16</span> 33</p>
+              <ol class="problema__apartados">
+                <li></li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">17</span> 34</p>
+              <ol class="problema__apartados">
+                <li></li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">18</span> 35</p>
+              <ol class="problema__apartados">
+                <li></li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">19</span> 37</p>
+              <ol class="problema__apartados">
+                <li></li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Probabilidad: sucesos compuestos</h2>
+          </section>
+
+          <section>
+            <h4>Probabilidad de sucesos compuestos</h4>
+            <p>
+              Para sucesos compuestos, la probabilidad puede calcularse usando
+              reglas como la de adición o la de multiplicación, dependiendo de
+              si los sucesos son incompatibles o independientes.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">20</span> 41</p>
+              <ol class="problema__apartados">
+                <li></li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">21</span> 43</p>
+              <ol class="problema__apartados">
+                <li></li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">22</span> 44</p>
+              <ol class="problema__apartados">
+                <li></li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Probabilidad: sucesos no equiprobables</h2>
+          </section>
+
+          <section>
+            <h4>Ley de los grandes números</h4>
+            <p>
+              La ley de los grandes números establece que, al repetir un
+              experimento muchas veces, la frecuencia relativa de un suceso
+              tiende a estabilizarse en torno a su probabilidad real.
+            </p>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">23</span> 45</p>
+              <ol class="problema__apartados">
+                <li></li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <div class="problema">
+              <p><span class="numero">24</span> 46</p>
+              <ol class="problema__apartados">
+                <li></li>
+              </ol>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="../plugin/customcontrols/plugin.js"></script>
+    <script src="../plugin/chalkboard/plugin.js"></script>
+    <script src="../plugin/math/math.js"></script>
+    <script type="module" src="/js/config.esm.js"></script>
+    <script src="../js/custom_plugins.js"></script>
+  </body>
+</html>
