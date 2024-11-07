@@ -289,11 +289,10 @@
             </p>
           </section>
 
-
           <section>
             <img src="../img/venn_2.png" alt="">
           </section>
-          
+
           <section>
             <img src="../img/venn_7.png" alt="">
           </section>
@@ -313,18 +312,14 @@ A = «Obtener al menos una cara» y B = «Obtener una sola cara». Calcula.
           </section>
           <section>
             <div class="problema">
-              <p><span class="numero">25</span> 25</p>
+              <p>
+                <span class="numero">25</span>Al lanzar un dado de 6 caras, $A = \{2, 4\}$ y $B = \{1, 2, 3\}$. Calcula:
+              </p>
               <ol class="problema__apartados">
-                <li></li>
-
-            </div>
-          </section>
-          <section>
-            <div class="problema">
-              <p><span class="numero">26</span> 26</p>
-              <ol class="problema__apartados">
-                <li></li>
-              </ol>
+                <li>Calcula $A \cap B$</li>
+                <li>Calcula $A \cup B$</li>
+                <li>¿Son A y B sucesos compatibles?</li>
+                <li>Obtén el contrario de los sucesos $A$, $B$, $A \cap B$ y $A \cup B$.</li>
             </div>
           </section>
         </section>
@@ -345,29 +340,10 @@ A = «Obtener al menos una cara» y B = «Obtener una sola cara». Calcula.
           </section>
           <section>
             <div class="problema">
-              <p><span class="numero">12</span> 27</p>
-              <ol class="problema__apartados">
-                <li></li>
-              </ol>
+              <p><span class="numero">27</span> Lanzamos una moneda y un dado de 6 caras. ¿Cuál es el espacio muestral? Ayudate de un diagrama de árbol.</p>
             </div>
           </section>
-          <section>
-            <h4>Técnicas para contar tabla de contingencia</h4>
-            <p>
-              Una tabla de contingencia muestra las frecuencias de ocurrencia de
-              dos o más variables categóricas. Por ejemplo, se puede usar para
-              ver la relación entre el género de una persona y su preferencia de
-              bebida.
-            </p>
-          </section>
-          <section>
-            <div class="problema">
-              <p><span class="numero">13</span> 28</p>
-              <ol class="problema__apartados">
-                <li></li>
-              </ol>
-            </div>
-          </section>
+          
           <section>
             <h4>Regla del producto</h4>
             <p>
@@ -376,44 +352,70 @@ A = «Obtener al menos una cara» y B = «Obtener una sola cara». Calcula.
               segunda m resultados, el total de resultados es n × m.
             </p>
           </section>
+
           <section>
             <h4>Permutaciones</h4>
             <p>
-              Las permutaciones son ordenamientos de un conjunto de elementos.
-              En un grupo de 3 personas (A, B, C), las permutaciones posibles
-              son ABC, ACB, BAC, BCA, CAB y CBA.
+              Las permutaciones son ordenamientos de un conjunto de $n$ elementos.
             </p>
+            <p>
+              Por ejemplo, si queremos ordenar 3 letras A, B y C lo podemos hacer de 6 forma: ABC, ACB, BAC, BCA, CAB y CBA.
+            </p>
+          </section>
+          <section>
+            <h4>Permutaciones</h4>
+            <p>¿Cuántas permutaciones (ordenaciones) podríamos hacer con un alfabeto de 5 letras? ¿Y con uno de 26?</p>
+            <p class="fragment">\(P(n) = n!\)</p>
           </section>
           <section>
             <h4>Variaciones sin repetición</h4>
             <p>
-              Las variaciones sin repetición son arreglos de un subconjunto de
-              elementos de un conjunto, en los que el orden importa. Por
-              ejemplo, elegir 2 de las letras {A, B, C} sin repetir da AB, AC,
-              BA, BC, CA, CB.
+              Las variaciones son cadenas ordenadas de elemento de dentro de un conjunto. En este caso como son sin repetición no podemos repetir los elementos del conjunto.
+            </p>
+            <p>
+              Por ejemplo, si queremos elegir dos letras de entre las letras {A, B, C} sin repetir podríamos hacerlo de 6 formas: AB, AC,
+              BA, BC, CA y CB.
             </p>
           </section>
           <section>
-            <h4>Variaciones con repetición</h4>
+            <h4>Variaciones sin repetición</h4>
+            <p>¿Cuántas variaciones sin repetición podremos hacer con un alfabeto de 10 elementos si queremos elegir 4 letras?</p>
+            <p>V(n,m) = \frac{n!}{(n-m)!}</p>
+          </section>
+          <section>
+            <h4>Variaciones sin repetición</h4>
             <p>
-              En variaciones con repetición, se permite que un elemento aparezca
-              varias veces. Por ejemplo, eligiendo 2 de las letras {A, B}, se
-              pueden obtener AA, AB, BA, BB.
+              Las variaciones son cadenas ordenadas de elemento de dentro de un conjunto. En este caso como son con repetición podemos repetir los elementos del conjunto.
+            </p>
+            <p>
+              Por ejemplo, si queremos elegir dos letras de entre las letras {A, B, C} sin repetir podríamos hacerlo de 9 formas: AB, AA, AC,
+              BA, BB, BC, CA, CB y CC.
             </p>
           </section>
+          <section>
+            <h4>Variaciones sin repetición</h4>
+            <p>¿Cuántas variaciones con repetición podremos hacer con un alfabeto de 10 elementos si queremos elegir 4 letras?</p>
+            <p>VR(n,m) = n^m</p>
+          </section>
+          
           <section>
             <div class="problema">
-              <p><span class="numero">14</span> 30</p>
+              <p><span class="numero">30</span> Dada una clase de 30 alumnos calcula:</p>
               <ol class="problema__apartados">
-                <li></li>
+                <li>Número de formas de colocarlos en una fila ordenada.</li>
+                <li>Número de formas de elegir un delegado y un subdelegado (teniendo en cuenta que no pueden ser la misma persona)</li>
               </ol>
             </div>
           </section>
           <section>
             <div class="problema">
-              <p><span class="numero">15</span> 31</p>
+              <p>
+                <span class="numero">31</span>
+                La contraseña de una determinada web tiene que tener 5 letras minúsculas elegidas del alfabeto (26 letras). Calcula lo siguiente:
+              </p>
               <ol class="problema__apartados">
-                <li></li>
+                <li>El número total de maneras en que se puede formar la contraseña si todas las letras deben ser distintas.</li>
+                <li>El número de formas de formar la contraseña si se permite repetir letras.</li>
               </ol>
             </div>
           </section>
@@ -427,10 +429,7 @@ A = «Obtener al menos una cara» y B = «Obtener una sola cara». Calcula.
           <section>
             <h4>¿Qué es la probabilidad?</h4>
             <p>
-              La probabilidad mide la posibilidad de que un suceso ocurra. Se
-              calcula como el número de casos favorables dividido por el número
-              de casos posibles. Por ejemplo, al lanzar un dado, la probabilidad
-              de sacar un 3 es 1/6.
+              La probabilidad es una medida de la certidumbre de que un proceso ocurra. Es una cantida entre 0 (suceso seguro) y 1 (suceso imposible).
             </p>
           </section>
           <section>
