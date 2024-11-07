@@ -118,4 +118,5 @@ body.print-pdf .pregunta__opcion:not(:last-child) {
 
 .katex-display {
   display: inline-block !important;
+  margin: 0 !important;
 }
