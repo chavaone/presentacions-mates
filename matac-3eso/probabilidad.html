@@ -77,7 +77,7 @@
 
         <section>
           <section>
-            <h2>Sucesos y operaciones con ellos</h2>
+            <h2>Espacio muestral y sucesos</h2>
           </section>
           <section>
             <h4>Sucesos elementales y espacio muestral</h4>
@@ -88,8 +88,7 @@
               ese espacio muestral.
             </p>
             <p>
-              Por ejemplo, al lanzar un dado, el espacio muestral es {1, 2, 3,
-              4, 5, 6}.
+              Por ejemplo, al lanzar un dado, el espacio muestral es \( \Omega = \{1, 2, 3, 4, 5, 6\}  \).
             </p>
           </section>
           <section>
@@ -116,8 +115,8 @@
               combinando varios sucesos elementales.
             </p>
             <p>
-              Por ejemplo, en el lanzamiento de un dado, el suceso "sacar un
-              número par" es compuesto, ya que incluye los resultados {2, 4, 6}.
+              Por ejemplo, en el lanzamiento de un dado, el suceso \(A = \text{"sacar un
+              número par"}\) es compuesto, ya que incluye los resultados \(A = \{2, 4, 6\}\).
             </p>
           </section>
           <section>
@@ -147,6 +146,14 @@
               </p>
             </div>
           </section>
+        </section>
+        
+        <section>
+
+          <section>
+            <h2>Operaciones con sucesos</h2>
+          </section>
+
           <section>
             <h4>Operaciones con sucesos: unión</h4>
             <p>
@@ -154,8 +161,8 @@
               pertenecen a al menos uno de los sucesos.
             </p>
             <p>
-              Si A es "sacar un número par" y B es "sacar un número mayor que
-              3", la unión A ∪ B es {2, 4, 5, 6}.
+              Si \(A\) es "sacar un número par" y \(B\) es "sacar un número mayor que
+              3", la unión \(A \cup B =  \{2, 4, 5, 6\}\).
             </p>
           </section>
           <section>
@@ -166,37 +173,50 @@
             </p>
             <p>
               Si A es "sacar un número par" y B es "sacar un número mayor que
-              3", la intersección A ∩ B es {4, 6}.
+              3", la intersección \(A \cap B =  \{4, 6\}\)
             </p>
           </section>
+
+          <section>
+            <h4>Espacio Muestral (\(\Omega\)): lanzar un dado</h4>
+            <img src="../img/venn_1.png" alt="">
+          </section>
+          
+          <section>
+            <h4>Suceso \(A = \) "sacar un número par"</h4>
+            <img src="../img/venn_2.png" alt="">
+          </section>
+          <section>
+            <h4>Suceso \(B = \) "sacar un número mayor que 3"</h4>
+            <img src="../img/venn_3.png" alt="">
+          </section>
+          <section>
+            <img src="../img/venn_4.png" alt="">
+          </section>
+          <section>
+            <h4>Unión \(A \cup B\)</h4>
+            <img src="../img/venn_5.png" alt="">
+          </section>
+          <section>
+            <h4>Intersección \(A \cap B\)</h4>
+            <img src="../img/venn_6.png" alt="">
+          </section>
+
+
           <section>
             <div class="problema">
               <p>
                 <span class="numero">13</span> Calcula la unión y la
                 intersección de los sucesos $A = \{1, 2, 3\}$ y $B = \{1, 3,
-                5\}$:
+                5\}$. Represéntalo con un diagrama de Venn:
               </p>
-            </div>
-          </section>
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">14</span> Al extraer una carta de la baraja
-                española expresa en forma de uniones e intersecciones los
-                siguientes sucesos.
-              </p>
-              <ol class="problema__apartados">
-                <li>«Que salga un número menor que 5 y mayor que 2».</li>
-                <li>«Que salga una figura y sea de bastos».</li>
-                <li>«Que no salga un as».</li>
-              </ol>
             </div>
           </section>
 
           <section>
             <div class="problema">
               <p>
-                <span class="numero">15</span> Extraemos una carta de la baraja.
+                <span class="numero">14</span> Extraemos una carta de la baraja.
                 Halla la unión y la intersección de las siguientes parejas de
                 sucesos.
               </p>
@@ -209,14 +229,29 @@
           </section>
 
           <section>
+            <div class="problema">
+              <p>
+                <span class="numero">15</span> Al extraer una carta de la baraja
+                española expresa en forma de uniones e intersecciones los
+                siguientes sucesos.
+              </p>
+              <ol class="problema__apartados">
+                <li>«Que salga un número menor que 5 y mayor que 2».</li>
+                <li>«Que salga una figura y sea de bastos».</li>
+                <li>«Que no salga un as».</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
             <h4>Sucesos incompatibles</h4>
             <p>
               Dos sucesos son incompatibles si no pueden ocurrir al mismo
-              tiempo.
+              tiempo y por lo tanto su intersección es nula.
             </p>
             <p>
               Por ejemplo, en el lanzamiento de un dado, "sacar un 1" y "sacar
-              un 6" son incompatibles.
+              numero par" son incompatibles.
             </p>
           </section>
           <section>
@@ -228,17 +263,41 @@
               </p>
             </div>
           </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero"24></span>En un bombo hay 15 bolas numeradas del 1 al 15 y se extrae una de ellas. Escribe los elementos que forman los sucesos siguientes:</p>
+              <ol class="problema__apartados">
+                <li>A = "Múltiplo de 3"</li>
+                <li>B = "Múltiplo de 2"</li>
+                <li>C = "Mayor que 4"</li>
+              </ol>
+              <p>Indica además un sucesos compatible y uno incompatible con cada uno de ellos.</p>
+            </div>
+          </section>
+
+
           <section>
             <h4>Operaciones con sucesos: complementario</h4>
             <p>
-              El complemento de un suceso A es el conjunto de resultados que no
+              El <strong>complementario</strong> de un suceso A es el conjunto de resultados que no
               están en A.
             </p>
             <p>
-              Por ejemplo, si A es "sacar un número par", el complemento es
-              "sacar un número impar".
+              Por ejemplo, si \(A\) es "sacar un número par", el complemento es
+              \(\overline{A}\) = "sacar un número impar".
             </p>
           </section>
+
+
+          <section>
+            <img src="../img/venn_2.png" alt="">
+          </section>
+          
+          <section>
+            <img src="../img/venn_7.png" alt="">
+          </section>
+
           <section>
             <div class="problema">
               <p><span class="numero">20</span> Considera el lanzamiento de 3 monedas. Escribe los siguientes sucesos:
