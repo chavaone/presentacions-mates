@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="posiciones_decimales.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.70180348"
+     inkscape:cx="284.98006"
+     inkscape:cy="369.04918"
+     inkscape:window-width="1920"
+     inkscape:window-height="999"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="Stop"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Stop"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1"
+         d="M 0,4 V -4"
+         id="path23" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Stop-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Stop"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1"
+         d="M 0,4 V -4"
+         id="path23-4" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:20.0161px;line-height:1.2;font-family:Gotham;-inkscape-font-specification:Gotham;text-align:center;letter-spacing:8.18843px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#c4c3c3;stroke-width:3.61065;stroke-linecap:round"
+       x="25.730751"
+       y="108.52647"
+       id="text1"
+       inkscape:export-filename="posicion_decimales.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:8.18843px;fill:#000000;stroke-width:3.61065"
+         x="29.824965"
+         y="108.52647">2,</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20.0161px;line-height:1.2;font-family:Gotham;-inkscape-font-specification:Gotham;text-align:center;letter-spacing:8.18843px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#c4c3c3;stroke-width:3.61065;stroke-linecap:round"
+       x="55.421513"
+       y="109.43719"
+       id="text1-0"><tspan
+         sodipodi:role="line"
+         id="tspan1-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:8.18843px;fill:#000000;stroke-width:3.61065"
+         x="59.515728"
+         y="109.43719">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20.0161px;line-height:1.2;font-family:Gotham;-inkscape-font-specification:Gotham;text-align:center;letter-spacing:8.18843px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#c4c3c3;stroke-width:3.61065;stroke-linecap:round"
+       x="129.71252"
+       y="109.60733"
+       id="text1-0-6"><tspan
+         sodipodi:role="line"
+         id="tspan1-3-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:8.18843px;fill:#000000;stroke-width:3.61065"
+         x="133.80673"
+         y="109.60733">6</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20.0161px;line-height:1.2;font-family:Gotham;-inkscape-font-specification:Gotham;text-align:center;letter-spacing:8.18843px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#c4c3c3;stroke-width:3.61065;stroke-linecap:round"
+       x="154.30998"
+       y="109.17936"
+       id="text1-0-6-4"><tspan
+         sodipodi:role="line"
+         id="tspan1-3-3-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:8.18843px;fill:#000000;stroke-width:3.61065"
+         x="158.40419"
+         y="109.17936">7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20.0161px;line-height:1.2;font-family:Gotham;-inkscape-font-specification:Gotham;text-align:center;letter-spacing:8.18843px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#c4c3c3;stroke-width:3.61065;stroke-linecap:round"
+       x="179.63303"
+       y="109.50725"
+       id="text1-0-6-7"><tspan
+         id="tspan1-3-3-4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:8.18843px;fill:#000000;stroke-width:3.61065"
+         x="189.82307"
+         y="109.50725"
+         sodipodi:role="line">8 </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20.0161px;line-height:1.2;font-family:Gotham;-inkscape-font-specification:Gotham;text-align:center;letter-spacing:8.18843px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#c4c3c3;stroke-width:3.61065;stroke-linecap:round"
+       x="104.89992"
+       y="109.39716"
+       id="text1-0-1"><tspan
+         sodipodi:role="line"
+         id="tspan1-3-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:8.18843px;fill:#000000;stroke-width:3.61065"
+         x="108.99413"
+         y="109.39716">5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20.0161px;line-height:1.2;font-family:Gotham;-inkscape-font-specification:Gotham;text-align:center;letter-spacing:8.18843px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#c4c3c3;stroke-width:3.61065;stroke-linecap:round"
+       x="79.957222"
+       y="109.61734"
+       id="text1-0-65"><tspan
+         sodipodi:role="line"
+         id="tspan1-3-6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:8.18843px;fill:#000000;stroke-width:3.61065"
+         x="84.051437"
+         y="109.61734">4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.7975px;line-height:1.2;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff0000;stroke-width:2.48889;stroke-linecap:round"
+       x="-27.688406"
+       y="77.938515"
+       id="text2"
+       transform="rotate(-45)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:0px;fill:#ff0000;stroke-width:2.48889"
+         x="-27.688406"
+         y="77.938515"
+         id="tspan3">unidades</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.7975px;line-height:1.2;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff0000;stroke-width:2.48889;stroke-linecap:round"
+       x="-3.5486689"
+       y="104.62389"
+       id="text2-3"
+       transform="rotate(-45)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:0px;fill:#ff0000;stroke-width:2.48889"
+         x="-3.5486698"
+         y="104.62389"
+         id="tspan3-7">décimas</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.7975px;line-height:1.2;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff0000;stroke-width:2.48889;stroke-linecap:round"
+       x="18.641787"
+       y="120.06735"
+       id="text2-2"
+       transform="rotate(-45)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:0px;fill:#ff0000;stroke-width:2.48889"
+         x="18.641787"
+         y="120.06735"
+         id="tspan3-8">centésimas</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.7975px;line-height:1.2;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff0000;stroke-width:2.48889;stroke-linecap:round"
+       x="34.115669"
+       y="138.39732"
+       id="text2-3-9"
+       transform="rotate(-45)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:0px;fill:#ff0000;stroke-width:2.48889"
+         x="34.115669"
+         y="138.39732"
+         id="tspan3-7-7">milésimas</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.7975px;line-height:1.2;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff0000;stroke-width:2.48889;stroke-linecap:round"
+       x="63.426109"
+       y="157.04233"
+       id="text2-3-2"
+       transform="rotate(-45)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:0px;fill:#ff0000;stroke-width:2.48889"
+         x="63.426109"
+         y="157.04233"
+         id="tspan3-7-9">diezmilésimas</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.7975px;line-height:1.2;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff0000;stroke-width:2.48889;stroke-linecap:round"
+       x="94.450821"
+       y="190.64716"
+       id="text2-2-3"
+       transform="rotate(-45)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:0px;fill:#ff0000;stroke-width:2.48889"
+         x="94.450821"
+         y="190.64716"
+         id="tspan3-8-1">millonésimas</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.7975px;line-height:1.2;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff0000;stroke-width:2.48889;stroke-linecap:round"
+       x="79.481552"
+       y="173.31851"
+       id="text2-3-9-9"
+       transform="rotate(-45)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:0px;fill:#ff0000;stroke-width:2.48889"
+         x="80.861305"
+         y="173.31851"
+         id="tspan3-7-7-4">cienmilésimas </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;line-height:1.2;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';text-align:center;letter-spacing:1.22502px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.7;stroke-linecap:round"
+       x="29.049704"
+       y="17.323217"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="stroke-width:0.7"
+         x="29.049704"
+         y="17.323217" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20.0161px;line-height:1.2;font-family:Gotham;-inkscape-font-specification:Gotham;text-align:center;letter-spacing:8.18843px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#c4c3c3;stroke-width:3.61065;stroke-linecap:round"
+       x="-1.9784281"
+       y="109.51727"
+       id="text1-1"
+       inkscape:export-filename="posicion_decimales.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan1-4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:8.18843px;fill:#000000;stroke-width:3.61065"
+         x="2.1157873"
+         y="109.51727">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.7975px;line-height:1.2;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff0000;stroke-width:2.48889;stroke-linecap:round"
+       x="-43.462803"
+       y="62.191719"
+       id="text2-6"
+       transform="rotate(-45)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';letter-spacing:0px;fill:#ff0000;stroke-width:2.48889"
+         x="-43.462803"
+         y="62.191719"
+         id="tspan3-89">decenas</tspan></text>
+    <path
+       style="fill:#0000ff;stroke:#0723d9;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Stop);marker-end:url(#Stop)"
+       d="M 46.314318,123.61768 H 189.37282"
+       id="path5" />
+    <path
+       style="fill:#ff00cc;stroke:#ff00cc;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.72156864;marker-start:url(#Stop-6);marker-end:url(#Stop-6);fill-opacity:1"
+       d="M -6.4789671,123.61768 H 36.781603"
+       id="path5-5" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;line-height:1.2;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';text-align:center;letter-spacing:3.12702px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff00cc;stroke:none;stroke-width:1.96978;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       x="14.939649"
+       y="142.68411"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="font-size:14.1111px;stroke:none;stroke-width:1.96978;fill:#ff00cc;fill-opacity:1"
+         x="16.503159"
+         y="142.68411">parte entera</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;line-height:1.2;font-family:'Bubblegum Sans';-inkscape-font-specification:'Bubblegum Sans';text-align:center;letter-spacing:3.12702px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#0000ff;stroke:none;stroke-width:1.96978;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       x="117.73773"
+       y="157.5143"
+       id="text6"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         style="font-size:14.1111px;stroke:none;stroke-width:1.96978"
+         x="119.30124"
+         y="157.5143">parte decimal</tspan></text>
+  </g>
+</svg>
