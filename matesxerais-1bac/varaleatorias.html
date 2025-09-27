@@ -1,0 +1,682 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Métodos Estatísticos e Numéricos - 2º BAC - Tema 2</title>
+
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/black.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/monokai.css">
+		<link rel="stylesheet" href="../css/estilo.css">
+
+
+		<!-- Printing and PDF exports -->
+		<script src="../js/print.js"></script>
+	</head>
+	<body>
+		<div class="reveal" id="revealdiv">
+			<div class="slides">
+				<section>
+					<h3>Tema 2: Variables Aleatorias</h3>
+				</section>
+
+				<section>
+	        <section>
+							<h4>Variables aleatorias</h4>
+							<q>Función que asocia a cada suceso elemental, un número real.</q>
+							<p>\[ X:\Omega\to \mathbb{R} \]</p>
+	        </section>
+
+					<section>
+						<h4>Exemplo</h4>
+						<p>Definimos a v.a. discreta \[X = \] "Número de caras obtidas ó lanzar 3 moedas."</p>
+						<ul>
+							<li>"Non sacar ninguna cara" \[\Rightarrow 0 \]</li>
+							<li>"Sacar unha cara" \[\Rightarrow 1 \]</li>
+							<li>"Sacar dúas caras" \[\Rightarrow 2 \]</li>
+							<li>"Sacar tres cara" \[\Rightarrow 3 \]</li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>Tipos</h4>
+						<ul>
+							<li>Discretas: P. ex. <em>"número obtido ó lanzar un dado"</em></li>
+							<li>Continuas: P. ex. <em>"altura de unha persoa elixida ó azar"</em></li>
+						</ul>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h6>V.A. Discretas</h6>
+						<h3>Función de masa de probabilidade</h3>
+						<h5>Dada unha variable aleatoria discreta \[X\]:</h5>
+						<h3>\[ f(x_i) = p_i = P(X=x_i) \]</h3>
+					</section>
+
+					<section>
+						<h4>Exemplo</h4>
+						<p>Definimos a v.a. discreta \[X = \] "Número de caras obtidas ó lanzar 3 moedas."</p>
+						<ul>
+							<li>\[ p_0 = f(0) = P(X=0) = 1/8 \]</li>
+							<li>\[ p_1 = f(1) = P(X=1) = 3/8 \]</li>
+							<li>\[ p_2 = f(2) = P(X=2) = 3/8 \]</li>
+							<li>\[ p_3 = f(3) = P(X=3) = 1/8 \]</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Gráfica</h3>
+						<img src="../img/2bac-metodos-funcionmasa.png" alt="">
+					</section>
+
+					<section>
+						<h4>Propiedades</h4>
+						<ul>
+							<li>\[f(x_i) \in [0, 1]\] <em>(é unha probabilidade)</em></li>
+							<li>\[ \sum_i f(x_i) = 1 \]</li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">1</span>Indica os valores da función de masa de probabilidade das seguintes variables aleatorias e traza a súa gráfica:</p>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									\[ X = \]"Número de cruces ó lanzar 2 moedas"
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									\[ Y = \]"Suma dos números obtidos ó lanzar dous dados de 4 caras"
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<h6>V.A. Discretas</h6>
+						<h3>Función de distribución</h3>
+						<h5>Dada unha variable aleatoria discreta \[X\]:</h5>
+						<h3>\[ F(x_i) = P(X \le x_i) \]</h3>
+					</section>
+
+					<section>
+						<h4>Exemplo</h4>
+						<p>Definimos a v.a. discreta \[X = \] "Número de caras obtenidas ó lanzar 3 moedas."</p>
+						<ul>
+							<li>\[ F(0) = P(X \le 0) = 1/8 \]</li>
+							<li>\[ F(1) = P(X \le 1) = 4/8 \]</li>
+							<li>\[ F(2) = P(X \le 2) = 7/8 \]</li>
+							<li>\[ F(3) = P(X \le 3) = 8/8 = 1 \]</li>
+						</ul>
+					</section>
+
+					<section>
+						<img src="../img/2eso-funciondistribuciondiscretas.svg.png" alt="">
+					</section>
+
+					<section>
+						<h4>Propiedades</h4>
+						<ul>
+							<li>\[ F(x) \in [0, 1] \]</li>
+							<li>Función creciente</li>
+							<li>\[ \lim_{x \to -\infty} F(x) = 0 \]</li>
+							<li>\[ \lim_{x \to +\infty} F(x) = 1 \]</li>
+							<li>\[ P(a \ge X \ge b) = F(b) - F(a) \]</li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">2</span>Indica os valores da función de distribución das seguintes variables aleatorias e traza a súa gráfica:</p>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									\[ X = \]"Número de cruces ó lanzar 2 moedas"
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									\[ Y = \]"Suma dos números obtidos ó lanzar dous dados de 4 caras"
+								</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h4>Parámetros dunha v.a. discreta</h4>
+						<h3>Esperanza matemática ou media</h3>
+						<q>Apórtanos o "valor esperado" ó realizar o experimente aleatorio.</q>
+						<h3>\[ \mu_x = E[x] = \sum_i x_i \cdot f(x_i) \]</h3>
+					</section>
+
+					<section>
+						<h4>Exemplo</h4>
+						<p>Definimos a v.a. discreta \[X = \] "Número de caras obtidas ó lanzar 3 moedas."</p>
+						<p style="text-align:left">\[E[X] = \sum_i x_i \cdot f(x_i) = 0 \cdot f(0) + 1 \cdot f(1) + 2 \cdot f(2) + \] <br/>
+							\[+  3 \cdot f(3) = 0 \cdot \frac{1}{8} + 1 \cdot \frac{3}{8} + 2 \cdot \frac{3}{8} + 3 \cdot \frac{1}{8} = \]
+							\[ = \frac{0}{8} + \frac{3}{8} + \frac{6}{8} + \frac{3}{8} = \frac{12}{8} = 1'5\]
+						</p>
+					</section>
+
+					<section>
+						<h4>Parámetros dunha v.a. discreta</h4>
+						<h3>Varianza</h3>
+						<q>Apórtanos una medida de dispersión dos valores da variable con respecto á media.</q>
+						<h3>\[\sigma_x^2 = VAR[X] = \sum_i (x_i - \mu)^2 \cdot f(x_i) = \] <br/> \[= \sum_i x_i^2 \cdot f(x_i) - \mu^2 \]</h3>
+					</section>
+
+					<section>
+						<p style="text-align:left">\[VAR[X] = \sum_i x_i^2 \cdot f(x_i) - \mu^2 = \] \[ = 0^2 \cdot f(0) + 1^2 \cdot f(1) + 2^2 \cdot f(2) +  3^2 \cdot f(3)) - 1.5^2 =\]
+							\[ = (0 \cdot \frac{1}{8} + 1 \cdot \frac{3}{8} + 4 \cdot \frac{3}{8} + 9 \cdot \frac{1}{8}) - 1.5^2 = \]
+							\[ = (\frac{0}{8} + \frac{3}{8} + \frac{12}{8} + \frac{9}{8}) - 1.5^2 = \frac{24}{8} - 1.5^2 = 0.75\]
+					</section>
+
+
+					<section>
+						<h4>Parámetros dunha v.a. discreta</h4>
+						<h3>Desviación típica</h3>
+						<q>Apórtanos una medida de dispersión pero nas mesmas unidades que a variable.</q>
+						<h3>\[\sigma_x = \sqrt{\sigma_x^2} = \sqrt{VAR[X]}\]</h3>
+					</section>
+
+					<section>
+						<p>\[ \sigma_x = \sqrt[\sigma_x^2] = \sqrt{0.75}= 0.86\]</p>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">3</span>Calcula a media, varianza e desviación típica das seguintes variables aleatorias:</p>
+							<ul class="problema__apartados">
+								<li>
+									<span class="numero numero--apartado">a</span>
+									\[ X = \]"Número de cruces ó lanzar 2 moedas"
+								</li>
+								<li>
+									<span class="numero numero--apartado">b</span>
+									\[ Y = \]"Suma dos números obtidos ó lanzar dous dados de 4 caras"
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<div class="problema">
+							<p><span class="numero">4</span>Definimos un experimento aleatorio como sigue:</p>
+							<q>Nunha bolsa temos 6 bólas: 3 bolas cun número 1 debuxado, 2 bolas cun número 2 debuxado e 1 bola cun número 3 debuxado. Sacamos dúas bolas da bolsa.</q>
+							<p>Definimos agora a variable aleatoria \[Z=\]"suma dos número de las dúas bolas".</p>
+							<p>Calcula os valores das funcións de masa de probabilidade y a de distribución, traza as súas gráficas e calcula a media, varianza e desviación tipica.</p>
+						</div>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h4>V.A. Continua</h4>
+					</section>
+
+					<section>
+						<h5>Exemplos</h5>
+						<ul>
+							<li>\[X= \] <em>"Lonxitude duns certos tornillos"</em></li>
+							<li>\[X= \] <em>"Tempo de vida dun certo tipo de lámpadas medido en horas"</em></li>
+							<li>\[X= \] <em>"Litros de auga consumidos por unha persona"</em></li>
+						</ul>
+					</section>
+
+					<section>
+						<h5>Función de distribución</h5>
+						<h3>\[ F(x) = P(X \le x) \]</h3>
+					</section>
+
+					<section>
+						<h4>Propiedades</h4>
+						<ul>
+							<li>\[ F(x) \in [0, 1] \]</li>
+							<li>Función creciente</li>
+							<li>\[ \lim_{x \to -\infty} F(x) = 0 \]</li>
+							<li>\[ \lim_{x \to +\infty} F(x) = 1 \]</li>
+							<li>\[ P(a \ge X \ge b) = F(b) - F(a) \]</li>
+						</ul>
+					</section>
+
+					<section>
+						<img src="../img/2bac-metodos-funciondistribucioncontinuas.gif" alt="">
+					</section>
+
+					<section>
+						<h4>Cal é a probabilidade de que unha persoa mida exactamente 1,72m?</h4>
+					</section>
+
+					<section>
+						<h5>Función de densidade</h5>
+						<p>\[f(x)\]</p>
+						<q>Versión suavizada del histograma</q>
+					</section>
+
+					<section>
+						<img class="whitebg" src="../img/2back-metodos-densidad1.png" alt="">
+					</section>
+
+					<section>
+						<img class="whitebg" src="../img/2back-metodos-densidad2.png" alt="">
+					</section>
+
+					<section>
+						<img class="whitebg" src="../img/2back-metodos-densidad3.png" alt="">
+					</section>
+
+					<section>
+						<h4>Propiedades</h4>
+						<ul>
+							<li>\[f(x) \in [0, 1]\] <em>(es una probabilidade)</em></li>
+							<li>\[ \int_{-\infty}^{\infty} f(x) = 1 \]</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Media ou esperanza matemática</h3>
+						<table>
+							<tr>
+								<th>V.A. Discreta</th>
+								<th>V.A. Continua</th>
+							</tr>
+							<tr>
+								<td>\[\sum_i x_i \cdot f(x_i)\] </td>
+								<td class="fragment">\[\int_{-\infty}^{\infty} x \cdot f(x) dx\]</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h4>Varianza</h4>
+						<table>
+							<tr>
+								<th>V.A. Discreta</th>
+								<th>V.A. Continua</th>
+							</tr>
+							<tr>
+								<td>\[\sum_i (x_i - \mu)^2 \cdot f(x_i)\] <br/>
+									  \[\sum_i x_i^2 \cdot f(x_i) - \mu^2 \]</td>
+								<td class="fragment">\[\int_{-\infty}^{\infty} (x - \mu)^2 \cdot f(x) dx\] <br/>
+									  \[\int_{-\infty}^{\infty} x^2 \cdot f(x) dx - \mu^2 \]</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Desviación típica</h3>
+						<h3>\[\sigma_x = \sqrt{\sigma_x^2} = \sqrt{VAR[X]}\]</h3>
+					</section>
+				</section>
+
+			<section>
+				<section>
+					<h2>Distribuciones notables</h2>
+				</section>
+
+				<section>
+					<h4>Distribuciones notables: variables discretas</h4>
+					<p>Chamamos <strong style="text-decoration:underline;">proceso de Bernuilli</strong> a un experimento no que:</p>
+					<ul>
+						<li>Cada observación é independiente.</li>
+						<li>Cada observación pódese clasificar en só dúas categorías: éxito ou fracaso.</li>
+						<li>As probabilidades de éxito e fracaso son consantes e denótanse por \[p\] e \[q\].</li>
+					</ul>
+				</section>
+
+				<section>
+					<h5>Exemplos de procesos de Bernuilli</h5>
+					<ul>
+						<li>Un exame tipo test consta de 10 preguntas, cada unha con 4 respostas das cales só unha é correcta.[...] <em>(Mat. 2018)</em></li>
+						<li>Nun bombo temos 10 bolas idénticas numeradas do 0 ao 9 e cada vez que facemos una extracción devolvemos a bola ao bombo [...] <em>(Mat. 2018)</em></li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>Distribución Binomial</h4>
+					<p>Dicimos que unha variable aleatoria discreta segue unha distribución Binomial cando, traballando cun proceso de Bernuilli, é da forma:</p>
+					<h5>\[X\]="Número de éxitos en \[n\] intentos"</h5>
+					<p>Denotándoo por \[X \sim B(n,p)\]</p>
+				</section>
+
+				<section>
+					<h5>Exemplos</h5>
+					<q>Un exame tipo test consta de 10 preguntas, cada unha con 4 respostas das cales só unha é correcta. Cal é a probabilidade de contestar ben polo menos dúas preguntas? <em>(Mat. 2018)</em></q>
+					<p class="fragment">\[X=\] "Número de preguntas ben contestadas." </br> \[X \sim B(10, 0.25)\]</p>
+				</section>
+
+				<section>
+					<h5>Exemplos</h5>
+					<q>Nun bombo temos 10 bolas idénticas numeradas do 0 ao 9 e cada vez que facemos una extracción devolvemos a bola ao bombo. Se facemos 5 extraccións, calcula a probabilidade de que o 7 saia menos de dúas veces.<em>(Mat. 2018)</em></q>
+					<p class="fragment">\[X=\] "Número de 7 sacados" </br> \[X \sim B(5, 0.1)\]</p>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">5</span> Dado experimento aleatorio "lanzar 3 dados de 5 caras", pregúntannos pola probabilidade de obter dúas veces un 3. Defíne a variable aleatoria coa que imos a traballar. Indica que probabilidade nos preguntan e calcúlaa co que sabes do tema anterior.</p>
+					</div>
+				</section>
+
+				<section>
+					<h4>Función de masa de probabilidad</h4>
+					<p>Dada unha variable aleatoria \[X \sim B(n,p)\]</p>
+					<h5 class="fragment">\[f(k) = P(X = k) = \binom{n}{k} \cdot p^k \cdot q^{n-k}\]</h5>
+				</section>
+
+				<section>
+					<h5>Coeficiente binomial</h5>
+					<h3>\[\binom{n}{k} = \frac{n!}{k! (n-k)!}\]</h3>
+					<img src="../img/calculadora-numerocombinatorio.png" alt="">
+				</section>
+
+				<section>
+					<h4>Función de distribución</h4>
+					<p>Dada unha variable aleatoria \[X \sim B(n,p)\]</p>
+					<h5>\[F(k) = P(X \le k) = \sum_{i \le k} f(i) \]</h5>
+					<h6>\[F(2) = f(0) + f(1) + f(2)\]</h6>
+				</section>
+
+				<section>
+					<p>Dada una variable aleaatoria \[X \sim B(n,p)\]</p>
+					<h5>Esperanza matemática o media: \[E[X] = np \]</h5>
+					<h5>Varianza: \[VAR[X] = npq \]</h5>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">6</span>A probabilidade de que un home acerte no branco é 0'25. Se dispara 10 veces, cal é a probabilidade de que acerte exactamente en tres ocasións? Cal é a probabilidade de que acerte polo menos nunha ocasión?</p>
+					</div>
+
+					<div class="problema">
+						<p><span class="numero">7</span>Nunha asociación xuvenil o 60% dos socios xogan ao balonmán. Nun momento dado trátase de reunir xente para formar un equipo, polo que se pregunta a un grupo de 20 socios se practican o dito deporte. Cal é a probabilidade de que no grupo haxa tres o máis persoas que xoguen ao balonmán?</p>
+					</div>
+
+					<div class="problema">
+						<p><span class="numero">8</span>O 85% da población considera que os tratamentos de psicoterapia son caros. Elixida unha mostra ao azar formada por sete individuos. ¿cuál é a probabilidade de que todos os consideren caros? e de que ningún os considere caros? e de que polo menos tres os consideren caros?</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">9</span>Un examen tipo test consta de 10 preguntas, cada unha con 4 respostas das cales só unha é correcta. Se se contesta ao chou, cal é a probabilidade de contestar ben polo menos dúas preguntas? <em>(MAT - Xuño 2018)</em></p>
+					</div>
+
+					<div class="problema">
+						<p><span class="numero">10</span>En Sargadelos prodúcense un 10% de pezas con algún defecto. Se a fábrica produce ao día 50 pezas, cal é a probabilidade de que haxa menos de 5 pezas defectuosas? Calcula a media e a varianza da distribución.</p>
+					</div>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h5>Distribución Normal</h5>
+					<ul class="fragment">
+						<li>Distribución continua</li>
+						<li>Ten por parámetros a media \[\mu\] e a desviación típica \[ \sigma \] da distribución.</li>
+						<li>Lo denotamos por \[ X \sim N(\mu, \sigma) \]</li>
+					</ul>
+				</section>
+
+				<section>
+					<h5>Función de densidade</h5>
+					<h4>\[f(x) = {1 \over \sigma\sqrt{2\pi}} e^{-(x-\mu)^2 / 2\sigma^2}\]</h4>
+				</section>
+
+				<section>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Normal_distribution_pdf.png/1280px-Normal_distribution_pdf.png" style="height:80%" alt="">
+				</section>
+
+				<section>
+					<h4>Características</h4>
+					<ul>
+						<li>Área baixo a curva é 1 (é unha función de densidade).</li>
+						<li>Máximo en \[x = \mu\]</li>
+						<li>Simétrica (par) con respecto a recta \[x = \mu\]</li>
+					</ul>
+				</section>
+
+				<section>
+					<h5>Función de distribución</h5>
+					<h4>\[F(x) = \int_{-\infty}^x f(x) dx\]</h4>
+				</section>
+
+				<section>
+					<img src="https://4.bp.blogspot.com/-DvxfNHq-0cg/VDehUTOA8uI/AAAAAAAAJ2o/xhM71iFdpWo/s1600/CropperCapture%5B30%5D.png" style="height:80%"  alt="">
+				</section>
+
+
+				<section>
+					<h3>Distribución normal tipificada</h3>
+					<ul>
+						<li>\[Z \sim N(0,1)\]</li>
+						<li>Su función de distribución está tabulada \[\Phi(z)\]</li>
+					</ul>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">E</span>Calcula as seguintes probabilidades para \[Z \sim N(0,1)\]:</p>
+						<ul class="problema__apartados">
+							<li><span class="numero numero--apartado">a</span> \[P(Z \lt 0'63)\]</li>
+							<li><span class="numero numero--apartado">b</span> \[P(Z \gt 0'63)\]</li>
+							<li><span class="numero numero--apartado">c</span> \[P(Z \lt -0'63)\]</li>
+							<li><span class="numero numero--apartado">d</span> \[P(Z \gt -0'63)\]</li>
+							<li><span class="numero numero--apartado">e</span> \[P(0'34 \gt Z \gt 0'76)\]</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">11</span>Calcula as seguintes probabilidades para \[Z \sim N(0,1)\]:</p>
+						<ul class="problema__apartados problema__apartados--flex">
+							<li><span class="numero numero--apartado">a</span> \[P(Z \lt 0'88)\]</li>
+							<li><span class="numero numero--apartado">b</span> \[P(Z \lt 0'74)\]</li>
+							<li><span class="numero numero--apartado">c</span> \[P(Z \gt 0'23)\]</li>
+							<li><span class="numero numero--apartado">d</span> \[P(Z \lt -0'57)\]</li>
+							<li><span class="numero numero--apartado">e</span> \[P(Z \gt -0'8)\]</li>
+							<li><span class="numero numero--apartado">f</span> \[P(Z \lt 2'34)\]</li>
+							<li><span class="numero numero--apartado">g</span> \[P(Z \gt 2'4)\]</li>
+							<li><span class="numero numero--apartado">h</span> \[P(Z \lt -1'23)\]</li>
+							<li><span class="numero numero--apartado">i</span> \[P(0'23 \lt Z \lt 0'63)\]</li>
+							<li><span class="numero numero--apartado">j</span> \[P(-0'45 \lt Z \lt 0'38)\]</li>
+							<li><span class="numero numero--apartado">k</span> \[P(-0'43 \lt Z \lt -0'13)\]</li>
+							<li><span class="numero numero--apartado">l</span> \[P(0'83 \lt Z \lt 1'22)\]</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h4>Tipificación de variable aleatoria</h4>
+					<p>Sexa \[X \sim N(\mu, \sigma)\] podemos facer o cambio de variable \[Z = \frac{X - \mu}{\sigma}\]</p>
+				</section>
+
+				<section>
+					<p>P. ex: Dada \[X \sim N(13, 3'4)\]</p>
+					<p>\[P(X \lt 24) = P(Z \lt \frac{24 - 13}{3'4}) = \\ = P(Z \lt 2'23) = \Phi(2'23)\]</p>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">12</span>Calcula as seguintes probabilidades:</p>
+						<ul class="problema__apartados">
+							<li><span class="numero numero--apartado">a</span> \[P(X \lt 38'23)\] con \[X \sim N(20, 12'3)\]</li>
+							<li><span class="numero numero--apartado">b</span> \[P(X \lt 6'42)\] con \[X \sim N(2, 5'6)\]</li>
+							<li><span class="numero numero--apartado">c</span> \[P(X \lt -20)\] con \[X \sim N(-12, 3'4)\]</li>
+							<li><span class="numero numero--apartado">d</span> \[P(X \lt -4)\] con \[X \sim N(0, 8)\]</li>
+							<li><span class="numero numero--apartado">e</span> \[P(X \lt 130'5)\] con \[X \sim N(120, 30)\]</li>
+							<li><span class="numero numero--apartado">f</span> \[P(X \lt 14'8)\] con \[X \sim N(13, 0'7)\]</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">13</span>Nun determinado lugar, a temperatura máxima durante o mes de xullo segue unha distribución normal de media 25°C e desviación típica 4°C. Calcula a probabilidade de que a temperatura máxima dun certo día estea comprendida entre 21°C e 27.2°C.</p>
+					</div>
+
+					<div class="problema">
+						<p><span class="numero">14</span>Un saltador de lonxitude salta unha media de 8 metros con desviación típica de 20 cm. Para poder ir á próxima olimpíada é necesario ter unha marca de 8’30 metros, ¿Que probabilidade ten de conseguir esta marca nun salto? E, ¿cal é esta probabilidade se realiza dez saltos?</p>
+					</div>
+
+					<div class="problema">
+						<p><span class="numero">15</span> Unha fábrica produce pezas cuxo grosor segue unha distribución normal de media 8 cm e desviación típica 0.01 cm. Calcula a probabilidade de que unha peza teña un grosor comprendido entre 7.98 e 8.02 cm.</p>
+					</div>
+				</section>
+
+				<section>
+
+					<div class="problema">
+						<p><span class="numero">16</span> O total de vendas diarias nun pequeno restaurante é unha variable que segue unha distribución normal de media 1220€ ao día e desviación típica 120€ ao día. Calcula a probabilidade de que nun día elixido ao azar as vendas excedan de 1400€.</p>
+					</div>
+
+					<div class="problema">
+						<p><span class="numero">17</span> A vida útil dunha marca de lámpadas segue unha distribución normal de media 1.200 horas de desviación típica 250 horas. Que proporción de lámpadas ten un tempo de vida inferior a 1.050 horas?, que proporción de lámpadas ten un tempo de vida superior a 1.350 horas? Explique brevemente o porqué da relación entre os resultados. Que proporción de lámpadas ten un tempo de vida entre 1.050 e 1.350 horas?</p>
+					</div>
+				</section>
+
+				<section>
+					<h4>Aproximación da distribución Binomial coa distribución Normal</h4>
+				</section>
+
+				<section>
+					<h4>Se vemos o histograma da normal...</h4>
+					<a href="https://www.geogebra.org/classic#probability">Geogebra...</a>
+				</section>
+
+				<section>
+					<q>Cando \[n\] é moi grande podemos aproximar unha distribución binomial con parámetros \[n\] e \[p\] por unha Distribución Normal de media \[\mu = n \cdot p\] e desviación tipica \[\sigma = \sqrt{n \cdot p \cdot q}\]</q>
+				</section>
+
+				<section>
+					<div class="problema"><p><span class="numero">18</span>Cal é a distribución binomial que empregamos no seguinte problema e como a podemos aproximar pola Normal:</p>
+					<q>Nun bombo temos 10 bolas idénticas numeradas do 0 ao 9 e cada vez que facemos una extracción devolvemos a bola ao bombo. Se facemos 100 extraccións, calcula a probabilidade de que o 7 saia menos de 12 veces.</q></div>
+				</section>
+
+				<section>
+					<h5>Corrección de Yates / De continuidad</h5>
+					<q>Ao aproximar unha variable discreta (Binomial) por unha continua (Normal) debemos facer una corrección de medio punto sobre os valores a calcular. É dicir, debemos sumar o restar 0'5 ós valores nos que estamos calculando a probabilidade.</q>
+				</section>
+
+				<section>
+					<a href="https://www.geogebra.org/classic#probability">Geogebra...</a>
+				</section>
+
+				<section>
+					<p>EJEMPLO: Dada la variable \[X \sim B(100, 0'3)\] nos piden calcular la probabilidad \[P(X \ge 9)\] aproximandola por la distribución Normal.</p>
+					<ol>
+						<li>Aproximaríamos la distribución:</br> \[B(100,0'3)\] por \[N(30, 7)\].</li>
+						<li>Aplicaríamos la corrección de Yates: \[P(X \ge 9) \approx P (X \ge 8'5)\]</li>
+						<li>Tipificaríamos la variable \[X\] y calcularíamos la probabilidad usando las tablas de la distribución normal tipificada</li>
+					</ol>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">19</span>Nun bombo temos 10 bolas idénticas numeradas do 0 ao 9 e cada vez que facemos una extracción devolvemos a bola ao bombo</p>
+						<ul class="problema__apartados">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								Se facemos 5 extraccións, calcula a probabilidade de que o 7 saia menos de dúas veces.
+							</li>
+							<li>
+								<span class="numero numero--apartado">b</span>
+								Se facemos 100 extraccións, calcula a probabilidade de que o 7 saia menos de nove veces.
+							</li>
+						</ul>
+					</div>
+
+					<div class="problema">
+						<p><span class="numero">20</span> A probabilidade de que un determinado xogador de fútbol marque gol desde o punto de penalti é . Se lanza 5 penaltis, calcula as seguintes tres probabilidades: de que non marque ningún gol; de que marque polo menos 2 goles; e de que marque 5 goles. Se lanza 2100 penaltis, calcula a probabilidade de que marque polo menos 1450 goles. Estase a asumir que os lanzamentos son sucesos independentes.</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">21</span>Sábese que o 10% dos alumnos de Bacharelato son fumadores. En base a isto, calcule a probabilidade aproximada de que, polo menos, haxa 310 alumnos fumadores dos 3.000 que se presentan ó exame de selectividade.</p>
+					</div>
+				</section>
+
+			</section>
+
+			<section>
+				<section>
+					<h3>Busca inversa distribución Normal</h3>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">22</span>Calcula \[a\] nos seguintes casos se \[Z \sim N(0,1)\]:</p>
+						<ul class="problema__apartados">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								\[P(Z\lt a) = 0.9345\]
+							</li>
+							<li>
+								<span class="numero numero--apartado">b</span>
+								\[P(Z \lt a) = 0.9828\]
+							</li>
+							<li>
+								<span class="numero numero--apartado">c</span>
+								\[P(Z \gt a) = 0.3427\]
+							</li>
+							<li>
+								<span class="numero numero--apartado">d</span>
+								\[P(Z \lt a) = 0.2745\]
+							</li>
+							<li>
+								<span class="numero numero--apartado">e</span>
+								\[P(-a \lt Z \lt a) = 0.95\]
+							</li>
+							<li>
+								<span class="numero numero--apartado">f</span>
+								\[P(-a \lt Z \lt a) = 0.98\]
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="problema">
+						<p><span class="numero">23</span>Calcula \[a\] nos seguintes casos:</p>
+						<ul class="problema__apartados">
+							<li>
+								<span class="numero numero--apartado">a</span>
+								\[P(X \lt a) = 0.8345\] con \[X \sim N(22, 3) \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">b</span>
+								\[P(X \lt a) = 0.8945\] con \[X \sim N(100, 12) \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">c</span>
+								\[P(X \gt a) = 0.2345\] con \[X \sim N(10, 2,5) \]
+							</li>
+							<li>
+								<span class="numero numero--apartado">d</span>
+								\[P(Z \lt a) = 0.4356\] con \[X \sim N(0, 3) \]
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+
+		</div>
+	  </div>
+
+		<script src="../js/reveal.js"></script>
+		<script src="../js/config.js"></script>
+	</body>
+</html>
