@@ -1,48 +1,57 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>Matemáticas I - 1º BAC - Tema 7</title>
+    <title>Matemáticas Xerais - 1º de BAC - Derivadas</title>
 
-		<link rel="stylesheet" href="../css/reset.css">
-		<link rel="stylesheet" href="../css/reveal.css">
-		<link rel="stylesheet" href="../css/theme/white.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="../lib/css/monokai.css">
-		<link rel="stylesheet" href="../css/estilo-blanco.css">
-
-
-		<!-- Printing and PDF exports -->
-		<script src="../js/print.js"></script>
-	</head>
-	<body>
-		<div class="reveal" id="revealdiv">
-			<div class="slides">
-
-				<section>
-					<h1>Tema 7</h1>
-					<h3>Derivada</h3>
-				</section>
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/white.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../plugin/customcontrols/style.css" />
+    <link rel="stylesheet" href="../plugin/chalkboard/style.css" />
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../css/estilo-blanco.css" />
+  </head>
+  <body>
+    <div class="reveal" id="revealdiv">
+      <div class="slides">
+        <section>
+          <h3>Derivadas</h3>
+        </section>
 
         <section>
-
           <section>
             <h3>Definición de derivada</h3>
-            <p>La derivada de una función en un punto \[x_0\] es la pendiente de la recta tangente a dicha función en dicho punto. Se denota por \[f'(x_0)\].</p>
+            <p>
+              La derivada de una función en un punto \[x_0\] es la pendiente de
+              la recta tangente a dicha función en dicho punto. Se denota por
+              \[f'(x_0)\].
+            </p>
           </section>
 
           <section>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Recta_tangente_y_derivada.svg/1280px-Recta_tangente_y_derivada.svg.png" alt="">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Recta_tangente_y_derivada.svg/1280px-Recta_tangente_y_derivada.svg.png"
+              alt=""
+            />
           </section>
 
           <section>
             <h3>Recordando...</h3>
             <h2>Pendiente de una recta</h2>
-						<p>\[ m = \frac{y_2-y_1}{x_2-x_1} = \frac{f(x_2) - f(x_1)}{x_2-x_1} \]</p>
+            <p>
+              \[ m = \frac{y_2-y_1}{x_2-x_1} = \frac{f(x_2) - f(x_1)}{x_2-x_1}
+              \]
+            </p>
           </section>
 
           <section>
@@ -57,55 +66,65 @@
 
           <section>
             <div class="problema">
-              <p><span class="numero">1</span>Calcula usando la definición, las siguientes derivadas:</p>
+              <p>
+                <span class="numero">1</span>Calcula usando la definición, las
+                siguientes derivadas:
+              </p>
               <ol class="problema__apartados">
                 <li>Siendo \[f(x) = 3x - 4\], \[f'(2)\]</li>
                 <li>Siendo \[g(x) = x^2 - 4\], \[g'(5)\]</li>
               </ol>
             </div>
           </section>
-
         </section>
 
         <section>
-
           <section>
             <h3>Derivabilidad</h3>
-            <p>Una función es derivable en un punto si existe el límite que usamos para definir la función derivada. Por lo tanto tendrán que existir sus límites laterales y estos ser iguales.</p>
+            <p>
+              Una función es derivable en un punto si existe el límite que
+              usamos para definir la función derivada. Por lo tanto tendrán que
+              existir sus límites laterales y estos ser iguales.
+            </p>
           </section>
 
           <section>
             <h3>Derivabilidad</h3>
-            <p>Para que una función sea derivable en un punto, esta ha de ser continua en dicho punto.</p>
+            <p>
+              Para que una función sea derivable en un punto, esta ha de ser
+              continua en dicho punto.
+            </p>
             <p>Graficamente, las funciones no son derivables en los "picos".</p>
           </section>
 
           <section>
             <div class="problema">
-              <p><span class="numero">2</span>Estudia la continuidad y derivabilidad de las siguientes funciones:</p>
-							<ol class="problema__apartados">
-								<li>\[ f(x) = \left\{ \begin{array}{lc}
-											             x^2+1 & x \le 1 \\
-											             -x+3  & x \gt 1
-											             \end{array}
-											   \right.\]</li>
-								<li>\[ t(x) = |x-5| \]</li>
-								<li>\[ f(x) = \left\{ \begin{array}{lc}
-											             \frac{x^2-9}{x-3} & x \neq 3 \\
-											             6                 & x = 1
-											             \end{array}
-											   \right.\]</li>
-							</ol>
+              <p>
+                <span class="numero">2</span>Estudia la continuidad y
+                derivabilidad de las siguientes funciones:
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  \[ f(x) = \left\{ \begin{array}{lc} x^2+1 & x \le 1 \\ -x+3 &
+                  x \gt 1 \end{array} \right.\]
+                </li>
+                <li>\[ t(x) = |x-5| \]</li>
+                <li>
+                  \[ f(x) = \left\{ \begin{array}{lc} \frac{x^2-9}{x-3} & x \neq
+                  3 \\ 6 & x = 1 \end{array} \right.\]
+                </li>
+              </ol>
             </div>
           </section>
-
         </section>
 
         <section>
-
           <section>
             <h3>Función derivada</h3>
-            <p>Sea f una función, la función derivada f' es aquella que lleva a cada valor en la derivada de la función f.</p>
+            <p>
+              Sea f una función, la función derivada f' es aquella que lleva a
+              cada valor en la derivada de la función f.
+            </p>
           </section>
 
           <section>
@@ -116,203 +135,250 @@
           <section>
             <h3>Derivadas sucesivas</h3>
             <p>Como f' también es una función, podemos calcular su derivada.</p>
-            <p>Existe por lo tanto una función derivada segunda, tercera, cuarta, etc.</p>
-						<p>Se denotan por \[f''(x)\], \[f'''(x)\], \[f^{4)}(x)\dots\]</p>
+            <p>
+              Existe por lo tanto una función derivada segunda, tercera, cuarta,
+              etc.
+            </p>
+            <p>Se denotan por \[f''(x)\], \[f'''(x)\], \[f^{4)}(x)\dots\]</p>
           </section>
 
           <section>
             <div class="problema">
-              <p><span class="numero">3</span>Calcula la función derivada primera y segunda de las siguientes funciones:</p>
+              <p>
+                <span class="numero">3</span>Calcula la función derivada primera
+                y segunda de las siguientes funciones:
+              </p>
               <ol class="problema__apartados">
-								<li>\[f(x) = 3x\]</li>
+                <li>\[f(x) = 3x\]</li>
                 <li>\[g(x) = x^2 + 3\]</li>
               </ol>
             </div>
           </section>
-
         </section>
 
         <section>
-
           <section>
             <h3>Cálculo de derivadas</h3>
           </section>
 
-					<section>
-						<h3>Función constante</h3>
-						<p>
-							\[f(x) = N\]
-						</p>
-						<p>
-							\[f'(x) = 0 \]
-						</p>
-					</section>
+          <section>
+            <h3>Función constante</h3>
+            <p>\[f(x) = N\]</p>
+            <p>\[f'(x) = 0 \]</p>
+          </section>
 
           <section>
             <h3>Función potencia</h3>
-						<p>
-							\[f(x) = x^n\]
-						</p>
-						<p>\[f'(x) = n \cdot x^{n-1} \]</p>
-						<p>Ejemplo: \[ f(x) = x^3  \Rightarrow \] <span class="fragment">\[f'(x) = 3x^2\]</span></p>
-						<p>Ejemplo: \[ f(x) = \sqrt{x} = x^{1/2}  \Rightarrow \] <span class="fragment">\[f'(x) = \frac{1}{2} \cdot x^{-1/2} = \frac{1}{2\sqrt{x}}\]</span></p>
+            <p>\[f(x) = x^n\]</p>
+            <p>\[f'(x) = n \cdot x^{n-1} \]</p>
+            <p>
+              Ejemplo: \[ f(x) = x^3 \Rightarrow \]
+              <span class="fragment">\[f'(x) = 3x^2\]</span>
+            </p>
+            <p>
+              Ejemplo: \[ f(x) = \sqrt{x} = x^{1/2} \Rightarrow \]
+              <span class="fragment"
+                >\[f'(x) = \frac{1}{2} \cdot x^{-1/2} =
+                \frac{1}{2\sqrt{x}}\]</span
+              >
+            </p>
           </section>
 
-					<section>
-						<h3>Derivadas de operaciones: producto por escalar</h3>
-						<p>\[ (k \cdot f)'(x) = k \cdot f'(x) \]</p>
-						<p>Ejemplo: \[f(x) = 3x^2 \Rightarrow \] <span class="fragment">\[f'(x) = 3 \cdot 2 \cdot x = 6x\]</span></p>
-					</section>
+          <section>
+            <h3>Derivadas de operaciones: producto por escalar</h3>
+            <p>\[ (k \cdot f)'(x) = k \cdot f'(x) \]</p>
+            <p>
+              Ejemplo: \[f(x) = 3x^2 \Rightarrow \]
+              <span class="fragment">\[f'(x) = 3 \cdot 2 \cdot x = 6x\]</span>
+            </p>
+          </section>
 
           <section>
             <h3>Derivadas de operaciones: suma/resta</h3>
-						<p>\[(f+g)'(x) = f'(x) + g'(x)\]</p>
-						<p>Ejemplo: \[ f(x) = x^2 + 3x  \Rightarrow \] <span class="fragment">\[f'(x) = 2x + 3\]</span></p>
+            <p>\[(f+g)'(x) = f'(x) + g'(x)\]</p>
+            <p>
+              Ejemplo: \[ f(x) = x^2 + 3x \Rightarrow \]
+              <span class="fragment">\[f'(x) = 2x + 3\]</span>
+            </p>
           </section>
 
-					<section>
-						<div class="problema">
-							<p><span class="numero">4</span> Calcula las derivadas de los siguientes funciones polinómicas:</p>
-							<ol class="problema__apartados">
-								<li>\[ f(x) = 3\]</li>
-								<li>\[ f(x) = x^3 \]</li>
-								<li>\[ f(x) = x^3 + 2x \]</li>
-								<li>\[ f(x) = x^2 + 3x + 4 \]</li>
-								<li>\[ f(x) = 2x^4 + 5x^2 \]</li>
-							</ol>
-						</div>
-					</section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">4</span> Calcula las derivadas de los
+                siguientes funciones polinómicas:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ f(x) = 3\]</li>
+                <li>\[ f(x) = x^3 \]</li>
+                <li>\[ f(x) = x^3 + 2x \]</li>
+                <li>\[ f(x) = x^2 + 3x + 4 \]</li>
+                <li>\[ f(x) = 2x^4 + 5x^2 \]</li>
+              </ol>
+            </div>
+          </section>
 
-					<section>
-						<h3>Derivadas elementales</h3>
-						<h2>Ver tabla</h2>
-					</section>
+          <section>
+            <h3>Derivadas elementales</h3>
+            <h2>Ver tabla</h2>
+          </section>
 
-					<section>
-						<div class="problema">
-							<p><span class="numero">5</span>Calcula las derivadas de las siguientes funciones elementales:</p>
-							<ol class="problema__apartados">
-								<li>\[ f(x) = 2^x \]</li>
-								<li>\[ f(x) = ln(x) \]</li>
-								<li>\[ f(x) = sen(x) + cos(x)\]</li>
-								<li>\[ f(x) = \sqrt{x}\]</li>
-							</ol>
-						</div>
-					</section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">5</span>Calcula las derivadas de las
+                siguientes funciones elementales:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ f(x) = 2^x \]</li>
+                <li>\[ f(x) = ln(x) \]</li>
+                <li>\[ f(x) = sen(x) + cos(x)\]</li>
+                <li>\[ f(x) = \sqrt{x}\]</li>
+              </ol>
+            </div>
+          </section>
 
           <section>
             <h3>Derivadas de operaciones: producto</h3>
-						<p>\[ (f \cdot g)'(x) = f'(x)\cdot g(x) + f(x)\cdot g'(x) \]</p>
+            <p>\[ (f \cdot g)'(x) = f'(x)\cdot g(x) + f(x)\cdot g'(x) \]</p>
           </section>
 
           <section>
             <h3>Derivadas de operaciones: cociente</h3>
-						<p>\[ (\frac{f}{g})'(x) = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{[g'(x)]^2}\]</p>
+            <p>
+              \[ (\frac{f}{g})'(x) = \frac{f'(x) \cdot g(x) - f(x) \cdot
+              g'(x)}{[g'(x)]^2}\]
+            </p>
           </section>
 
-					<section>
-						<div class="problema">
-							<p><span class="numero">6</span>Calcula las derivadas de los siguientes productos y cocientes de funciones:</p>
-							<ol class="problema__apartados">
-								<li>\[ f(x) = 2x \cdot 2^x \]</li>
-								<li>\[ f(x) = sen(x) \cdot \sqrt{x} \]</li>
-								<li>\[ f(x) = \frac{sen(x)}{2x} \]</li>
-								<li>\[ f(x) = \frac{e^x}{3x^2}\]</li>
-								<li></li>
-							</ol>
-						</div>
-					</section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">6</span>Calcula las derivadas de los
+                siguientes productos y cocientes de funciones:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ f(x) = 2x \cdot 2^x \]</li>
+                <li>\[ f(x) = sen(x) \cdot \sqrt{x} \]</li>
+                <li>\[ f(x) = \frac{sen(x)}{2x} \]</li>
+                <li>\[ f(x) = \frac{e^x}{3x^2}\]</li>
+                <li></li>
+              </ol>
+            </div>
+          </section>
 
           <section>
             <h3>Derivadas de operaciones: composición</h3>
             <p>Regla de la cadena</p>
-						<p>\[ (f \circ g)'(x) = f'(g(x)) \cdot g'(x) \]</p>
+            <p>\[ (f \circ g)'(x) = f'(g(x)) \cdot g'(x) \]</p>
           </section>
 
-					<section>
-						<div class="problema">
-							<p><span class="numero">7</span>Calcula las siguientes derivadas:</p>
-							<ol class="problema__apartados">
-								<li> \[ f(x) = sen(x^3 -2x) \] </li>
-								<li> \[ f(x) = ln(x^2+4) \] </li>
-								<li> \[ f(x) = cos((x+3)^2) \] </li>
-								<li> \[ f(x) = 2^{x^2+3x} \] </li>
-								<li> \[ f(x) = ln(3x \cdot 3^x) \] </li>
-								<li> \[ f(x) = \sqrt{sen(x^2 +3)} \] </li>
-							</ol>
-						</div>
-					</section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">7</span>Calcula las siguientes derivadas:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ f(x) = sen(x^3 -2x) \]</li>
+                <li>\[ f(x) = ln(x^2+4) \]</li>
+                <li>\[ f(x) = cos((x+3)^2) \]</li>
+                <li>\[ f(x) = 2^{x^2+3x} \]</li>
+                <li>\[ f(x) = ln(3x \cdot 3^x) \]</li>
+                <li>\[ f(x) = \sqrt{sen(x^2 +3)} \]</li>
+              </ol>
+            </div>
+          </section>
 
-					<section>
-						<div class="problema">
-							<ol class="problema__apartados" start="7">
-								<li> \[ f(x) =  \frac{1}{cos^2(x^2 + 3)}\] </li>
-								<li> \[ f(x) =  (\frac{x^2+3}{x-4})^3\] </li>
-								<li> \[ f(x) =  \frac{sen((x+3)^3)}{2x^2}\] </li>
-								<li> \[ f(x) =  \sqrt[3]{\frac{x^2+3}{sen(x)}}\] </li>
-								<li> \[ f(x) =  ln(\sqrt{\frac{x^2+3}{cos(x)}})\] </li>
-								<li> \[ f(x) = tan(x^2 + \sqrt{3x})\] </li>
-							</ol>
-						</div>
-					</section>
-
+          <section>
+            <div class="problema">
+              <ol class="problema__apartados" start="7">
+                <li>\[ f(x) = \frac{1}{cos^2(x^2 + 3)}\]</li>
+                <li>\[ f(x) = (\frac{x^2+3}{x-4})^3\]</li>
+                <li>\[ f(x) = \frac{sen((x+3)^3)}{2x^2}\]</li>
+                <li>\[ f(x) = \sqrt[3]{\frac{x^2+3}{sen(x)}}\]</li>
+                <li>\[ f(x) = ln(\sqrt{\frac{x^2+3}{cos(x)}})\]</li>
+                <li>\[ f(x) = tan(x^2 + \sqrt{3x})\]</li>
+              </ol>
+            </div>
+          </section>
         </section>
 
-				<section>
+        <section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">8</span>Calcula la ecuación del la recta
+                tangente y de la recta normal a las siguientes funciones en los
+                puntos indicados.
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ f(x) = 3x^2 + 4x \] en \[x_0 = 3\]</li>
+                <li>\[ t(x) = \sqrt{x^2 + 3} \] en \[x_0 = 1\]</li>
+              </ol>
+            </div>
+          </section>
 
-					<section>
-						<div class="problema">
-							<p><span class="numero">8</span>Calcula la ecuación del la recta tangente y de la recta normal a las siguientes funciones en los puntos indicados.</p>
-							<ol class="problema__apartados">
-								<li>\[ f(x) = 3x^2 + 4x \] en  \[x_0 = 3\]</li>
-								<li>\[ t(x) = \sqrt{x^2 + 3} \] en \[x_0 = 1\]</li>
-							</ol>
-						</div>
-					</section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">9</span>Determina en que punto la recta
+                tangente a la función \[f(x) = x^2+3x\] es paralela a la recta
+                \[r \equiv 2x+y -3 = 0\]. Indica la ecuación de dicha recta
+                tangente.
+              </p>
+            </div>
+          </section>
 
-					<section>
-						<div class="problema">
-							<p><span class="numero">9</span>Determina en que punto la recta tangente a la función \[f(x) = x^2+3x\] es paralela a la recta \[r \equiv 2x+y -3 = 0\]. Indica la ecuación de dicha recta tangente.</p>
-						</div>
-					</section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">10</span>Determina en que punto la recta
+                tangente a la función \[f(x) = \frac{x^3}{3} - x^2 -3x +1\]
+                forma un ángulo de 135º con el sentido positivo del eje de
+                abscisas. Indica la ecuación de dicha recta tangente.
+              </p>
+            </div>
+          </section>
 
-					<section>
-						<div class="problema">
-							<p><span class="numero">10</span>Determina en que punto la recta tangente a la función \[f(x) = \frac{x^3}{3} - x^2 -3x +1\] forma un ángulo de 135º con el sentido positivo del eje de abscisas. Indica la ecuación de dicha recta tangente.</p>
-						</div>
-					</section>
+          <section>
+            <h3>Función derivada y Derivabilidad</h3>
+            <p>
+              Si una función \[f\] es continua en \[x = x_0\] y existe el límite
+              \[\lim_{x\to x_0^-} f'(x) = L\] entonces \[f'(x_0^-) = L\]
+            </p>
+            <p>
+              Si una función \[f\] es continua en \[x = x_0\] y existe el límite
+              \[\lim_{x\to x_0^+} f'(x) = L\] entonces \[f'(x_0^+) = L\]
+            </p>
 
+            <strong
+              >En caso de no existir dicho límite tendríamos que recurrir a la
+              definición de derivada.</strong
+            >
+          </section>
 
-					<section>
-						<h3>Función derivada y Derivabilidad</h3>
-						<p>Si una función \[f\] es continua en \[x = x_0\] y existe el límite \[\lim_{x\to x_0^-} f'(x) = L\] entonces \[f'(x_0^-) = L\]</p>
-						<p>Si una función \[f\] es continua en \[x = x_0\] y existe el límite \[\lim_{x\to x_0^+} f'(x) = L\] entonces \[f'(x_0^+) = L\]</p>
-						
-						<strong>En caso de no existir dicho límite tendríamos que recurrir a la definición de derivada.</strong>
-
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">8</span>Comprueba si existe algún valor de \[a\] para el cual sean derivables las siguientes funciones en los puntos indicados.</p>
-							<ol class="problema__apartados">
-								<li>\[ f(x) = \left\{ \begin{array}{lc}
-																	 ax+2 & x \lt 1 \\
-																	 3(x-2)^2  & x \ge 1
-																	 \end{array}
-												 \right.\] en el punto \[x=1\]</li>
-							 <li>\[ f(x) = \left\{ \begin{array}{lc}
-																	 a-x^2 & x \le 1 \\
-																	 \frac{2}{ax}  & x \ge 1
-																	 \end{array}
-												 \right.\] en el punto \[x=1\]</li>
-							</ol>
-						</div>
-					</section>
-
-				</section>
-				 <section>
-
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">8</span>Comprueba si existe algún valor de
+                \[a\] para el cual sean derivables las siguientes funciones en
+                los puntos indicados.
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  \[ f(x) = \left\{ \begin{array}{lc} ax+2 & x \lt 1 \\ 3(x-2)^2
+                  & x \ge 1 \end{array} \right.\] en el punto \[x=1\]
+                </li>
+                <li>
+                  \[ f(x) = \left\{ \begin{array}{lc} a-x^2 & x \le 1 \\
+                  \frac{2}{ax} & x \ge 1 \end{array} \right.\] en el punto
+                  \[x=1\]
+                </li>
+              </ol>
+            </div>
+          </section>
+        </section>
+        <section>
           <section>
             <h3>Derivada y (De)Crecimiento de una función</h3>
             <a href="https://www.geogebra.org/m/cpdnzjpf">Ver en Geogebra</a>
@@ -320,11 +386,14 @@
 
           <section>
             <div class="problema">
-              <p><span class="numero">9</span>Indica si las siguientes funciones están creciendo o decreciendo en los puntos indicados:</p>
+              <p>
+                <span class="numero">9</span>Indica si las siguientes funciones
+                están creciendo o decreciendo en los puntos indicados:
+              </p>
               <ol class="problema__apartados">
-                <li> \[ f(x) = x^3 - 3 \] en \[ x = -5 \]</li>
-                <li> \[ f(x) = 2 - \sqrt{x^2 + 3} \] en \[ x = 7 \]</li>
-                <li> \[ f(x) = ln(x^2 + 2x +6) \] en \[ x = 8 \]</li>
+                <li>\[ f(x) = x^3 - 3 \] en \[ x = -5 \]</li>
+                <li>\[ f(x) = 2 - \sqrt{x^2 + 3} \] en \[ x = 7 \]</li>
+                <li>\[ f(x) = ln(x^2 + 2x +6) \] en \[ x = 8 \]</li>
               </ol>
             </div>
           </section>
@@ -336,11 +405,14 @@
 
           <section>
             <div class="problema">
-              <p><span class="numero">10</span>Indica los puntos críticos de las funciones anteriores:</p>
+              <p>
+                <span class="numero">10</span>Indica los puntos críticos de las
+                funciones anteriores:
+              </p>
               <ol class="problema__apartados">
-                <li> \[ f(x) = x^3 - 3 \] en \[ x = -5 \]</li>
-                <li> \[ f(x) = 2 - \sqrt{x^2 + 3} \] en \[ x = 7 \]</li>
-                <li> \[ f(x) = ln(x^2 + 2x +6) \] en \[ x = 8 \]</li>
+                <li>\[ f(x) = x^3 - 3 \] en \[ x = -5 \]</li>
+                <li>\[ f(x) = 2 - \sqrt{x^2 + 3} \] en \[ x = 7 \]</li>
+                <li>\[ f(x) = ln(x^2 + 2x +6) \] en \[ x = 8 \]</li>
               </ol>
             </div>
           </section>
@@ -352,110 +424,123 @@
 
           <section>
             <div class="problema">
-              <p><span class="numero">11</span>Indica si los puntos críticos del ejercicio anterior son máximos, mínimos o puntos de inflexión:</p>
+              <p>
+                <span class="numero">11</span>Indica si los puntos críticos del
+                ejercicio anterior son máximos, mínimos o puntos de inflexión:
+              </p>
               <ol class="problema__apartados">
-                <li> \[ f(x) = x^3 - 3 \] en \[ x = -5 \]</li>
-                <li> \[ f(x) = 2 - \sqrt{x^2 + 3} \] en \[ x = 7 \]</li>
-                <li> \[ f(x) = ln(x^2 + 2x +6) \] en \[ x = 8 \]</li>
+                <li>\[ f(x) = x^3 - 3 \] en \[ x = -5 \]</li>
+                <li>\[ f(x) = 2 - \sqrt{x^2 + 3} \] en \[ x = 7 \]</li>
+                <li>\[ f(x) = ln(x^2 + 2x +6) \] en \[ x = 8 \]</li>
               </ol>
             </div>
           </section>
 
-					<section>
-						<h3>Determinación de punto crítico</h3>
-						<p>Criterio segunda derivada</p>
-						<ul>
-							<li>\[f''(x_0) \lt 0]: Mínimo</li>
-							<li>\[f''(x_0) \gt 0]: Máximo</li>
-							<li>\[f''(x_0) = 0]: Posible <em>Punto de Inflexión</em></li>
-						</ul>
-					</section>
+          <section>
+            <h3>Determinación de punto crítico</h3>
+            <p>Criterio segunda derivada</p>
+            <ul>
+              <li>\[f''(x_0) \lt 0]: Mínimo</li>
+              <li>\[f''(x_0) \gt 0]: Máximo</li>
+              <li>\[f''(x_0) = 0]: Posible <em>Punto de Inflexión</em></li>
+            </ul>
+          </section>
 
-					<section>
-						<h3>Análisis de una función: crecimiento/decreciendo y máximos/mínimos</h3>
-					</section>
+          <section>
+            <h3>
+              Análisis de una función: crecimiento/decreciendo y máximos/mínimos
+            </h3>
+          </section>
 
-					<section>
-						<div class="problema">
-							<p><span class="numero">12</span>Analiza el crecimiento/decreciemiento y los máximos y mínimos de las siguientes funciones:</p>
-							<ol class="problema__apartados">
-								<li>\[ f(x) = x^2 -5x +12\]</li>
-								<li>\[ f(x) = 2x^3 -3x^2\]</li>
-								<li>\[ f(x) = x^4-4x^3-2x^2+12x\]</li>
-								<li>\[ f(x) = \frac{x^2}{1+x^2}\]</li>
-								<li>\[ f(x) = x^3 - 7x^2 + 36\]</li>
-							</ol>
-						</div>
-					</section>
-
-      	</section>
-
-				<section>
-
-					<section>
-						<h3>Curvatura</h3>
-						<ul>
-							<li>Concavo</li>
-							<li>Convexo</li>
-						</ul>
-					</section>
-
-					<section>
-						<h3>Polígonos...</h3>
-						<img src="../img/poligonoconcavoconvexo.gif" alt="">
-					</section>
-
-					<section>
-						<h3>Pero las funciones...</h3>
-						<img src="../img/funcionconcavoconvexo.jpg" alt="">
-					</section>
-
-					<section>
-						<h3>Curvatura</h3>
-						<ul>
-							<li>Convexo: la recta tangente queda <strong>por encima</strong> de la gráfica.</li>
-							<li>Concavo: la recta tangente queda <strong>por debajo</strong> de la gráfica.</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>La función \[x^2\] es CONCAVA</h2>
-					</section>
-
-					<section>
-						<h3>Curvatura</h3>
-						<ul>
-							<li>Convexo: \[f''(x) \lt 0\]</li>
-							<li>Concavo: \[f''(x) \gt 0\]</li>
-						</ul>
-					</section>
-
-					<section>
-						<h3>Puntos de inflexión</h3>
-						<p>Cambio de cóncavo a convexo o convexo a cóncavo.</p>
-						<p>\[f''(x) = 0\] y \[f'''(x) \neq 0\]</p>
-					</section>
-
-					<section>
-						<h3>Análisis de concavidad y convexidad</h3>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">13</span>Analiza la curvatura de las siguientes funciones:</p>
-							<ol class="problema__apartados">
-								<li>\[ f(x) = 2x^3 -3x^2\]</li>
-								<li>\[ f(x) = x^4-4x^3-2x^2+12x\]</li>
-								<li>\[ f(x) = x^3 - 7x^2 + 36\]</li>
-							</ol>
-						</div>
-					</section>
-
-				</section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">12</span>Analiza el
+                crecimiento/decreciemiento y los máximos y mínimos de las
+                siguientes funciones:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ f(x) = x^2 -5x +12\]</li>
+                <li>\[ f(x) = 2x^3 -3x^2\]</li>
+                <li>\[ f(x) = x^4-4x^3-2x^2+12x\]</li>
+                <li>\[ f(x) = \frac{x^2}{1+x^2}\]</li>
+                <li>\[ f(x) = x^3 - 7x^2 + 36\]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
 
         <section>
+          <section>
+            <h3>Curvatura</h3>
+            <ul>
+              <li>Concavo</li>
+              <li>Convexo</li>
+            </ul>
+          </section>
 
+          <section>
+            <h3>Polígonos...</h3>
+            <img src="../img/poligonoconcavoconvexo.gif" alt="" />
+          </section>
 
+          <section>
+            <h3>Pero las funciones...</h3>
+            <img src="../img/funcionconcavoconvexo.jpg" alt="" />
+          </section>
+
+          <section>
+            <h3>Curvatura</h3>
+            <ul>
+              <li>
+                Convexo: la recta tangente queda <strong>por encima</strong> de
+                la gráfica.
+              </li>
+              <li>
+                Concavo: la recta tangente queda <strong>por debajo</strong> de
+                la gráfica.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>La función \[x^2\] es CONCAVA</h2>
+          </section>
+
+          <section>
+            <h3>Curvatura</h3>
+            <ul>
+              <li>Convexo: \[f''(x) \lt 0\]</li>
+              <li>Concavo: \[f''(x) \gt 0\]</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Puntos de inflexión</h3>
+            <p>Cambio de cóncavo a convexo o convexo a cóncavo.</p>
+            <p>\[f''(x) = 0\] y \[f'''(x) \neq 0\]</p>
+          </section>
+
+          <section>
+            <h3>Análisis de concavidad y convexidad</h3>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">13</span>Analiza la curvatura de las
+                siguientes funciones:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ f(x) = 2x^3 -3x^2\]</li>
+                <li>\[ f(x) = x^4-4x^3-2x^2+12x\]</li>
+                <li>\[ f(x) = x^3 - 7x^2 + 36\]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
           <section>
             <h3>Análisis de una función</h3>
             <ul>
@@ -473,84 +558,116 @@
 
           <section>
             <div class="problema">
-              <p><span class="numero">14</span>Analiza las siguientes funciones:</p>
-							<ol class="problema__apartados">
-								<li>\[ f(x) = \frac{x^2}{x-2} \]</li>
-								<li>\[ f(x) = \frac{x^2+x+1}{x^2} \]</li>
-								<li>\[ f(x) = \frac{x}{x^2+3} \]</li>
-							</ol>
+              <p>
+                <span class="numero">14</span>Analiza las siguientes funciones:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ f(x) = \frac{x^2}{x-2} \]</li>
+                <li>\[ f(x) = \frac{x^2+x+1}{x^2} \]</li>
+                <li>\[ f(x) = \frac{x}{x^2+3} \]</li>
+              </ol>
             </div>
           </section>
         </section>
 
+        <section>
+          <!-- Optimización -->
+          <section>
+            <h2>Problemas de optimización</h2>
+            <p>
+              Debemos expresar el problema como una función y luego calcular el
+              máximo o mínimo.
+            </p>
+          </section>
 
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">15</span>Encuentra la base y la aultrua del
+                triángulo isósceles de perímetro 50cm que tenga la mayor área
+                posible.
+              </p>
+            </div>
+          </section>
 
-				<section> <!-- Optimización -->
-					<section>
-						<h2>Problemas de optimización</h2>
-						<p>Debemos expresar el problema como una función y luego calcular el máximo o mínimo.</p>
-					</section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">16</span>Una lata cilíndrica de cierto
+                refresco tiene un volumen de 333cm³. La chapa utilizada para las
+                bases es doble de cara que la utilizada para cada lateral.
+                Calcula las dimensiones de la lata para que el coste de
+                fabricxación sea el menor posible.
+              </p>
+            </div>
+          </section>
 
-					<section>
-						<div class="problema">
-							<p><span class="numero">15</span>Encuentra la base y la aultrua del triángulo isósceles de perímetro 50cm que tenga la mayor área posible.</p>
-						</div>
-					</section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">17</span>La página de un libro tiene un
+                área de 6000cm². Si los cuatro márgenes miden 2cm, calcula las
+                dimensiones de la página para que la parte impresa ea la mayotr
+                posible.
+              </p>
+            </div>
+          </section>
 
-					<section>
-						<div class="problema">
-							<p><span class="numero">16</span>Una lata cilíndrica de cierto refresco tiene un volumen de 333cm³. La chapa utilizada para las bases es doble de cara que la utilizada para cada lateral. Calcula las dimensiones de la lata para que el coste de fabricxación sea el menor posible.</p>
-						</div>
-					</section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">18</span>Se condidera una ventana cuya
+                parte inferior es un rectángulo y la superior un semicírculo. Si
+                el perímetro de la ventana es 6m, calcula las dimensiones de la
+                parte rectangular para que entre un máximo de luz.
+              </p>
+            </div>
+          </section>
+        </section>
 
-					<section>
-						<div class="problema">
-							<p><span class="numero">17</span>La página de un libro tiene un área de 6000cm². Si los cuatro márgenes miden 2cm, calcula las dimensiones de la página para que la parte impresa ea la mayotr posible.</p>
-						</div>
-					</section>
+        <section>
+          <section>
+            <h3>Derivada como incremento instantáneo</h3>
+          </section>
 
-					<section>
-						<div class="problema">
-							<p><span class="numero">18</span>Se condidera una ventana cuya parte inferior es un rectángulo y la superior un semicírculo. Si el perímetro de la ventana es 6m, calcula las dimensiones de la parte rectangular para que entre un máximo de luz.</p>
-						</div>
-					</section>
+          <section>
+            <h3>Ejemplo: dinámica (MRUA)</h3>
+            <p>\[s(t) = \frac{1}{2} a t^{2}+v_{0}t +e_{0} \]</p>
+            <p>
+              \[v(t) = s'(t) = \]
+              <span class="fragment">\[a \cdot t + v_0 \]</span>
+            </p>
+            <p>\[a(t) = v'(t) = \] <span class="fragment">\[a\]</span></p>
+          </section>
 
-				</section>
-				
-				<section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">19</span>Un malabarista lanza verticalmente
+                una pelota. Su ecuación del movimiento es \[s(t) = -6t^2 +
+                48t\]. Se pide:
+              </p>
+              <ol class="problema__apartados">
+                <li>¿Con qué velocidad inicial se lanza la pelota?</li>
+                <li>¿En qué instante empieza a descender?</li>
+                <li>¿Cuál es la altura máxima a la que llega?</li>
+                <li>¿Cuánto tiempo está en movimiento?</li>
+                <li>
+                  ¿Qué velocidad lleva la pelota en los instantes t=3 y t=7?
+                  ¿Por qué son de distinto signo?
+                </li>
+              </ol>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
 
-					<section>
-						<h3>Derivada como incremento instantáneo</h3>
-					</section>
-
-					<section>
-						<h3>Ejemplo: dinámica (MRUA)</h3>
-						<p>\[s(t) = \frac{1}{2} a t^{2}+v_{0}t +e_{0} \]</p>
-						<p>\[v(t) = s'(t) = \] <span class="fragment">\[a \cdot t + v_0 \]</span></p>
-						<p>\[a(t) = v'(t) = \] <span class="fragment">\[a\]</span></p>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">19</span>Un malabarista lanza verticalmente una pelota. Su ecuación del movimiento es \[s(t) = -6t^2 + 48t\]. Se pide:</p>
-							<ol class="problema__apartados">
-								<li>¿Con qué velocidad inicial se lanza la pelota?</li>
-								<li>¿En qué instante empieza a descender?</li>
-								<li>¿Cuál es la altura máxima a la que llega?</li>
-								<li>¿Cuánto tiempo está en movimiento?</li>
-								<li>¿Qué velocidad lleva la pelota en los instantes t=3 y t=7? ¿Por qué son de distinto signo?</li>
-							</ol>
-						</div>
-					</section>
-
-				</section>
-
-
-			</div>
-
-		</div>
-
-		<script src="../js/reveal.js"></script>
-		<script src="../js/config.js"></script>
-	</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="../plugin/customcontrols/plugin.js"></script>
+    <script src="../plugin/chalkboard/plugin.js"></script>
+    <script src="../plugin/math/math.js"></script>
+    <script type="module" src="/js/config.esm.js"></script>
+    <script src="../js/custom_plugins.js"></script>
+  </body>
 </html>

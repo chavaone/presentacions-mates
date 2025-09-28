@@ -1,450 +1,520 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title>Matemáticas I - 1º BAC - Tema 5</title>
-
-		<link rel="stylesheet" href="../css/reset.css">
-		<link rel="stylesheet" href="../css/reveal.css">
-		<link rel="stylesheet" href="../css/theme/white.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="../lib/css/monokai.css">
-		<link rel="stylesheet" href="../css/estilo-blanco.css">
-
-
-		<!-- Printing and PDF exports -->
-		<script src="../js/print.js"></script>
-	</head>
-	<body>
-		<div class="reveal" id="revealdiv">
-			<div class="slides">
-
-				<section>
-					<h1>Tema 5</h1>
-					<h3>Funciones</h3>
-				</section>
-
-				<section>
-
-					<section>
-						<h3>Concepto de función</h3>
-						<p>Una función es un objeto matemático que se utiliza para expresar la dependencia entre dos magnitudes de forma que a cada valor de una de ellas se le asigna uno y solo uno de la otra.</p>
-					</section>
-
-					<section>
-						<ul>
-							<li>Variable independiente: \[x\]</li>
-							<li>Variable dependiente: \[y = f(x)\]</li>
-						</ul>
-					</section>
-
-					<section>
-						<img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/PolygonsFunction.svg" alt="" height="600vh">
-					</section>
-
-					<section>
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/FunctionMachine.svg/800px-FunctionMachine.svg.png" alt="" height="90%">
-					</section>
-
-					<section>
-						<h3>Formas de definir una función</h3>
-						<ol>
-							<li>Enunciado o regla</li>
-							<li>Tabla de valores</li>
-							<li>Gráfica</li>
-							<li>Expresión algebraica</li>
-						</ol>
-					</section>
-
-					<section>
-						<h3>Gráfica</h3>
-						<p>Representamos los vares de valores (x, f(x)) para cada valor posible de x.</p>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">1</span>Indica cual de las siguientes gráficas no corresponde con una función:</p>
-							<ol class="problema__apartados">
-								<li style="max-width:50%"><img src="../img/funciones-grafica1.png" alt="" width="90%"></li>
-								<li style="max-width:50%"><img src="../img/funciones-grafica3.png" alt="" width="90%"></li>
-							</ol>
-						</div>
-					</section>
-
-					<section>
-						<h3>Expresión algebraica</h3>
-						<p>Ejemplo: Utilizamos la notación \[f(x)=x^2\] para especificar a la función que a cada número x le hace corresponder su cuadrado \[x^2\]. Por lo tanto \[f(2) = 4\]; \[f(3) = 9\].</p>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">2</span>Indica el valor de f(3) para cada caso:</p>
-							<ol class="problema__apartados">
-								<li>\[ f(x) = 3x + 2 \]</li>
-								<li>\[ f(x) = x^2 \]</li>
-								<li>\[ f(x) = \sqrt{x + 1} \]</li>
-							</ol>
-						</div>
-					</section>
-
-				</section>
-
-				<section>
-
-					<section>
-						<h3>Características de las funciones</h3>
-					</section>
-
-					<section>
-						<h3>Dominio de definición</h3>
-						<p>Llamaremos dominio de una función \[f\] al conjunto de valores para los que esa función queda perfectamente definida.</p>
-						<p>\[Dom~f\]</p>
-					</section>
-
-					<section>
-						<h3>Imagen</h3>
-						<p>Se llama imagen o recorrido de una función  a todos los valores de la variable dependiente que tienen algún valor de la variable independiente que se transforma en él por la función.</p>
-						<p>\[Im~f\]</p>
-					</section>
-
-					<section>
-						<h3>Puntos de corte con los ejes</h3>
-						<p>Los puntos de corte con los ejes de una función  \[f\] son los puntos de intersección de la gráfica de la función con cada uno de los ejes de coordenadas.</p>
-					</section>
-
-					<section>
-						<h3>Continuidad</h3>
-					</section>
-
-					<section>
-						<h3>Tipos de discontinuidades</h3>
-						<ol>
-							<li>Evitable</li>
-							<li>De salto finito</li>
-							<li>De salto infinito</li>
-						</ol>
-					</section>
-
-					<section>
-						<h3>Crecimiento / Decrecimiento</h3>
-						<h3>Máximos / Mínimos</h3>
-					</section>
-
-					<section>
-						<h3>Periodicidad</h3>
-						<p>Una función es periódica si su gráfica se va repitiendo cada cierto intervalo.</p>
-					</section>
-
-					<section>
-						<h3>Simetrías</h3>
-						<p>Una función simétrica es una función en la que se puede encontrar un eje de simetría en su representación gráfica.</p>
-						<ol>
-							<li>Simetría par</li>
-							<li>Simetría impar</li>
-						</ol>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">3</span>Describe las características de las funciones en función de los parámetros vistos en clase:</p>
-							<h4>FICHA</h4>
-						</div>
-					</section>
-
-				</section>
-
-				<section>
-
-					<section>
-						<h3>Análisis del Dominio</h3>
-						<p>Buscaremos los "problemas" que puedan tener las expresiones.</p>
-					</section>
-
-					<section>
-						<h3>Análisis de los Puntos de corte</h3>
-						<ul>
-							<li>Eje x: Resolceremos la ecuación \[f(x) = 0\]</li>
-							<li>Eje y: Calcularemos f(0)</li>
-						</ul>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">4</span>Calcula el dominio y los puntos de corte con los ejes de las siguientes funciones:</p>
-							<ol class="problema__apartados">
-								<li>\[f(x) = x^2 + 3x\]</li>
-								<li>\[g(x) = \sqrt{x^2 - 5x + 4} \]</li>
-								<li>\[t(x) = \frac{x^2- 3}{x - 6}\]</li>
-								<li>\[s(x) = \frac{\sqrt{2x-3}}{x-10}\]</li>
-							</ol>
-						</div>
-					</section>
-
-				</section>
-
-				<section>
-					<section>
-						<h3>Funciones elementales</h3>
-					</section>
-
-					<section>
-						<ul>
-							<li>
-								Algebraicas: <br>
-								<ul>
-									<li>Polinómicas</li>
-									<li>Racionales</li>
-									<li>Radicales</li>
-								</ul>
-
-							</li>
-
-							<li>
-								Transcendentes: <br>
-								<ul>
-									<li>Exponenciales</li>
-									<li>Logarítmicas</li>
-									<li>Trigonométricas</li>
-								</ul>
-							</li>
-							<li>Definidas a trozos</li>
-						</ul>
-					</section>
-
-					<section>
-						<h3>Polinómicas: Función constante</h3>
-						<p>\[f(x) = c\]</p>
-					</section>
-
-					<section>
-						<h3>Polinómicas: Función lineal</h3>
-						<p>\[ f(x) = mx + n \]</p>
-					</section>
-
-					<section>
-						<h3>Polinómicas: Función lineal</h3>
-						<ul>
-							<li>Es una <strong>recta</strong></li>
-							<li>\[m\]: Pendiente.</li>
-							<li>\[n\]: Ordenada en el origen</li>
-						</ul>
-					</section>
-
-					<section>
-						<h3>Polinómicas: Función lineal</h3>
-						<p>Para representar calculamos dos puntos.</p>
-					</section>
-
-					<section>
-						<h3>Polinómicas: Función cuadrática</h3>
-						<p>\[ f(x) = ax^2 + bx + c \]</p>
-					</section>
-
-					<section>
-						<h3>Polinómicas: Función cuadrática</h3>
-						<ul>
-							<li>Es una <strong>parábola</strong></li>
-							<li>Signo de \[a\]:
-								<ul>
-									<li>Positivo: Ramas hacia arriba.</li>
-									<li>Negativo: Ramas hacia abajo.</li>
-								</ul>
-							</li>
-							<li>Vértice en \[x=\frac{-b}{a}\].</li>
-							<li>Simétrica par con respecto a una recta vertical partiendo de vértice.</li>
-						</ul>
-					</section>
-
-					<section>
-						<h3>Polinómicas: Función cuadrática</h3>
-						<p>Para representar calculamos vértice, puntos de corte y puntos de la función teniendo en cuenta la simetría.</p>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">5</span>Representa las siguientes funciones polinómicas:</p>
-							<ol class="problema__apartados">
-								<li>\[f(x) = 3x\]</li>
-								<li>\[f(x) = -2x + 3\]</li>
-								<li>\[f(x) = x^2 - 3x\]</li>
-								<li>\[f(x) = 2\]</li>
-								<li>\[f(x) = -2x^2 +10x + 12\]</li>
-								<li>\[f(x) = x - 4\]</li>
-							</ol>
-						</div>
-					</section>
-
-					<section>
-						<h3>Transformaciones de funciones</h3>
-						<ul>
-							<li>\[f(x-k)\]</li>
-							<li>\[f(x) + k \]</li>
-							<li>\[-f(x)\]</li>
-							<li>\[f(-x)\]</li>
-						</ul>
-					</section>
-
-					<section>
-						<h3>Función racional</h3>
-						<p>\[ f(x) = \frac{k}{x} \]</p>
-					</section>
-
-					<section>
-						<h3>Función racional</h3>
-						<a href="https://www.geogebra.org/m/jrtzqu66">Ver Geogebra</a>
-					</section>
-
-					<section>
-						<h3>Función radical</h3>
-						<p>\[ f(x) = \sqrt{x} \]</p>
-					</section>
-
-					<section>
-						<h3>Función radical</h3>
-						<a href="https://www.geogebra.org/m/gwrqsztb">Ver Geogebra</a>
-					</section>
-
-					<section>
-						<h3>Función Exponencial</h3>
-						<p>\[ f(x) = a^x \]</p>
-					</section>
-
-					<section>
-						<h3>Función Exponencial</h3>
-						<a href="https://www.geogebra.org/m/gft5jwm6">Ver Geogebra</a>
-					</section>
-
-					<section>
-						<h3>Función Logarítmica</h3>
-						<p>\[ f(x) = log_a(x) \]</p>
-					</section>
-
-					<section>
-						<h3>Función Logarítmica</h3>
-						<a href="https://www.geogebra.org/m/hxvrfat2">Ver Geogebra</a>
-					</section>
-
-					<section>
-						<h3>Funciones trigonométricas</h3>
-						<p>\[ f(x) = sen(x) \]</p>
-						<p>\[ f(x) = cos(x) \]</p>
-						<p>\[ f(x) = tan(x) \]</p>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">6</span>Busca las gráficas y funciones de tus compañeras que se corresponden con las tuyas.</p>
-							<h3>FICHAs</h3>
-						</div>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">7</span>Resuelve el siguiente Kahoot! identificando las expresiones geométricas de las siguientes gráficas.</p>
-							<a href="https://create.kahoot.it/share/identifica-funciones-elementales/f8e9aee0-d990-4c82-b91f-0cbbd5e556e0">Kahoot!</a>
-						</div>
-					</section>
-
-					<section>
-						<h3>Función definida a trozos</h3>
-						<p>\[ \begin{cases}
-								f(x) ~~~ cond. \\
-								g(x) ~~~ cond. \\
-								\dots
-								\end{cases} \]</p>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">8</span>Representa las siguientes funciones definidas a trozos:</p>
-							<ol class="problema__apartados">
-								<li>\[f(x) = \left\{ \begin{array}{lcc}
-											             x - 3 &   si  & x \lt 5 \\
-											             4 &  si & x \ge 5
-											             \end{array}
-											   \right.\]</li>
-							 <li>\[t(x) = \left\{ \begin{array}{lcc}
-											             x^2 +7x + 10 &   si  & x \lt -1 \\
-											             8 &  si & -1 \le x \le 3 \\
-																	 -x + 3 & si & x \gt 3
-											             \end{array}
-											   \right.\]</li>
-							 <li>\[g(x) = \left\{ \begin{array}{lcc}
-											             2x &   si  & x \lt -4 \\
-											             4 &  si & -4 \le x \lt 6 \\
-																	 -x^2 +12x -30 & si & x \ge 6
-											             \end{array}
-											   \right.\]</li>
-							</ol>
-						</div>
-					</section>
-
-				</section>
-
-				<section>
-
-					<section>
-						<h3>Operaciones con funciones</h3>
-					</section>
-
-					<section>
-						<h3>Suma, resta producto y cociente</h3>
-					</section>
-
-					<section>
-						<h3>Composición de funciones</h3>
-						<p>\[ (f \circ g)(x) = f(g(x)) \]</p>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">9</span>Dadas las funciones \[f(x) = 2x + 3\] , \[g(x) = \sqrt{x}\] y \[s(x) = x^2\] calcula:</p>
-							<ol class="problema__apartados">
-								<li>\[ (f+g)(x) \]</li>
-								<li>\[ (f \cdot g)(x) \]</li>
-								<li>\[ (\frac{s}{f})(x)\]</li>
-								<li>\[ (g \circ f)(x)\]</li>
-								<li>\[ (f \circ s)(x)\]</li>
-							</ol>
-						</div>
-					</section>
-
-				</section>
-
-				<section>
-
-					<section>
-						<h3>Función inversa</h3>
-						\[ (f \circ f^{-1})(x) = id(x) \]
-						<p>\[ f(x) = \sqrt{x}\] e \[g(x) = x^2\]. Entón \[(f \circ g)(x) = \sqrt{x^2} = x\].</p>
-					</section>
-
-					<section>
-						<h3>Cálculo de la función inversa</h3>
-					</section>
-
-					<section>
-						<div class="problema">
-							<p><span class="numero">10</span>Calcula la inversa de las siguientes funciones:</p>
-							<ol class="problema__apartados">
-								<li>\[f(x) = (x-2)^2\]</li>
-								<li>\[g(x) = \sqrt{x-3} \]</li>
-								<li>\[t(x) = \frac{x-1}{x+2}\]</li>
-							</ol>
-						</div>
-					</section>
-
-
-				</section>
-
-			</div>
-		</div>
-
-		<script src="../js/reveal.js"></script>
-		<script src="../js/config.js"></script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Matemáticas Xerais - 1º de BAC - Funciones</title>
+
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/white.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../plugin/customcontrols/style.css" />
+    <link rel="stylesheet" href="../plugin/chalkboard/style.css" />
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../css/estilo-blanco.css" />
+  </head>
+  <body>
+    <div class="reveal" id="revealdiv">
+      <div class="slides">
+        <section>
+          <h3>Funciones</h3>
+        </section>
+
+        <section>
+          <section>
+            <h3>Concepto de función</h3>
+            <p>
+              Una función es un objeto matemático que se utiliza para expresar
+              la dependencia entre dos magnitudes de forma que a cada valor de
+              una de ellas se le asigna uno y solo uno de la otra.
+            </p>
+          </section>
+
+          <section>
+            <ul>
+              <li>Variable independiente: \[x\]</li>
+              <li>Variable dependiente: \[y = f(x)\]</li>
+            </ul>
+          </section>
+
+          <section>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c8/PolygonsFunction.svg"
+              alt=""
+              height="600vh"
+            />
+          </section>
+
+          <section>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/FunctionMachine.svg/800px-FunctionMachine.svg.png"
+              alt=""
+              height="90%"
+            />
+          </section>
+
+          <section>
+            <h3>Formas de definir una función</h3>
+            <ol>
+              <li>Enunciado o regla</li>
+              <li>Tabla de valores</li>
+              <li>Gráfica</li>
+              <li>Expresión algebraica</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>Gráfica</h3>
+            <p>
+              Representamos los vares de valores (x, f(x)) para cada valor
+              posible de x.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">1</span>Indica cual de las siguientes
+                gráficas no corresponde con una función:
+              </p>
+              <ol class="problema__apartados">
+                <li style="max-width: 50%">
+                  <img src="../img/funciones-grafica1.png" alt="" width="90%" />
+                </li>
+                <li style="max-width: 50%">
+                  <img src="../img/funciones-grafica3.png" alt="" width="90%" />
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h3>Expresión algebraica</h3>
+            <p>
+              Ejemplo: Utilizamos la notación \[f(x)=x^2\] para especificar a la
+              función que a cada número x le hace corresponder su cuadrado
+              \[x^2\]. Por lo tanto \[f(2) = 4\]; \[f(3) = 9\].
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">2</span>Indica el valor de f(3) para cada
+                caso:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ f(x) = 3x + 2 \]</li>
+                <li>\[ f(x) = x^2 \]</li>
+                <li>\[ f(x) = \sqrt{x + 1} \]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Características de las funciones</h3>
+          </section>
+
+          <section>
+            <h3>Dominio de definición</h3>
+            <p>
+              Llamaremos dominio de una función \[f\] al conjunto de valores
+              para los que esa función queda perfectamente definida.
+            </p>
+            <p>\[Dom~f\]</p>
+          </section>
+
+          <section>
+            <h3>Imagen</h3>
+            <p>
+              Se llama imagen o recorrido de una función a todos los valores de
+              la variable dependiente que tienen algún valor de la variable
+              independiente que se transforma en él por la función.
+            </p>
+            <p>\[Im~f\]</p>
+          </section>
+
+          <section>
+            <h3>Puntos de corte con los ejes</h3>
+            <p>
+              Los puntos de corte con los ejes de una función \[f\] son los
+              puntos de intersección de la gráfica de la función con cada uno de
+              los ejes de coordenadas.
+            </p>
+          </section>
+
+          <section>
+            <h3>Continuidad</h3>
+          </section>
+
+          <section>
+            <h3>Tipos de discontinuidades</h3>
+            <ol>
+              <li>Evitable</li>
+              <li>De salto finito</li>
+              <li>De salto infinito</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>Crecimiento / Decrecimiento</h3>
+            <h3>Máximos / Mínimos</h3>
+          </section>
+
+          <section>
+            <h3>Periodicidad</h3>
+            <p>
+              Una función es periódica si su gráfica se va repitiendo cada
+              cierto intervalo.
+            </p>
+          </section>
+
+          <section>
+            <h3>Simetrías</h3>
+            <p>
+              Una función simétrica es una función en la que se puede encontrar
+              un eje de simetría en su representación gráfica.
+            </p>
+            <ol>
+              <li>Simetría par</li>
+              <li>Simetría impar</li>
+            </ol>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">3</span>Describe las características de las
+                funciones en función de los parámetros vistos en clase:
+              </p>
+              <h4>FICHA</h4>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Análisis del Dominio</h3>
+            <p>Buscaremos los "problemas" que puedan tener las expresiones.</p>
+          </section>
+
+          <section>
+            <h3>Análisis de los Puntos de corte</h3>
+            <ul>
+              <li>Eje x: Resolceremos la ecuación \[f(x) = 0\]</li>
+              <li>Eje y: Calcularemos f(0)</li>
+            </ul>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">4</span>Calcula el dominio y los puntos de
+                corte con los ejes de las siguientes funciones:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[f(x) = x^2 + 3x\]</li>
+                <li>\[g(x) = \sqrt{x^2 - 5x + 4} \]</li>
+                <li>\[t(x) = \frac{x^2- 3}{x - 6}\]</li>
+                <li>\[s(x) = \frac{\sqrt{2x-3}}{x-10}\]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Funciones elementales</h3>
+          </section>
+
+          <section>
+            <ul>
+              <li>
+                Algebraicas: <br />
+                <ul>
+                  <li>Polinómicas</li>
+                  <li>Racionales</li>
+                  <li>Radicales</li>
+                </ul>
+              </li>
+
+              <li>
+                Transcendentes: <br />
+                <ul>
+                  <li>Exponenciales</li>
+                  <li>Logarítmicas</li>
+                  <li>Trigonométricas</li>
+                </ul>
+              </li>
+              <li>Definidas a trozos</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Polinómicas: Función constante</h3>
+            <p>\[f(x) = c\]</p>
+          </section>
+
+          <section>
+            <h3>Polinómicas: Función lineal</h3>
+            <p>\[ f(x) = mx + n \]</p>
+          </section>
+
+          <section>
+            <h3>Polinómicas: Función lineal</h3>
+            <ul>
+              <li>Es una <strong>recta</strong></li>
+              <li>\[m\]: Pendiente.</li>
+              <li>\[n\]: Ordenada en el origen</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Polinómicas: Función lineal</h3>
+            <p>Para representar calculamos dos puntos.</p>
+          </section>
+
+          <section>
+            <h3>Polinómicas: Función cuadrática</h3>
+            <p>\[ f(x) = ax^2 + bx + c \]</p>
+          </section>
+
+          <section>
+            <h3>Polinómicas: Función cuadrática</h3>
+            <ul>
+              <li>Es una <strong>parábola</strong></li>
+              <li>
+                Signo de \[a\]:
+                <ul>
+                  <li>Positivo: Ramas hacia arriba.</li>
+                  <li>Negativo: Ramas hacia abajo.</li>
+                </ul>
+              </li>
+              <li>Vértice en \[x=\frac{-b}{a}\].</li>
+              <li>
+                Simétrica par con respecto a una recta vertical partiendo de
+                vértice.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Polinómicas: Función cuadrática</h3>
+            <p>
+              Para representar calculamos vértice, puntos de corte y puntos de
+              la función teniendo en cuenta la simetría.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">5</span>Representa las siguientes funciones
+                polinómicas:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[f(x) = 3x\]</li>
+                <li>\[f(x) = -2x + 3\]</li>
+                <li>\[f(x) = x^2 - 3x\]</li>
+                <li>\[f(x) = 2\]</li>
+                <li>\[f(x) = -2x^2 +10x + 12\]</li>
+                <li>\[f(x) = x - 4\]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h3>Transformaciones de funciones</h3>
+            <ul>
+              <li>\[f(x-k)\]</li>
+              <li>\[f(x) + k \]</li>
+              <li>\[-f(x)\]</li>
+              <li>\[f(-x)\]</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Función racional</h3>
+            <p>\[ f(x) = \frac{k}{x} \]</p>
+          </section>
+
+          <section>
+            <h3>Función racional</h3>
+            <a href="https://www.geogebra.org/m/jrtzqu66">Ver Geogebra</a>
+          </section>
+
+          <section>
+            <h3>Función radical</h3>
+            <p>\[ f(x) = \sqrt{x} \]</p>
+          </section>
+
+          <section>
+            <h3>Función radical</h3>
+            <a href="https://www.geogebra.org/m/gwrqsztb">Ver Geogebra</a>
+          </section>
+
+          <section>
+            <h3>Función Exponencial</h3>
+            <p>\[ f(x) = a^x \]</p>
+          </section>
+
+          <section>
+            <h3>Función Exponencial</h3>
+            <a href="https://www.geogebra.org/m/gft5jwm6">Ver Geogebra</a>
+          </section>
+
+          <section>
+            <h3>Función Logarítmica</h3>
+            <p>\[ f(x) = log_a(x) \]</p>
+          </section>
+
+          <section>
+            <h3>Función Logarítmica</h3>
+            <a href="https://www.geogebra.org/m/hxvrfat2">Ver Geogebra</a>
+          </section>
+
+          <section>
+            <h3>Funciones trigonométricas</h3>
+            <p>\[ f(x) = sen(x) \]</p>
+            <p>\[ f(x) = cos(x) \]</p>
+            <p>\[ f(x) = tan(x) \]</p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">6</span>Busca las gráficas y funciones de
+                tus compañeras que se corresponden con las tuyas.
+              </p>
+              <h3>FICHAs</h3>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">7</span>Resuelve el siguiente Kahoot!
+                identificando las expresiones geométricas de las siguientes
+                gráficas.
+              </p>
+              <a
+                href="https://create.kahoot.it/share/identifica-funciones-elementales/f8e9aee0-d990-4c82-b91f-0cbbd5e556e0"
+                >Kahoot!</a
+              >
+            </div>
+          </section>
+
+          <section>
+            <h3>Función definida a trozos</h3>
+            <p>
+              \[ \begin{cases} f(x) ~~~ cond. \\ g(x) ~~~ cond. \\ \dots
+              \end{cases} \]
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">8</span>Representa las siguientes funciones
+                definidas a trozos:
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  \[f(x) = \left\{ \begin{array}{lcc} x - 3 & si & x \lt 5 \\ 4
+                  & si & x \ge 5 \end{array} \right.\]
+                </li>
+                <li>
+                  \[t(x) = \left\{ \begin{array}{lcc} x^2 +7x + 10 & si & x \lt
+                  -1 \\ 8 & si & -1 \le x \le 3 \\ -x + 3 & si & x \gt 3
+                  \end{array} \right.\]
+                </li>
+                <li>
+                  \[g(x) = \left\{ \begin{array}{lcc} 2x & si & x \lt -4 \\ 4 &
+                  si & -4 \le x \lt 6 \\ -x^2 +12x -30 & si & x \ge 6
+                  \end{array} \right.\]
+                </li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Operaciones con funciones</h3>
+          </section>
+
+          <section>
+            <h3>Suma, resta producto y cociente</h3>
+          </section>
+
+          <section>
+            <h3>Composición de funciones</h3>
+            <p>\[ (f \circ g)(x) = f(g(x)) \]</p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">9</span>Dadas las funciones \[f(x) = 2x +
+                3\] , \[g(x) = \sqrt{x}\] y \[s(x) = x^2\] calcula:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ (f+g)(x) \]</li>
+                <li>\[ (f \cdot g)(x) \]</li>
+                <li>\[ (\frac{s}{f})(x)\]</li>
+                <li>\[ (g \circ f)(x)\]</li>
+                <li>\[ (f \circ s)(x)\]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Función inversa</h3>
+            \[ (f \circ f^{-1})(x) = id(x) \]
+            <p>
+              \[ f(x) = \sqrt{x}\] e \[g(x) = x^2\]. Entón \[(f \circ g)(x) =
+              \sqrt{x^2} = x\].
+            </p>
+          </section>
+
+          <section>
+            <h3>Cálculo de la función inversa</h3>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">10</span>Calcula la inversa de las
+                siguientes funciones:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[f(x) = (x-2)^2\]</li>
+                <li>\[g(x) = \sqrt{x-3} \]</li>
+                <li>\[t(x) = \frac{x-1}{x+2}\]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="../plugin/customcontrols/plugin.js"></script>
+    <script src="../plugin/chalkboard/plugin.js"></script>
+    <script src="../plugin/math/math.js"></script>
+    <script type="module" src="/js/config.esm.js"></script>
+    <script src="../js/custom_plugins.js"></script>
+  </body>
 </html>
