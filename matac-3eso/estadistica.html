@@ -405,15 +405,18 @@
 
         <section>
           <section>
-            <h2>Medidas estadísticas</h2>
+            <h2>Medidas estadísticas: medidas de posición</h2>
+            <p>
+              Las medidas de posición proporcionan información resumida de la
+              variable objeto de estudio
+            </p>
           </section>
           <section>
-            <h4>Medidas de centralización</h4>
+            <h4>Medidas de posición central: media, mediana y moda</h4>
             <p>
               Las medidas de centralización nos ayudan a resumir un conjunto de
               datos en un solo valor que represente el centro o la tendencia
-              central de los datos. Las más comunes son la media, la mediana y
-              la moda.
+              central de los datos.
             </p>
           </section>
           <section>
@@ -423,25 +426,29 @@
               Se calcula sumando todos los valores y dividiendo entre el número
               total de valores. La fórmula es:
             </p>
-            <p>\(\overline{x} = \frac{\sum_{i=1}^{n} x_i}{n}\)</p>
+            <p>\(\overline{x} = \frac{\sum_{i=1}^{n} x_i \cdot f_i}{n}\)</p>
           </section>
           <section>
             <h4>Mediana</h4>
             <p>
               La mediana es el valor que deja el mismo número de datos por
-              encima y por debajo de él cuando los datos están ordenados. Si hay
-              un número impar de datos, la mediana es el valor central. Si hay
-              un número par de datos, la mediana es la media de los dos valores
-              centrales.
+              encima y por debajo de él cuando los datos están ordenados.
+            </p>
+            <p>
+              Si hay un número impar de datos, la mediana es el valor central.
+              Si hay un número par de datos, la mediana es la media de los dos
+              valores centrales.
             </p>
           </section>
           <section>
             <h4>Moda</h4>
             <p>
-              La moda es el valor que más se repite en un conjunto de datos. Es
-              posible que un conjunto de datos tenga más de una moda (si varios
-              valores se repiten el mismo número de veces) o que no tenga moda
-              (si ningún valor se repite).
+              La moda es el valor que más se repite en un conjunto de datos.
+            </p>
+            <p>
+              Es posible que un conjunto de datos tenga más de una moda (si
+              varios valores se repiten el mismo número de veces) o que no tenga
+              moda (si ningún valor se repite).
             </p>
           </section>
 
@@ -454,26 +461,26 @@
               </p>
               <p>4, 1, 0, 4, 1, 4, 1, 2, 3, 0, 2, 4, 0, 3, 1</p>
             </div>
-            </section>
-
-            <section>
-              <div class="problema">
-                <p>
-                  <span class="numero">35</span> Las estaturas (en cm) de 24
-                  alumnos de 3.° ESO son:
-                </p>
-                <p>
-                  158, 160, 168, 156, 166, 158, 160, 168, 168, 158, 156, 164,
-                  162, 166, 164, 168, 162, 158, 156, 166, 160, 168, 160, 160
-                </p>
-                <ol class="problema__apartados">
-                  <li>Agrúpalas en intervalos.</li>
-                  <li>Realiza la tabla de frecuencias</li>
-                  <li>Calcula la media, mediana y moda.</li>
-                </ol>
-              </div>
-            </section>
           </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">35</span> Las estaturas (en cm) de 24
+                alumnos de 3.° ESO son:
+              </p>
+              <p>
+                158, 160, 168, 156, 166, 158, 160, 168, 168, 158, 156, 164, 162,
+                166, 164, 168, 162, 158, 156, 166, 160, 168, 160, 160
+              </p>
+              <ol class="problema__apartados">
+                <li>Agrúpalas en intervalos.</li>
+                <li>Realiza la tabla de frecuencias</li>
+                <li>Calcula la media, mediana y moda.</li>
+              </ol>
+            </div>
+          </section>
+
           <section>
             <div class="problema">
               <p>
@@ -485,8 +492,7 @@
           </section>
 
           <section>
-            <h4>Cuartiles</h4>
-            <p></p>
+            <h4>Medidas de posición no central: cuartiles</h4>
           </section>
 
           <section>
@@ -506,7 +512,10 @@
                 en las que hay 50 plazas y se han presentado 200 personas. Estos
                 son los resultados:
               </p>
-              <table border="1" style="border-collapse: collapse; text-align: center;">
+              <table
+                border="1"
+                style="border-collapse: collapse; text-align: center"
+              >
                 <tr>
                   <th>Notas</th>
                   <td>3</td>
@@ -538,9 +547,63 @@
               </ol>
             </div>
           </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Medidas estadísticas: medidas de dispersión</h2>
+            <p>
+              Las medidas de dispersión estudian la separación existente entre
+              los valores que toma la variable.
+            </p>
+          </section>
 
           <section>
-            <h4>Medidas de dispersión: desviación típica y varianza</h4>
+            <h4>
+              Medidas de dispersión absolutas: desviación típica y varianza
+            </h4>
+            <p>
+              \( \sigma^2 = \frac{\sum_i (X_i - \overline{x}) \cdot f_i}{N} \)
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">41</span> Las longitudes (en mm) de una
+                muestra de tornillos son las siguientes. Calcula sus medidas de
+                dispersión utilizando las marcas de clase.
+              </p>
+
+              <table
+                border="1"
+                style="border-collapse: collapse; text-align: center"
+              >
+                <tr>
+                  <th>Intervalo</th>
+                  <td>[13, 14)</td>
+                  <td>[14, 15)</td>
+                  <td>[15, 16)</td>
+                  <td>[16, 17)</td>
+                </tr>
+                <tr>
+                  <th>\(f_i\)</th>
+                  <td>8</td>
+                  <td>7</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+
+          <section>
+            <h4>Medidas de dispersión relativas: Coeficiente de variación</h4>
+            <p>
+              Se trata de una medida adimensional y sin unidades que nos permite
+              comparar la dispersión de dos variables.
+            </p>
+            <p>\(C_v = \frac{\sigma}{|\overline{x}|}\)</p>
           </section>
 
           <section>
@@ -555,7 +618,10 @@
               </ul>
               <ol class="problema__apartados">
                 <li>Calcula la media y la varianza en los dos casos.</li>
-                <li>¿En cuál de los dos jugadores hay mayor dispersión?</li>
+                <li>
+                  Calcula su coeficiente de variación. ¿En cuál de los dos
+                  jugadores hay mayor dispersión?
+                </li>
               </ol>
             </div>
           </section>
@@ -563,35 +629,10 @@
           <section>
             <div class="problema">
               <p>
-                <span class="numero">41</span> Las longitudes (en mm) de una
-                muestra de tornillos son las siguientes. Calcula sus medidas de
-                dispersión utilizando las marcas de clase.
-              </p>
-
-              <table border="1" style="border-collapse: collapse; text-align: center;">
-                <tr>
-                  <th>Intervalo</th>
-                  <td>[13, 14)</td>
-                  <td>[14, 15)</td>
-                  <td>[15, 16)</td>
-                  <td>[16, 17)</td>
-                </tr>
-                <tr>
-                  <th>f<sub>i</sub></th>
-                  <td>8</td>
-                  <td>7</td>
-                  <td>2</td>
-                  <td>3</td>
-                </tr>
-              </table>
-            </div>
-          </section>
-          <section>
-            <div class="problema">
-              <p>
                 <span class="numero">42</span> Las notas obtenidas por un alumno
                 en cinco exámenes han sido: 3, 8, 5, 7 y 4, y las de otro
-                alumno: 2, 9, 4, 5 y 7. ¿En qué alumno es mayor la dispersión?
+                alumno: 2, 9, 4, 5 y 7. Calcula su coeficiente de variación. ¿En
+                qué alumno es mayor la dispersión?
               </p>
             </div>
           </section>
