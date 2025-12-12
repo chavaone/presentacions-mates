@@ -122,7 +122,21 @@
             </p>
           </section>
           <section>
+            <h3>Camino</h3>
+            <p>Un camino es una sucesión de nodos y aristas.</p>
+          </section>
+          <section>
             <h3>Matriz</h3>
+            <p>Conjunto de números ordenador en \[m\] filas y \[n\] columnas</p>
+            <p style="text-align: center">
+              \[ \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} &
+              a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\
+              a_{m1} & a_{m2} & \cdots & a_{mn} \end{pmatrix}\]
+            </p>
+            <p>
+              El elemento \[a_{ij}\] es el elemento de la fila \[i\] y columna
+              \[j\].
+            </p>
           </section>
           <section>
             <h3>Matriz de adyacencia de un grafo</h3>
@@ -136,7 +150,67 @@
           <section>
             <h3>Producto de matrices</h3>
           </section>
-          <section></section>
+        </section>
+        <section>
+          <section>
+            <h3>Puentes de Königsberg</h3>
+            <img
+              src="../img/grafos_puentes_koenigsberg.png"
+              alt="Puentes de Königsberg"
+            />
+            <p>
+              El problema de los 7 puentes de Königsberg consiste en encontrar
+              un camino que recorra los 7 puentes sin recorrer ninguno.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">1</span>
+                La imagen anterior representa la disposición de los puentes de
+                Königsberg en la é poca de Euler.
+              </p>
+              <ol class="problema__apartados">
+                <li>Representa el problema con un grafo.</li>
+                <li>Calcula el grado de los nodos del grafo.</li>
+                <li>
+                  Si añadimos una arista al grafo, ¿podríamos hacer el camino
+                  pedido?
+                </li>
+                <li>Como son ahora los grados de cada nodo?</li>
+                <li>Si añadimos otra arista, podemos cerrar el camino?</li>
+                <li>
+                  Donde tendría que estar esa arista? Como afecta a los grados?
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h3>Ciclo euleriano</h3>
+            <p>
+              Un ciclo euleriano es un camino cerrado (inicio y final coinciden)
+              en el que se recorren todas las aristas de un grafo sin repetir
+              ninguna.
+            </p>
+            <p>
+              Para que un grafo admita un ciclo euleriano, todos sus
+              nodos/vértices deben tener grado par.
+            </p>
+          </section>
+
+          <section>
+            <h3>Camino euleriano</h3>
+            <p>
+              Un camino euleriano es cun camino abierto en el que se recorren
+              todas las aristas sin repetir ninguna.
+            </p>
+            <p>
+              Para que un grafo admita un camino euleriano, como máximo debe
+              tener 2 nodos/vértices con grado impar.
+            </p>
+          </section>
         </section>
       </div>
     </div>
