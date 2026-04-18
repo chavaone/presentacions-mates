@@ -25,221 +25,321 @@
     <div class="reveal">
       <div class="slides">
         <section>
+          <h2>Probabilidad Condicionada</h2>
+        </section>
+
+        <section>
           <section>
-            <h2>Probabilidad condicionada</h2>
+            <h2>Experimentos y sucesos</h2>
+          </section>
+
+          <section>
+            <h4>Experimentos deterministas y aleatorios</h4>
+            <p>
+              Un experimento determinista es aquel cuyo resultado se conoce con
+              certeza antes de realizarlo.
+            </p>
+            <p>
+              Un experimento aleatorio es aquel cuyo resultado no se puede
+              predecir con seguridad.
+            </p>
+          </section>
+
+          <section>
+            <h4>Suceso elemental y espacio muestral</h4>
+            <p>
+              El espacio muestral es el conjunto de todos los posibles
+              resultados de un experimento aleatorio.
+            </p>
+            <p>
+              Un suceso elemental es un único resultado del espacio muestral.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">1</span>Para los siguientes experimentos
+                indica si son deterministas o aleatorios y, en caso de ser
+                aleatorios, indica su espacio muestral:
+              </p>
+              <ol class="problema__apartados">
+                <li>Lanzar una moneda.</li>
+                <li>
+                  Calcular el tiempo que le lleva a un sólido recorrer una
+                  distancia determinada conocida la velocidad.
+                </li>
+                <li>Lanzar un dado de 6 caras.</li>
+                <li>
+                  Calcular la velocidad de un objecto después de un determinado
+                  tiempo conocidas las condiciones iniciales.
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Sucesos compuestos</h4>
+            <p>
+              Un suceso compuesto es aquel formado por varios sucesos
+              elementales. Por ejemplo, "obtener un número par" al lanzar un
+              dado.
+            </p>
+          </section>
+
+          <section>
+            <h4>Suceso seguro y suceso imposible</h4>
+            <p>
+              El \textbf{suceso seguro} sucede siempre. Coincide con todo el
+              espacio muestral.
+            </p>
+            <p>
+              El \textbf{suceso imposible} no sucesde nunca. No contiene
+              resultados.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">2</span>Para los siguientes experimentos
+                indica los sucesos elementales que componen los sucesos
+                compuestos:
+              </p>
+              <ol class="problema__apartados">
+                <li>Número par al lanzar un dado de 6 caras.</li>
+                <li>Número mayor que 3 en un dado.</li>
+                <li>Obtener cara al lanzar dos monedas (al menos una).</li>
+                <li>Elegir una carta de una baraja española que sea figura.</li>
+              </ol>
+            </div>
           </section>
         </section>
 
         <section>
           <section>
-            <h4>Experimento</h4>
-            <p>Un proceso a través del cual se obtiene una observación.</p>
+            <h2>Operaciones con sucesos</h2>
           </section>
 
           <section>
-            <h4>Tipos de experimentos</h4>
-            <p>Determinista y aleatorio.</p>
+            <h4>Unión de sucesos</h4>
+            <p>
+              La unión de dos sucesos A y B contiene todos los sucesos de A y de
+              B (eliminando los repetidos)
+            </p>
+            <p>Se representa por \[ A \cup B \]</p>
+          </section>
+
+          <section>
+            <h4>Intersección de sucesos</h4>
+            <p>
+              La intersección es el suceso "A y B" contiene los sucesos que
+              tienen en común A y B.
+            </p>
+            <p>Se representa por \[ A \cap B \]</p>
+          </section>
+
+          <section>
+            <h4>Diferencia de sucesos</h4>
+            <p>
+              La diferencia de los sucesos A y B son los resultados de A que no
+              están en B.
+            </p>
+            <p>Se representa por \[A-B\]</p>
+            <p>Se puede calcular como \[ A - B = A \cap \overline{B}\]</p>
+          </section>
+
+          <section>
+            <h4>Complementario de un suceso</h4>
+            <p>
+              El complementario de A son los sucesos del espacio muestral que no
+              pertenecen a A.
+            </p>
+            <p>Se representa por \[ \overline{A} \]</p>
           </section>
 
           <section>
             <div class="problema">
               <p>
-                <span class="numero">1</span>Clasifica los siguientes
-                experimentos como deterministas o aleatorios:
-              </p>
-              <ol class="problema__apartados">
-                <li>Lanzar una moneda al aire y anotar si sale cara o cruz.</li>
-                <li>
-                  Comprobar el tiempo que tarda un objeto en recorrer una
-                  distancia conocidas la velocidad y las condiciones del
-                  entorno.
-                </li>
-                <li>El tiempo meteorológico que hará mañana.</li>
-              </ol>
-            </div>
-          </section>
-
-          <section>
-            <h4>Suceso elemental</h4>
-            <p>Cada uno de los posibles resultados de un experimento.</p>
-          </section>
-
-          <section>
-            <h4>Ejemplo</h4>
-            <p>
-              Lanzar un dado de seis caras y observar el resultado. \[\omega_1
-              =\] "sacar un 1", \[\omega_2 =\] "sacar un 2", ..., \[\omega_6 =\]
-              "sacar un 6".
-            </p>
-          </section>
-
-          <section>
-            <h4>Espacio muestral</h4>
-            <p>Conjunto formado por todos los sucesos elementales.</p>
-          </section>
-
-          <section>
-            <h4>Ejemplo</h4>
-            <p>
-              Lanzar un dado de seis caras y observar el resultado. \[ \Omega =
-              \{\omega_1, \omega_2, \omega_3, \dots, \omega_6\} \]
-            </p>
-          </section>
-
-          <section>
-            <h4>Suceso</h4>
-            <p>Un subconjunto del espacio muestral.</p>
-          </section>
-
-          <section>
-            <h4>Ejemplo</h4>
-            <p>
-              Lanzar un dado de seis caras y observar el resultado. \[ A = \]
-              "sacar un número par" \[= \{\omega_2, \omega_4, \omega_6\} \] \[ B
-              = \] "sacar menos de 3" \[= \{\omega_1, \omega_2 \} \] \[ C = \]
-              "sacar un múltiplo de 3" \[= \{\omega_3, \omega_6 \} \]
-            </p>
-          </section>
-
-          <section>
-            <h4>Suceso imposible y suceso seguro</h4>
-            <p>
-              Suceso imposible: \[ \emptyset \]. Suceso seguro: \[ \Omega \].
-            </p>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">2</span>En el experimento de
-                <em>"lanzar un dado de 12 caras y observar su resultado"</em>
+                <span class="numero">3</span>Dado el experimento lanzar un dado
+                de 12 caras y los sucesos A="número par" y B="múltiplo de 3",
                 calcula:
               </p>
               <ol class="problema__apartados">
-                <li>Los sucesos elementales.</li>
-                <li>El espacio muestral.</li>
-                <li>El suceso \[A =\] “sacar un múltiplo de 3”.</li>
-                <li>El suceso \[B =\] “sacar un número par”.</li>
-                <li>Un suceso imposible.</li>
+                <li>\(A \cup B\)</li>
+                <li>\(A \cap B\)</li>
+                <li>\(A - B\)</li>
+                <li>\(\overline{B}\)</li>
               </ol>
             </div>
           </section>
 
           <section>
-            <h4>Operaciones con sucesos</h4>
-            <p>
-              Unión \[ A \cup B \], intersección \[ A \cap B \], complementario
-              \[ \overline{A} \], diferencia \[ A - B = A \cap \overline{B} \].
-            </p>
+            <h4>Propiedades de las operaciones con sucesos</h4>
+            <ul>
+              <li>
+                Conmutativa:<br />
+                \[ A \cup B = B \cup A \]<br />\[ A \cap B = B \cap A \]
+              </li>
+
+              <li>
+                Asociativa: <br />
+                \[ (A \cup B) \cup C = A \cup (B \cup C) \] <br />
+                \[ (A \cap B) \cap C = A \cap (B \cap C) \]
+              </li>
+
+              <li>
+                Distributiva: <br />
+                \[ A \cap (B \cup C) = (A \cap B) \cup (A \cap C) \] <br />
+                \[ A \cup (B \cap C) = (A \cup B) \cap (A \cup C) \]
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>Propiedades de las operaciones con sucesos</h4>
+            <ul>
+              <li>
+                Elemento neutro: <br />
+                \[ A \cup \varnothing = A \]<br />
+                \[ A \cap \Omega = A \]
+              </li>
+
+              <li>
+                Elemento absorbente: <br />
+                \[ A \cup \Omega = \Omega \quad \] <br />
+                \[ \quad A \cap \varnothing = \varnothing \]
+              </li>
+
+              <li>
+                Complementario: <br />
+                \[ A \cup \overline{A} = \Omega \]<br />
+                \[ A \cap \overline{A} = \varnothing \]
+              </li>
+            </ul>
           </section>
 
           <section>
-            <h4>Ejemplo de sucesos</h4>
-            <p>
-              Experimento: "Lanzar un dado de 6 caras y anotar el resultado".
-              \[A = \] "Sacar número par" y \[B = \] "Sacar múltiplo de 3".
-            </p>
-            <img src="../img/conjuntosbase.png" class="blackbg" />
-          </section>
-
-          <section>
-            <h4>Unión</h4>
-            <p>\[ A \cup B \]</p>
-            <img src="../img/conjuntosunion.png" class="blackbg" />
-          </section>
-
-          <section>
-            <h4>Intersección</h4>
-            <p>\[ A \cap B \]</p>
-            <img src="../img/conjuntosinterseccion.png" class="blackbg" />
-          </section>
-
-          <section>
-            <h4>Diferencia</h4>
-            <p>\[ A - B \]</p>
-            <img src="../img/conjuntosdiferencia.png" class="blackbg" />
-          </section>
-
-          <section>
-            <h4>Complementario</h4>
-            <p>\[ \overline{A} \]</p>
-            <img src="../img/conjuntoscomplementario.png" class="blackbg" />
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">3</span>Dado el experimento
-                <em>"lanzar un dado de 6 caras y observar el resultado"</em> y
-                sean \[A\], \[B\] y \[C\] los sucesos "sacar un número par",
-                "sacar un número menor que 3" y "sacar un múltiplo de 3",
-                respectivamente; expresa usando notación y calcula los sucesos
-                elementales que forman:
-              </p>
-              <ol class="problema__apartados">
-                <li>
-                  Ocurre \[A\] y \[B\] pero no \[C\]. \[ A \cap B \cap
-                  \overline{C} = \{ \omega_2 \} \]
-                </li>
-                <li>Los tres sucesos ocurren simultáneamente.</li>
-                <li>Ocurren \[A\] o \[B\], pero no \[C\].</li>
-                <li>Ocurre alguno de los tres sucesos.</li>
-                <li>No ocurre ninguno de los tres sucesos.</li>
-              </ol>
-            </div>
+            <h4>Propiedades de las operaciones con sucesos</h4>
+            <ul>
+              <li>
+                Leyes de De Morgan: <br />
+                \[ \overline{A \cup B} = \overline{A} \cap \overline{B} \]
+                <br />
+                \[ \overline{A \cap B} = \overline{A} \cup \overline{B} \]
+              </li>
+            </ul>
           </section>
 
           <section>
             <h4>Sucesos compatibles e incompatibles</h4>
             <p>
-              Dos sucesos \[ A \] y \[ B \] son incompatibles si no pueden
-              suceder a la vez y por tanto \[A \cap B = \emptyset \].
+              Dos sucesos son compatibles si pueden ocurrir a la vez. Son
+              incompatibles si su intersección es vacía.
             </p>
           </section>
 
           <section>
-            <h4>Propiedades de las operaciones con sucesos</h4>
-            <p>Propiedades de la unión y de la intersección.</p>
-            <img src="../img/propiedadesunionintersec.png" class="blackbg" />
-          </section>
-
-          <section>
-            <h4>Leyes de De Morgan</h4>
-            <p>
-              \[\overline{A \cup B} = \bar{A} \cap \bar{B} \] \[\overline{A \cap
-              B} = \bar{A} \cup \bar{B} \]
-            </p>
+            <div class="problema">
+              <p>
+                <span class="numero">4</span>Indica si los siguientes pares de
+                sucesos son o no compatibles:
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  Al lanzar un dado, A = "Sacar un número par" y B="Sacar un
+                  múltiplo de 3".
+                </li>
+                <li>
+                  Al sacar una carta de una baraja, A = "Sacar una figura" y
+                  B="Sacar un 7"
+                </li>
+                <li>
+                  Al sacar una ficha de parchis, A= "Sacar una ficha de color
+                  cálido" y B ="Sacar un ficha azul."
+                </li>
+              </ol>
+            </div>
           </section>
         </section>
 
         <section>
+          <section>
+            <h2>Cálculo de probabilidades: Regla de Laplace</h2>
+          </section>
+
           <section>
             <h4>Probabilidad</h4>
             <p>
-              Medida de la incertidumbre de que ocurra un suceso al realizar un
-              experimento aleatorio.
+              La probabilidad mide la posibilidad de que ocurra un suceso. \[ 0
+              \leq P(A) \leq 1 \]
             </p>
           </section>
 
           <section>
-            <h4>Métodos para asignar la probabilidad</h4>
+            <h4>Regla de Laplace</h4>
             <p>
-              Ley de Laplace. Solo válido para sucesos equiprobables. \[ P(A) =
-              \frac{\text{casos favorables}}{\text{casos posibles}} \]
+              Si todos los resultados son equiprobables: \[ P(A) =
+              \frac{|A|}{|\Omega|} \]
             </p>
           </section>
 
           <section>
             <div class="problema">
               <p>
-                <span class="numero">4</span>De una baraja española de 40 cartas
-                se extrae una. Calcula las siguientes probabilidades:
+                <span class="numero">5</span>Al lanzar un dado de 6 caras
+                calcula:
               </p>
               <ol class="problema__apartados">
-                <li>Que sea un rey.</li>
-                <li>Que sea de copas.</li>
-                <li>Que no sea figura (sota, caballo o rey).</li>
-                <li>Que sea el 7 de espadas.</li>
+                <li>Probabilidad de número par.</li>
+                <li>Probabilidad de múltiplo de 3.</li>
+                <li>Probabilidad de número mayor que 4.</li>
+                <li>Probabilidad de número primo.</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Combinatoria: regla del producto</h4>
+            <p>\[ |A \times B| = |A| \cdot |B| \]</p>
+          </section>
+
+          <section>
+            <h4>Combinatoria: permutaciones</h4>
+            <p>Número de ordenaciones.</p>
+            <p>\[ P(n) = n! \]</p>
+          </section>
+
+          <section>
+            <h4>Combinatoria: variaciones sin repetición</h4>
+            <p>Número de listas ordenadas sin repetir elementos.</p>
+            <p>\[ V(n,k)=\frac{n!}{(n-k)!} \]</p>
+          </section>
+
+          <section>
+            <h4>Combinatoria: variaciones con repetición</h4>
+            <p>Número de listas ordenadas repitiendo elementos.</p>
+            <p>\[ VR(n,k) = n^k \]</p>
+          </section>
+
+          <section>
+            <h4>Combinatoria: combinaciones</h4>
+            <p>Número de posibles conjuntos.</p>
+            <p>\[ C(n,k)=\frac{n!}{k!(n-k)!} \]</p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">6</span>En una clase de 30 alumnos, indica
+              </p>
+              <ol class="problema__apartados">
+                <li>Formas de colocarlos en fila.</li>
+                <li>Formas de elegir delegado y subdelegado.</li>
+                <li>
+                  Formas de que escoger el mejor alumno/a de dos materias
+                  distingas (pueden ser el mismo/a alumno/a).
+                </li>
+                <li>Cuantos equipos de 3 personas diferentes podemos hacer.</li>
               </ol>
             </div>
           </section>
@@ -247,17 +347,20 @@
           <section>
             <div class="problema">
               <p>
-                <span class="numero">5</span>De una urna que contiene 10 bolas
-                numeradas del 1 al 10 se extrae una bola. Consideremos los
-                sucesos A = "obtener número par", B = "obtener un número mayor
-                que 7" y C = "obtener un múltiplo de tres". Calcula las
-                probabilidades de los sucesos:
+                <span class="numero">7</span>
+                La contraseña de una determinada web tiene que tener 5 letras
+                minúsculas elegidas del alfabeto (26 letras). Calcula lo
+                siguiente:
               </p>
               <ol class="problema__apartados">
-                <li>\[A\], \[B\] y \[C\].</li>
-                <li>\[A \cap B\].</li>
-                <li>\[A \cup B\] y \[A \cup B \cup C\].</li>
-                <li>\[A - B\].</li>
+                <li>
+                  El número total de maneras en que se puede formar la
+                  contraseña si todas las letras deben ser distintas.
+                </li>
+                <li>
+                  El número de formas de formar la contraseña si se permite
+                  repetir letras.
+                </li>
               </ol>
             </div>
           </section>
@@ -265,89 +368,130 @@
           <section>
             <div class="problema">
               <p>
-                <span class="numero">6</span>Dado el experimento de lanzar dos
-                dados de 6 caras, calcula las probabilidades de los siguientes
-                sucesos:
+                <span class="numero">8</span>
+                En una clase hay 10 alumnos y se van a elegir al azar 4 de ellos
+                para formar un equipo, sin importar el orden.
               </p>
               <ol class="problema__apartados">
-                <li>Sacar el mismo número en los dos dados.</li>
-                <li>Que los números sumen 7.</li>
+                <li>
+                  ¿Cuántos equipos distintos pueden formarse? (usa
+                  combinaciones).
+                </li>
+                <li>
+                  Si 3 de los alumnos son amigos, ¿cuál es la probabilidad de
+                  que los 3 estén en el mismo equipo?
+                </li>
+                <li>
+                  ¿Cuál es la probabilidad de que en el equipo haya exactamente
+                  2 de esos 3 amigos?
+                </li>
               </ol>
             </div>
           </section>
 
           <section>
-            <h4>Métodos para asignar la probabilidad</h4>
-            <p>
-              Ley de los grandes números. La frecuencia relativa de la
-              ocurrencia de un suceso cuando aumentamos mucho el número de
-              experimentos se estabiliza en torno a un número que podemos tomar
-              como la probabilidad.
-            </p>
-          </section>
-
-          <section>
-            <h4>Definición axiomática de Kolmogórov</h4>
-            <p>
-              \[ P : \Omega \rightarrow \mathbb{R} \]. Para todo suceso \[A\],
-              \[P(A) \ge 0\]. \[P(\Omega) = 1\]. Dados \[A, B\] sucesos
-              incompatibles: \[P(A \cup B) = P(A) + P(B)\].
-            </p>
-          </section>
-
-          <section>
-            <h4>Consecuencias</h4>
-            <p>
-              \[P(\emptyset) = 0 \Rightarrow 0 \le P(A) \le 1\] y \[
-              P(\overline{A}) = 1 - P(A) \].
-            </p>
-          </section>
-
-          <section>
-            <h4>Consecuencias</h4>
-            <p>\[P(A \cup B) = P(A) + P(B) - P(A\cap B)\]</p>
-            <img src="../img/probabilidadeunion.png" class="blackbg" />
-          </section>
-
-          <section>
-            <h4>Consecuencias</h4>
-            <p>
-              \[P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A\cap B) - P(A \cap
-              C) - P(B \cap C) + P(A \cap B \cap C)\]
-            </p>
-            <img src="../img/probabilidadeuniontres.png" class="blackbg" />
-          </section>
-
-          <section>
-            <h4>Consecuencias</h4>
-            <p>\[P(A-B) = P(A) - P(A \cap B)\]</p>
+            <div class="problema">
+              <p>
+                <span class="numero">9</span>
+                Se colocan al azar 6 libros diferentes en una estantería en una
+                sola fila.
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  ¿De cuántas formas distintas pueden ordenarse los 6 libros?
+                  (usa permutaciones).
+                </li>
+                <li>
+                  ¿Cuál es la probabilidad de que dos libros determinados queden
+                  juntos?
+                </li>
+                <li>
+                  ¿Cuál es la probabilidad de que un libro concreto ocupe el
+                  primer lugar?
+                </li>
+              </ol>
+            </div>
           </section>
 
           <section>
             <div class="problema">
               <p>
-                <span class="numero">7</span>Sean A y B dos sucesos
-                incompatibles de un experimento aleatorio tales que \[P(A)=
-                0,2\] y \[P(A\cup B)=0,6\]. Calcula \[P(B)\].
+                <span class="numero">10</span>
+                Se quieren formar números de 3 cifras distintas utilizando los
+                dígitos del 1 al 7, sin repetir cifras.
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  ¿Cuántos números distintos pueden formarse? (usa variaciones
+                  sin repetición).
+                </li>
+                <li>
+                  ¿Cuál es la probabilidad de que el número formado sea mayor
+                  que 400?
+                </li>
+                <li>
+                  ¿Cuál es la probabilidad de que el número termine en cifra
+                  impar?
+                </li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Ley de los grandes números</h2>
+          </section>
+
+          <section>
+            <h4>Ley de los grandes números</h4>
+            <p>
+              La frecuencia relativa de un suceso se aproxima a su probabilidad
+              al repetir muchas veces el experimento.
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Definición axiomática</h2>
+          </section>
+
+          <section>
+            <h4>Definición de Kolmogórov</h4>
+            <ol>
+              <li>\[P(A) \geq 0 \]</li>
+              <li>\[P(\Omega) = 1\]</li>
+              <li>Si A y B son incompatibles, \[P(A \cup B) = P(A) + P(B)\]</li>
+            </ol>
+          </section>
+
+          <section>
+            <h4>Consecuencias</h4>
+            <ul>
+              <li>\[ P(A) \in [0,1] \]</li>
+              <li>\[ P(A)=1-P(A) \]</li>
+              <li>\[ P(A \cup B) = P(A) + P(B) - P(A \cap B) \]</li>
+              <li>\[ P(A-B) = P(A) - P(A \cap B)\]</li>
+            </ul>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">11</span>
+                Sean A y B dos sucesos incompatibles de un experimento aleatorio
+                tales que \[P(A)= 0,2\] y \[P(A\cup B)=0,6\]. Calcula \[P(B)\].
               </p>
             </div>
 
             <div class="problema">
               <p>
-                <span class="numero">8</span>Considérense los sucesos \[A\] y
-                \[B\] asociados a un experimento aleatorio con \[P(A)= 0,7\];
-                \[P(B)=0,6\] y \[P(A\cap B) = 0,4\]. Calcula \[ P(A\cup B)\],
-                \[P(\overline{A} \cup \overline{B})\] y \[P(A - B)\].
-              </p>
-            </div>
-
-            <div class="problema">
-              <p>
-                <span class="numero">9</span>Sean los sucesos A y B tales que
-                \[P(A) = 3/8\], \[P(B)= 1/2\] y \[P(A \cap B) = 1/4\]. Calcula
-                \[P(A \cup B)\], \[P(\overline{A})\], \[P(\overline{A} \cup
-                \overline{B})\], \[P(\overline{A} \cap \overline{B})\] y \[P(A -
-                B)\].
+                <span class="numero">12</span>
+                Consideranse os sucesos \[A\] e \[B\] asociados a un experimento
+                aleatorio con \[P(A)= 0,7\]; \[P(B)=0,6\] e \[P(A\cap B) =
+                0,4\]. Calcula \[ P(A\cup B)\], \[ P(\overline{A} \cup
+                \overline{B})\] e \[ P(A - B)\].
               </p>
             </div>
           </section>
@@ -355,492 +499,86 @@
 
         <section>
           <section>
+            <h2>Probabilidad condicionada</h2>
+          </section>
+
+          <section>
             <h4>Probabilidad condicionada</h4>
+            <p>\[ P(A/B)=\frac{P(A \cap B)}{P(B)} \]</p>
+          </section>
+
+          <section>
+            <h4>Interpretando enunciados</h4>
             <p>
-              \[ P(B / A ) \]. Probabilidad de que se cumpla B sabiendo que se
-              cumple A.
+              Se trata de identificar qué se sabe y qué se pide en términos de
+              probabilidades.
             </p>
           </section>
 
           <section>
             <div class="problema">
               <p>
-                <span class="numero">10</span>En una caja hay pinzas grandes y
-                pequeñas de madera y de plástico según se refleja en la tabla.
-                Se elige una al azar. Calcula la probabilidad de que:
+                <span class="numero">13</span>Indica que probabilidades nos da
+                el enunciado y nos pide el enunciado de los siguientes
+                problemas:
               </p>
-              <table>
-                <tr>
-                  <td></td>
-                  <td>Pinzas grandes</td>
-                  <td>Pinzas pequeñas</td>
-                </tr>
-                <tr>
-                  <td>Madera</td>
-                  <td>10</td>
-                  <td>19</td>
-                </tr>
-                <tr>
-                  <td>Plástico</td>
-                  <td>18</td>
-                  <td>23</td>
-                </tr>
-              </table>
               <ol class="problema__apartados">
-                <li>Sea grande.</li>
-                <li>Sea grande y de plástico.</li>
-                <li>Sea grande sabiendo que es de plástico.</li>
+                <li></li>
               </ol>
-            </div>
-          </section>
-
-          <section>
-            <h4>Identificación de sucesos</h4>
-            <p>
-              \[G = \text{"que sea grande"} \] \[P = \text{"que sea de
-              plástico"} \] a) Que sea grande \[\rightarrow P(~~~~~~~~~)\] b)
-              Que sea grande y de plástico \[\rightarrow P(~~~~~~~~~)\] c) Que
-              sea grande sabiendo que es de plástico \[\rightarrow
-              P(~~~~~~~~~)\]
-            </p>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">11</span>¿Qué probabilidades nos dan y qué
-                probabilidades nos piden en el siguiente problema?: \[H =
-                \text{"ser hombre"}\] \[M = \text{"ser mujer"}\] \[A =
-                \text{"adquirir un producto"}\]
-              </p>
-              <p>
-                Según cierto estudio de un departamento de ventas, el 30% de sus
-                clientes son hombres, el 25% de sus clientes adquieren algún
-                producto y el 40% de los que adquieren algún producto son
-                mujeres. ¿Qué porcentaje de sus clientes son mujeres y adquieren
-                algún producto del departamento de electrónica?
-              </p>
-            </div>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">12</span>¿Qué probabilidades nos dan y qué
-                probabilidades nos piden en el siguiente problema?: \[D =
-                \text{"estar defectuoso"}\] \[I = \text{"pasar la inspección"}\]
-              </p>
-              <p>
-                Cuando los motores llegan al final de una cadena de producción,
-                se escogen los que deben pasar una inspección. Se producen un
-                10% de motores defectuosos, y el 60% de todos los motores
-                defectuosos y el 20% de los buenos pasan una inspección.
-                ¿Probabilidad de que un motor sea defectuoso y pase la
-                inspección y de que un motor sea bueno y pase la inspección?
-              </p>
-            </div>
-          </section>
-
-          <section>
-            <h4>Probabilidad condicionada</h4>
-            <p>\[ P(B / A ) = \frac{P(A \cap B)}{P(A)} \]</p>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">13</span>En una encuesta realizada en A
-                Coruña se determinó que el 40% de los encuestados lee el
-                periódico La Voz de Galicia, el 15% lee Nós Diario y el 3% lee
-                ambos periódicos. Seleccionado un lector al azar del periódico
-                Nós Diario, calcular la probabilidad de que lea también La Voz
-                de Galicia.
-              </p>
             </div>
           </section>
 
           <section>
             <h4>Regla del producto</h4>
+            <p>\[ P(A \cap B)=P(A)\cdot P(B/A) \]</p>
+          </section>
+
+          <section>
+            <h4>Dependencia e independencia</h4>
             <p>
-              \[ P(B / A ) = \frac{P(A \cap B)}{P(A)} \Rightarrow P(A \cap B) =
-              P(A) \cdot P(B / A ) \] \[ P(A \cap B \cap C) = P(A) \cdot P(B / A
-              ) \cdot P(C / A \cap B) \]
+              Son independientes si: \[ P(A \cap B)=P(A)P(B) \] o de forma
+              equivalente si \[P(A/B) = P(A)\]
             </p>
           </section>
 
           <section>
             <div class="problema">
               <p>
-                <span class="numero">14</span>Dado el experimento "tirar un dado
-                tres veces", calcular la probabilidad de sacar un número par la
-                primera vez, sacar 6 la segunda vez y sacar un múltiplo de 3 la
-                tercera.
-              </p>
-            </div>
-
-            <div class="problema">
-              <p>
-                <span class="numero">15</span>Tenemos una bolsa con 3 bolas
-                blancas y 5 negras. Calcular la probabilidad de que al sacar dos
-                bolas la primera sea blanca y la segunda negra.
-              </p>
-            </div>
-          </section>
-
-          <section>
-            <h4>Dependencia de sucesos</h4>
-            <p>
-              Dos sucesos \[A\] y \[B\] son independientes si: \[P(A) =
-              P(A/B)\], \[P(B) = P(B/A)\] y \[P(A \cap B) = P(A) \cdot P(B)\].
-            </p>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">16</span>Sean \[A\] y \[B\] dos sucesos
-                tales que \[P(A)=0,6\] y \[P(B)=0,3\]. Si \[P(A/B)=0,1\]
-                calcúlese \[P(A \cup B)\] y \[P( \overline{B}/ A )\].
-              </p>
-            </div>
-
-            <div class="problema">
-              <p>
-                <span class="numero">17</span>En un experimento aleatorio, sean
-                A y B dos sucesos con \[P(\overline{A})=0,4\]; \[P(B)=0,7\]. Si
-                \[A\] y \[B\] son independientes, calcula \[P(A \cup B)\] y
-                \[P(A−B)\].
-              </p>
-            </div>
-
-            <div class="problema">
-              <p>
-                <span class="numero">18</span>Se sabe que \[P(B/A)=0,7\],
-                \[P(A/B)=0,4\] y \[P(A)=0,2\]. Calcula \[P( A \cap B)\], \[P(
-                B)\] y \[P(A \cup \overline{B})\]. Justifica si son
-                independientes o no los sucesos \[A\] y \[B\].
-              </p>
-            </div>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">19</span>Según cierto estudio de un
-                departamento de ventas, el 30% de sus clientes son hombres, el
-                25% de sus clientes adquieren algún producto y el 40% de los que
-                adquieren algún producto son mujeres. ¿Qué porcentaje de sus
-                clientes son mujeres y adquieren algún producto del departamento
-                de electrónica?
-              </p>
-            </div>
-
-            <div class="problema">
-              <p>
-                <span class="numero">20</span>Cuando los motores llegan al final
-                de una cadena de producción, se escogen los que deben pasar una
-                inspección. Se producen un 10% de motores defectuosos, y el 60%
-                de todos los motores defectuosos y el 20% de los buenos pasan
-                una inspección. ¿Probabilidad de que un motor sea defectuoso y
-                pase la inspección y de que un motor sea bueno y pase la
-                inspección?
-              </p>
-            </div>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">21</span>Tenemos dos urnas. La primera con
-                dos bolas blancas y 5 negras y la segunda con 3 bolas blancas y
-                1 negra. Lanzamos una moneda; si sale cara cogemos una bola de
-                la primera urna y si sale cruz cogemos una bola de la segunda.
-                ¿Cuál es la probabilidad de coger una bola blanca?
-              </p>
-              <ol class="problema__apartados">
-                <li></li>
-              </ol>
-            </div>
-          </section>
-
-          <section>
-            <h4>Conjunto completo de sucesos</h4>
-            <p>
-              Un conjunto de sucesos tal que su unión da el espacio muestral y
-              los sucesos son incompatibles dos a dos. Por ejemplo, dado el
-              experimento "lanzar un dado de 6 caras", los sucesos A="sacar par"
-              y B="sacar impar" formarían un conjunto completo de sucesos.
-            </p>
-          </section>
-
-          <section>
-            <h4>Teorema de las probabilidades totales</h4>
-            <p>
-              Sea \[A_1, A_2, \dots, A_n\] un conjunto completo de sucesos y sea
-              \[B\] un suceso cualquiera: \[ P(B) = \sum_{i=1}^n
-              P(B/A_i)P(A_i)\]
-            </p>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">22</span>Un artículo distribuido en tres
-                marcas distintas A, B y C se vende en un supermercado. Se
-                observa que el 30% de las ventas diarias del artículo son de la
-                marca A, el 50% son de la marca B y el resto son de la marca C.
-                Se sabe además que el 60% de las ventas de la marca A se
-                realizan por la mañana, el 55% de las ventas de la marca B por
-                la tarde y el 40% de la marca C se vende por la mañana. Calcula
-                el porcentaje de ventas del artículo efectuadas por la mañana.
-              </p>
-            </div>
-
-            <div class="problema">
-              <p>
-                <span class="numero">23</span>Un estudio sociológico afirma que
-                3 de cada 10 personas de una determinada población son obesas,
-                de las cuales el 60% sigue una dieta. Por otra parte, el 63% de
-                la población no es obesa y no sigue una dieta. ¿Qué porcentaje
-                de la población sigue una dieta?
-              </p>
-            </div>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">24</span>La plantilla de unos grandes
-                almacenes está formada por 200 hombres y 300 mujeres. La cuarta
-                parte de los hombres y la tercera parte de las mujeres solo
-                trabajan en el turno de mañana. Elegido uno de los empleados al
-                azar, ¿cuál es la probabilidad de que sea hombre o solo trabaje
-                en el turno de mañana?
-              </p>
-            </div>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">25</span>En una ciudad, el 55% de la
-                población en edad laboral son hombres; de ellos, un 12% está en
-                paro. Entre las mujeres el porcentaje de paro es del 23%. Si en
-                esta ciudad se elige al azar una persona en edad laboral:
+                <span class="numero">14</span>
+                Sean \(A\) y \(B\) sucesos tales que \[ P(A \cap B)=0,1 \], \[
+                P(\overline{A} \cap \overline{B})=0,6 \] y \[ P(A/B)=0,5 \],
+                donde \( \overline{A} \) y \( \overline{B} \) denotan los
+                sucesos contrarios de \(A\) y \(B\) respectivamente.
               </p>
               <ol class="problema__apartados">
                 <li>
-                  ¿Cuál es la probabilidad de que sea hombre y no esté en paro?
+                  Calcula las probabilidades siguientes: \[ P(B) \] y \[ P(A
+                  \cup B) \].
                 </li>
                 <li>
-                  ¿Cuál es la probabilidad de que sea mujer y esté en paro?
-                </li>
-                <li>Calcular el porcentaje de paro en esa ciudad.</li>
-              </ol>
-            </div>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h2>Diagramas de árbol</h2>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">26</span>En una ciudad, el 55% de la
-                población en edad laboral son hombres; de ellos, un 12% está en
-                paro. Entre las mujeres el porcentaje de paro es del 23%. Si en
-                esta ciudad se elige al azar una persona en edad laboral:
-              </p>
-              <ol class="problema__apartados">
-                <li></li>
-              </ol>
-            </div>
-            <img src="../img/diagramaarbore.png" class="blackbg" />
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">27</span>En una ciudad en la que hay el
-                doble número de hombres que de mujeres se declara una epidemia.
-                Un 4% de los habitantes son hombres y están enfermos, mientras
-                que un 3% son mujeres y están enfermas. Se elige al azar un
-                habitante de la ciudad, calcular:
-              </p>
-              <ol class="problema__apartados">
-                <li>Probabilidad de que sea hombre.</li>
-                <li>Si es hombre, la probabilidad de que esté enfermo.</li>
-                <li>La probabilidad de que sea mujer o esté sano.</li>
-              </ol>
-            </div>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">28</span>En un mercado de valores cotizan
-                un total de 60 empresas, de las que 15 son del sector bancario,
-                35 son industriales y 10 son del sector tecnológico. La
-                probabilidad de que un banco de los que cotizan en el mercado se
-                declare en quiebra es 0,01, la probabilidad de que se declare en
-                quiebra una empresa industrial es 0,02 y de que lo haga una
-                empresa tecnológica es 0,1. ¿Cuál es la probabilidad de que se
-                produzca una quiebra en una empresa del citado mercado de
-                valores?
-              </p>
-            </div>
-          </section>
-
-          <section>
-            <h2>Tablas de contingencia</h2>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">29</span>Un estudio sociológico afirma que
-                3 de cada 10 personas de una determinada población son obesas,
-                de las cuales el 60% sigue una dieta. Por otra parte, el 63% de
-                la población no es obesa y no sigue una dieta. ¿Qué porcentaje
-                de la población sigue una dieta?
-              </p>
-              <ol class="problema__apartados">
-                <li></li>
-              </ol>
-            </div>
-
-            <table>
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>\[D\]</th>
-                  <th>\[\overline{D}\]</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>\[O\]</td>
-                  <td>18</td>
-                  <td>12</td>
-                  <td>30</td>
-                </tr>
-                <tr>
-                  <td>\[\overline{O}\]</td>
-                  <td>7</td>
-                  <td>63</td>
-                  <td>70</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td>25</td>
-                  <td>75</td>
-                  <td>100</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">30</span>En una empresa, el 20% de los
-                trabajadores son mayores de 30 años, el 8% desempeña algún
-                puesto directivo y el 6% es mayor de 30 años y desempeña algún
-                puesto directivo.
-              </p>
-              <ol class="problema__apartados">
-                <li>
-                  ¿Qué porcentaje de los trabajadores tiene más de 30 años y no
-                  desempeña ningún cargo directivo?
-                </li>
-                <li>
-                  ¿Qué porcentaje de los trabajadores no es directivo ni mayor
-                  de 30 años?
-                </li>
-              </ol>
-            </div>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">31</span>Se realiza un estudio para
-                determinar si los hogares de una pequeña ciudad se suscribirían
-                a un servicio de TV. Los hogares se clasifican de acuerdo con su
-                nivel de renta.
-              </p>
-              <table>
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th>Renta baja</th>
-                    <th>Renta media</th>
-                    <th>Renta alta</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Se suscribirían</td>
-                    <td>0,05</td>
-                    <td>0,15</td>
-                    <td>0,1</td>
-                  </tr>
-                  <tr>
-                    <td>No se suscribirían</td>
-                    <td>0,15</td>
-                    <td>0,47</td>
-                    <td>0,08</td>
-                  </tr>
-                </tbody>
-              </table>
-              <ol class="problema__apartados">
-                <li></li>
-              </ol>
-            </div>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h4>Teorema de Bayes</h4>
-            <p>
-              Probabilidades a posteriori. \[P(A/B) = \frac{P(A \cap B)}{P(B)}\]
-            </p>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">32</span>Una empresa quiere comercializar
-                una herramienta eléctrica para la construcción y por tanto es
-                probada por 3 de cada 5 trabajadores del sector. De los que la
-                probaron, el 70% da una opinión favorable, el 5% da una opinión
-                desfavorable y el resto opina que le es indiferente. De los que
-                no probaron la herramienta, el 60% da una opinión favorable, el
-                30% opina que le es indiferente y el resto da una opinión
-                desfavorable. Se sabe que la empresa comercializará la
-                herramienta si al menos el 65% de los trabajadores del sector da
-                una opinión favorable.
-              </p>
-              <ol class="problema__apartados">
-                <li>
-                  Si un trabajador elegido al azar da una opinión desfavorable,
-                  ¿cuál es la probabilidad de que probara la herramienta?
-                </li>
-                <li>
-                  ¿Qué porcentaje de trabajadores da una opinión favorable?
-                  ¿Comercializará la empresa la herramienta? Razona la
+                  ¿Son los sucesos \(A\) y \(B\) independientes? Justifica la
                   respuesta.
                 </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">15</span>
+                Sean \(A\) y \(B\) dos sucesos de un experimento aleatorio tales
+                que \[ P(A)=0,4 \], \[ P(B)=0,7 \] y \[ P(B/A)=0,75 \]. Calcule
+                las siguientes probabilidades:
+              </p>
+              <ol class="problema__apartados">
                 <li>
-                  Calcula el porcentaje de trabajadores que prueba la
-                  herramienta y opina que le es indiferente.
+                  \[ P(A \cap \overline{B}) \], \[ P(A \cup B) \] y \[
+                  P(\overline{A} \cap B) \]
+                </li>
+                <li>
+                  ¿Son \(A\) y \(B\) sucesos independientes? Justifique la
+                  respuesta.
                 </li>
               </ol>
             </div>
@@ -849,22 +587,183 @@
           <section>
             <div class="problema">
               <p>
-                <span class="numero">33</span>Se quiere hacer un estudio sobre
-                la situación laboral de los trabajadores en tres sectores de la
-                economía que denotaremos por B1, B2 y B3. La mitad de los
-                trabajadores pertenecen al primer sector B1, y el resto se
-                reparten en partes iguales entre los otros dos sectores B2 y B3.
-                El 8% de los del sector B1, el 4% de los del sector B2 y el 6%
-                de los del sector B3 están en paro.
+                <span class="numero">16</span>
+                Sean \(A\) y \(B\) dos sucesos del mismo espacio muestral, con
+                \[ P(A)=\frac{2}{5} \], \[ P(A \cup B)=\frac{14}{15} \] y \[ P(A
+                \cup \overline{B})=\frac{2}{3} \]. Se pide:
+              </p>
+              <ol class="problema__apartados">
+                <li>Calcular \[ P(B) \] y \[ P(A \cap \overline{B}) \].</li>
+                <li>
+                  Calcular \[ P(B/A) \]. ¿Son independientes los sucesos \(A\) y
+                  \(B\)? Justifica la respuesta.
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Probabilidades totales: de forma algebraica</h4>
+            <p>\[ P(A)=\sum P(A/B_i)P(B_i) \]</p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">17</span>
+                El 40% de los aspirantes a un puesto de trabajo supera una
+                determinada prueba de selección. Terminan siendo contratados el
+                80% de los aspirantes que superan esa prueba y el 50% de los que
+                no la superan. Calcula el porcentaje de aspirantes al puesto de
+                trabajo que terminan siendo contratados.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h4>Probabilidades totales: diagrama de árbol</h4>
+            <p></p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">18</span>
+                Una empresa somete a un control de calidad a 7 de cada 10
+                artículos fabricados. De los que son sometidos a control
+                resultan defectuosos un 2% y de los que no se someten a control
+                de calidad resultan defectuosos un 12%.
               </p>
               <ol class="problema__apartados">
                 <li>
-                  Calcula el porcentaje de paro entre los trabajadores de dicho
-                  estudio.
+                  ¿Cuál es la probabilidad de que un artículo elegido al azar
+                  resulte defectuoso?
                 </li>
                 <li>
-                  ¿Qué porcentaje de los que tienen trabajo pertenecen al tercer
-                  sector B3?
+                  Si un artículo elegido al azar resulta defectuoso, ¿cuál es la
+                  probabilidad de que no haya sido sometido a control de
+                  calidad?
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">19</span>
+                El departamento comercial de una empresa estudia la posible
+                acogida de un producto entre sus clientes. Para ello, realiza un
+                primer lanzamiento del producto a 250 clientes elegidos al azar,
+                de los cuales 150 financian sus pagos a plazos y el resto pagan
+                al contado. El departamento estima que el 90% de los clientes
+                que pagan a plazos aceptará el producto, mientras que de los que
+                pagan al contado lo aceptará un 65%. Calcula la probabilidad de
+                que un cliente de esa empresa no acepte el producto.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h4>Probabilidades totales: tabla de contingencia</h4>
+            <p></p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">20</span>
+                En una ciudad, el 80% de la población adulta ve la televisión,
+                el 30% lee algún libro y el 25% ve la televisión y lee algún
+                libro. Se pide:
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  De entre los que leen libros, ¿qué porcentaje ve la
+                  televisión?
+                </li>
+                <li>
+                  Porcentaje de los que no ven la televisión y sí leen algún
+                  libro.
+                </li>
+                <li>
+                  Porcentaje de los que no hacen ninguna de las dos cosas.
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">21</span>
+                El 40% de los habitantes de una comarca tiene camelias, el 35%
+                tiene rosas y el 21% tiene camelias y rosas. Se elige al azar un
+                habitante de esa comarca y se pide calcular las cinco
+                probabilidades siguientes: de que no tenga ni camelias ni rosas;
+                de que tenga camelias, sabiendo que tiene rosas; de que tenga
+                rosas, sabiendo que tiene camelias; y de que solamente tenga
+                rosas o solamente tenga camelias.
+              </p>
+              <ol class="problema__apartados">
+                <li>De que tenga camelias o rosas</li>
+                <li>De que no tenga ni rosas, ni camelias</li>
+                <li>De que tenga camelias, sabiendo que tiene rosas</li>
+                <li>De que tenga rosas, sabiendo que tiene camelias</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Probabilidad a posteriori: Regla de Bayes</h4>
+            <p>\[ P(B/A)=\frac{P(A \cup B)}{P(A)} \]</p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">22</span>
+                Unos grandes almacenes tienen a la venta un determinado artículo
+                en dos formatos: A y B. Entre los compradores del artículo, dos
+                de cada cinco eligen el formato A y el resto eligen el formato
+                B. Quedan satisfechos el 80% de los que eligen el formato A y el
+                85% de los que eligen el formato B.
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  Determina la probabilidad de que una persona quede satisfecha
+                  con la compra del artículo.
+                </li>
+                <li>
+                  Si un comprador del artículo, elegido al azar, no quedó
+                  satisfecho con la compra, ¿cuál es la probabilidad de que
+                  eligiese el formato A?
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">23</span>
+                En una empresa, el 30 % de los empleados son mujeres y el 70 %
+                restante son hombres. De las mujeres, el 80 % tiene contrato
+                indefinido, mientras que del grupo de los hombres, solo el 70 %
+                tiene ese tipo de contrato.
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  Calcula el porcentaje de personas de dicha empresa que tiene
+                  contrato indefinido.
+                </li>
+                <li>
+                  Si un empleado tiene contrato indefinido, determina la
+                  probabilidad de que sea mujer.
+                </li>
+                <li>
+                  ¿Son independientes los sucesos “ser hombre” y “tener contrato
+                  indefinido”?
                 </li>
               </ol>
             </div>
