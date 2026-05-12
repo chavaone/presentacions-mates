@@ -1,0 +1,432 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>
+      Matemáticas Aplicadas as CCSS - 1º de BAC - Ecuaciones, inecuaciones y
+      sistemas
+    </title>
+
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/white.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../plugin/customcontrols/style.css" />
+    <link rel="stylesheet" href="../plugin/chalkboard/style.css" />
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../css/estilo-blanco.css" />
+  </head>
+
+  <body>
+    <div class="reveal" id="revealdiv">
+      <div class="slides">
+        <section>
+          <section>
+            <h2>Estadística bidimensional</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Estadística en una dimensión</h2>
+          </section>
+
+          <section>
+            <h4>Población, muestra y variable</h4>
+            <p>
+              La población es el conjunto total de individuos u objetos que se
+              desean estudiar. La muestra es un subconjunto representativo de la
+              población. La variable estadística es la característica que se
+              estudia en cada individuo.
+            </p>
+          </section>
+
+          <section>
+            <h4>Tipos de variables estadísticas</h4>
+            <p>
+              Las variables estadísticas pueden ser cualitativas o
+              cuantitativas. Las variables cualitativas describen cualidades y
+              pueden ser nominales u ordinales. Las variables cuantitativas
+              expresan cantidades numéricas y pueden ser discretas o continuas.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">1</span>En los siguientes enunciados
+                identifica cuál es la población y la variable estadística a
+                estudiar. Indica además el tipo de variable estadística en cada
+                caso.
+              </p>
+              <ol class="problema__apartados">
+                <li>Color favorito de los alumnos de un instituto.</li>
+                <li>Número de hermanos de los estudiantes de una clase.</li>
+                <li>Altura de los jugadores de un equipo de baloncesto.</li>
+                <li>Marca de teléfono móvil utilizada por los profesores.</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Tablas de frecuencias</h4>
+            <p>
+              Una tabla de frecuencias organiza los datos estadísticos mostrando
+              las frecuencias absolutas, relativas y acumuladas de cada valor o
+              intervalo.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">2</span>Para los siguientes conjuntos de
+                datos, construye la tabla de frecuencias:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[2,3,3,4,5,5,5,6,7,7,8\]</li>
+                <li>\[1,2,2,2,3,4,4,5,5,5,6,7\]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Agrupar valores en intervalos</h4>
+            <p>
+              Cuando los datos son numerosos o continuos, se agrupan en
+              intervalos para facilitar su representación y análisis
+              estadístico.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">3</span>Para los siguiente conjuntos de
+                datos, agrúpalos en intervalos y construye su tabla de
+                frecuencias:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[12,15,18,19,20,22,24,25,27,29,30,31,33,35\]</li>
+                <li>\[45,48,50,51,53,55,58,60,61,63,65,67,69\]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Estadística en una dimensión: gráficos</h2>
+          </section>
+
+          <section>
+            <h4>Gráfico: Diagrama de barras</h4>
+            <p>
+              El diagrama de barras representa variables cualitativas o
+              cuantitativas discretas mediante barras cuya altura es
+              proporcional a la frecuencia.
+            </p>
+          </section>
+
+          <section>
+            <h4>Gráfico: Histograma</h4>
+            <p>
+              El histograma representa variables cuantitativas continuas
+              agrupadas en intervalos mediante rectángulos contiguos.
+            </p>
+          </section>
+
+          <section>
+            <h4>Gráfico: Diagrama de sectores</h4>
+            <p>
+              El diagrama de sectores representa las frecuencias relativas de
+              los datos mediante sectores circulares proporcionales.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">4</span>Para el siguientes conjuntos de
+                datos, completa la tabla de frecuencias y dibuja sus diagrama de
+                barras o histograma segundo corresponda:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[1,1,2,2,2,3,3,4,5,5,6\]</li>
+                <li>\[10,12,13,15,17,18,20,21,23,24,25,27,28\]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Estadística en una dimensión: medidas</h2>
+          </section>
+
+          <section>
+            <h4>Parámetros estadísticos</h4>
+            <p>
+              Los parámetros estadísticos son medidas numéricas que resumen la
+              información contenida en un conjunto de datos.
+            </p>
+          </section>
+
+          <section>
+            <h4>Media</h4>
+            <p>
+              La media aritmética es el promedio de los datos y se calcula
+              mediante:
+            </p>
+          </section>
+
+          <section>
+            <h4>Moda</h4>
+            <p>
+              La moda es el valor de la variable que presenta mayor frecuencia
+              absoluta.
+            </p>
+          </section>
+
+          <section>
+            <h4>Mediana, Cuartiles y Percentiles</h4>
+            <p>
+              La mediana divide la distribución en dos partes iguales. Los
+              cuartiles dividen los datos en cuatro partes y los percentiles en
+              cien partes iguales.
+            </p>
+          </section>
+
+          <section>
+            <h4>Rango y rango intercuartílico</h4>
+            <p>
+              El rango es la diferencia entre el valor máximo y el mínimo. El
+              rango intercuartílico es la diferencia entre el tercer y el primer
+              cuartil.
+            </p>
+          </section>
+
+          <section>
+            <h4>Varianza y desviación típica</h4>
+            <p>
+              La varianza mide la dispersión de los datos respecto de la media y
+              la desviación típica es su raíz cuadrada.
+            </p>
+          </section>
+
+          <section>
+            <h4>Coeficiente de variación</h4>
+            <p>
+              El coeficiente de variación compara la dispersión de diferentes
+              distribuciones estadísticas.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">5</span>Para los siguientes conjunto de
+                datos, completa la tabla de frecuencias y calcula la media,
+                mediana, moda, cuartiles, rango, rango intercuartílico,
+                desviación típica y coeficiente de variación:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[2,4,4,5,6,6,7,8,8,9,10\]</li>
+                <li>\[12,14,15,16,18,18,19,20,22,24\]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Estadística Bidimensional</h2>
+          </section>
+
+          <section>
+            <h4>Distribución conjunta: tabla de doble entrada</h4>
+            <p>
+              Una distribución conjunta estudia simultáneamente dos variables
+              estadísticas y se representa mediante tablas de doble entrada.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">6</span>Dados los siguientes conjuntos de
+                pares de valores, construye una tabla de doble entrada con sus
+                frecuencias conjuntas:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[(1,2),(1,3),(2,3),(2,4),(3,4),(3,5)\]</li>
+                <li>\[(2,1),(2,2),(3,2),(3,3),(4,3),(4,4)\]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Frecuencias marginales</h4>
+            <p>
+              Las frecuencias marginales se obtienen sumando las frecuencias
+              conjuntas por filas o columnas.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">7</span>Construye una tabla con las
+                frecuencias marginales del ejercicio anterior:
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  Calcula las frecuencias marginales de la variable \[X\].
+                </li>
+                <li>
+                  Calcula las frecuencias marginales de la variable \[Y\].
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Frecuencias condicionadas</h4>
+            <p>
+              Las frecuencias condicionadas muestran cómo se distribuye una
+              variable cuando se fija un valor concreto de la otra variable.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">8</span>Constuye las tablas de frecuencias
+                condicionadas que se piden teniendo en cuenta los datos del
+                ejercicio anterior:
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  Frecuencias condicionadas de \[X\] para cada valor de \[Y\].
+                </li>
+                <li>
+                  Frecuencias condicionadas de \[Y\] para cada valor de \[X\].
+                </li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Estadística Bidimensional: Gráfico y medidas</h2>
+          </section>
+
+          <section>
+            <h4>Gráfico: Diagrama de dispersión</h4>
+            <p>
+              El diagrama de dispersión representa pares de valores mediante
+              puntos en el plano cartesiano.
+            </p>
+          </section>
+
+          <section>
+            <h4>Dependencia lineal</h4>
+            <p>
+              Existe dependencia lineal entre dos variables cuando los puntos
+              del diagrama de dispersión se aproximan a una recta.
+            </p>
+          </section>
+
+          <section>
+            <h4>Covarianza</h4>
+            <p>
+              La covarianza mide la relación lineal entre dos variables
+              estadísticas.
+            </p>
+          </section>
+
+          <section>
+            <h4>Coeficiente de correlación</h4>
+            <p>
+              El coeficiente de correlación lineal mide la intensidad y sentido
+              de la relación lineal entre dos variables.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">9</span>Calcula la covarianza y coeficiente
+                de correlación de los siguientes conjuntos de datos:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[(1,2),(2,3),(3,5),(4,4),(5,6)\]</li>
+                <li>\[(2,8),(3,7),(4,6),(5,5),(6,4)\]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Regresión lineal</h2>
+          </section>
+
+          <section>
+            <h4>Regresión Lineal</h4>
+            <p>
+              La regresión lineal permite aproximar la relación entre dos
+              variables mediante una recta.
+            </p>
+          </section>
+
+          <section>
+            <h4>Rectas de regresión</h4>
+            <p>
+              Las rectas de regresión permiten estimar valores de una variable a
+              partir de la otra.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">10</span>Calcula la recta de regresión de X
+                sobre Y y de Y sobre X para los siguientes conjuntos de datos:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[(1,2),(2,3),(3,5),(4,4),(5,6)\]</li>
+                <li>\[(2,1),(3,2),(4,2),(5,4),(6,5)\]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Interpolaciones y extrapolaciones</h4>
+            <p>
+              La interpolación permite estimar valores dentro del intervalo
+              observado de datos. La extrapolación permite estimar valores fuera
+              de dicho intervalo.
+            </p>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="../plugin/customcontrols/plugin.js"></script>
+    <script src="../plugin/chalkboard/plugin.js"></script>
+    <script src="../plugin/math/math.js"></script>
+    <script type="module" src="/js/config.esm.js"></script>
+    <script src="../js/custom_plugins.js"></script>
+  </body>
+</html>
