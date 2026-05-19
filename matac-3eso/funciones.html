@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>Matemáticas 3º ESO - Números Racionales</title>
+    <title>Matemáticas 3º ESO - Funciones</title>
 
     <link rel="stylesheet" href="../dist/reset.css" />
     <link rel="stylesheet" href="../dist/reveal.css" />
@@ -26,8 +26,57 @@
     <div class="reveal" id="revealdiv">
       <div class="slides">
         <section>
-          <h1>Tema 8</h1>
-          <h3>Funciones y gráficas. Funciones lineales y cuadráticas</h3>
+          <h2>Funciones y gráficas</h2>
+        </section>
+
+        <section>
+          <section>
+            <h3>Coordenadas cartesianas</h3>
+            <p>
+              Las coordenadas de un punto \[A\] son un par ordenado de números
+              reales \[(x, y)\], siendo “x” la primera coordenada o abscisa (nos
+              indica la distancia a la que dicho punto se encuentra del eje
+              vertical) e “y” la segunda coordenada u ordenada (nos indica la
+              distancia a la que dicho punto se encuentra del eje horizontal)
+            </p>
+          </section>
+
+          <section>
+            <h3>Coordenadas cartesianas</h3>
+            <img src="../img/coordenadas.png" alt="" height="400" />
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">1</span>Representa graficamente los
+                siguientes pares de valores:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[A(3,5)\]</li>
+                <li>\[B(-2,4)\]</li>
+                <li>\[C(-5,2)\]</li>
+                <li>\[D(3,-4)\]</li>
+                <li>\[E(-2,5)\]</li>
+                <li>\[F(4,0)\]</li>
+                <li>\[G(0,3)\]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">2</span>Indica las coordenadas de todos los
+                puntos señalados en el plano:
+                <img
+                  src="../img/coordenadas_exercicio.png"
+                  alt=""
+                  height="350"
+                />
+              </p>
+            </div>
+          </section>
         </section>
 
         <section>
@@ -52,14 +101,6 @@
               src="https://upload.wikimedia.org/wikipedia/commons/c/c8/PolygonsFunction.svg"
               alt=""
               height="600vh"
-            />
-          </section>
-
-          <section>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/FunctionMachine.svg/800px-FunctionMachine.svg.png"
-              alt=""
-              height="90%"
             />
           </section>
 
@@ -97,7 +138,7 @@
                   <td>3<br /></td>
                 </tr>
                 <tr>
-                  <td>Precio (€]<br /></td>
+                  <td>Precio (€)<br /></td>
                   <td>1,3</td>
                   <td>2,6<br /></td>
                   <td>3,9</td>
@@ -109,12 +150,29 @@
           <section>
             <h3>Gráfica</h3>
             <a href="https://www.geogebra.org/m/z5nj9mtq">
-              <img src="../img/funciones-funcion-azucar.png" alt=""
+              <img src="../img/grafica-funcion-azucar.png" alt="" height="300"
             /></a>
             <p>
-              Representamos los vares de valores (x, f(x)) para cada valor
+              Representamos los pares de valores (x, f(x)) para cada valor
               posible de x.
             </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">3</span>Indica cual de las siguientes
+                gráficas no corresponde con una función:
+              </p>
+              <ol class="problema__apartados">
+                <li style="max-width: 50%">
+                  <img src="../img/funciones-grafica1.png" alt="" width="90%" />
+                </li>
+                <li style="max-width: 50%">
+                  <img src="../img/funciones-grafica3.png" alt="" width="90%" />
+                </li>
+              </ol>
+            </div>
           </section>
 
           <section>
@@ -126,32 +184,23 @@
           </section>
 
           <section>
+            <h3>Expresión algebraica: notación</h3>
+            <p>
+              Usamos la notación \[f(3)\] para denotar el valor de la función
+              cuando la variable independiente (la \[x\] generalmente) vale 3.
+            </p>
+          </section>
+
+          <section>
             <div class="problema">
               <p>
-                <span class="numero">1</span>Indica el valor de f(3) para cada
+                <span class="numero">4</span>Indica el valor de f(3) para cada
                 caso:
               </p>
               <ol class="problema__apartados">
                 <li>\[ f(x) = 3x + 2 \]</li>
                 <li>\[ f(x) = x^2 \]</li>
                 <li>\[ f(x) = \sqrt{x + 1} \]</li>
-              </ol>
-            </div>
-          </section>
-
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">2</span>Indica cual de las siguientes
-                gráficas no corresponde con una función:
-              </p>
-              <ol class="problema__apartados">
-                <li style="max-width: 50%">
-                  <img src="../img/funciones-grafica1.png" alt="" width="90%" />
-                </li>
-                <li style="max-width: 50%">
-                  <img src="../img/funciones-grafica3.png" alt="" width="90%" />
-                </li>
               </ol>
             </div>
           </section>
@@ -183,7 +232,26 @@
 
           <section>
             <h3>Polinómicas: Función lineal</h3>
-            <p>Para representar calculamos dos puntos.</p>
+            <p>
+              Para representar calculamos dos puntos dando un valores a la
+              variable independiente y calculando su correspondiente en la
+              variable dependiente.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">5</span>Representa las siguientes funciones
+                constante y lineal:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[f(x) = 3x\]</li>
+                <li>\[f(x) = -2x + 3\]</li>
+                <li>\[f(x) = 2\]</li>
+                <li>\[f(x) = x - 4\]</li>
+              </ol>
+            </div>
           </section>
 
           <section>
@@ -198,8 +266,8 @@
               <li>
                 Signo de \[a\]:
                 <ul>
-                  <li>Positivo: Ramas hacia arriba.</li>
-                  <li>Negativo: Ramas hacia abajo.</li>
+                  <li>Positivo: Ramas hacia arriba (Convexa).</li>
+                  <li>Negativo: Ramas hacia abajo (Cóncava).</li>
                 </ul>
               </li>
               <li>Vértice en \[x=\frac{-b}{a}\].</li>
@@ -221,16 +289,14 @@
           <section>
             <div class="problema">
               <p>
-                <span class="numero">5</span>Representa las siguientes funciones
-                polinómicas:
+                <span class="numero">6</span>Representa las siguientes funciones
+                polinómicas calculando previamente vértice y puntos de corte:
               </p>
               <ol class="problema__apartados">
-                <li>\[f(x) = 3x\]</li>
-                <li>\[f(x) = -2x + 3\]</li>
                 <li>\[f(x) = x^2 - 3x\]</li>
-                <li>\[f(x) = 2\]</li>
                 <li>\[f(x) = -2x^2 +10x + 12\]</li>
-                <li>\[f(x) = x - 4\]</li>
+                <li>\[f(x) = x^2 - 8x + 14\]</li>
+                <li>\[f(x) = -3x^2 +12x + 15\]</li>
               </ol>
             </div>
           </section>
@@ -310,7 +376,7 @@
           <section>
             <div class="problema">
               <p>
-                <span class="numero">3</span>Describe las características de las
+                <span class="numero">7</span>Describe las características de las
                 funciones en función de los parámetros vistos en clase:
               </p>
               <h4>FICHA</h4>
