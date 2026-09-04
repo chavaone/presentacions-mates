@@ -1,0 +1,22 @@
+:root { color-scheme: light dark; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100dvh; background: Canvas; color: CanvasText; }
+button { font: inherit; }
+.hidden { display: none !important; }
+.app { width: min(100%, 680px); min-height: 100dvh; margin: auto; padding: max(18px, env(safe-area-inset-top)) 18px max(18px, env(safe-area-inset-bottom)); display: flex; flex-direction: column; gap: 18px; }
+header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+h1 { margin: 0; font-size: 1.35rem; }
+.status { font-size: .82rem; opacity: .7; }
+.capture-card, .preview-card { border: 1px solid color-mix(in srgb, CanvasText 15%, transparent); border-radius: 18px; padding: 18px; }
+.capture-card { min-height: 50dvh; display: grid; place-items: center; align-content: center; gap: 16px; }
+.camera-button { width: min(100%, 360px); min-height: 150px; border: 0; border-radius: 24px; font-weight: 700; font-size: 1.1rem; cursor: pointer; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px; }
+.camera-button:disabled { opacity: .45; cursor: not-allowed; }
+.camera-icon { font-size: 3rem; }
+.hint { margin: 0; text-align: center; opacity: .65; font-size: .9rem; }
+.preview-card img { display: block; width: 100%; max-height: 58dvh; object-fit: contain; border-radius: 12px; background: #111; }
+.preview-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+.preview-actions button { min-height: 50px; border: 0; border-radius: 12px; font-weight: 700; }
+.primary { background: #2563eb; color: white; }
+.secondary { background: color-mix(in srgb, CanvasText 10%, transparent); color: CanvasText; }
+progress { width: 100%; margin-top: 14px; }
+footer { margin-top: auto; display: flex; justify-content: space-between; gap: 15px; font-size: .78rem; opacity: .55; }

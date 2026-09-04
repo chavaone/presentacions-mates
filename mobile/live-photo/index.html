@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Foto para Reveal</title>
+  <link rel="stylesheet" href="./mobile.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Foto para clase</h1>
+      <div id="status" class="status">Conectando…</div>
+    </header>
+
+    <section class="capture-card">
+      <input id="camera" type="file" accept="image/*" capture="environment" hidden>
+      <button id="cameraButton" class="camera-button" disabled>
+        <span class="camera-icon">📷</span>
+        <span>Sacar fotografía</span>
+      </button>
+      <p id="hint" class="hint">Esperando conexión con la presentación.</p>
+    </section>
+
+    <section id="previewCard" class="preview-card hidden">
+      <img id="preview" alt="Vista previa">
+      <div class="preview-actions">
+        <button id="cancelButton" class="secondary">Descartar</button>
+        <button id="sendButton" class="primary">Enviar</button>
+      </div>
+      <progress id="progress" max="100" value="0" class="hidden"></progress>
+    </section>
+
+    <footer>
+      <span id="roomLabel"></span>
+      <span id="sentCount">0 fotos enviadas</span>
+    </footer>
+  </main>
+
+  <script type="module" src="./mobile.js"></script>
+</body>
+</html>

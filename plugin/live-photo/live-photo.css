@@ -1,0 +1,109 @@
+.live-photo-hidden { display: none !important; }
+
+.live-photo-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.96);
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 18px;
+  touch-action: none;
+}
+
+.live-photo-overlay * { box-sizing: border-box; }
+
+.live-photo-topbar {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 18px;
+  pointer-events: none;
+}
+
+.live-photo-status {
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.12);
+  font-size: 14px;
+  pointer-events: auto;
+}
+
+.live-photo-icon-button,
+.live-photo-toolbar button {
+  border: 0;
+  color: inherit;
+  background: rgba(255,255,255,.12);
+  cursor: pointer;
+}
+
+.live-photo-icon-button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 30px;
+  line-height: 1;
+  pointer-events: auto;
+}
+
+.live-photo-pairing {
+  width: min(90vw, 760px);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 70px 20px 30px;
+}
+
+.live-photo-pairing h2 { margin: 0 0 8px; }
+.live-photo-help { opacity: .72; margin: 0 0 20px; }
+
+.live-photo-qr-wrap {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.live-photo-qr { width: 280px; height: 280px; object-fit: contain; }
+.live-photo-qr-placeholder { color: #333; padding: 25px; font-size: 15px; }
+.live-photo-room { margin-top: 18px; font-size: 26px; letter-spacing: .12em; }
+.live-photo-pair-url { max-width: 720px; margin-top: 14px; opacity: .45; font-size: 11px; word-break: break-all; user-select: text; }
+
+.live-photo-viewer { position: absolute; inset: 0; overflow: hidden; }
+.live-photo-canvas { position: absolute; inset: 0; display: grid; place-items: center; overflow: hidden; cursor: grab; }
+.live-photo-canvas:active { cursor: grabbing; }
+.live-photo-image { max-width: 96vw; max-height: 91vh; object-fit: contain; transform-origin: center center; user-select: none; -webkit-user-drag: none; }
+
+.live-photo-toolbar {
+  position: absolute;
+  z-index: 3;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(0,0,0,.68);
+  backdrop-filter: blur(8px);
+}
+
+.live-photo-toolbar button { min-width: 44px; height: 40px; padding: 0 11px; border-radius: 8px; font-size: 23px; }
+.live-photo-toolbar button:hover,
+.live-photo-icon-button:hover { background: rgba(255,255,255,.22); }
+.live-photo-counter { min-width: 62px; text-align: center; font-variant-numeric: tabular-nums; font-size: 14px; }
