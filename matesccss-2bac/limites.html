@@ -1,0 +1,785 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>
+      Matemáticas Aplicadas a las CCSS II - 2º BAC - Límites y continuidad
+    </title>
+
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/white.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../plugin/customcontrols/style.css" />
+    <link rel="stylesheet" href="../plugin/chalkboard/style.css" />
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../css/estilo-blanco.css" />
+  </head>
+  <body>
+    <div class="reveal" id="revealdiv">
+      <div class="slides">
+        <section>
+          <h2>Tema 1</h2>
+          <h4>Límites de funciones. Continuidad</h4>
+          <p>Matemáticas Aplicadas a las CCSS II · 2º BAC</p>
+        </section>
+
+        <section>
+          <section>
+            <h2>Repaso de funciones</h2>
+          </section>
+
+          <section>
+            <h4>Qué necesitamos recordar</h4>
+            <p>
+              Antes de trabajar límites y continuidad recuperamos dominio,
+              imagen, cortes con los ejes, crecimiento, decrecimiento y lectura
+              de gráficas.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">1</span>Responde teniendo en cuenta la
+                gráfica de la función del Anexo B:
+              </p>
+              <ol class="problema__apartados">
+                <li>¿Cuál es el dominio de definición de la función?</li>
+                <li>¿Cuál es la imagen de la función?</li>
+                <li>
+                  ¿Qué tipo de discontinuidad presenta la función en \[ x=19 \]?
+                </li>
+                <li>
+                  ¿Tiene la función máximos o mínimos? ¿Puede una función
+                  cualquiera no tener máximos?
+                </li>
+                <li>
+                  Indica un punto en el que la función sea creciente y otro en
+                  el que sea decreciente.
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">2</span>Calcula el dominio y los puntos de
+                corte de las siguientes funciones:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ f(x)=x^3-6x^2+11x-6 \]</li>
+                <li>\[ f(x)=\frac{3}{x+3} \]</li>
+                <li>
+                  \[ f(x)=\frac{3}{x+3}-\frac{2}{x-2}+\frac{3x}{x^2+x-6} \]
+                </li>
+                <li>\[ f(x)=\sqrt{x^2+3x}-3x \]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Concepto de límite</h2>
+          </section>
+
+          <section>
+            <h4>Idea intuitiva</h4>
+            <p>
+              El límite describe el valor al que se aproxima una función cuando
+              \[x\] se acerca a un punto, aunque la función pueda no tomar ese
+              valor exactamente en dicho punto.
+            </p>
+          </section>
+
+          <section>
+            <h4>Límites laterales</h4>
+            <p>Por la izquierda: \[ \lim_{x\to a^-} f(x) \]</p>
+            <p>Por la derecha: \[ \lim_{x\to a^+} f(x) \]</p>
+            <p>
+              El límite en \[a\] existe si ambos límites laterales existen y
+              coinciden.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">3</span>Para la gráfica B.1, calcula:</p>
+              <ol class="problema__apartados">
+                <li>\[ \lim_{x\to -8^-} f(x) \]</li>
+                <li>\[ \lim_{x\to -8^+} f(x) \]</li>
+                <li>\[ \lim_{x\to 11^-} f(x) \]</li>
+                <li>\[ \lim_{x\to 11^+} f(x) \]</li>
+                <li>\[ \lim_{x\to 5^-} f(x) \]</li>
+                <li>\[ \lim_{x\to 5^+} f(x) \]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Cálculo directo</h4>
+            <p>
+              Si la función es continua en \[a\], entonces el límite se obtiene
+              sustituyendo: \[ \lim_{x\to a} f(x)=f(a). \]
+            </p>
+            <p>
+              En funciones a trozos hay que estudiar especialmente los puntos
+              donde cambia la definición.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">4</span>Calcula los límites cuando \[x\]
+                tiende a \[3\] de las siguientes funciones:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ f(x)=3x+4 \]</li>
+                <li>
+                  \[ f(x)=\begin{cases} x-2 & \text{si } x\lt 3,\\ 1 & \text{si
+                  } x\geq 3. \end{cases} \]
+                </li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Límites en el infinito y en 0</h2>
+          </section>
+
+          <section>
+            <h4>Primer paso</h4>
+            <p>
+              Antes de aplicar ninguna técnica, sustituimos formalmente y
+              analizamos si aparece un valor determinado o una indeterminación.
+            </p>
+          </section>
+
+          <section>
+            <h4>Operaciones con \[0\] e \[\infty\]</h4>
+            <p>
+              Algunas operaciones tienen resultado inmediato, como
+              \[N+\infty=\infty\] o \[\frac{N}{\infty}=0\]. Otras no tienen un
+              valor único y dan lugar a indeterminaciones.
+            </p>
+          </section>
+
+          <section>
+            <h3>Con la suma...</h3>
+            <ul>
+              <li>
+                \[ N \pm \infty = \]
+                <span class="fragment">\[ \pm \infty\]</span>
+              </li>
+              <li>
+                \[ 0 \pm \infty = \]
+                <span class="fragment">\[ \pm \infty\]</span>
+              </li>
+              <li>
+                \[ \infty + \infty = \] <span class="fragment">\[\infty\]</span>
+              </li>
+              <li>
+                \[ \infty - \infty = \]
+                <span class="fragment color-red">INDETERMINACIÓN</span>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Y que pasa con los polinomios...</h3>
+            <p>\[ \lim_{x\to \infty} x^3 -3x^2 = \]</p>
+            <p class="fragment">
+              Analizamos siempre el coeficiente de término de mayor grado pues
+              es el que marcará el sentido de crecimiento.
+            </p>
+          </section>
+
+          <section>
+            <h3>Con el producto...</h3>
+            <ul>
+              <li>
+                \[ \pm N \cdot \infty = \]
+                <span class="fragment">\[\pm \infty\]</span>
+              </li>
+              <li>
+                \[ N \cdot (-\infty) = \]
+                <span class="fragment">\[ -\infty\]</span>
+              </li>
+              <li>
+                \[ \infty \cdot (\pm \infty) = \]
+                <span class="fragment">\[\pm \infty\]</span>
+              </li>
+              <li>\[ 0 \cdot 0 = \] <span class="fragment">\[0\]</span></li>
+              <li>
+                \[ 0 \cdot (\pm \infty) = \]
+                <span class="fragment color-red">INDETERMINACIÓN</span>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Con la división...</h3>
+            <ul>
+              <li>
+                \[ \frac{k}{0} = \] <span class="fragment">\[\infty\]</span>
+                <span style="margin-left: 1em">&#9679;</span>
+                \[ \frac{N}{\infty} = \] <span class="fragment">\[0\]</span>
+                <span style="margin-left: 1em">&#9679;</span>
+                \[ \frac{\infty}{N} = \]
+                <span class="fragment">\[\infty\]</span>
+              </li>
+              <li>
+                \[ \frac{\infty}{0} = \]
+                <span class="fragment">
+                  \[\infty \cdot \frac{1}{0} = \infty\]</span
+                >
+              </li>
+              <li>
+                \[ \frac{0}{\infty} = \]
+                <span class="fragment">\[0 \cdot \frac{1}{\infty} = 0\]</span>
+              </li>
+              <li>
+                \[ \frac{\infty}{\infty} = \]
+                <span class="fragment">INDETERMINACIÓN</span>
+              </li>
+              <li>
+                \[ \frac{0}{0} = \]
+                <span class="fragment">INDETERMINACIÓN</span>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Con la potencia...</h3>
+            <ul>
+              <li>
+                \[ N^{\infty} = \] <span class="fragment">\[\infty\]</span>
+                <span>(con \[N \gt 1\])</span>
+              </li>
+              <li>
+                \[ N^{\infty} = \] <span class="fragment">0</span>
+                <span>(con \[0 \lt N \lt 1\])</span>
+              </li>
+              <li>\[ 0^\infty = \] <span class="fragment">0</span></li>
+              <li>
+                \[1^\infty = \] <span class="fragment">INDETERMINACIÓN</span>
+              </li>
+              <li>
+                \[\infty^0 = \] <span class="fragment">INDETERMINACIÓN</span>
+              </li>
+              <li>\[0^0 =\] <span class="fragment">INDETERMINACIÓN</span></li>
+            </ul>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">5</span>Calcula los siguientes límites
+                empleando las propiedades de las operaciones con \[0\] y
+                \[\infty\]:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ \lim_{x\to0}\left(3+\frac{1}{2x}\right) \]</li>
+                <li>\[ \lim_{x\to-\infty}(x^2+3x) \]</li>
+                <li>\[ \lim_{x\to\infty}\ln(x)+\sqrt{x+3} \]</li>
+                <li>
+                  \[ \lim_{x\to\infty}\left(\sqrt{2x}-\sqrt{x+1}\right) \]
+                </li>
+                <li>\[ \lim_{x\to\infty}(2x+3)\ln(x) \]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">5</span>Calcula los siguientes límites
+                empleando las propiedades de las operaciones con \[0\] y
+                \[\infty\]:
+              </p>
+              <ol class="problema__apartados" start="6">
+                <li>\[ \lim_{x\to\infty}\frac{2^{-x}}{x^2+3} \]</li>
+                <li>\[ \lim_{x\to\infty}\frac{\ln(x)}{e^{-2x+3}} \]</li>
+                <li>\[ \lim_{x\to\infty}\frac{x^3-2}{x^2+3x} \]</li>
+                <li>\[ \lim_{x\to-1}\frac{x^2-1}{x+1} \]</li>
+                <li>\[ \lim_{x\to0}(1-x)^{\frac{1}{x}} \]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Indeterminaciones</h2>
+          </section>
+
+          <section>
+            <h4>Tipos que resolveremos</h4>
+            <p>
+              Trabajaremos las indeterminaciones \[\frac{\infty}{\infty}\],
+              \[\frac{0}{0}\], \[\infty\cdot0\], \[\infty-\infty\] y
+              \[1^\infty\].
+            </p>
+          </section>
+
+          <section>
+            <h4>Estrategia general</h4>
+            <p>
+              Primero identificamos la indeterminación. Después transformamos la
+              expresión: dividir por el término dominante, factorizar,
+              racionalizar, reducir a común denominador o usar el número \[e\].
+            </p>
+          </section>
+
+          <section>
+            <h4>Indeterminación \[\frac{\infty}{\infty}\]</h4>
+            <p>
+              En cocientes de polinomios manda el término de mayor grado. Si
+              aparecen expresiones no polinómicas, comparamos velocidades de
+              crecimiento: exponenciales, polinómicas, radicales y logarítmicas.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">6</span>Resuelve los siguientes límites de
+                tipo \[\frac{\infty}{\infty}\]:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ \lim_{x\to\infty}\frac{3x^2-2x+1}{-x^3+2x^2+x-3} \]</li>
+                <li>\[ \lim_{x\to\infty}\frac{x^2-3x+2}{2x^2-x+5} \]</li>
+                <li>\[ \lim_{x\to\infty}\frac{4x^3-x^2+2x+5}{-2x^2+7x-3} \]</li>
+                <li>\[ \lim_{x\to\infty}\frac{x-4}{\sqrt{x^2-1}} \]</li>
+                <li>\[ \lim_{x\to\infty}\frac{e^x}{x^2+3x} \]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Indeterminación \[\frac{0}{0}\]</h4>
+            <p>
+              Las técnicas principales son factorizar para simplificar o
+              multiplicar por el conjugado cuando aparecen radicales.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">7</span>Resuelve los siguientes límites de
+                tipo \[\frac{0}{0}\]:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ \lim_{x\to1}\frac{x^3-x^2}{x^2+3x-4} \]</li>
+                <li>\[ \lim_{x\to2}\frac{x-2}{\sqrt{2x}-2} \]</li>
+                <li>\[ \lim_{x\to0}\frac{\sqrt{1+x}-\sqrt{1-x}}{x} \]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Indeterminación \[\infty\cdot0\]</h4>
+            <p>
+              Transformamos el producto en un cociente para convertirlo en una
+              indeterminación de tipo \[\frac{0}{0}\] o
+              \[\frac{\infty}{\infty}\].
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">8</span>Resuelve los siguientes límites de
+                tipo \[\infty\cdot0\]:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ \lim_{x\to\infty}e^{-x}(x^2+x+1) \]</li>
+                <li>\[ \lim_{x\to1}\frac{1}{\sqrt{x}-1}(x-1) \]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Indeterminación \[\infty-\infty\]</h4>
+            <p>
+              Según la expresión, operamos la diferencia, reducimos a común
+              denominador o usamos el conjugado.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">9</span>Resuelve los siguientes límites de
+                tipo \[\infty-\infty\]:
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  \[ \lim_{x\to3}\left(\frac{4}{x-3}-\frac{3x}{x^2-x-6}\right)
+                  \]
+                </li>
+                <li>
+                  \[
+                  \lim_{x\to\infty}\left(\frac{2x^4-x^2+1}{x^3}-\frac{2x^3+x^2-x+4}{3x^2}\right)
+                  \]
+                </li>
+                <li>
+                  \[ \lim_{x\to\infty}\left(\sqrt{4x^2-2x+6}-(2x-1)\right) \]
+                </li>
+                <li>
+                  \[
+                  \lim_{x\to2}\left(\frac{1}{\sqrt{x-2}}-\frac{3}{\sqrt{x^2-4}}\right)
+                  \]
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Indeterminación \[1^\infty\]</h4>
+            <p>
+              Usaremos la relación con el número \[e\]: \[
+              e=\lim_{x\to\infty}\left(1+\frac{1}{x}\right)^x. \]
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">10</span>Resuelve los siguientes límites de
+                tipo \[1^\infty\]:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ \lim_{x\to\infty}\left(1-\frac{2}{x}\right)^{x+1} \]</li>
+                <li>
+                  \[
+                  \lim_{x\to\infty}\left(\frac{x^2-2x+1}{x^2-4}\right)^{\frac{x^2}{x-2}}
+                  \]
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Ejercicio mixto</h4>
+            <p>
+              Ahora el enunciado ya no indica qué tipo de indeterminación
+              aparece. Primero hay que reconocerla y después decidir la técnica.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">11</span>Resuelve los siguientes límites.
+                Identifica previamente, cuando exista, el tipo de
+                indeterminación:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ \lim_{x\to+\infty}\frac{\ln(x^2+1)}{x} \]</li>
+                <li>
+                  \[ \lim_{x\to+\infty}\left(\sqrt{x^2+x}-\sqrt{x+7}\right) \]
+                </li>
+                <li>\[ \lim_{x\to2}\frac{x^2+3x-10}{x^3-x^2-8x+12} \]</li>
+                <li>\[ \lim_{x\to+\infty}x\ln\left(\frac{1+x}{x}\right) \]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Continuidad de funciones</h2>
+          </section>
+
+          <section>
+            <h4>Continuidad en un punto</h4>
+            <p>
+              Una función es continua en \[x=a\] cuando existe \[f(a)\], existe
+              \[\lim_{x\to a}f(x)\] y ambos valores coinciden.
+            </p>
+          </section>
+
+          <section>
+            <h4>Tipos de discontinuidad</h4>
+            <p>
+              Clasificaremos las discontinuidades como evitables, de salto
+              finito o infinitas. En las evitables, puede redefinirse el valor
+              de la función en el punto para hacerla continua.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">12</span>Estudia si las siguientes
+                funciones son continuas en el punto indicado. Si no lo son,
+                clasifica la discontinuidad e indica si puede redefinirse:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ f(x)=x^2-3x \] en \[x=2\].</li>
+                <li>\[ g(x)=\frac{x^2-5x+6}{x-3} \] en \[x=3\].</li>
+                <li>
+                  \[ f(x)=\begin{cases} x-2 & \text{si } x\lt3,\\ 1 & \text{si }
+                  x\geq3. \end{cases} \] en \[x=3\].
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Continuidad global</h4>
+            <p>
+              Para estudiar la continuidad de una función localizamos primero
+              los puntos problemáticos: puntos fuera del dominio y puntos donde
+              cambia la definición.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">13</span>Estudia la continuidad de las
+                siguientes funciones:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ f(x)=3x+4 \]</li>
+                <li>\[ f(x)=\frac{x+3}{x^2-9} \]</li>
+                <li>
+                  \[ f(x)=\begin{cases} \frac{2x+6}{x} & \text{si } x\lt1,\\ x+7
+                  & \text{si } x\geq1. \end{cases} \]
+                </li>
+                <li>
+                  \[ f(x)=\begin{cases} 2x+3 & \text{si } x\leq1,\\ x^2+2x+2 &
+                  \text{si } 1\lt x\lt2,\\ -3 & \text{si } x\geq2. \end{cases}
+                  \]
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Continuidad con parámetros</h4>
+            <p>
+              Si una función depende de un parámetro, las condiciones de
+              continuidad nos permiten plantear ecuaciones para determinar sus
+              valores.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">14</span>Calcula el valor del parámetro
+                \[a\] para que las siguientes funciones sean continuas:
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  \[ f(x)=\begin{cases} 2x+a & \text{si } x\leq1,\\ x^2-ax+2 &
+                  \text{si } x\gt1. \end{cases} \]
+                </li>
+                <li>
+                  \[ f(x)=\begin{cases} e^{ax} & \text{si } x\leq0,\\ x+2a &
+                  \text{si } x\gt0. \end{cases} \]
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">15</span>Calcula los valores de los
+                parámetros para que las siguientes funciones sean continuas:
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  \[ f(x)=\begin{cases} x^2-1 & \text{si } x\lt0,\\ ax+b &
+                  \text{si } 0\leq x\lt1,\\ 2 & \text{si } x\geq1. \end{cases}
+                  \]
+                </li>
+                <li>
+                  \[ f(x)=\begin{cases} ax+3 & \text{si } x\leq2,\\ x^2+b &
+                  \text{si } x\gt2, \end{cases} \] sabiendo además que
+                  \[f(1)=5\].
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">16</span>Estudia la continuidad de las
+                siguientes funciones según los valores del parámetro \[a\]:
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  \[ f(x)=\begin{cases} x^2+ax & \text{si } x\leq2,\\ a-x &
+                  \text{si } x\gt2. \end{cases} \]
+                </li>
+                <li>
+                  \[ f(x)=\begin{cases} 3-ax^2 & \text{si } x\leq1,\\
+                  \frac{2}{ax} & \text{si } x\gt1. \end{cases} \]
+                </li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Asíntotas</h2>
+          </section>
+
+          <section>
+            <h4>Asíntotas verticales</h4>
+            <p>
+              Si \[\lim_{x\to a}f(x)=\pm\infty\], entonces la función tiene una
+              asíntota vertical en \[x=a\]. No todo punto excluido del dominio
+              tiene por qué producir una asíntota vertical.
+            </p>
+          </section>
+
+          <section>
+            <h4>Asíntotas horizontales</h4>
+            <p>
+              Si \[\lim_{x\to\pm\infty}f(x)=k\], entonces la función tiene una
+              asíntota horizontal \[y=k\] hacia ese extremo.
+            </p>
+          </section>
+
+          <section>
+            <h4>Asíntotas oblicuas</h4>
+            <p>
+              Una recta \[y=mx+n\] es asíntota oblicua si
+              \[m=\lim_{x\to\pm\infty}\frac{f(x)}{x}\] y
+              \[n=\lim_{x\to\pm\infty}(f(x)-mx).\]
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">17</span>Estudia la presencia de asíntotas
+                en las siguientes funciones:
+              </p>
+              <ol class="problema__apartados">
+                <li>\[ f(x)=\frac{x-2}{x^2-4} \]</li>
+                <li>\[ f(x)=\frac{2x^2-1}{x+2} \]</li>
+                <li>\[ f(x)=\frac{3x^2+x+1}{x^2-3x-4} \]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Problemas contextualizados</h2>
+          </section>
+
+          <section>
+            <h4>Interpretar resultados</h4>
+            <p>
+              En un problema contextualizado no basta con calcular. Hay que
+              traducir el resultado a las unidades del problema y explicar qué
+              significa en la situación descrita.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">18</span
+                ><i class="fa-solid fa-file-signature"></i> [2022/Ord] En una
+                zona protegida, el número de aves \[N(t)\], en cientos, viene
+                dado por:
+              </p>
+              <p>
+                \[ N(t)=\begin{cases} t^2-8t+50 & \text{si }0\leq t\leq10,\\
+                95-\frac{250}{t} & \text{si }t\gt10. \end{cases} \]
+              </p>
+              <ol class="problema__apartados">
+                <li>
+                  Estudia la continuidad de la función en \[t=10\] e interpreta
+                  el resultado.
+                </li>
+                <li>Calcula \[\lim_{t\to+\infty}N(t)\].</li>
+                <li>
+                  ¿A qué número de aves tiende la población con el paso del
+                  tiempo?
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">19</span>El precio de cada acción de una
+                empresa oscila entre 2 y 8 euros. La facturación \[F(x)\]
+                depende del precio \[x\] de cada acción:
+              </p>
+              <p>
+                \[ F(x)=\begin{cases} 3x^2+Ax & \text{si }2\leq x\leq5,\\
+                5x^2+Bx-37 & \text{si }5\lt x\leq8. \end{cases} \]
+              </p>
+              <p>
+                Se sabe que cuando el precio de una acción es de 5 euros la
+                facturación es de 13000 euros y que el modelo debe ser continuo.
+              </p>
+              <ol class="problema__apartados">
+                <li>Determina los valores de \[A\] y \[B\].</li>
+                <li>
+                  Explica qué significado tendría que la función no fuese
+                  continua para \[x=5\].
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">20</span
+                ><i class="fa-solid fa-file-signature"></i> [2020/Ext] Los
+                gastos anuales de una empresa, en cientos de miles de euros, se
+                modelizan mediante:
+              </p>
+              <p>\[ G(t)=\frac{5t-3}{t+1},\qquad t\geq0. \]</p>
+              <ol class="problema__apartados">
+                <li>Calcula \[\lim_{t\to+\infty}G(t)\].</li>
+                <li>Interpreta el resultado en el contexto del problema.</li>
+                <li>
+                  Determina la ecuación de la asíntota horizontal del modelo y
+                  explica su significado económico.
+                </li>
+              </ol>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="../plugin/customcontrols/plugin.js"></script>
+    <script src="../plugin/chalkboard/plugin.js"></script>
+    <script src="../plugin/math/math.js"></script>
+    <script type="module" src="/js/config.esm.js"></script>
+    <script src="../js/custom_plugins.js"></script>
+  </body>
+</html>
