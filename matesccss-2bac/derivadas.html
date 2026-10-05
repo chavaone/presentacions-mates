@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Matemáticas Aplicadas a las CCSS II - 2º de BAC - Derivadas</title>
+
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/white.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../plugin/customcontrols/style.css" />
+    <link rel="stylesheet" href="../plugin/chalkboard/style.css" />
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../css/estilo-blanco.css" />
+  </head>
+  <body>
+    <div class="reveal" id="revealdiv">
+      <div class="slides">
+        <section>
+          <h3>Derivadas</h3>
+          <h4>Matemáticas aplicadas a las CCSS II</h4>
+        </section>
+
+        <section>
+          <section>
+            <h2>Concepto e interpretación de la derivada</h2>
+          </section>
+
+          <section>
+            <h4>Tasa de variación media</h4>
+            <p>
+              La tasa de variación media de una función \[f\] en el intervalo \[[a,b]\] mide el cambio medio de la función por unidad de \[x\].
+            </p>
+            <p>
+              \[ TVM_{[a,b]}(f)=\frac{f(b)-f(a)}{b-a} \]
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">1</span>Calcula la tasa de variación media en los casos siguientes:</p>
+              <ol class="problema__apartados">
+                <li>\[f(x)=x^2+1\] en el intervalo \[[-3,-1]\].</li>
+                <li>\[g(x)=7x-5\] en el intervalo \[[0,2]\].</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">2</span>¿En cuáles de las funciones del ejercicio anterior es constante la tasa de variación media, independientemente del intervalo elegido? ¿Qué tipo de funciones son?</p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Derivada mediante la definición</h2>
+          </section>
+
+          <section>
+            <h4>Derivada en un punto</h4>
+            <p>
+              La derivada de \[f\] en \[x_0\] se define como el límite del cociente incremental:
+            </p>
+            <p>
+              \[f'(x_0)=\lim_{h\to 0}\frac{f(x_0+h)-f(x_0)}{h}\]
+            </p>
+            <p>
+              Cuando existe, representa la pendiente instantánea de la función en ese punto.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">3</span>Calcula las siguientes derivadas usando la definición:</p>
+              <ol class="problema__apartados">
+                <li>Siendo \[f(x)=3x-4\], calcula \[f'(2)\].</li>
+                <li>Siendo \[g(x)=x^2-4\], calcula \[g'(5)\].</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Función derivada</h4>
+            <p>
+              Si podemos calcular la derivada de \[f\] en cada punto de su dominio, obtenemos una nueva función:
+            </p>
+            <p>\[f'(x)\]</p>
+            <p>
+              Esta función se llama función derivada de \[f\].
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">4</span>Calcula la función derivada usando exclusivamente la definición de derivada:</p>
+              <ol class="problema__apartados">
+                <li>\[f(x)=3x-5\]</li>
+                <li>\[g(x)=x^2-1\]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Función derivada y cálculo de derivadas</h2>
+          </section>
+
+          <section>
+            <h4>Derivadas elementales</h4>
+            <p>\[(k)'=0\]</p>
+            <p>\[(x^n)'=n\cdot x^{n-1}\]</p>
+            <p>\[(e^x)'=e^x\]</p>
+            <p>\[(a^x)'=a^x\ln a\]</p>
+            <p>\[(\ln x)'=\frac{1}{x}\]</p>
+          </section>
+
+          <section>
+            <h4>Suma, resta y producto por escalar</h4>
+            <p>\[(f+g)'(x)=f'(x)+g'(x)\]</p>
+            <p>\[(f-g)'(x)=f'(x)-g'(x)\]</p>
+            <p>\[(k\cdot f)'(x)=k\cdot f'(x)\]</p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">5</span>Calcula las derivadas de las siguientes funciones empleando las derivadas de las funciones elementales y las propiedades de suma, resta y producto por escalar:</p>
+              <ol class="problema__apartados">
+                <li>\[f(x)=x^3+2x\]</li>
+                <li>\[g(x)=2x^4+5x^2\]</li>
+                <li>\[p(x)=2^x\]</li>
+                <li>\[q(x)=\ln x\]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Producto y cociente</h4>
+            <p>\[(f\cdot g)'(x)=f'(x)g(x)+f(x)g'(x)\]</p>
+            <p>\[\left(\frac{f}{g}\right)'(x)=\frac{f'(x)g(x)-f(x)g'(x)}{[g(x)]^2}\]</p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">6</span>Calcula las derivadas de los siguientes productos y cocientes:</p>
+              <ol class="problema__apartados">
+                <li>\[f(x)=2x\cdot 2^x\]</li>
+                <li>\[g(x)=x^2e^x\]</li>
+                <li>\[h(x)=\frac{e^x}{3x^2}\]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Regla de la cadena</h4>
+            <p>
+              Si una función está formada por una composición, derivamos la función exterior y multiplicamos por la derivada de la interior.
+            </p>
+            <p>\[(f\circ g)'(x)=f'(g(x))\cdot g'(x)\]</p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">7</span>Calcula las siguientes derivadas aplicando la regla de la cadena:</p>
+              <ol class="problema__apartados">
+                <li>\[f(x)=(x^2+1)^3\]</li>
+                <li>\[g(x)=\sqrt{x^2+3x-5}\]</li>
+                <li>\[h(x)=e^{x^2+2x-1}\]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">7</span>Calcula las siguientes derivadas aplicando la regla de la cadena:</p>
+              <ol class="problema__apartados" start="4">
+                <li>\[p(x)=2^{x^2+3x}\]</li>
+                <li>\[q(x)=\ln(x^2-x)\]</li>
+                <li>\[r(x)=2\ln(3x+5)\]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Combinación de reglas</h4>
+            <p>
+              En muchas funciones hay que identificar varias reglas: cadena, producto, cociente, logaritmos, exponenciales o potencias.
+            </p>
+            <p>
+              Antes de derivar conviene observar si la expresión puede simplificarse.
+            </p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">8</span>Calcula las siguientes derivadas:</p>
+              <ol class="problema__apartados">
+                <li>\[f(x)=\frac{1}{(x^2+1)^3}\]</li>
+                <li>\[g(x)=e^{1/x}\]</li>
+                <li>\[h(x)=\sqrt{\ln x}\]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">8</span>Calcula las siguientes derivadas:</p>
+              <ol class="problema__apartados" start="4">
+                <li>\[p(x)=\ln(1+e^x)\]</li>
+                <li>\[q(x)=\frac{1}{1+e^{-x}}\]</li>
+                <li>\[r(x)=\big(\ln(x^2+1)\big)^3\]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Derivadas sucesivas</h4>
+            <p>La función derivada también puede derivarse.</p>
+            <p>\[f'(x),\qquad f''(x),\qquad f'''(x)\]</p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">9</span>Calcula \[f'(x)\], \[f''(x)\] y \[f'''(x)\]:</p>
+              <ol class="problema__apartados">
+                <li>\[f(x)=x^2+3x-1\]</li>
+                <li>\[f(x)=e^{2x}\]</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>La gráfica de \[f'\]</h4>
+            <p>El signo de \[f'\] informa sobre el comportamiento de \[f\].</p>
+            <p>Los puntos con tangente horizontal se corresponden con valores donde \[f'(x)=0\].</p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">10</span>En cada una de las parejas de gráficas propuestas, decide cuál puede representar a una función \[f\] y cuál a su derivada \[f'\]. Justifica la respuesta atendiendo al signo de \[f'\], las tangentes horizontales y el comportamiento de \[f\].</p>
+              <ol class="problema__apartados">
+                <li><img src="img/comparar_derivada_func1.png" alt="Comparar función y derivada 1" style="width: 85%;" /></li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">10</span>En cada una de las parejas de gráficas propuestas, decide cuál puede representar a una función \[f\] y cuál a su derivada \[f'\].</p>
+              <ol class="problema__apartados" start="2">
+                <li><img src="img/comparar_derivada_func2.png" alt="Comparar función y derivada 2" style="width: 85%;" /></li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Continuidad y derivabilidad</h2>
+          </section>
+
+          <section>
+            <h4>Derivabilidad</h4>
+            <p>
+              Una función es derivable en un punto si existen las derivadas laterales y coinciden.
+            </p>
+            <p>\[f'_-(x_0)=f'_+(x_0)\]</p>
+          </section>
+
+          <section>
+            <h4>Continuidad y derivabilidad</h4>
+            <p>Si una función es derivable en un punto, entonces es continua en ese punto.</p>
+            <p>El recíproco no siempre es cierto: una función puede ser continua y no ser derivable.</p>
+          </section>
+
+          <section>
+            <h4>¿Cuándo puede fallar la derivabilidad?</h4>
+            <p>Una función puede no ser derivable por distintos motivos:</p>
+            <ul>
+              <li>discontinuidad;</li>
+              <li>punto anguloso;</li>
+              <li>cúspide;</li>
+              <li>tangente vertical.</li>
+            </ul>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">11</span>Observa las gráficas propuestas e indica en qué puntos no son derivables las funciones. Justifica en cada caso la causa: discontinuidad, punto anguloso, cúspide, tangente vertical u otra.</p>
+              <ol class="problema__apartados">
+                <li>Gráfica A.2.</li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Funciones definidas a trozos</h4>
+            <p>En los puntos de cambio de definición conviene estudiar:</p>
+            <ul>
+              <li>continuidad;</li>
+              <li>derivada lateral izquierda;</li>
+              <li>derivada lateral derecha.</li>
+            </ul>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">12</span>Estudia la continuidad y la derivabilidad de las siguientes funciones:</p>
+              <ol class="problema__apartados">
+                <li>
+                  \[ f(x)=\begin{cases}x^2+1 & \text{si } x\leq 1,\\ -x+3 & \text{si } x>1.\end{cases} \]
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">12</span>Estudia la continuidad y la derivabilidad de las siguientes funciones:</p>
+              <ol class="problema__apartados" start="2">
+                <li>
+                  \[ g(x)=\begin{cases}\dfrac{x^2-9}{x-3} & \text{si } x\neq 3,\\ 6 & \text{si } x=3.\end{cases} \]
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">12</span>Estudia la continuidad y la derivabilidad de las siguientes funciones:</p>
+              <ol class="problema__apartados" start="3">
+                <li>
+                  \[ h(x)=\begin{cases}0 & \text{si } x\leq \sqrt{2},\\ -x^2+2 & \text{si } x>\sqrt{2}.\end{cases} \]
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <h4>Funciones con valor absoluto</h4>
+            <p>Para estudiar la derivabilidad de una función con valor absoluto, suele ser útil escribirla como función definida a trozos.</p>
+            <p>Los puntos importantes son aquellos en los que cambia la expresión del valor absoluto.</p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">13</span>Para las siguientes funciones con valor absoluto, escríbelas como funciones definidas a trozos, calcula sus derivadas laterales en los puntos donde cambia su expresión e indica si son derivables en dichos puntos.</p>
+              <ol class="problema__apartados">
+                <li>\[f(x)=|x^2-4|\]</li>
+                <li>\[r(x)=x^2|x|\]</li>
+                <li>\[f(x)=|x+1|+|x-3|\]</li>
+              </ol>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Parámetros y derivabilidad</h2>
+          </section>
+
+          <section>
+            <h4>Funciones a trozos con parámetros</h4>
+            <p>Para que una función a trozos sea derivable en el punto de cambio de definición necesitamos dos condiciones:</p>
+            <p>\[\text{continuidad}\]</p>
+            <p>\[\text{igualdad de derivadas laterales}\]</p>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">14</span>Comprueba si existen valores de los parámetros para que las siguientes funciones sean derivables en sus puntos de cambio de definición:</p>
+              <ol class="problema__apartados">
+                <li>
+                  \[h(x)=\begin{cases}a & \text{si } x<-2,\\ x^2-bx+1 & \text{si } x\geq -2,\end{cases} \quad \text{en } x=-2.\]
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section>
+            <div class="problema">
+              <p><span class="numero">14</span>Comprueba si existen valores de los parámetros para que las siguientes funciones sean derivables en sus puntos de cambio de definición:</p>
+              <ol class="problema__apartados" start="2">
+                <li>
+                  \[f(x)=\begin{cases}ax+2 & \text{si } x<1,\\ 3(x-2)^2 & \text{si } x\geq 1,\end{cases} \quad \text{en } x=1.\]
+                </li>
+              </ol>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="../plugin/customcontrols/plugin.js"></script>
+    <script src="../plugin/chalkboard/plugin.js"></script>
+    <script src="../plugin/math/math.js"></script>
+    <script type="module" src="/js/config.esm.js"></script>
+    <script src="../js/custom_plugins.js"></script>
+  </body>
+</html>
