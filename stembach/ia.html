@@ -137,6 +137,98 @@
               automaticamente mellor.
             </aside>
           </section>
+
+          <section>
+            <h4>Que máis podemos proporcionarlle?</h4>
+            <ul>
+              <li>
+                Un ou dous <strong>exemplos</strong> do resultado buscado.
+              </li>
+              <li>Unha <strong>plantilla</strong> ou estrutura.</li>
+              <li>Un <strong>glosario</strong> de termos.</li>
+              <li>Un <strong>documento</strong> de referencia.</li>
+              <li>O <strong>contexto</strong> dunha conversa anterior.</li>
+            </ul>
+            <p>
+              <small
+                >Non compartades datos persoais ou documentos sensibles sen
+                autorización.</small
+              >
+            </p>
+            <aside class="notes">
+              Do apartado 3.3 da UNIR. As entradas adicionais orientan a
+              resposta, pero non substitúen a verificación das fontes.
+            </aside>
+          </section>
+          <section>
+            <div class="problema">
+              <p>
+                <span class="numero">2</span
+                ><strong>Mellorade o primeiro prompt</strong>
+              </p>
+              <p>Volvede ao experimento dos materiais illantes.</p>
+              <ol>
+                <li>Engadide obxectivo, contexto e límites.</li>
+                <li>Probádeo e comparade as respostas.</li>
+                <li>Cal das melloras vos resultou máis útil?</li>
+              </ol>
+            </div>
+            <aside class="notes">
+              Reservar tempo real para traballar. Non facilitar antes o prompt
+              modelo. Recoller algunha combinación (por exemplo few-shot +
+              prompt chaining).
+            </aside>
+          </section>
+          <section>
+            <h4>Exemplo · Prompt encadeado e contextualizado</h4>
+            <p style="font-size: 0.78em; text-align: left">
+              «Somos estudantes de 1.º de bacharelato. Temos vasos iguais, auga
+              quente, termómetro e catro materiais illantes. Queremos comparar
+              cal conserva mellor a temperatura. Primeiro, axúdanos a definir as
+              variables e a forma de medilas. Non deseñes aínda todo o
+              experimento: agarda a nosa resposta e pregúntanos o que falte».
+            </p>
+            <p>
+              <small>É unha opción posible, non unha receita universal.</small>
+            </p>
+            <aside class="notes">
+              Só mostrar despois do segundo intento. Identificar contexto,
+              obxectivo, límite e encadeamento.
+            </aside>
+          </section>
+          <section>
+            <h4>Corrixir a resposta ou reformular a pregunta?</h4>
+            <p>
+              <strong>Continuar:</strong> cando a resposta é útil e só precisa
+              pequenos axustes.
+            </p>
+            <p>
+              <strong>Reformular:</strong> cando acumulamos instrucións, hai
+              contradicións ou a tarefa estaba mal definida.
+            </p>
+            <p>
+              Nalgúns casos, <strong>un novo prompt claro</strong> pode dar
+              mellor resultado que seguir engadindo correccións.
+            </p>
+            <p>
+              <small
+                >Probade ambas vías se tedes tempo: non existe unha ganadora
+                universal.</small
+              >
+            </p>
+            <aside class="notes">
+              Transmitir unha opción, nunca unha garantía. Se queda tempo, pedir
+              que reescriban nun único prompt as correccións que fixeron sobre
+              os illantes e contrasten.
+            </aside>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Modelos de prompts</h1>
+          </section>
+
           <section>
             <h4>1. Zero-shot · Sen exemplos</h4>
             <p>
@@ -273,115 +365,8 @@
             </aside>
           </section>
           <section>
-            <h4>7. Reverse prompting · Prompt inverso</h4>
-            <p>
-              Partimos dun <strong>resultado que nos gusta</strong> e pedimos
-              unha posible instrución para recrear o estilo.
-            </p>
-            <p style="font-size: 0.78em; text-align: left">
-              «Esta é unha táboa de variables dun experimento: […]. Propón un
-              prompt que poida producir unha táboa coa mesma estrutura para
-              outra investigación».
-            </p>
-            <p>
-              <small
-                >O prompt proposto é unha hipótese, non unha reconstrución
-                exacta.</small
-              >
-            </p>
-            <aside class="notes">
-              Clarificar que non podemos saber con certeza cal foi o prompt
-              orixinal dun texto só mirando o resultado.
-            </aside>
-          </section>
-          <section>
-            <h4>Que máis podemos proporcionarlle?</h4>
-            <ul>
-              <li>
-                Un ou dous <strong>exemplos</strong> do resultado buscado.
-              </li>
-              <li>Unha <strong>plantilla</strong> ou estrutura.</li>
-              <li>Un <strong>glosario</strong> de termos.</li>
-              <li>Un <strong>documento</strong> de referencia.</li>
-              <li>O <strong>contexto</strong> dunha conversa anterior.</li>
-            </ul>
-            <p>
-              <small
-                >Non compartades datos persoais ou documentos sensibles sen
-                autorización.</small
-              >
-            </p>
-            <aside class="notes">
-              Do apartado 3.3 da UNIR. As entradas adicionais orientan a
-              resposta, pero non substitúen a verificación das fontes.
-            </aside>
-          </section>
-          <section>
-            <div class="problema">
-              <p>
-                <span class="numero">2</span
-                ><strong>Mellorade o primeiro prompt</strong>
-              </p>
-              <p>Volvede ao experimento dos materiais illantes.</p>
-              <ol>
-                <li>Engadide obxectivo, contexto e límites.</li>
-                <li>
-                  Empregade <strong>polo menos dúas técnicas</strong> das
-                  anteriores.
-                </li>
-                <li>Probádeo e comparade as respostas.</li>
-                <li>Cal das melloras vos resultou máis útil?</li>
-              </ol>
-              <p><small>Segundo intento · 4 minutos</small></p>
-            </div>
-            <aside class="notes">
-              Reservar tempo real para traballar. Non facilitar antes o prompt
-              modelo. Recoller algunha combinación (por exemplo few-shot +
-              prompt chaining).
-            </aside>
-          </section>
-          <section>
-            <h4>Exemplo · Prompt encadeado e contextualizado</h4>
-            <p style="font-size: 0.78em; text-align: left">
-              «Somos estudantes de 1.º de bacharelato. Temos vasos iguais, auga
-              quente, termómetro e catro materiais illantes. Queremos comparar
-              cal conserva mellor a temperatura. Primeiro, axúdanos a definir as
-              variables e a forma de medilas. Non deseñes aínda todo o
-              experimento: agarda a nosa resposta e pregúntanos o que falte».
-            </p>
-            <p>
-              <small>É unha opción posible, non unha receita universal.</small>
-            </p>
-            <aside class="notes">
-              Só mostrar despois do segundo intento. Identificar contexto,
-              obxectivo, límite e encadeamento.
-            </aside>
-          </section>
-          <section>
-            <h4>Corrixir a resposta ou reformular a pregunta?</h4>
-            <p>
-              <strong>Continuar:</strong> cando a resposta é útil e só precisa
-              pequenos axustes.
-            </p>
-            <p>
-              <strong>Reformular:</strong> cando acumulamos instrucións, hai
-              contradicións ou a tarefa estaba mal definida.
-            </p>
-            <p>
-              Nalgúns casos, <strong>un novo prompt claro</strong> pode dar
-              mellor resultado que seguir engadindo correccións.
-            </p>
-            <p>
-              <small
-                >Probade ambas vías se tedes tempo: non existe unha ganadora
-                universal.</small
-              >
-            </p>
-            <aside class="notes">
-              Transmitir unha opción, nunca unha garantía. Se queda tempo, pedir
-              que reescriban nun único prompt as correccións que fixeron sobre
-              os illantes e contrasten.
-            </aside>
+            <h4>7. Método Socrático</h4>
+            <p>Máis adiante...</p>
           </section>
         </section>
         <section>
@@ -463,6 +448,14 @@
               polo usuario. Engadir cautela: pensar antes non inmuniza contra
               recomendacións falsas.
             </aside>
+          </section>
+          <section>
+            <h4>7. Método Socrático</h4>
+            <p>
+              A través do prompt, obrigamos a que a IA non nos dea a solución
+              directamente senon que non vaia guiando cara ela a través de
+              pregundas dirixidas.
+            </p>
           </section>
           <section>
             <div class="problema">
